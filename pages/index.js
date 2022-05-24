@@ -1,9 +1,9 @@
-import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
-import { getSortedPostsData } from '../lib/posts'
-import Link from 'next/link'
-import Date from '../components/date'
+import Head from "next/head";
+import Layout, { siteTitle } from "../components/layout";
+import utilStyles from "../styles/utils.module.css";
+import { getSortedPostsData } from "../lib/posts";
+import Link from "next/link";
+import Date from "../components/date";
 
 export default function Home({ allPostsData }) {
   return (
@@ -12,9 +12,18 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
         <p>
-          (This is a sample website - you’ll be building a site like this in{' '}
+          Ut euismod metus at turpis elementum, nec egestas lectus commodo.
+          Donec ullamcorper aliquam lorem non vehicula. Pellentesque euismod
+          nulla vitae laoreet facilisis. Ut bibendum ut ipsum ut consequat.
+          Curabitur mollis mi dapibus ligula ultricies faucibus. Aliquam rutrum
+          tellus in eleifend tincidunt. Sed pulvinar purus mauris, in
+          sollicitudin dolor rhoncus quis. Cras dignissim, leo ut dapibus
+          pharetra, lorem magna placerat nunc, vitae tempus quam purus venenatis
+          sem. Etiam ullamcorper quam sed turpis tincidunt malesuada.
+        </p>
+        <p>
+          (This is a sample website - you’ll be building a site like this in{" "}
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
         </p>
       </section>
@@ -35,14 +44,14 @@ export default function Home({ allPostsData }) {
         </ul>
       </section>
     </Layout>
-  )
+  );
 }
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
+  const allPostsData = getSortedPostsData();
   return {
     props: {
-      allPostsData
-    }
-  }
+      allPostsData,
+    },
+  };
 }
