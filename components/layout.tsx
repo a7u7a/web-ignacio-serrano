@@ -4,8 +4,8 @@ import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 
-const name = "Ayuya TypeScript";
-export const siteTitle = "Next.js Sample Website";
+const name = "Web Ignacio Serrano";
+export const siteTitle = "Ignacio Serrano";
 
 export default function Layout({
   children,

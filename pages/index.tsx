@@ -20,14 +20,7 @@ export default function Home({ allPostsData }: {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          Ut euismod metus at turpis elementum, nec egestas lectus commodo.
-          Donec ullamcorper aliquam lorem non vehicula. Pellentesque euismod
-          nulla vitae laoreet facilisis. Ut bibendum ut ipsum ut consequat.
-          Curabitur mollis mi dapibus ligula ultricies faucibus. Aliquam rutrum
-          tellus in eleifend tincidunt. Sed pulvinar purus mauris, in
-          sollicitudin dolor rhoncus quis. Cras dignissim, leo ut dapibus
-          pharetra, lorem magna placerat nunc, vitae tempus quam purus venenatis
-          sem. Etiam ullamcorper quam sed turpis tincidunt malesuada.
+          Web en proceso de construcción.
         </p>
         <p>
           (This is a sample website - you’ll be building a site like this in{" "}
