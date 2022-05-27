@@ -4,7 +4,7 @@ import matter from 'gray-matter'
 import { remark } from 'remark'
 import html from 'remark-html'
 
-const postsDirectory = path.join(process.cwd(), 'posts/blog')
+const postsDirectory = path.join(process.cwd(), 'content/about')
 
 // Used to render post index
 export function getSortedPostsData() {
@@ -52,14 +52,19 @@ export async function getPostData(id) {
   const fullPath = path.join(postsDirectory, `${id}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
 
+  // here we filter content by language
+  console.log("iddd",id);
+
   // Use gray-matter to parse the post metadata section
   const matterResult = matter(fileContents)
-
+  console.log("matterResult", matterResult);
   // Use remark to convert markdown into HTML string
   const processedContent = await remark()
     .use(html)
     .process(matterResult.content)
   const contentHtml = processedContent.toString()
+
+  console.log("processedContent", processedContent);
 
   // Combine the data with the id and contentHtml
   return {
