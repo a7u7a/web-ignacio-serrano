@@ -1,5 +1,5 @@
 ---
-date: May 25, 2022 7:54 PM
+date: May 27, 2022 10:44 PM
 title: Bio
 body_eng: Nevado del Ruiz has undergone three distinct eruptive periods, the
   first beginning 1.8 million years ago. During the present period (beginning
