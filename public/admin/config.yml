@@ -26,6 +26,8 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - { label: 'Blog post content', name: 'body', widget: 'markdown' }
   - name: "sensiblog" # Used in routes, e.g., /admin/collections/blog
     label: "Sensiblog" # Used in the UI
     folder: "content/sensiblog" # The path to the folder where the documents are stored
