@@ -16,7 +16,6 @@ collections:
       - {label: "Fecha de publicación", name: "date", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL"}
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Castellano", name: "body", widget: "markdown"}
-      - {label: "Title", name: "title_eng", widget: "string"}
       - {label: "English", name: "body_eng", widget: "markdown"}
   - name: "feed" # Used in routes, e.g., /admin/collections/blog
     label: "Feed" # Used in the UI
@@ -68,5 +67,4 @@ collections:
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Castellano", name: "body", widget: "markdown"}
-      - {label: "Title", name: "title_eng", widget: "string"}
       - {label: "English", name: "body_eng", widget: "markdown"}  
