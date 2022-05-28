@@ -1,6 +1,6 @@
 ---
 date: May 27, 2022 11:07 PM
-title: how to buy
+title: Cómo comprar
 body_eng: |-
   # How to buy?
 

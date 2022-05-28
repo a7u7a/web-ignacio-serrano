@@ -10,7 +10,17 @@ collections:
   - name: "about" # Used in routes, e.g., /admin/collections/blog
     label: "About" # Used in the UI
     folder: "content/about" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
+    create: false # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Fecha de publicación", name: "date", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL"}
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Cuerpo (Castellano)", name: "body", widget: "markdown"}
+      - {label: "Cuerpo (English)", name: "body_eng", widget: "markdown"}
+  - name: "modals" # Used in routes, e.g., /admin/collections/blog
+    label: "Modals" # Used in the UI
+    folder: "content/modals" # The path to the folder where the documents are stored
+    create: false # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Fecha de publicación", name: "date", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL"}
@@ -55,14 +65,4 @@ collections:
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Cuerpo (Castellano)", name: "body", widget: "markdown"}
       - {label: "Title", name: "title_eng", widget: "string"}
-      - {label: "Cuerpo (English)", name: "body_eng", widget: "markdown"}
-  - name: "modals" # Used in routes, e.g., /admin/collections/blog
-    label: "Modals" # Used in the UI
-    folder: "content/modals" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Fecha de publicación", name: "date", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL"}
-      - {label: "Titulo", name: "title", widget: "string"}
-      - {label: "Cuerpo (Castellano)", name: "body", widget: "markdown"}
       - {label: "Cuerpo (English)", name: "body_eng", widget: "markdown"}
