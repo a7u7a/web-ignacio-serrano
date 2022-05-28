@@ -1,5 +1,5 @@
 ---
-title: henlo little friend
+title: Hello feed
 thumbnail: /uploads/screen-shot-2021-05-24-at-20.47.11.png
 tags:
   - starwars
