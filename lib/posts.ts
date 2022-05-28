@@ -4,7 +4,7 @@ import matter from 'gray-matter'
 import { remark } from 'remark'
 import html from 'remark-html'
 
-const postsDirectory = path.join(process.cwd(), 'content/feed')
+const postsDirectory = path.join(process.cwd(), 'content/sensiblog')
 
 // Used to render post index
 export function getSortedPostsData() {
