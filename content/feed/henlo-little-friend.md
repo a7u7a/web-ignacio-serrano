@@ -10,4 +10,7 @@ test1: |-
 thumbnail: /uploads/screen-shot-2021-05-04-at-10.34.08.png
 ---
 ### some other content
+
 It was only me
+
+![](/uploads/screen-shot-2021-05-24-at-20.47.11.png)
