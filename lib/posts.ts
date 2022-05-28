@@ -52,9 +52,6 @@ export async function getPostData(id) {
   const fullPath = path.join(postsDirectory, `${id}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
 
-  // here we filter content by language
-  console.log("iddd",id);
-
   // Use gray-matter to parse the post metadata section
   const matterResult = matter(fileContents)
   console.log("matterResult", matterResult);
@@ -63,8 +60,12 @@ export async function getPostData(id) {
     .use(html)
     .process(matterResult.content)
   const contentHtml = processedContent.toString()
+  console.log("processed spanish content", processedContent);
 
-  console.log("processedContent", processedContent);
+  const processedContent2 = await remark()
+    .use(html)
+    .process(matterResult.data.body_eng)
+  console.log("processed english content", processedContent2);
 
   // Combine the data with the id and contentHtml
   return {

@@ -13,55 +13,60 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL"}
+      - {label: "Fecha de publicación", name: "date", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL"}
+      - {label: "Titulo", name: "titulo", widget: "string"}
       - {label: "Castellano", name: "body", widget: "markdown"}
-      - { label: "English", name: "body_eng", widget: "markdown" }
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "English", name: "body_eng", widget: "markdown"}
   - name: "feed" # Used in routes, e.g., /admin/collections/blog
     label: "Feed" # Used in the UI
     folder: "content/feed" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Fecha de publicación", name: "date", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL"}
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Tags", name: "tags", widget: "list"}
-      - {label: "Publish Date", name: "date", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL"}
+      - {label: "Titulo", name: "titulo", widget: "string"}
       - {label: "Castellano", name: "body", widget: "markdown"}
-      - { label: "English", name: "body_eng", widget: "markdown" }
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "English", name: "body_eng", widget: "markdown"}
   - name: "sensiblog" # Used in routes, e.g., /admin/collections/blog
     label: "Sensiblog" # Used in the UI
     folder: "content/sensiblog" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Fecha de publicación", name: "date", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL"}
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Tags", name: "tags", widget: "list"}
-      - {label: "Publish Date", name: "date", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL"}
+      - {label: "Titulo", name: "titulo", widget: "string"}
       - {label: "Castellano", name: "body", widget: "markdown"}
-      - { label: "English", name: "body_eng", widget: "markdown" }
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "English", name: "body_eng", widget: "markdown"}
   - name: "posible" # Used in routes, e.g., /admin/collections/blog
     label: "Posible" # Used in the UI
     folder: "content/posible" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Fecha de publicación", name: "date", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL"}
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Stock", name: "stock", widget: "number"}
       - {label: "Price", name: "price", widget: "number"}
-      - {label: "Publish Date", name: "date", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL"}
+      - {label: "Titulo", name: "titulo", widget: "string"}
       - {label: "Castellano", name: "body", widget: "markdown"}
-      - { label: "English", name: "body_eng", widget: "markdown" }
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "English", name: "body_eng", widget: "markdown"}
   - name: "modals" # Used in routes, e.g., /admin/collections/blog
     label: "Modals" # Used in the UI
     folder: "content/modals" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Fecha de publicación", name: "date", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL"}
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Publish Date", name: "date", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL"}
+      - {label: "Titulo", name: "titulo", widget: "string"}
       - {label: "Castellano", name: "body", widget: "markdown"}
-      - { label: "English", name: "body_eng", widget: "markdown" }  
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "English", name: "body_eng", widget: "markdown"}  
