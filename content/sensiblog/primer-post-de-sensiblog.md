@@ -1,10 +1,11 @@
 ---
-title: Primer post de sensiblog
-thumbnail: /uploads/screen-shot-2021-05-04-at-10.34.08.png
-tags:
-  - Electronica
-  - onditasensible
 date: May 27, 2022 9:33 PM
+thumbnail: /uploads/screen-shot-2021-05-04-at-10.34.08.png
+category: Electrónica
+tags:
+  - onditasensible
+title: Primer post de sensiblog
+title_eng: Sensiblog first post
 body_eng: The Armero tragedy occurred following the eruption of the Nevado del
   Ruiz stratovolcano in Tolima, Colombia, on November 13, 1985. After 69 years
   of dormancy, the volcano's eruption caught nearby towns unaware, even though
