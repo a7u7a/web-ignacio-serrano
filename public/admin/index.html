@@ -60,6 +60,7 @@
         pattern: /text-on-image (\S+)\s/,
         // Function to extract data elements from the regexp match
         fromBlock: function (match) {
+          console.log("match",match);
           return {
             text: match[1],
             text: match[2],
