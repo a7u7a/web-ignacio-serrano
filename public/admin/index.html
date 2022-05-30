@@ -10,7 +10,7 @@
     <!-- Include the script that builds the page and powers Netlify CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
     <script>
-      import Image from "next/image";
+      
 
       CMS.registerEditorComponent({
         // Internal id of the component
@@ -75,7 +75,7 @@
         // Preview output for this component. Can either be a string or a React component
         // (component gives better render performance)
         toPreview: function (obj) {
-          return (<Image priority src={obj.image} height={200} width={200} />);
+          return (`<img src=${obj.image} height=200 width=200 />`);
         },
       });
     </script>
