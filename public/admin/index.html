@@ -59,13 +59,13 @@
           },
         ],
         // Pattern to identify a block as being an instance of this component
-        pattern: /text-on-image (\S+)\s/,
+        pattern: /text-on-image (\S+)\s (\S+)\s/,
         // Function to extract data elements from the regexp match
         fromBlock: function (match) {
           console.log("match", match);
           return {
-            text: match[1],
-            image: match[2],
+            text: match[0],
+            image: match[1],
           };
         },
         // Function to create a text block from an instance of this component
