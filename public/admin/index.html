@@ -103,7 +103,7 @@
         toBlock: ({ alt, image, title, more }) =>
           `![${alt || ""}](${image || ""}${
             title ? ` "${title.replace(/"/g, '\\"')}"` : ""
-          })\n${more}`,
+          })[${more}]`,
         // eslint-disable-next-line react/display-name
         toPreview: ({ alt, image, title }, getAsset, fields) => {
           const imageField = fields?.find((f) => f.get("widget") === "image");
@@ -112,7 +112,8 @@
             title || ""
           } />`;
         },
-        pattern: /^!\[(.*)\]\((.*?)(\s"(.*)")?\)$/,
+        // pattern: /^!\[(.*)\]\((.*?)(\s"(.*)")?\)$/,
+        pattern: /^!\[(.*)\]\((.*?)(\s"(.*)")?\)\[([\S\s]*)\]\n/,
         fields: [
           {
             label: "Image",
