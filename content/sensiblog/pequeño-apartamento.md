@@ -13,9 +13,7 @@ body_eng: The Armero tragedy occurred following the eruption of the Nevado del
   the government had received warnings from volcanological organizations to
   evacuate the area after the detection of volcanic activity two months earlier.
 ---
-![henlo alt](/uploads/screen-shot-2022-03-31-at-23.43.28.png "henlo title")[heueueu 
-
-[Duck Duck Go](https://duckduckgo.com)]
+![henlo alt](/uploads/screen-shot-2022-03-31-at-23.43.28.png "henlo title")[Tras sesenta y nueve años de inactividad, la erupción tomó por sorpresa a los poblados cercanos, a pesar de que el [Gobierno](https://duckduckgo.com)había recibido advertencias por parte de múltiples organismos vulcanológicos desde la aparición.]
 
 ![dsfaasaaaaa](/uploads/screen-shot-2022-05-25-at-20.31.07.png "aaaawwwwwwwwww")
 
