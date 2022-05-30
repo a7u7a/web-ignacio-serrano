@@ -13,11 +13,10 @@ body_eng: The Armero tragedy occurred following the eruption of the Nevado del
   the government had received warnings from volcanological organizations to
   evacuate the area after the detection of volcanic activity two months earlier.
 ---
-![here is some alt text](/uploads/screen-shot-2022-05-19-at-16.06.13.png "some title 4 u")[hello this is a nice paragraph
-and a link [Duck Duck Go](https://duckduckgo.com)
-bye]
+![henlo alt](/uploads/screen-shot-2022-03-31-at-23.43.28.png "henlo title")[heueueu 
 
-![loca \[Duck Duck Go\](https://duckduckgo.com) re loca](/uploads/d_nq_np_769079-mlc47937758735_102021-w.jpg "polera")
-hello my friend
+[Duck Duck Go](https://duckduckgo.com)]
+
+![dsfaasaaaaa](/uploads/screen-shot-2022-05-25-at-20.31.07.png "aaaawwwwwwwwww")
 
 La tragedia de Armero fue un desastre natural producto de la erupción del volcán Nevado del Ruiz el miércoles 13 de noviembre de 1985, afectando a los departamentos de Caldas y Tolima, Colombia. Tras sesenta y nueve años de inactividad, la erupción tomó por sorpresa a los poblados cercanos, a pesar de que el Gobierno había recibido advertencias por parte de múltiples organismos vulcanológicos desde la aparición de los primeros indicios de actividad volcánica en septiembre de 1985.
