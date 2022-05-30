@@ -64,18 +64,19 @@
         fromBlock: function (match) {
           console.log("match", match);
           return {
-            text: match[0],
-            image: match[1],
+            text: match[1],
+            // image: match[2],
           };
         },
         // Function to create a text block from an instance of this component
         toBlock: function (obj) {
-          return "text-on-image " + obj.text + " " + obj.image;
+          // return "text-on-image " + obj.text + " " + obj.image;
+          return "text-on-image " + obj.text;
         },
         // Preview output for this component. Can either be a string or a React component
         // (component gives better render performance)
         toPreview: function (obj) {
-          return (`<img src=${obj.image} height=200 width=200 />`);
+          return (`<img src=${obj.text} height=200 width=200 />`);
         },
       });
     </script>
