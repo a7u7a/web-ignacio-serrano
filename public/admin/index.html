@@ -75,7 +75,7 @@
         // Preview output for this component. Can either be a string or a React component
         // (component gives better render performance)
         toPreview: function (obj) {
-          return <Image priority src={obj.image} height={200} width={200} />;
+          return (<Image priority src={obj.image} height={200} width={200} />);
         },
       });
     </script>
