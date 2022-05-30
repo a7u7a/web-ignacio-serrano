@@ -49,12 +49,12 @@
         // Fields the user need to fill out when adding an instance of the component
         fields: [
           { name: "text", label: "Text", widget: "markdown" },
-          // {
-          //   name: "image",
-          //   label: "Image",
-          //   widget: "image",
-          //   allow_multiple: false,
-          // },
+          {
+            name: "image",
+            label: "Image",
+            widget: "image",
+            allow_multiple: false,
+          },
         ],
         // Pattern to identify a block as being an instance of this component
         pattern: /text-on-image (\S+)\s/,
@@ -63,12 +63,12 @@
           console.log("match",match);
           return {
             text: match[1],
-           // image: match[2],
+            image: match[2],
           };
         },
         // Function to create a text block from an instance of this component
         toBlock: function (obj) {
-          return "text-on-image " + obj.text ;
+          return "text-on-image " + obj.text +  ' ' + obj.image;
         },
         // Preview output for this component. Can either be a string or a React component
         // (component gives better render performance)
