@@ -13,7 +13,7 @@ body_eng: The Armero tragedy occurred following the eruption of the Nevado del
   the government had received warnings from volcanological organizations to
   evacuate the area after the detection of volcanic activity two months earlier.
 ---
-![here is some alt text]( "some title 4 u")[hello this is a nice paragraph
+![here is some alt text](/uploads/screen-shot-2022-05-19-at-16.06.13.png "some title 4 u")[hello this is a nice paragraph
 and a link [Duck Duck Go](https://duckduckgo.com)
 bye]
 
