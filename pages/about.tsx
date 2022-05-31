@@ -20,28 +20,16 @@ export default function About({
     contentHtml:string
   }[];
 }) {
-  const aboutPost = allPostsData.filter((item) => item.id === "about")[0];
-  const bioPost = allPostsData.filter((item) => item.id === "bio")[0];
-  const cvPost = allPostsData.filter((item) => item.id === "cv")[0];
-  
   return (
     <div>
       <Head>
         <title>{pageName}</title>
       </Head>
-    
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <h2 className={utilStyles.headingLg}>About</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title, contentHtml }) => (
             <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
-                <a>{title}</a>
-              </Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <DateEl dateString={date} />
-              </small>
               <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
             </li>
           ))}
