@@ -3,10 +3,12 @@ import path from 'path'
 import matter from 'gray-matter'
 import { remark } from 'remark'
 import html from 'remark-html'
+import { AboutCollection } from '../models/aboutCollection.models'
 
 const postsDirectory = path.join(process.cwd(), 'content/sensiblog')
 
 /**
+ * Pending: add AboutCollection interface
  * Return array with all posts in a collection
  * @param collectionName 
  * @returns 
@@ -38,7 +40,7 @@ export async function getCollectionData(collectionName: string) {
   const processFileNames = async () => {
     return await Promise.all(fileNames.map(parseContentToHTML))
   }
-  console.log("processFileNames()", await processFileNames());
+  // console.log("processFileNames()", await processFileNames());
   return processFileNames()
 }
 

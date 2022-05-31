@@ -1,43 +1,30 @@
 import Head from "next/head";
-import Layout, { siteTitle } from "../components/layout";
 import { getCollectionData } from "../lib/posts";
 import Link from "next/link";
-import DateEl from "../components/date";
 import { GetStaticProps } from "next";
-import { remark } from 'remark'
-import html from 'remark-html'
+import { AboutCollection } from "../models/aboutCollection.models";
+import Intro from "../components/intro";
+import Bio from "../components/bio";
+import CV from "../components/cv";
+
+import utilStyles from "../styles/utils.module.css";
 
 const pageName = "About";
 
 export default function About({
   allPostsData,
-}: {
-  allPostsData: {
-    date: string;
-    title: string;
-    id: string;
-    contentHtml:string
-  }[];
-}) {
+}: { allPostsData: AboutCollection[] }) {
+  console.log("allPostsData[0]", allPostsData[0]);
   return (
-    <div>
-      <Head>
-        <title>{pageName}</title>
-      </Head>
-      <section >
-        <h2>About</h2>
-        <ul>
-          {allPostsData.map(({ id, date, title, contentHtml }) => (
-            <li key={id}>
-              <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-            </li>
-          ))}
-        </ul>
-      </section>
-    </div>
+    <div className="flex flex-col m-8">
+      <Intro data={allPostsData[0]}></Intro>
+      <Bio data={allPostsData[1]}></Bio>
+      <CV data={allPostsData[2]}></CV>
+      </div>
+      
+    
   );
 }
-
 
 export const getStaticProps: GetStaticProps = async () => {
   const allPostsData = await getCollectionData("about");
