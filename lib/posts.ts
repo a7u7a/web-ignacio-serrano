@@ -6,6 +6,43 @@ import html from 'remark-html'
 
 const postsDirectory = path.join(process.cwd(), 'content/sensiblog')
 
+/**
+ * Return array with all posts in a collection
+ * @param collectionName 
+ * @returns 
+ */
+
+export async function getCollectionData(collectionName: string) {
+  // Get file names under /posts
+  const mydir = path.join(process.cwd(), 'content/' + collectionName)
+  const fileNames = fs.readdirSync(mydir)
+
+  const parseContentToHTML = async (fileName: string) => {
+    const id = fileName.replace(/\.md$/, '')
+    const fullPath = path.join(mydir, fileName)
+    const fileContents = fs.readFileSync(fullPath, 'utf8')
+    // Use gray-matter to parse the post metadata section
+    const matterResult = matter(fileContents)
+    const processedContent = await remark()
+      .use(html)
+      .process(matterResult.content)
+    const contentHtml = processedContent.toString()
+
+    return {
+      id,
+      contentHtml,
+      ...(matterResult.data as { date: string; title: string })
+    }
+  }
+
+  const processFileNames = async () => {
+    return await Promise.all(fileNames.map(parseContentToHTML))
+  }
+  console.log("processFileNames()", await processFileNames());
+  return processFileNames()
+}
+
+
 // Used to render post index
 export function getSortedPostsData() {
   // Get file names under /posts
@@ -48,24 +85,24 @@ export function getAllPostIds() {
   })
 }
 
-export async function getPostData(id) {
+export async function getPostData(id: string) {
   const fullPath = path.join(postsDirectory, `${id}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
 
   // Use gray-matter to parse the post metadata section
   const matterResult = matter(fileContents)
-  console.log("matterResult", matterResult);
+  // console.log("matterResult", matterResult);
   // Use remark to convert markdown into HTML string
   const processedContent = await remark()
     .use(html)
     .process(matterResult.content)
   const contentHtml = processedContent.toString()
-  console.log("processed spanish content", processedContent);
+  // console.log("processed spanish content", processedContent);
 
   const processedContent2 = await remark()
     .use(html)
     .process(matterResult.data.body_eng)
-  console.log("processed english content", processedContent2);
+  // console.log("processed english content", processedContent2);
 
   // Combine the data with the id and contentHtml
   return {
