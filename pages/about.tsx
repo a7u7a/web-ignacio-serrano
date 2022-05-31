@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
-import utilStyles from "../styles/utils.module.css";
 import { getCollectionData } from "../lib/posts";
 import Link from "next/link";
 import DateEl from "../components/date";
@@ -25,11 +24,11 @@ export default function About({
       <Head>
         <title>{pageName}</title>
       </Head>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>About</h2>
-        <ul className={utilStyles.list}>
+      <section >
+        <h2>About</h2>
+        <ul>
           {allPostsData.map(({ id, date, title, contentHtml }) => (
-            <li className={utilStyles.listItem} key={id}>
+            <li key={id}>
               <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
             </li>
           ))}
