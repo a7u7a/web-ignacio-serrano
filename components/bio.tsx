@@ -5,7 +5,7 @@ const Bio: React.FC<{ data: AboutCollection }> = (props: {
 }) => {
   return (
     <div
-      className="font-serif"
+      className="space-y-4"
       dangerouslySetInnerHTML={{ __html: props.data.contentHtml }}
     ></div>
   );

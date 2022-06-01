@@ -14,5 +14,11 @@ body_eng: Nevado del Ruiz has undergone three distinct eruptive periods, the
   April 1994. Many of these eruptions involved a central vent eruption, a flank
   vent eruption, and a phreatic (steam) explosion. Ruiz is the second-most
   active volcano in Colombia after Galeras.
+
+   April 1994. Many of these eruptions involved a central vent eruption, a flank
+  vent eruption, and a phreatic (steam) explosion. Ruiz is the second-most
+  active volcano in Colombia after Galeras.
 ---
 Armero, localizada a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande del departamento de Tolima, después de Ibagué y El Espinal.4​ Importante centro agrícola antes de la erupción, Armero producía cerca de una quinta parte del arroz de Colombia, además de algodón, sorgo y café. Gran parte de este éxito puede ser atribuido al Nevado del Ruiz, ya que el fértil suelo volcánico había estimulado el crecimiento agrícola.5​ Construido encima de un abanico aluvial que había presenciado otros lahares,6​ el pueblo había sido destruido previamente por una erupción en 1595 y por flujos de lodo en 1845.7​ En la erupción de 1595, tres erupciones plinianas distintas produjeron lahares que se cobraron la vida de 636 personas.8​9​ Durante el evento de 1845, 1000 personas murieron cerca del río Magdalena por flujos de lodo producidos por terremotos.
+
+Construido encima de un abanico aluvial que había presenciado otros lahares,6​ el pueblo había sido destruido previamente por una erupción en 1595 y por flujos de lodo en 1845.

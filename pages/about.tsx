@@ -13,15 +13,18 @@ const pageName = "About";
 
 export default function About({
   allPostsData,
-}: { allPostsData: AboutCollection[] }) {
-  console.log("allPostsData[0]", allPostsData[0]);
+}: {
+  allPostsData: AboutCollection[];
+}) {
+  console.log("allPostsData[0]", allPostsData[0].contentHtml);
   return (
-    
-    <div className="flex flex-col m-8">
-      <Intro data={allPostsData[0]}></Intro>
-      <Bio data={allPostsData[1]}></Bio>
-      <CV data={allPostsData[2]}></CV>
+    <div className="w-1/2">
+      <div className="flex flex-col m-6 sm:m-24 space-y-10">
+        <Intro data={allPostsData[0]}></Intro>
+        <Bio data={allPostsData[1]}></Bio>
+        <CV data={allPostsData[2]}></CV>
       </div>
+    </div>
   );
 }
 

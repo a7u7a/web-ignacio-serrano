@@ -4,7 +4,7 @@ const CV: React.FC<{ data: AboutCollection }> = (props: {
   data: AboutCollection;
 }) => {
   return (
-    <div dangerouslySetInnerHTML={{ __html: props.data.contentHtml }}></div>
+    <div className="text-sm flex flex-col space-y-4" dangerouslySetInnerHTML={{ __html: props.data.contentHtml }}></div>
   );
 };
 
