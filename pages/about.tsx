@@ -16,13 +16,12 @@ export default function About({
 }: { allPostsData: AboutCollection[] }) {
   console.log("allPostsData[0]", allPostsData[0]);
   return (
+    
     <div className="flex flex-col m-8">
       <Intro data={allPostsData[0]}></Intro>
       <Bio data={allPostsData[1]}></Bio>
       <CV data={allPostsData[2]}></CV>
       </div>
-      
-    
   );
 }
 
