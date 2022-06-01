@@ -4,7 +4,10 @@ const Bio: React.FC<{ data: AboutCollection }> = (props: {
   data: AboutCollection;
 }) => {
   return (
-    <div dangerouslySetInnerHTML={{ __html: props.data.contentHtml }}></div>
+    <div
+      className="font-serif"
+      dangerouslySetInnerHTML={{ __html: props.data.contentHtml }}
+    ></div>
   );
 };
 

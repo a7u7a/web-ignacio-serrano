@@ -4,7 +4,7 @@ const Intro: React.FC<{ data: AboutCollection }> = (props: {
   data: AboutCollection;
 }) => {
   return (
-    <div className="font-medium" dangerouslySetInnerHTML={{ __html: props.data.contentHtml }}></div>
+    <div className="font-semibold" dangerouslySetInnerHTML={{ __html: props.data.contentHtml }}></div>
   );
 };
 
