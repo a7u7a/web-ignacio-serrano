@@ -1,4 +1,4 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   content: [
@@ -8,10 +8,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans],
-        test: ['Source Serif 4', ...defaultTheme.fontFamily.serif],
+        sans: ["Inter", ...defaultTheme.fontFamily.sans],
+        test: ["Source Serif 4", ...defaultTheme.fontFamily.serif],
       },
     },
   },
-  plugins: [],
-}
+  plugins: [require("@tailwindcss/typography")],
+};

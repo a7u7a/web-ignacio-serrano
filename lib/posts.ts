@@ -25,11 +25,14 @@ export async function getCollectionData(collectionName: string) {
     const fileContents = fs.readFileSync(fullPath, 'utf8')
     // Use gray-matter to parse the post metadata section
     const matterResult = matter(fileContents)
+    //console.log("matterResult", matterResult.content)
+
     const processedContent = await remark()
       .use(html)
       .process(matterResult.content)
-    const contentHtml = processedContent.toString()
+    // const contentHtml = processedContent.toString()
 
+    const contentHtml = matterResult.content
     return {
       id,
       contentHtml,

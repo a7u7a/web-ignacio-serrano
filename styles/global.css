@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-a {
-    @apply underline text-blue-600 hover:text-blue-800 visited:text-purple-600
- }
+/* for cms markdown */
+
+/* a {
+   @apply underline text-blue-600 hover:text-blue-800 visited:text-purple-600
+} */
+
+/* strong {
+    @apply font-bold text-red-600;
+} */

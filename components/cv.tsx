@@ -1,10 +1,24 @@
 import { AboutCollection } from "../models/aboutCollection.models";
+import ReactMarkdown from "react-markdown";
+import NavLink from "./navlink";
 
-const CV: React.FC<{ data: AboutCollection }> = (props: {
-  data: AboutCollection;
-}) => {
+const CV = (props: { data: AboutCollection }) => {
   return (
-    <div className="text-sm flex flex-col space-y-4" dangerouslySetInnerHTML={{ __html: props.data.contentHtml }}></div>
+    <ReactMarkdown
+    className="prose prose-sm"
+      components={{
+        a: ({ node, children }) => {
+          return (
+            <NavLink
+              url={node.properties!.href as string}
+              text={children[0] as string}
+            />
+          );
+        },
+      }}
+    >
+      {props.data.contentHtml}
+    </ReactMarkdown>
   );
 };
 

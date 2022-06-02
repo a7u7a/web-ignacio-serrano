@@ -1,13 +1,24 @@
 import { AboutCollection } from "../models/aboutCollection.models";
+import ReactMarkdown from "react-markdown";
+import NavLink from "./navlink";
 
-const Bio: React.FC<{ data: AboutCollection }> = (props: {
-  data: AboutCollection;
-}) => {
+const Bio = (props: { data: AboutCollection }) => {
   return (
-    <div
-      className="space-y-4"
-      dangerouslySetInnerHTML={{ __html: props.data.contentHtml }}
-    ></div>
+    <ReactMarkdown
+      className="prose"
+      components={{
+        a: ({ node, children }) => {
+          return (
+            <NavLink
+              url={node.properties!.href as string}
+              text={children[0] as string}
+            />
+          );
+        },
+      }}
+    >
+      {props.data.contentHtml}
+    </ReactMarkdown>
   );
 };
 
