@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
-        test: ["Source Serif 4", ...defaultTheme.fontFamily.serif],
+        serif: ["Source\\ Serif\\ 4", ...defaultTheme.fontFamily.serif],
       },
     },
   },

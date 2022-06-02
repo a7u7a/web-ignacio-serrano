@@ -7,6 +7,7 @@ import Intro from "../components/intro";
 import Bio from "../components/bio";
 import CV from "../components/cv";
 import utilStyles from "../styles/utils.module.css";
+import { ArrowElbowLeftUp } from "phosphor-react";
 
 const pageName = "About";
 
@@ -18,6 +19,7 @@ export default function About({
   //console.log("allPostsData[0]", allPostsData[0].contentHtml);
   return (
     <div className="flex flex-row">
+      <ArrowElbowLeftUp size={32} />
       <div className="w-1/2">
         <div className="flex flex-col m-6 sm:m-24 space-y-10">
           <Intro data={allPostsData[0]}></Intro>

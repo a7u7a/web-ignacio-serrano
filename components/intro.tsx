@@ -5,7 +5,7 @@ import NavLink from "./navlink";
 const Intro = (props: { data: AboutCollection }) => {
   return (
     <ReactMarkdown
-      className="prose prose-lg"
+      className="intro"
       components={{
         a: ({ node, children }) => {
           return (

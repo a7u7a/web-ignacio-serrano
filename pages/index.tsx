@@ -21,7 +21,7 @@ export default function Home({
         <title>{siteTitle}</title>
       </Head>
       <section>
-        <p>Web en proceso de construcción.</p>
+        <p className="font-serif font-bold text-xl">Web en proceso de construcción.</p>
         <Link href="/about">
           <a>About</a>
         </Link>

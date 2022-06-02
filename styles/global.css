@@ -2,12 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-/* for cms markdown */
+.intro {
+    @apply leading-6 font-bold prose prose-lg prose-a:underline prose-a:text-blue-600 prose-a:hover:text-blue-800 prose-a:visited:text-purple-600
+}
 
-/* a {
-   @apply underline text-blue-600 hover:text-blue-800 visited:text-purple-600
-} */
+.bio {
+    @apply leading-6 prose prose-a:underline prose-a:text-blue-600 prose-a:hover:text-blue-800 prose-a:visited:text-purple-600
+}
 
-/* strong {
-    @apply font-bold text-red-600;
-} */
+.cv {
+    @apply leading-5 prose prose-sm prose-a:underline prose-a:text-blue-600 prose-a:hover:text-blue-800 prose-a:visited:text-purple-600
+}

@@ -5,7 +5,7 @@ import NavLink from "./navlink";
 const Bio = (props: { data: AboutCollection }) => {
   return (
     <ReactMarkdown
-      className="prose"
+      className="bio"
       components={{
         a: ({ node, children }) => {
           return (

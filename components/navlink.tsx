@@ -10,7 +10,7 @@ interface NavLinkProps {
 const NavLink = ({ url, text }: NavLinkProps) => {
   return (
     <Link href={encodeURI(url)}>
-      <a className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600">
+      <a >
         {text}
       </a>
     </Link>

@@ -12,13 +12,13 @@ class MyDocument extends Document {
           />
           {/* Fonts */}
           <link
-            href="https://fonts.googleapis.com/css2?family=Inter&display=optional"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
             rel="stylesheet"
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=Source+Serif+4&display=optional"
+            href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600&display=swap"
             rel="stylesheet"
-          ></link>
+          />
         </Head>
         <body>
           <Main />
