@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { getAbout, getSortedFeedPosts } from "../lib/posts";
 import { GetStaticProps } from "next";
-import { aboutPost } from "../interfaces/posts";
+import { aboutPost, allFeedData } from "../interfaces/posts";
 import AboutSection from "../components/aboutSection";
 import { useState } from "react";
 import LanguageButton from "../components/LanguageButton";
@@ -12,11 +12,13 @@ const pageName = "About";
 
 interface AboutProps {
   aboutData: aboutPost[];
-  allFeedData: { date: string; title: string; id: string }[];
+  allFeedData: allFeedData[];
 }
 
 const About = ({ aboutData, allFeedData }: AboutProps) => {
   const [lang, setLang] = useState("spa");
+
+  console.log("allFeedDataASA", allFeedData);
 
   function toggleLang() {
     if (lang === "spa") {
@@ -53,7 +55,8 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
         </div>
       </div>
       <div className="w-1/2 bg-orange-300">
-        <Feed allFeedData={allFeedData} />
+        <Feed allFeedDataa={allFeedData}/>
+        {/* <Feed someData={allFeedData} /> */}
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import path from 'path'
 import matter from 'gray-matter'
 import { remark } from 'remark'
 import html from 'remark-html'
-import { aboutPost } from '../interfaces/posts'
+import { aboutPost, allFeedData } from '../interfaces/posts'
 
 const postsDirectory = path.join(process.cwd(), 'content/sensiblog')
 const feedDirectory = path.join(process.cwd(), 'content/feed')
@@ -11,7 +11,6 @@ const feedDirectory = path.join(process.cwd(), 'content/feed')
 /**
  * Reads files in 'about' folder and returns array of posts
  */
-
 export const getAbout = async (): Promise<aboutPost[]> => {
   // Get file names under /posts
   const mydir = path.join(process.cwd(), 'content/about')
@@ -43,10 +42,10 @@ export const getAbout = async (): Promise<aboutPost[]> => {
 }
 
 
-export const getSortedFeedPosts = () => {
+export const getSortedFeedPosts = (): allFeedData[] => {
   // Get file names under /posts
   const fileNames = fs.readdirSync(feedDirectory)
-  const allPostsData = fileNames.map(fileName => {
+  const allPostsData: allFeedData[] = fileNames.map(fileName => {
     // Remove ".md" from file name to get id
     const id = fileName.replace(/\.md$/, '')
 
@@ -60,10 +59,12 @@ export const getSortedFeedPosts = () => {
     // Combine the data with the id
     return {
       id,
-      ...(matterResult.data as { date: string, title: string })
+      title: matterResult.data.title,
+      date: matterResult.data.date
     }
   })
   // Sort posts by date
+  console.log("allPostsData", allPostsData);
   return allPostsData.sort((a, b) => {
     if (a.date < b.date) {
       return 1

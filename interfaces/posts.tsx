@@ -19,3 +19,15 @@ export interface aboutPost extends basePost {
 // category?: string // used in Sensiblog
 // stock?: number;
 // price?: number;
+
+export interface feedPost extends basePost {
+  thumbnail: string;
+  tags: string[];
+}
+
+
+export interface allFeedData {
+  date: string;
+  title: string;
+  id: string;
+}
