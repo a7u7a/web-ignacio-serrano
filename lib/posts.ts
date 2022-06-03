@@ -3,7 +3,7 @@ import path from 'path'
 import matter from 'gray-matter'
 import { remark } from 'remark'
 import html from 'remark-html'
-import { aboutPost, allFeedData } from '../interfaces/posts'
+import { aboutPost, allFeedData, feedPost } from '../interfaces/posts'
 
 const postsDirectory = path.join(process.cwd(), 'content/sensiblog')
 const feedDirectory = path.join(process.cwd(), 'content/feed')
@@ -42,10 +42,10 @@ export const getAbout = async (): Promise<aboutPost[]> => {
 }
 
 
-export const getSortedFeedPosts = (): allFeedData[] => {
+export const getSortedFeedPosts = (): feedPost[] => {
   // Get file names under /posts
   const fileNames = fs.readdirSync(feedDirectory)
-  const allPostsData: allFeedData[] = fileNames.map(fileName => {
+  const allPostsData: feedPost[] = fileNames.map(fileName => {
     // Remove ".md" from file name to get id
     const id = fileName.replace(/\.md$/, '')
 
@@ -55,12 +55,15 @@ export const getSortedFeedPosts = (): allFeedData[] => {
 
     // Use gray-matter to parse the post metadata section
     const matterResult = matter(fileContents)
-
+    const contentSpanish = matterResult.content
     // Combine the data with the id
     return {
       id,
       title: matterResult.data.title,
-      date: matterResult.data.date
+      date: matterResult.data.date,
+      thumbnail: matterResult.data.thumbnail,
+      contentSpanish,
+      tags: matterResult.data.tags
     }
   })
   // Sort posts by date
