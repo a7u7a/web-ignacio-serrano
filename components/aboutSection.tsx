@@ -9,6 +9,8 @@ interface AboutSectionProps {
 }
 
 const AboutSection = (props: AboutSectionProps) => {
+    console.log("spa",props.data.contentSpanish );
+    console.log("eng", props.data.contentEnglish);
   const content =
     props.lang === "spa"
       ? props.data.contentSpanish
