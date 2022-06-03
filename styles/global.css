@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 .intro {
-    @apply leading-6 font-bold prose prose-lg prose-a:underline prose-a:text-blue-600 prose-a:hover:text-blue-800 prose-a:visited:text-purple-600
+  @apply leading-6 font-semibold prose prose-lg prose-a:text-verde;
 }
 
 .bio {
-    @apply leading-6 prose prose-a:underline prose-a:text-blue-600 prose-a:hover:text-blue-800 prose-a:visited:text-purple-600
+  @apply leading-6 prose prose-a:font-normal prose-a:text-verde;
 }
 
 .cv {
-    @apply leading-5 prose prose-sm prose-a:underline prose-a:text-blue-600 prose-a:hover:text-blue-800 prose-a:visited:text-purple-600
+  @apply leading-5 prose prose-sm prose-a:font-normal prose-a:text-verde;
 }

@@ -6,11 +6,12 @@ interface NavLinkProps {
 }
 /**
  * Only used to be able to style link colors and use Link component
+ * Tried to style link but conflicted with 'prose'
  */
 const NavLink = ({ url, text }: NavLinkProps) => {
   return (
     <Link href={encodeURI(url)}>
-      <a >
+      <a>
         {text}
       </a>
     </Link>

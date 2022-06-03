@@ -3,12 +3,10 @@ import { getAbout } from "../lib/posts";
 import Link from "next/link";
 import { GetStaticProps } from "next";
 import { aboutPost } from "../interfaces/posts";
-import Intro from "../components/intro";
-import Bio from "../components/bio";
-import CV from "../components/cv";
 import AboutSection from "../components/aboutSection";
 import { ArrowElbowLeftUp } from "phosphor-react";
 import { useState } from "react";
+import LanguageButton from "../components/LanguageButton";
 
 const pageName = "About";
 
@@ -33,14 +31,7 @@ export default function About({ allPostsData }: { allPostsData: aboutPost[] }) {
             <Link href={"/"}>
               <ArrowElbowLeftUp size={32} />
             </Link>
-            <button
-              className="flex flex-row text-center px-1 py-0 rounded border-2 border-gray-800 items-center hover:bg-gray-800 hover:text-gray-100 active:bg-violet-700"
-              onClick={toggleLang}
-            >
-              <div className="font-bold">spa</div>
-              <div>/</div>
-              <div>eng</div>
-            </button>
+            <LanguageButton onClick={toggleLang} lang={lang} />
           </div>
         </div>
         <div className="flex flex-col m-6 sm:m-24 space-y-10">
