@@ -1,11 +1,15 @@
-import { AboutCollection } from "../models/aboutCollection.models";
+import { aboutPost } from "../interfaces/posts";
 import ReactMarkdown from "react-markdown";
 import NavLink from "./navlink";
 
-const Intro = (props: { data: AboutCollection }) => {
+const Intro = (props: { data: aboutPost, lang: string, className:string  }) => {
+  const content =
+    props.lang === "spa"
+      ? props.data.contentSpanish
+      : props.data.contentEnglish;
   return (
     <ReactMarkdown
-      className="intro"
+      className={props.className}
       components={{
         a: ({ node, children }) => {
           return (
@@ -17,7 +21,7 @@ const Intro = (props: { data: AboutCollection }) => {
         },
       }}
     >
-      {props.data.contentHtml}
+      {content}
     </ReactMarkdown>
   );
 };

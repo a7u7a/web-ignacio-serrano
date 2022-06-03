@@ -1,8 +1,12 @@
-import { AboutCollection } from "../models/aboutCollection.models";
+import { aboutPost } from "../interfaces/posts";
 import ReactMarkdown from "react-markdown";
 import NavLink from "./navlink";
 
-const Bio = (props: { data: AboutCollection }) => {
+const Bio = (props: { data: aboutPost; lang: string }) => {
+  const content =
+    props.lang === "spa"
+      ? props.data.contentSpanish
+      : props.data.contentEnglish;
   return (
     <ReactMarkdown
       className="bio"
@@ -17,7 +21,7 @@ const Bio = (props: { data: AboutCollection }) => {
         },
       }}
     >
-      {props.data.contentHtml}
+      {content}
     </ReactMarkdown>
   );
 };

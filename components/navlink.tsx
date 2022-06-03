@@ -5,7 +5,7 @@ interface NavLinkProps {
   text: string;
 }
 /**
- * Only use to be able to style link colors and use Link component
+ * Only used to be able to style link colors and use Link component
  */
 const NavLink = ({ url, text }: NavLinkProps) => {
   return (

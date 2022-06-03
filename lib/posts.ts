@@ -3,45 +3,42 @@ import path from 'path'
 import matter from 'gray-matter'
 import { remark } from 'remark'
 import html from 'remark-html'
-import { AboutCollection } from '../models/aboutCollection.models'
+import { aboutPost } from '../interfaces/posts'
+import React from 'react'
 
 const postsDirectory = path.join(process.cwd(), 'content/sensiblog')
 
 /**
- * Pending: add AboutCollection interface
- * Return array with all posts in a collection
+ * Reads files in 'about' folder and returns array of posts
  * @param collectionName 
  * @returns 
  */
 
-export async function getCollectionData(collectionName: string) {
+export const getAbout = async (collectionName: string): Promise<aboutPost[]> => {
   // Get file names under /posts
   const mydir = path.join(process.cwd(), 'content/' + collectionName)
   const fileNames = fs.readdirSync(mydir)
 
-  const parseContentToHTML = async (fileName: string) => {
+  const parseContent = async (fileName: string) => {
     const id = fileName.replace(/\.md$/, '')
     const fullPath = path.join(mydir, fileName)
     const fileContents = fs.readFileSync(fullPath, 'utf8')
-    // Use gray-matter to parse the post metadata section
+    // front matter contains english content
     const matterResult = matter(fileContents)
-    //console.log("matterResult", matterResult.content)
+    // main content is in spanish
+    const contentSpanish = matterResult.content
 
-    const processedContent = await remark()
-      .use(html)
-      .process(matterResult.content)
-    // const contentHtml = processedContent.toString()
-
-    const contentHtml = matterResult.content
     return {
       id,
-      contentHtml,
-      ...(matterResult.data as { date: string; title: string })
+      contentSpanish,
+      contentEnglish: matterResult.data.body_eng!,
+      date: matterResult.data.date!,
+      title: matterResult.data.title!,
     }
   }
 
   const processFileNames = async () => {
-    return await Promise.all(fileNames.map(parseContentToHTML))
+    return await Promise.all(fileNames.map(parseContent))
   }
   // console.log("processFileNames()", await processFileNames());
   return processFileNames()
@@ -49,7 +46,7 @@ export async function getCollectionData(collectionName: string) {
 
 
 // Used to render post index
-export function getSortedPostsData() {
+export const getSortedPostsData = () => {
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory)
   const allPostsData = fileNames.map(fileName => {
@@ -79,7 +76,7 @@ export function getSortedPostsData() {
   })
 }
 
-export function getAllPostIds() {
+export const getAllPostIds = () => {
   const fileNames = fs.readdirSync(postsDirectory)
   return fileNames.map(fileName => {
     return {
@@ -90,7 +87,7 @@ export function getAllPostIds() {
   })
 }
 
-export async function getPostData(id: string) {
+export const getPostData = async (id: string) => {
   const fullPath = path.join(postsDirectory, `${id}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
 

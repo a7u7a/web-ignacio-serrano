@@ -1,6 +1,6 @@
 ---
 date: May 27, 2022 10:43 PM
-title: Header
+title: Intro
 body_eng: The Armero tragedy occurred following the eruption of the Nevado del
   Ruiz stratovolcano in Tolima, Colombia, on November 13, 1985. After 69 years
   of dormancy, the volcano's eruption caught nearby towns unaware.

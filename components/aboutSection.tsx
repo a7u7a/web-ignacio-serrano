@@ -2,10 +2,20 @@ import { aboutPost } from "../interfaces/posts";
 import ReactMarkdown from "react-markdown";
 import NavLink from "./navlink";
 
-const CV = (props: { data: aboutPost }) => {
+interface AboutSectionProps {
+  data: aboutPost;
+  lang: string;
+  className: string;
+}
+
+const AboutSection = (props: AboutSectionProps) => {
+  const content =
+    props.lang === "spa"
+      ? props.data.contentSpanish
+      : props.data.contentEnglish;
   return (
     <ReactMarkdown
-    className="cv"
+      className={props.className}
       components={{
         a: ({ node, children }) => {
           return (
@@ -17,9 +27,9 @@ const CV = (props: { data: aboutPost }) => {
         },
       }}
     >
-      {props.data.contentSpanish}
+      {content}
     </ReactMarkdown>
   );
 };
 
-export default CV;
+export default AboutSection;
