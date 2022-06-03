@@ -17,6 +17,7 @@ collections:
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Cuerpo (Castellano)", name: "body", widget: "markdown"}
       - {label: "Cuerpo (English)", name: "body_eng", widget: "markdown"}
+      - {label: "Categories", name: "categories", widget: "categories", separator: "__"}
   - name: "modals" # Used in routes, e.g., /admin/collections/blog
     label: "Modals" # Used in the UI
     folder: "content/modals" # The path to the folder where the documents are stored
