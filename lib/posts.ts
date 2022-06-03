@@ -4,19 +4,17 @@ import matter from 'gray-matter'
 import { remark } from 'remark'
 import html from 'remark-html'
 import { aboutPost } from '../interfaces/posts'
-import React from 'react'
 
 const postsDirectory = path.join(process.cwd(), 'content/sensiblog')
+const feedDirectory = path.join(process.cwd(), 'content/feed')
 
 /**
  * Reads files in 'about' folder and returns array of posts
- * @param collectionName 
- * @returns 
  */
 
-export const getAbout = async (collectionName: string): Promise<aboutPost[]> => {
+export const getAbout = async (): Promise<aboutPost[]> => {
   // Get file names under /posts
-  const mydir = path.join(process.cwd(), 'content/' + collectionName)
+  const mydir = path.join(process.cwd(), 'content/about')
   const fileNames = fs.readdirSync(mydir)
 
   const parseContent = async (fileName: string) => {
@@ -43,6 +41,39 @@ export const getAbout = async (collectionName: string): Promise<aboutPost[]> => 
   // console.log("processFileNames()", await processFileNames());
   return processFileNames()
 }
+
+
+export const getSortedFeedPosts = () => {
+  // Get file names under /posts
+  const fileNames = fs.readdirSync(feedDirectory)
+  const allPostsData = fileNames.map(fileName => {
+    // Remove ".md" from file name to get id
+    const id = fileName.replace(/\.md$/, '')
+
+    // Read markdown file as string
+    const fullPath = path.join(feedDirectory, fileName)
+    const fileContents = fs.readFileSync(fullPath, 'utf8')
+
+    // Use gray-matter to parse the post metadata section
+    const matterResult = matter(fileContents)
+
+    // Combine the data with the id
+    return {
+      id,
+      ...(matterResult.data as { date: string, title: string })
+    }
+  })
+  // Sort posts by date
+  return allPostsData.sort((a, b) => {
+    if (a.date < b.date) {
+      return 1
+    } else {
+      return -1
+    }
+  })
+}
+
+
 
 
 // Used to render post index

@@ -4,7 +4,6 @@ import { useState } from "react";
 
 const UpButton = () => {
   const [hover, setHover] = useState(false);
-
   return (
     <Link href={"/"}>
       <ArrowElbowLeftUp
