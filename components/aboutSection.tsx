@@ -8,16 +8,14 @@ interface AboutSectionProps {
   className: string;
 }
 
-const AboutSection = (props: AboutSectionProps) => {
-    console.log("spa",props.data.contentSpanish );
-    console.log("eng", props.data.contentEnglish);
+const AboutSection = ({data, lang, className}: AboutSectionProps) => {
   const content =
-    props.lang === "spa"
-      ? props.data.contentSpanish
-      : props.data.contentEnglish;
+    lang === "spa"
+      ? data.contentSpanish
+      : data.contentEnglish;
   return (
     <ReactMarkdown
-      className={props.className}
+      className={className}
       components={{
         a: ({ node, children }) => {
           return (
