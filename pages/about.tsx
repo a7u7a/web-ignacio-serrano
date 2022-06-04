@@ -52,10 +52,9 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
           </div>
         </div>
       </div>
-      <div className="w-1/2 bg-orange-300">
-        <Feed feedData={allFeedData}/>
-        {/* <Feed someData={allFeedData} /> */}
-      </div>
+
+      <Feed feedData={allFeedData} />
+      {/* <Feed someData={allFeedData} /> */}
     </div>
   );
 };
