@@ -11,7 +11,10 @@ export default function Feed({ feedData }: { feedData: feedPost[] }) {
 
   return (
     <>
-      <div className=" w-1/2 bg-no-repeat bg-center" style={{ backgroundImage: `url(${path1}` }}>
+      <div
+        className=" w-1/2 bg-no-repeat bg-center"
+        style={{ backgroundImage: `url(${path1}` }}
+      >
         <h1 className="fixed w-1/2 mt-16 mb-16 object-center rotate-45 text-center text-3xl">
           Feed
         </h1>
@@ -33,14 +36,6 @@ export default function Feed({ feedData }: { feedData: feedPost[] }) {
             ))}
           </div>
         </div>
-
-        {/* <div
-          className="absolute w-full h-full bg-red-400 "
-          onMouseOver={() => setHover(true)}
-          onMouseOut={() => setHover(false)}
-        >
-          <Image src={hover ? path1 : path2} layout="fill" />
-        </div> */}
       </div>
     </>
   );

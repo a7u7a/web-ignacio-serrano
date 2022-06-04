@@ -14,7 +14,8 @@
   @apply leading-5 prose prose-sm prose-a:font-normal prose-a:text-verde;
 }
 
-*{
+/* hide scrollbar */
+* {
   -ms-overflow-style: none;
 }
 ::-webkit-scrollbar {

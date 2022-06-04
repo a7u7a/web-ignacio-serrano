@@ -37,7 +37,6 @@ export const getAbout = async (): Promise<aboutPost[]> => {
   const processFileNames = async () => {
     return await Promise.all(fileNames.map(parseContent))
   }
-  // console.log("processFileNames()", await processFileNames());
   return processFileNames()
 }
 
@@ -67,7 +66,6 @@ export const getSortedFeedPosts = (): feedPost[] => {
     }
   })
   // Sort posts by date
-  console.log("allPostsData", allPostsData);
   return allPostsData.sort((a, b) => {
     if (a.date < b.date) {
       return 1
@@ -125,22 +123,13 @@ export const getAllPostIds = () => {
 export const getPostData = async (id: string) => {
   const fullPath = path.join(postsDirectory, `${id}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
-
   // Use gray-matter to parse the post metadata section
   const matterResult = matter(fileContents)
-  // console.log("matterResult", matterResult);
   // Use remark to convert markdown into HTML string
   const processedContent = await remark()
     .use(html)
     .process(matterResult.content)
   const contentHtml = processedContent.toString()
-  // console.log("processed spanish content", processedContent);
-
-  const processedContent2 = await remark()
-    .use(html)
-    .process(matterResult.data.body_eng)
-  // console.log("processed english content", processedContent2);
-
   // Combine the data with the id and contentHtml
   return {
     id,
