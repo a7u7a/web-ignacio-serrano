@@ -1,6 +1,6 @@
 ---
 title: Actividad Revista Arte Actual Madrid
-thumbnail: /uploads/screen-shot-2021-05-24-at-20.47.11.png
+thumbnail: /uploads/screen-shot-2022-05-10-at-16.45.30.png
 tags:
   - fondart
   - workshop

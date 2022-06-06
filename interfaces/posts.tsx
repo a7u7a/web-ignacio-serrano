@@ -1,15 +1,4 @@
 // aboutCollection schema from CMS config public/admin/config.yml
-export interface basePost {
-  // common to all posts
-  date: string;
-  title: string;
-  contentSpanish: string; // post body
-  id: string; // post filename
-}
-
-export interface aboutPost extends basePost {
-  contentEnglish: string;
-}
 
 // optional
 // contentEnglish?: string;
@@ -20,14 +9,18 @@ export interface aboutPost extends basePost {
 // stock?: number;
 // price?: number;
 
+export interface basePost {
+  date: string;
+  title: string;
+  contentSpanish: string; // post body
+  id: string; // post filename
+}
+
+export interface aboutPost extends basePost {
+  contentEnglish: string;
+}
+
 export interface feedPost extends basePost {
   thumbnail: string;
   tags: string[];
-}
-
-
-export interface allFeedData {
-  date: string;
-  title: string;
-  id: string;
 }
