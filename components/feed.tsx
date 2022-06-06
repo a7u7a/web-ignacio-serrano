@@ -1,7 +1,5 @@
-import Link from "next/link";
 import DateEl from "./date";
 import { feedPost } from "../interfaces/posts";
-import Image from "next/image";
 import { useState } from "react";
 
 export default function Feed({ feedData }: { feedData: feedPost[] }) {
@@ -10,7 +8,7 @@ export default function Feed({ feedData }: { feedData: feedPost[] }) {
   return (
     <>
       <div
-        className="w-1/2 bg-no-repeat bg-center"
+        className="w-1/2 bg-no-repeat bg-center bg-violet-400"
         style={{ backgroundImage: `url(${hover})` }}
       >
         <h1 className="fixed w-1/2 mt-16 mb-16 object-center rotate-45 text-center text-3xl">

@@ -7,6 +7,7 @@ import { useState } from "react";
 import LanguageButton from "../components/LanguageButton";
 import UpButton from "../components/upButton";
 import Feed from "../components/feed";
+import Image from "next/image";
 
 const pageName = "About";
 
@@ -38,23 +39,29 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
               className="intro"
               data={aboutData.filter((post) => post.id === "intro")[0]}
               lang={lang}
-            ></AboutSection>
+            />
             <AboutSection
               className="bio"
               data={aboutData.filter((post) => post.id === "bio")[0]}
               lang={lang}
-            ></AboutSection>
+            />
+
+            <div className="flex relative">
+              <Image width={1314} height={670} src={"/uploads/random.png"} />
+              <div className="absolute flex w-full h-full items-center justify-center">
+                <p className="text-white text-2xl">Random</p>
+              </div>
+            </div>
+
             <AboutSection
               className="cv"
               data={aboutData.filter((post) => post.id === "cv")[0]}
               lang={lang}
-            ></AboutSection>
+            />
           </div>
         </div>
       </div>
-
       <Feed feedData={allFeedData} />
-      {/* <Feed someData={allFeedData} /> */}
     </div>
   );
 };
