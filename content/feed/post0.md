@@ -1,5 +1,5 @@
 ---
-title: Actividad Revista Arte Actual Hola
+title: Actividad Revista Arte Actual Hola Otras fotografías del impacto del desastre llamaron
 thumbnail: /uploads/screen-shot-2021-05-04-at-10.34.08.png
 tags:
   - fondart

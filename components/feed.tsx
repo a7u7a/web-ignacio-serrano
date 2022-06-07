@@ -1,6 +1,6 @@
 import DateEl from "./date";
 import { feedPost } from "../interfaces/posts";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { X } from "phosphor-react";
 import ReactMarkdown from "react-markdown";
 import NavLink from "./navlink";
@@ -9,6 +9,8 @@ import Sticker from "./sticker";
 export default function Feed({ feedData }: { feedData: feedPost[] }) {
   const [backgroundImage, setBackgroundImage] = useState("");
   const [articleDisplay, setArticle] = useState<feedPost | undefined>();
+
+  const childFunc = useRef(null);
 
   function changeArticle(direction: "up" | "down") {
     const index = feedData.indexOf(articleDisplay!);
@@ -20,7 +22,7 @@ export default function Feed({ feedData }: { feedData: feedPost[] }) {
   return (
     <>
       <div
-        className="w-1/2 bg-no-repeat bg-center bg-violet-400"
+        className="w-1/2 bg-no-repeat bg-center bg-cover bg-violet-400"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         {/* Article modal (make comp)*/}
@@ -73,7 +75,7 @@ export default function Feed({ feedData }: { feedData: feedPost[] }) {
             <div className="text-sm mt-4">
               <p>Tags:</p>
               {articleDisplay?.tags.map((tag) => (
-                <p className="inline mr-2">{`#${tag}`}</p>
+                <p key={tag} className="inline mr-2">{`#${tag}`}</p>
               ))}
             </div>
           </div>
@@ -86,7 +88,7 @@ export default function Feed({ feedData }: { feedData: feedPost[] }) {
           <div className="pt-44 flex flex-col">
             {feedData.map((post) => (
               <button
-                className="relative text-center pt-6 pb-6 text-2xl object-center"
+                className="relative h-32 -mb-4 w-full flex items-center place-content-center hover:bg-violet-300 hover:mix-blend-difference"
                 key={post.id}
                 onMouseEnter={() => setBackgroundImage(post.thumbnail)}
                 onMouseLeave={() => setBackgroundImage("")}
@@ -96,13 +98,16 @@ export default function Feed({ feedData }: { feedData: feedPost[] }) {
                   );
                 }}
               >
-                <Sticker />
-
-                <a>{post.title}</a>
-                <br />
-                <small>
+                <div
+                  onMouseEnter={() => console.log("ENTER")}
+                  onMouseLeave={() => console.log("EXIT")}
+                  className="flex flex-col text-center"
+                >
+                  <a className="text-3xl">{post.title}</a>
                   <DateEl dateString={post.date} />
-                </small>
+                </div>
+
+                <Sticker />
               </button>
             ))}
           </div>
