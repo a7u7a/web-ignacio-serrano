@@ -1,5 +1,5 @@
 ---
-title: Actividad Revista Arte Actual Madrid
+title: Actividad Revista Arte Actual EJEJEJ
 thumbnail: /uploads/screen-shot-2022-05-19-at-16.06.13.png
 tags:
   - fondart

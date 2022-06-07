@@ -1,5 +1,5 @@
 ---
-title: Actividad Revista Arte Actual Madrid
+title: Actividad Revista Arte Actual Pepito
 thumbnail: /uploads/screen-shot-2021-12-21-at-00.15.14.png
 tags:
   - fondart

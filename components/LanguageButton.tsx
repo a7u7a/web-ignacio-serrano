@@ -1,7 +1,3 @@
-import { aboutPost } from "../interfaces/posts";
-import ReactMarkdown from "react-markdown";
-import NavLink from "./navlink";
-
 interface LanguageButtonProps {
   onClick: () => void;
   lang: string;

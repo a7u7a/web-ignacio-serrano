@@ -1,5 +1,5 @@
 ---
-title: Actividad Revista Arte Actual Madrid
+title: Actividad Revista Arte Actual cachupin
 thumbnail: /uploads/screen-shot-2022-05-10-at-16.45.30.png
 tags:
   - fondart

@@ -1,5 +1,5 @@
 ---
-title: Actividad Revista Arte Actual Madrid
+title: Actividad Revista Arte Actual Facundo
 thumbnail: /uploads/screen-shot-2022-05-05-at-15.55.04.png
 tags:
   - fondart

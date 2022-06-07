@@ -8,6 +8,7 @@ import LanguageButton from "../components/LanguageButton";
 import UpButton from "../components/upButton";
 import Feed from "../components/feed";
 import Image from "next/image";
+import RandomButton from "../components/randomButton";
 
 const pageName = "About";
 
@@ -45,14 +46,7 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
               data={aboutData.filter((post) => post.id === "bio")[0]}
               lang={lang}
             />
-
-            <div className="flex relative">
-              <Image width={1314} height={670} src={"/uploads/random.png"} />
-              <div className="absolute flex w-full h-full items-center justify-center">
-                <p className="text-white text-2xl">Random</p>
-              </div>
-            </div>
-
+            <RandomButton />
             <AboutSection
               className="cv"
               data={aboutData.filter((post) => post.id === "cv")[0]}

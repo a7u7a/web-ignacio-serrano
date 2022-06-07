@@ -1,5 +1,5 @@
 ---
-title: Actividad Revista Arte Actual Madrid
+title: Actividad Revista Arte Actual comisario
 thumbnail: /uploads/screen-shot-2022-03-31-at-23.43.28.png
 tags:
   - fondart
