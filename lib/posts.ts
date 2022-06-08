@@ -3,7 +3,7 @@ import path from 'path'
 import matter from 'gray-matter'
 import { remark } from 'remark'
 import html from 'remark-html'
-import { aboutPost, allFeedData, feedPost } from '../interfaces/posts'
+import { aboutPost, feedPost } from '../interfaces/posts'
 
 const postsDirectory = path.join(process.cwd(), 'content/sensiblog')
 const feedDirectory = path.join(process.cwd(), 'content/feed')
