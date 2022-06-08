@@ -21,11 +21,9 @@ export default function Feed({ feedData }: { feedData: feedPost[] }) {
   }
 
   function onEnter(id: string) {
-    console.log("enter", id);
     setHoverId(id);
   }
   function onExit() {
-    console.log("exit");
     setHoverId(undefined);
   }
   return (
@@ -107,7 +105,11 @@ export default function Feed({ feedData }: { feedData: feedPost[] }) {
                   );
                 }}
               >
-                <div className="flex flex-col text-center z-20">
+                <div
+                  className={`flex flex-col text-center z-20 ${
+                    hoverId === post.id ? "text-white" : "text-black"
+                  }`}
+                >
                   <a className="text-3xl px-4">{post.title}</a>
                   <DateEl dateString={post.date} />
                 </div>
