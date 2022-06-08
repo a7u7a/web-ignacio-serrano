@@ -8,7 +8,8 @@ import LanguageButton from "../components/LanguageButton";
 import UpButton from "../components/upButton";
 import Feed from "../components/feed";
 import RandomButton from "../components/randomButton";
-import Scene from "../components/cajaRemedio";
+import CajaRemedio from "../components/cajaRemedio";
+import Image from "next/image";
 
 const pageName = "About";
 
@@ -36,9 +37,7 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
         </div>
         <div className="h-full overflow-auto">
           <div className="flex flex-col m-6 sm:m-24 space-y-10">
-            
-              <Scene />
-            
+            <CajaRemedio />
 
             <AboutSection
               className="intro"
@@ -51,11 +50,20 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
               lang={lang}
             />
             <RandomButton />
-            <AboutSection
-              className="cv"
-              data={aboutData.filter((post) => post.id === "cv")[0]}
-              lang={lang}
-            />
+            <div>
+              <div className="w-3/12 mb-4">
+                <Image
+                  height={100}
+                  width={100 * 1.09}
+                  src={"/images/cv.png"}
+                ></Image>
+              </div>
+              <AboutSection
+                className="cv"
+                data={aboutData.filter((post) => post.id === "cv")[0]}
+                lang={lang}
+              />
+            </div>
           </div>
         </div>
       </div>

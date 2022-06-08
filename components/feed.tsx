@@ -88,7 +88,7 @@ export default function Feed({ feedData }: { feedData: feedPost[] }) {
                 Siguiente
               </button>
             </div>
-            <div className="text-3xl mt-6">{articleDisplay?.title}</div>
+            <div className="text-6xl mt-6">{articleDisplay?.title}</div>
             <div className="text-sm mt-4">{articleDisplay?.date}</div>
             <ReactMarkdown
               className="feed"
