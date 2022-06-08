@@ -35,9 +35,9 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
           <UpButton />
           <LanguageButton onClick={toggleLang} lang={lang} />
         </div>
-        <div className="h-full overflow-auto">
+        <div className="relative h-96 overflow-hidden md:overflow-auto h-max-96 md:h-full">
           <div className="flex flex-col m-6 lg:ml-24 lg:mr-24 space-y-10">
-            {/* <CajaRemedio /> */}
+            <CajaRemedio />
 
             <AboutSection
               className="intro"
@@ -64,6 +64,11 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
                 lang={lang}
               />
             </div>
+          </div>
+          <div className="absolute flex flex-col bottom-0 text-center inset-x-0 md:invisible items-center bg-gradient-to-t from-indigo-500">
+            <button className="bg-white border rounded border-rojo px-2 mb-4 mt-16 text-rojo">
+              Expandir
+            </button>
           </div>
         </div>
       </div>
