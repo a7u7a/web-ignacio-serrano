@@ -2,7 +2,7 @@
 title: Actividad Revista Arte Actual Madrid
 thumbnail: /uploads/d_nq_np_769079-mlc47937758735_102021-w.jpg
 tags:
-  - fondart
+  - silla
   - workshop
 date: May 2, 2022 9:12 PM
 ---

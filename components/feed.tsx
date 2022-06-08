@@ -10,8 +10,36 @@ export default function Feed({ feedData }: { feedData: feedPost[] }) {
   const [backgroundImage, setBackgroundImage] = useState("");
   const [articleDisplay, setArticle] = useState<feedPost | undefined>();
   const [hoverId, setHoverId] = useState<string | undefined>(undefined);
-
+  const [tagColors, setTagColors] = useState(getTagColors());
   const childFunc = useRef(null);
+
+  function getTagColors() {
+    // Get the first tag on each post. Used to determine sticker color
+    // return a obj of unique tags and color for each tag {tag1:tag1color, tag2:tag2color, ...}
+    const colors = [
+      "#05FF00",
+      "#891FF3",
+      "#FFFF00",
+      "#0500FF",
+      "#FF0000",
+      "#FF00E5",
+    ];
+
+    const _: string[] = [];
+    feedData.forEach((post) => {
+      _.push(post.tags[0]);
+    });
+    // remove duplicates
+    const tags = [...new Set(_)];
+
+    const tagColors = [];
+    for (let i = 0; i < tags.length; i++) {
+      const tag = tags[i] as string;
+      tagColors.push({ tag: tag, color: colors[i % colors.length] });
+    }
+
+    return tagColors;
+  }
 
   function changeArticle(direction: "up" | "down") {
     const index = feedData.indexOf(articleDisplay!);
@@ -116,6 +144,11 @@ export default function Feed({ feedData }: { feedData: feedPost[] }) {
 
                 <Sticker
                   id={post.id}
+                  color={
+                    tagColors.filter(
+                      (tagColor) => tagColor.tag === post.tags[0]
+                    )[0].color
+                  }
                   onEnter={onEnter}
                   onExit={onExit}
                   tag={post.tags[0]}

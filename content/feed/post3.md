@@ -2,7 +2,7 @@
 title: Actividad Revista Arte Actual Facundo
 thumbnail: /uploads/screen-shot-2022-05-05-at-15.55.04.png
 tags:
-  - fondart
+  - agua
   - workshop
 date: May 4, 2022 9:12 PM
 ---

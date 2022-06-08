@@ -2,7 +2,7 @@
 title: Actividad Revista Arte Actual jalapeño
 thumbnail: /uploads/screen-shot-2022-05-19-at-17.42.16.png
 tags:
-  - fondart
+  - perrito
   - workshop
 date: May 8, 2022 9:12 PM
 ---

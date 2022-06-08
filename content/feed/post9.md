@@ -2,7 +2,7 @@
 title: Actividad Revista Arte Actual suela
 thumbnail: /uploads/screen-shot-2021-05-24-at-20.47.11.png
 tags:
-  - fondart
+  - agua
   - workshop
 date: May 10, 2022 9:12 PM
 ---

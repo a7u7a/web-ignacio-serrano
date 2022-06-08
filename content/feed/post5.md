@@ -2,7 +2,7 @@
 title: Actividad Revista Arte Actual jojojo
 thumbnail: /uploads/screen-shot-2021-05-24-at-20.47.11.png
 tags:
-  - fondart
+  - silla
   - workshop
 date: May 6, 2022 9:12 PM
 ---

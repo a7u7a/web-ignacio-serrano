@@ -2,7 +2,7 @@
 title: Actividad Revista Arte Actual EJEJEJ
 thumbnail: /uploads/screen-shot-2022-05-19-at-16.06.13.png
 tags:
-  - fondart
+  - rata
   - workshop
 date: May 5, 2022 9:12 PM
 ---

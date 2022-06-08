@@ -23,11 +23,13 @@ function randomPosition(height: number, width: number) {
 
 const Sticker = ({
   tag,
+  color,
   id,
   onEnter,
   onExit,
 }: {
   tag: string;
+  color:string
   id: string;
   onEnter: (id: string) => void;
   onExit: () => void;
@@ -78,11 +80,11 @@ const Sticker = ({
           transform={`rotate(${angle} ,${position.x},${position.y}) translate(${position.x}, ${position.y})`}
         >
           <ellipse
-            fill="#05FF00"
+            fill={color}
             stroke="black"
             strokeWidth="0.5"
-            rx="40"
-            ry="20"
+            rx="43"
+            ry="23"
             className="relative"
           />
           <text

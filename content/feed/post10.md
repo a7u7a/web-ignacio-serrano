@@ -2,7 +2,7 @@
 title: Actividad Revista Arte Actual cachupin
 thumbnail: /uploads/screen-shot-2022-05-10-at-16.45.30.png
 tags:
-  - fondart
+  - perrito
   - workshop
 date: May 11, 2022 9:12 PM
 ---
