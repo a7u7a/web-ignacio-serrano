@@ -7,8 +7,8 @@ import { useState } from "react";
 import LanguageButton from "../components/LanguageButton";
 import UpButton from "../components/upButton";
 import Feed from "../components/feed";
-import Image from "next/image";
 import RandomButton from "../components/randomButton";
+import Scene from "../components/cajaRemedio";
 
 const pageName = "About";
 
@@ -36,6 +36,10 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
         </div>
         <div className="h-full overflow-auto">
           <div className="flex flex-col m-6 sm:m-24 space-y-10">
+            
+              <Scene />
+            
+
             <AboutSection
               className="intro"
               data={aboutData.filter((post) => post.id === "intro")[0]}
