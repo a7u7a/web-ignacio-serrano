@@ -57,17 +57,17 @@ export default function Feed({ feedData }: { feedData: feedPost[] }) {
   return (
     <>
       <div
-        className="w-1/2 bg-no-repeat bg-center bg-cover bg-violet-400"
+        className="relative w-full md:w-1/2 bg-no-repeat bg-center bg-cover bg-violet-400"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         {/* Article modal (make comp)*/}
         <div
-          className={`absolute z-50 w-1/2 h-full bg-violet-400 ${
+          className={`fixed inset-0 md:absolute md:top-0 md:right-0 z-50 w-full h-full bg-violet-400 ${
             articleDisplay ? "visible" : "invisible"
           }`}
         >
           <button
-            className="absolute top-0 right-0 m-2"
+            className="absolute bottom-0 right-0 md:top-0 md:right-0 m-2"
             onClick={() => setArticle(undefined)}
           >
             <X size={42} />
@@ -116,11 +116,11 @@ export default function Feed({ feedData }: { feedData: feedPost[] }) {
           </div>
         </div>
 
-        <h1 className="fixed w-1/2 mt-16 mb-16 object-center rotate-45 text-center text-3xl z-40">
+        <h1 className="static md:fixed w-full md:w-1/2 mt-16 mb-16 object-center rotate-45 text-center text-3xl z-40">
           Feed
         </h1>
-        <div className="h-full pb-12 overflow-auto">
-          <div className="pt-44 flex flex-col">
+        <div className="h-full pb-12 md:overflow-auto">
+          <div className="md:pt-44 flex flex-col">
             {feedData.map((post) => (
               <button
                 className="relative -mb-4 w-full flex items-center place-content-center"

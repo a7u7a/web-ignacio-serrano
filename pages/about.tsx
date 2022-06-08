@@ -29,15 +29,15 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
     }
   }
   return (
-    <div className="flex flex-row h-screen">
-      <div className="w-1/2">
-        <div className="flex flex-row p-6 justify-between fixed w-1/2 z-50">
+    <div className="flex flex-col md:flex-row md:h-screen">
+      <div className="w-full md:w-1/2">
+        <div className="flex flex-row p-6 justify-between fixed w-full md:w-1/2 z-50">
           <UpButton />
           <LanguageButton onClick={toggleLang} lang={lang} />
         </div>
         <div className="h-full overflow-auto">
-          <div className="flex flex-col m-6 sm:m-24 space-y-10">
-            <CajaRemedio />
+          <div className="flex flex-col m-6 lg:ml-24 lg:mr-24 space-y-10">
+            {/* <CajaRemedio /> */}
 
             <AboutSection
               className="intro"

@@ -52,10 +52,10 @@ function Box(props: JSX.IntrinsicElements["mesh"]) {
 
 const CajaRemedio = () => {
   return (
-    <div className="h-64">
+    <div className="h-80">
       <Canvas>
         <CameraControls />
-        <PerspectiveCamera makeDefault position={[2, 1.5, 2]} zoom={1.5} />
+        <PerspectiveCamera makeDefault position={[2.5, 1.5, 2.5]} zoom={1.5} />
         <ambientLight />
         <pointLight position={[10, 10, 10]} />
         <Box position={[0, .2, 0]} />
