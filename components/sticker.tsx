@@ -21,7 +21,17 @@ function randomPosition(height: number, width: number) {
   };
 }
 
-const Sticker = () => {
+const Sticker = ({
+  tag,
+  id,
+  onEnter,
+  onExit,
+}: {
+  tag: string;
+  id: string;
+  onEnter: (id: string) => void;
+  onExit: () => void;
+}) => {
   const refContainer = useRef<HTMLInputElement>(null);
 
   const [angle, setA] = useState(randomAngle());
@@ -54,7 +64,12 @@ const Sticker = () => {
   }
 
   return (
-    <div ref={refContainer} className="absolute w-full h-full ">
+    <div
+      onMouseEnter={() => onEnter(id)}
+      onMouseLeave={onExit}
+      ref={refContainer}
+      className="absolute w-full h-full z-30"
+    >
       <svg
         viewBox={`0 0 ${dimensions.width} ${dimensions.height}`}
         xmlns="http://www.w3.org/2000/svg"
@@ -72,10 +87,14 @@ const Sticker = () => {
           />
           <text
             className="text-center"
-            style={{ textAnchor: "middle", dominantBaseline: "central" }}
+            style={{
+              textAnchor: "middle",
+              dominantBaseline: "central",
+              fill: "black",
+            }}
             fill="white"
           >
-            text
+            {tag}
           </text>
         </g>
       </svg>

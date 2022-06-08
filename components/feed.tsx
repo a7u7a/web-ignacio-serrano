@@ -9,6 +9,7 @@ import Sticker from "./sticker";
 export default function Feed({ feedData }: { feedData: feedPost[] }) {
   const [backgroundImage, setBackgroundImage] = useState("");
   const [articleDisplay, setArticle] = useState<feedPost | undefined>();
+  const [hoverId, setHoverId] = useState<string | undefined>(undefined);
 
   const childFunc = useRef(null);
 
@@ -19,6 +20,14 @@ export default function Feed({ feedData }: { feedData: feedPost[] }) {
     setArticle(nextPost ? nextPost : articleDisplay);
   }
 
+  function onEnter(id: string) {
+    console.log("enter", id);
+    setHoverId(id);
+  }
+  function onExit() {
+    console.log("exit");
+    setHoverId(undefined);
+  }
   return (
     <>
       <div
@@ -81,14 +90,14 @@ export default function Feed({ feedData }: { feedData: feedPost[] }) {
           </div>
         </div>
 
-        <h1 className="fixed w-1/2 mt-16 mb-16 object-center rotate-45 text-center text-3xl">
+        <h1 className="fixed w-1/2 mt-16 mb-16 object-center rotate-45 text-center text-3xl z-40">
           Feed
         </h1>
         <div className="h-full pb-12 overflow-auto">
           <div className="pt-44 flex flex-col">
             {feedData.map((post) => (
               <button
-                className="relative h-32 -mb-4 w-full flex items-center place-content-center hover:bg-violet-300 hover:mix-blend-difference"
+                className="relative h-32 -mb-4 w-full flex items-center place-content-center"
                 key={post.id}
                 onMouseEnter={() => setBackgroundImage(post.thumbnail)}
                 onMouseLeave={() => setBackgroundImage("")}
@@ -98,16 +107,24 @@ export default function Feed({ feedData }: { feedData: feedPost[] }) {
                   );
                 }}
               >
-                <div
-                  onMouseEnter={() => console.log("ENTER")}
-                  onMouseLeave={() => console.log("EXIT")}
-                  className="flex flex-col text-center"
-                >
-                  <a className="text-3xl">{post.title}</a>
+                <div className="flex flex-col text-center z-20">
+                  <a className="text-3xl px-4">{post.title}</a>
                   <DateEl dateString={post.date} />
                 </div>
 
-                <Sticker />
+                <Sticker
+                  id={post.id}
+                  onEnter={onEnter}
+                  onExit={onExit}
+                  tag={post.tags[0]}
+                />
+                <div
+                  className={`absolute w-full h-full ${
+                    hoverId === post.id
+                      ? "mix-blend-exclusion bg-violet-300"
+                      : ""
+                  }`}
+                ></div>
               </button>
             ))}
           </div>
