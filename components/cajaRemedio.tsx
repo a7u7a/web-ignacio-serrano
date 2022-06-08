@@ -34,7 +34,7 @@ const CameraControls = () => {
   // Ref to the controls, so that we can update them on every frame using useFrame
   const controls = useRef<OrbitControls>(null);
   useFrame((state) => controls.current!.update());
-  return <orbitControls ref={controls} args={[camera, domElement]} />;
+  return <orbitControls ref={controls} args={[camera, domElement]} enableZoom={false} />;
 };
 
 function Box(props: JSX.IntrinsicElements["mesh"]) {
@@ -55,10 +55,10 @@ const CajaRemedio = () => {
     <div className="h-64">
       <Canvas>
         <CameraControls />
-        <PerspectiveCamera makeDefault position={[2, 1.5, 2]} zoom={2} />
+        <PerspectiveCamera makeDefault position={[2, 1.5, 2]} zoom={1.5} />
         <ambientLight />
         <pointLight position={[10, 10, 10]} />
-        <Box position={[0, 0, 0]} />
+        <Box position={[0, .2, 0]} />
       </Canvas>
     </div>
   );

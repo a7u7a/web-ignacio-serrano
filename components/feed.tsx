@@ -88,7 +88,7 @@ export default function Feed({ feedData }: { feedData: feedPost[] }) {
                 Siguiente
               </button>
             </div>
-            <div className="text-6xl mt-6">{articleDisplay?.title}</div>
+            <div className="text-3xl mt-6">{articleDisplay?.title}</div>
             <div className="text-sm mt-4">{articleDisplay?.date}</div>
             <ReactMarkdown
               className="feed"
@@ -123,7 +123,7 @@ export default function Feed({ feedData }: { feedData: feedPost[] }) {
           <div className="pt-44 flex flex-col">
             {feedData.map((post) => (
               <button
-                className="relative h-32 -mb-4 w-full flex items-center place-content-center"
+                className="relative -mb-4 w-full flex items-center place-content-center"
                 key={post.id}
                 onMouseEnter={() => setBackgroundImage(post.thumbnail)}
                 onMouseLeave={() => setBackgroundImage("")}
@@ -134,14 +134,15 @@ export default function Feed({ feedData }: { feedData: feedPost[] }) {
                 }}
               >
                 <div
-                  className={`flex flex-col text-center z-20 ${
+                  className={`flex flex-col text-center z-20 my-6 ${
                     hoverId === post.id ? "text-white" : "text-black"
                   }`}
                 >
-                  <a className="text-3xl px-4">{post.title}</a>
+                  <a className="text-5xl px-4 font-light">{post.title}</a>
                   <DateEl dateString={post.date} />
                 </div>
 
+                  {/* I wanted to have the svg viewbox on top of everything so it has detect the hover events */}
                 <Sticker
                   id={post.id}
                   color={

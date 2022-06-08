@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
 function randomAngle() {
-  const angles = [10, 15, 20, 25, 30, 35, 40];
+  const angles = [10, 15, 20, 25, 30, 35, 40, 45];
   const index = Math.floor(Math.random() * angles.length);
   const mod = Math.round(Math.random()) ? 1 : -1;
   const angle = angles[index] * mod;

@@ -7,7 +7,7 @@ const UpButton = () => {
   return (
     <Link href={"/"}>
       <ArrowElbowLeftUp
-        className="cursor-pointer"
+        className="cursor-pointer z-50"
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
         color={hover ? "#891FF3" : "#000000"}

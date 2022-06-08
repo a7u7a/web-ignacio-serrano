@@ -31,7 +31,7 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
   return (
     <div className="flex flex-row h-screen">
       <div className="w-1/2">
-        <div className="flex flex-row p-6 justify-between fixed w-1/2">
+        <div className="flex flex-row p-6 justify-between fixed w-1/2 z-50">
           <UpButton />
           <LanguageButton onClick={toggleLang} lang={lang} />
         </div>
