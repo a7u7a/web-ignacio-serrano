@@ -6,6 +6,8 @@ import Link from "next/link";
 import DateEl from "../components/date";
 import { GetStaticProps } from "next";
 
+// old index, this file will be deleted
+
 export default function Home2({
   allPostsData,
 }: {
