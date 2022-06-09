@@ -3,13 +3,14 @@ import { getAbout, getSortedFeedPosts } from "../lib/posts";
 import { GetStaticProps } from "next";
 import { aboutPost, feedPost } from "../interfaces/posts";
 import AboutSection from "../components/aboutSection";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import LanguageButton from "../components/LanguageButton";
 import UpButton from "../components/upButton";
 import Feed from "../components/feed";
 import RandomButton from "../components/randomButton";
 import CajaRemedio from "../components/cajaRemedio";
 import Image from "next/image";
+import useMediaQuery from "../lib/media";
 
 const pageName = "About";
 
@@ -20,6 +21,20 @@ interface AboutProps {
 
 const About = ({ aboutData, allFeedData }: AboutProps) => {
   const [lang, setLang] = useState("spa");
+
+  const isSmall = useMediaQuery("(max-width: 768px)");
+  const [collapsed, setCollapsed] = useState(isSmall);
+
+  useEffect(() => {
+    setCollapsed(isSmall ? true : false);
+  }, [isSmall]);
+
+  function expandHandle() {
+    setCollapsed(!collapsed);
+
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
 
   function toggleLang() {
     if (lang === "spa") {
@@ -35,8 +50,13 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
           <UpButton />
           <LanguageButton onClick={toggleLang} lang={lang} />
         </div>
-        <div className="relative h-96 overflow-hidden md:overflow-auto h-max-96 md:h-full">
-          <div className="flex flex-col m-6 lg:ml-24 lg:mr-24 space-y-10">
+        <div
+          // className="relative h-96 overflow-hidden md:overflow-auto h-max-96 md:h-full"
+          className={`relative ${
+            collapsed ? "overflow-hidden h-screen" : "overflow-auto h-full"
+          } h-max-screen `}
+        >
+          <div className="flex flex-col m-6 md:ml-8 md:mr-8 lg:ml-24 lg:mr-24 space-y-10">
             <CajaRemedio />
 
             <AboutSection
@@ -65,9 +85,16 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
               />
             </div>
           </div>
-          <div className="absolute flex flex-col bottom-0 text-center inset-x-0 md:invisible items-center bg-gradient-to-t from-indigo-500">
-            <button className="bg-white border rounded border-rojo px-2 mb-4 mt-16 text-rojo">
-              Expandir
+          <div
+            className={`${
+              collapsed ? "absolute" : "fixed"
+            } flex flex-col bottom-0 text-center inset-x-0 md:invisible items-center bg-gradient-to-t from-indigo-500`}
+          >
+            <button
+              onClick={expandHandle}
+              className="bg-white border rounded border-rojo px-2 mb-4 mt-16 text-rojo"
+            >
+              {collapsed ? "Expandir" : "Contraer"}
             </button>
           </div>
         </div>

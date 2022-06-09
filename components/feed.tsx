@@ -116,7 +116,7 @@ export default function Feed({ feedData }: { feedData: feedPost[] }) {
           </div>
         </div>
 
-        <h1 className="static md:fixed w-full md:w-1/2 mt-16 mb-16 object-center rotate-45 text-center text-3xl z-40">
+        <h1 className="static md:fixed w-full md:w-1/2 mt-10 md:mt-16 mb-6 md:mb-16 object-center rotate-45 text-center text-3xl z-40">
           Feed
         </h1>
         <div className="h-full pb-12 md:overflow-auto">
