@@ -67,7 +67,8 @@ export default function Feed({ feedData }: { feedData: feedPost[] }) {
           }`}
         >
           <button
-            className="absolute bottom-0 right-0 md:top-0 md:right-0 m-2"
+            className="absolute m-2 bottom-0 right-0 md:bottom-auto md:top-0"
+            
             onClick={() => setArticle(undefined)}
           >
             <X size={42} />
