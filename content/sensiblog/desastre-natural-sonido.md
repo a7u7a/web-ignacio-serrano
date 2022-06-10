@@ -1,11 +1,11 @@
 ---
 date: May 27, 2022 11:39 PM
-thumbnail: /uploads/screen-shot-2022-05-10-at-16.45.30.png
+thumbnail: /uploads/screen-shot-2022-04-24-at-20.56.01.png
 category: Sonido
 tags:
   - biofabricacion
   - workshop
-title: Desastre natural
+title: Sal de fruta por favor
 title_eng: Natural Disaster
 body_eng: >-
   # Wow text
