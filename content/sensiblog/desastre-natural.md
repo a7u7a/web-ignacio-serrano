@@ -7,11 +7,35 @@ tags:
   - workshop
 title: Desastre natural
 title_eng: Natural Disaster
-body_eng: The Armero tragedy occurred following the eruption of the Nevado del
-  Ruiz stratovolcano in Tolima, Colombia, on November 13, 1985. After 69 years
-  of dormancy, the volcano's eruption caught nearby towns unaware, even though
-  the government had received warnings from volcanological organizations to
-  evacuate the area after the detection of volcanic activity two months earlier.
+body_eng: >-
+  # Wow text
+
+
+  The Armero tragedy occurred following the eruption of the Nevado del Ruiz stratovolcano in Tolima, Colombia, on November 13, 1985. After 69 years of [dormancy](https://duckduckgo.com), the volcano's eruption caught nearby towns unaware, even though the government had received warnings from [volcanological](https://duckduckgo.com) organizations to evacuate the area after the detection of volcanic activity two months earlier.
+
+  ![Alga](/uploads/screen-shot-2022-02-02-at-23.14.13.png "Un pie de foto por aquí")
+
+
+  ## Another wow paragraph
+
+
+  ### More and more
+
+
+  The Armero tragedy occurred following the eruption of the Nevado del Ruiz stratovolcano in Tolima, Colombia, on November 13, 1985. After 69 years of [dormancy](https://duckduckgo.com), the volcano's eruption caught nearby towns unaware, even though the government had received warnings from [volcanological](https://duckduckgo.com) organizations to evacuate the area after the detection of volcanic activity two months earlier.
+
+  ![globos](/uploads/screen-shot-2021-12-24-at-16.32.48.png "Otro pie de foto")
+
+
+  ![alga larga](/uploads/screen-shot-2022-02-02-at-23.16.59.png "Foto vertical")
+
+
+  The Armero tragedy occurred following the eruption of the Nevado del Ruiz stratovolcano in Tolima, Colombia, on November 13, 1985. After 69 years of [dormancy](https://duckduckgo.com), the volcano's eruption caught nearby towns unaware, even though the government had received warnings from [volcanological](https://duckduckgo.com) organizations to evacuate the area after the detection of volcanic activity two months earlier.
+
+  #### the end
+
+
+  The Armero tragedy occurred following the eruption of the Nevado del Ruiz stratovolcano in Tolima, Colombia, on November 13, 1985. After 69 years of [dormancy](https://duckduckgo.com), the volcano's eruption caught nearby towns unaware, even though the government had received warnings from [volcanological](https://duckduckgo.com) organizations to evacuate the area after the detection of volcanic activity two months earlier.
 ---
 # Un texto tremendo
 
