@@ -1,11 +1,11 @@
 ---
 date: May 27, 2022 11:39 PM
-thumbnail: /uploads/screen-shot-2022-05-10-at-16.45.30.png
+thumbnail: /uploads/screen-shot-2022-05-19-at-17.42.16.png
 category: Animación
 tags:
   - biofabricacion
   - workshop
-title: Desastre natural
+title: Califragilistico espialidoso
 title_eng: Natural Disaster
 body_eng: >-
   # Wow text
