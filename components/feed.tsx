@@ -25,11 +25,11 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
       "#FF00E5",
     ];
 
-    const _: string[] = [];
-    feedPosts.forEach((post) => {
-      _.push(post.tags[0]);
+    // get tags and remove duplicates
+    const _ = feedPosts.map((post) => {
+      return post.tags[0];
     });
-    // remove duplicates
+
     const tags = [...new Set(_)];
 
     const tagColors = [];
@@ -68,7 +68,6 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
         >
           <button
             className="absolute m-2 bottom-0 right-0 md:bottom-auto md:top-0"
-            
             onClick={() => setArticle(undefined)}
           >
             <X size={42} />
@@ -143,7 +142,7 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
                   <DateEl dateString={post.date} />
                 </div>
 
-                  {/* I wanted to have the svg viewbox on top of everything so it has detect the hover events */}
+                {/* I wanted to have the svg viewbox on top of everything so it has detect the hover events */}
                 <Sticker
                   id={post.id}
                   color={

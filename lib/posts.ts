@@ -27,6 +27,12 @@ export const getAbout = async (): Promise<aboutPost[]> => {
     const fileContents = fs.readFileSync(fullPath, 'utf8')
     // front matter contains english content
     const matterResult = matter(fileContents)
+
+    // Use remark to convert markdown into HTML string
+    //   const processedContent = await remark()
+    //   .use(html)
+    //   .process(matterResult.content)
+    // const contentHtml = processedContent.toString()
     // main content is in spanish
     const contentSpanish = matterResult.content
 

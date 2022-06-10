@@ -11,7 +11,15 @@ interface sensiblogProps {
   allSensiblogPosts: sensiblogPost[];
 }
 
+function getCategories(allPosts: sensiblogPost[]) {
+  const _ = allPosts.map((post) => {
+    return post.category;
+  });
+  return [...new Set(_)]; // remove duplicates
+}
+
 const Sensiblog = ({ allSensiblogPosts }: sensiblogProps) => {
+  const categories = getCategories(allSensiblogPosts);
   const [lang, setLang] = useState("spa");
 
   function toggleLang() {
@@ -47,11 +55,20 @@ const Sensiblog = ({ allSensiblogPosts }: sensiblogProps) => {
         </div>
       </div>
       <div className="mt-32 flex flex-col w-full">
-        <div className="flex flex-row h-23 bg-slate-400 w-full">
-          {allSensiblogPosts.map((post) => (
-            <IndexEntry postSummary={post} />
-          ))}
-        </div>
+        {categories.map((category) => (
+          <div
+            className="flex flex-row h-32 bg-slate-400 overflow-x-scroll"
+            key={category}
+          >
+            {allSensiblogPosts
+              .filter((post) => {
+                return post.category === category;
+              })
+              .map((post) => (
+                <IndexEntry post={post} key={post.id} />
+              ))}
+          </div>
+        ))}
       </div>
     </div>
   );
