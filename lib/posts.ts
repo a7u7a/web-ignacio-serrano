@@ -3,13 +3,18 @@ import path from 'path'
 import matter from 'gray-matter'
 import { remark } from 'remark'
 import html from 'remark-html'
-import { aboutPost, feedPost } from '../interfaces/posts'
+import { aboutPost, feedPost, sensiblogPost } from '../interfaces/posts'
 
 const postsDirectory = path.join(process.cwd(), 'content/sensiblog')
 const feedDirectory = path.join(process.cwd(), 'content/feed')
+const sensiblogDirectory = path.join(process.cwd(), 'content/sensiblog')
 
 /**
  * Reads files in 'about' folder and returns array of posts
+ * Written like this because it used to do remark parsing which used await keyword
+ * Keeping this as reference
+ * 
+ * I should be using the interfaces to unpack matterResult
  */
 export const getAbout = async (): Promise<aboutPost[]> => {
   // Get file names under /posts
@@ -28,7 +33,7 @@ export const getAbout = async (): Promise<aboutPost[]> => {
     return {
       id,
       contentSpanish,
-      contentEnglish: matterResult.data.body_eng!,
+      contentEnglish: matterResult.data.body_eng,
       date: matterResult.data.date!,
       title: matterResult.data.title!,
     }
@@ -39,7 +44,6 @@ export const getAbout = async (): Promise<aboutPost[]> => {
   }
   return processFileNames()
 }
-
 
 export const getSortedFeedPosts = (): feedPost[] => {
   // Get file names under /posts
@@ -75,7 +79,42 @@ export const getSortedFeedPosts = (): feedPost[] => {
   })
 }
 
+export const getSortedSensiblogPosts = (): sensiblogPost[] => {
+  // Get file names under /posts
+  const fileNames = fs.readdirSync(sensiblogDirectory)
+  const allPostsData: sensiblogPost[] = fileNames.map(fileName => {
+    // Remove ".md" from file name to get id
+    const id = fileName.replace(/\.md$/, '')
 
+    // Read markdown file as string
+    const fullPath = path.join(sensiblogDirectory, fileName)
+    const fileContents = fs.readFileSync(fullPath, 'utf8')
+
+    // Use gray-matter to parse the post metadata section
+    const matterResult = matter(fileContents)
+    const contentSpanish = matterResult.content
+    // Combine the data with the id
+    return {
+      id,
+      title: matterResult.data.title,
+      date: matterResult.data.date,
+      thumbnail: matterResult.data.thumbnail,
+      contentSpanish,
+      tags: matterResult.data.tags,
+      title_eng: matterResult.data.title_eng,
+      contentEnglish: matterResult.data.body_eng,
+      category: matterResult.data.category
+    }
+  })
+  // Sort posts by date
+  return allPostsData.sort((a, b) => {
+    if (a.date < b.date) {
+      return 1
+    } else {
+      return -1
+    }
+  })
+}
 
 
 // Used to render post index

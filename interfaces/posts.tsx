@@ -24,3 +24,11 @@ export interface feedPost extends basePost {
   thumbnail: string;
   tags: string[];
 }
+
+export interface sensiblogPost extends basePost {
+  category: string;
+  thumbnail: string;
+  contentEnglish: string;
+  title_eng: string;
+  tags: string[];
+}
