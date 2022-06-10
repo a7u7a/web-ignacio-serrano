@@ -1,11 +1,11 @@
 ---
 date: May 27, 2022 11:39 PM
-thumbnail: /uploads/screen-shot-2022-05-10-at-16.45.30.png
+thumbnail: /uploads/screen-shot-2021-12-21-at-00.15.14.png
 category: Biomateriales
 tags:
   - biofabricacion
   - workshop
-title: Desastre natural
+title: Mesa de vidrio
 title_eng: Natural Disaster
 body_eng: >-
   # Wow text
