@@ -1,12 +1,12 @@
 ---
 date: June 10, 2022 11:01 AM
-thumbnail: /uploads/screen-shot-2022-05-10-at-16.45.30.png
+thumbnail: /uploads/screen-shot-2022-02-02-at-23.14.13.png
 category: Arte
 tags:
   - hola
   - chao
   - pancito
-title: Noticia internacional
+title: Carne de soya con ketchup frenetico
 title_eng: International News
 body_eng: >-
   ![Alga](/uploads/screen-shot-2022-05-31-at-16.22.55.png "Un pie de foto por
