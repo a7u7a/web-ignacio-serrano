@@ -1,11 +1,11 @@
 ---
 date: May 27, 2022 11:39 PM
-thumbnail: /uploads/screen-shot-2022-05-10-at-16.45.30.png
+thumbnail: /uploads/screen-shot-2021-05-24-at-20.47.11.png
 category: Arte
 tags:
   - biofabricacion
   - workshop
-title: Desastre natural
+title: Arte arte arte
 title_eng: Natural Disaster
 body_eng: >-
   # Wow text
