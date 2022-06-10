@@ -57,9 +57,12 @@ const Sensiblog = ({ allSensiblogPosts }: sensiblogProps) => {
       <div className="mt-32 flex flex-col w-full">
         {categories.map((category) => (
           <div
-            className="flex flex-row h-32 bg-slate-400 overflow-x-scroll"
+            className="flex flex-row h-32  overflow-x-scroll"
             key={category}
           >
+            <div className="flex items-center text-3xl font-serif h-32 p-6">
+              {category + " →"}
+            </div>
             {allSensiblogPosts
               .filter((post) => {
                 return post.category === category;
