@@ -99,7 +99,7 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
           </div>
         </div>
       </div>
-      <Feed feedData={allFeedData} />
+      <Feed feedPosts={allFeedData} />
     </div>
   );
 };

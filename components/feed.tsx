@@ -6,7 +6,7 @@ import ReactMarkdown from "react-markdown";
 import NavLink from "./navlink";
 import Sticker from "./sticker";
 
-export default function Feed({ feedData }: { feedData: feedPost[] }) {
+export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
   const [backgroundImage, setBackgroundImage] = useState("");
   const [articleDisplay, setArticle] = useState<feedPost | undefined>();
   const [hoverId, setHoverId] = useState<string | undefined>(undefined);
@@ -26,7 +26,7 @@ export default function Feed({ feedData }: { feedData: feedPost[] }) {
     ];
 
     const _: string[] = [];
-    feedData.forEach((post) => {
+    feedPosts.forEach((post) => {
       _.push(post.tags[0]);
     });
     // remove duplicates
@@ -42,9 +42,9 @@ export default function Feed({ feedData }: { feedData: feedPost[] }) {
   }
 
   function changeArticle(direction: "up" | "down") {
-    const index = feedData.indexOf(articleDisplay!);
+    const index = feedPosts.indexOf(articleDisplay!);
     const mod = direction === "up" ? +1 : -1;
-    const nextPost = feedData[index + mod];
+    const nextPost = feedPosts[index + mod];
     setArticle(nextPost ? nextPost : articleDisplay);
   }
 
@@ -122,7 +122,7 @@ export default function Feed({ feedData }: { feedData: feedPost[] }) {
         </h1>
         <div className="h-full pb-12 md:overflow-auto">
           <div className="md:pt-44 flex flex-col">
-            {feedData.map((post) => (
+            {feedPosts.map((post) => (
               <button
                 className="relative -mb-4 w-full flex items-center place-content-center"
                 key={post.id}
@@ -130,7 +130,7 @@ export default function Feed({ feedData }: { feedData: feedPost[] }) {
                 onMouseLeave={() => setBackgroundImage("")}
                 onClick={() => {
                   setArticle(
-                    feedData.filter((feedPost) => feedPost.id === post.id)[0]
+                    feedPosts.filter((feedPost) => feedPost.id === post.id)[0]
                   );
                 }}
               >

@@ -1,10 +1,11 @@
 import { GetStaticProps } from "next";
 import { getSortedSensiblogPosts } from "../lib/posts";
-import { aboutPost, feedPost, sensiblogPost } from "../interfaces/posts";
+import { sensiblogPost } from "../interfaces/posts";
 import UpButton from "../components/upButton";
 import LanguageButton from "../components/LanguageButton";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import IndexEntry from "../components/sensiblog/indexEntry";
 
 interface sensiblogProps {
   allSensiblogPosts: sensiblogPost[];
@@ -45,7 +46,13 @@ const Sensiblog = ({ allSensiblogPosts }: sensiblogProps) => {
           </div>
         </div>
       </div>
-      <div className="w-full"></div>
+      <div className="mt-32 flex flex-col w-full">
+        <div className="flex flex-row h-23 bg-slate-400 w-full">
+          {allSensiblogPosts.map((post) => (
+            <IndexEntry postSummary={post} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
