@@ -37,7 +37,7 @@ const Sensiblog = ({ allSensiblogPosts }: sensiblogProps) => {
           </div>
         </div>
         <div className="flex flex-row">
-          <button className="pt-6 h-6 text-black text-xl underline-offset-1 tracking-wide underline mr-24">
+          <button className="pt-6 h-6 text-black text-xl underline-offset-1 tracking-wide underline mr-24 hover:text-violeta">
             Sobre Sensiblog
           </button>
           <div className="p-6 mr-44">
