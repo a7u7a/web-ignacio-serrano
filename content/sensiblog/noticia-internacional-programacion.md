@@ -1,12 +1,12 @@
 ---
 date: June 10, 2022 11:01 AM
-thumbnail: /uploads/screen-shot-2022-05-10-at-16.45.30.png
+thumbnail: /uploads/d_nq_np_769079-mlc47937758735_102021-w.jpg
 category: Programación
 tags:
   - hola
   - chao
   - pancito
-title: Noticia internacional
+title: Totalmente enfermo K.O.
 title_eng: International News
 body_eng: >-
   ![Alga](/uploads/screen-shot-2022-05-31-at-16.22.55.png "Un pie de foto por
