@@ -31,7 +31,9 @@ const Sensiblog = ({ allSensiblogPosts }: sensiblogProps) => {
   }
 
   return (
-    <div className="flex flex-col h-screen bg-gray-200">
+    <div className="flex flex-col h-screen">
+      <div className="h-screen w-screen bg-black fixed -z-10"></div>
+      <div className="fixed inset-y-0 right-0 w-44 z-50 bg-gradient-to-l from-amarillo "></div>
       <div className="flex flex-row justify-between fixed w-full z-50">
         <div className="flex flex-row">
           <div className="pt-6 px-6">
@@ -46,18 +48,21 @@ const Sensiblog = ({ allSensiblogPosts }: sensiblogProps) => {
           </div>
         </div>
         <div className="flex flex-row">
-          <button className="pt-6 h-6 text-black text-xl underline-offset-1 tracking-wide underline mr-24 hover:text-violeta">
+          <button className="pt-6 h-6 text-xl underline-offset-1 tracking-wide underline mr-24 hover:text-violeta text-white">
             Sobre Sensiblog
           </button>
           <div className="p-6 mr-44">
-            <LanguageButton onClick={toggleLang} lang={lang} />
+            <LanguageButton onClick={toggleLang} lang={lang} color="white" />
           </div>
         </div>
       </div>
-      <div className="mt-32 flex flex-col w-full">
+      <div className="mt-32 flex flex-col w-full space-y-3">
         {categories.map((category) => (
-          <div className="flex flex-row h-32  overflow-x-scroll" key={category}>
-            <div className="flex items-center text-3xl font-serif h-32 p-6">
+          <div
+            className="flex flex-row h-40 overflow-x-scroll space-x-4"
+            key={category}
+          >
+            <div className="text-3xl font-serif h-40 p-6 text-white">
               {category + " →"}
             </div>
             {allSensiblogPosts

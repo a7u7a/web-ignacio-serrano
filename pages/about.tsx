@@ -47,8 +47,8 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
     <div className="flex flex-col md:flex-row md:h-screen">
       <div className="w-full md:w-1/2">
         <div className="flex flex-row p-6 justify-between fixed w-full md:w-1/2 z-50">
-          <UpButton color="white" />
-          <LanguageButton onClick={toggleLang} lang={lang} />
+          <UpButton color="black" />
+          <LanguageButton onClick={toggleLang} lang={lang} color="black" />
         </div>
         <div
           // className="relative h-96 overflow-hidden md:overflow-auto h-max-96 md:h-full"

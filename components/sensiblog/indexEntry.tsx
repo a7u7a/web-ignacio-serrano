@@ -34,13 +34,13 @@ const IndexEntry = ({ post }: indexEntryProps) => {
   }, []);
 
   return (
-    <div className="flex flex-row h-32">
-      <div className="w-32 relative">
+    <div className="flex flex-row h-40 cursor-pointer">
+      <div className="w-40 relative">
         <Image objectFit="cover" src={post.thumbnail} layout="fill" />
       </div>
-      <div className="flex flex-col w-64">
-        <div className="font-serif text-xl">{post.title}</div>
-        <div className="text-xs">{snippet}</div>
+      <div className="flex flex-col w-64 py-1 px-2 ">
+        <div className="font-serif text-xl text-white">{post.title}</div>
+        <div className="text-xs text-gray-200">{snippet}</div>
       </div>
     </div>
   );
