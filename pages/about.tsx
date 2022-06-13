@@ -4,7 +4,7 @@ import { GetStaticProps } from "next";
 import { aboutPost, feedPost } from "../interfaces/posts";
 import AboutSection from "../components/aboutSection";
 import { useState, useEffect } from "react";
-import LanguageButton from "../components/languageButton";
+import LanguageButton from "../components/languageBtn";
 import UpButton from "../components/upButton";
 import Feed from "../components/feed";
 import RandomButton from "../components/randomButton";

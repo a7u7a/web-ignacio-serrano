@@ -2,7 +2,7 @@ import { GetStaticProps } from "next";
 import { getSortedSensiblogPosts } from "../lib/posts";
 import { sensiblogPost } from "../interfaces/posts";
 import UpButton from "../components/upButton";
-import LanguageButton from "../components/languageButton";
+import LanguageButton from "../components/languageBtn";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import IndexEntry from "../components/sensiblog/indexEntry";
