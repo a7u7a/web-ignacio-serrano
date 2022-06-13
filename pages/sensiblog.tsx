@@ -62,7 +62,7 @@ const Sensiblog = ({ allSensiblogPosts }: sensiblogProps) => {
             className="flex flex-row h-40 overflow-x-scroll space-x-4"
             key={category}
           >
-            <div className="text-3xl font-serif h-40 p-6 text-white">
+            <div className="sticky left-0 text-3xl font-serif h-40 p-6 text-white bg-black z-50 ">
               {category + " →"}
             </div>
             {allSensiblogPosts
