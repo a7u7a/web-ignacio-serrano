@@ -2,7 +2,11 @@ import Link from "next/link";
 import { ArrowElbowLeftUp } from "phosphor-react";
 import { useState } from "react";
 
-const UpButton = () => {
+interface UpButtonProps {
+  color: string;
+}
+
+const UpButton = ({ color }: UpButtonProps) => {
   const [hover, setHover] = useState(false);
   return (
     <Link href={"/"}>
@@ -10,7 +14,7 @@ const UpButton = () => {
         className="cursor-pointer z-50"
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
-        color={hover ? "#891FF3" : "#000000"}
+        color={hover ? "#891FF3" : color}
         size={32}
       />
     </Link>

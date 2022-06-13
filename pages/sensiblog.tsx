@@ -2,7 +2,7 @@ import { GetStaticProps } from "next";
 import { getSortedSensiblogPosts } from "../lib/posts";
 import { sensiblogPost } from "../interfaces/posts";
 import UpButton from "../components/upButton";
-import LanguageButton from "../components/LanguageButton";
+import LanguageButton from "../components/languageButton";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import IndexEntry from "../components/sensiblog/indexEntry";
@@ -35,7 +35,7 @@ const Sensiblog = ({ allSensiblogPosts }: sensiblogProps) => {
       <div className="flex flex-row justify-between fixed w-full z-50">
         <div className="flex flex-row">
           <div className="pt-6 px-6">
-            <UpButton />
+            <UpButton color="white" />
           </div>
           <div className="h-32 w-56 relative">
             <Image
@@ -56,10 +56,7 @@ const Sensiblog = ({ allSensiblogPosts }: sensiblogProps) => {
       </div>
       <div className="mt-32 flex flex-col w-full">
         {categories.map((category) => (
-          <div
-            className="flex flex-row h-32  overflow-x-scroll"
-            key={category}
-          >
+          <div className="flex flex-row h-32  overflow-x-scroll" key={category}>
             <div className="flex items-center text-3xl font-serif h-32 p-6">
               {category + " →"}
             </div>

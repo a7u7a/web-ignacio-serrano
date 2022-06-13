@@ -4,7 +4,7 @@ import { GetStaticProps } from "next";
 import { aboutPost, feedPost } from "../interfaces/posts";
 import AboutSection from "../components/aboutSection";
 import { useState, useEffect } from "react";
-import LanguageButton from "../components/LanguageButton";
+import LanguageButton from "../components/languageButton";
 import UpButton from "../components/upButton";
 import Feed from "../components/feed";
 import RandomButton from "../components/randomButton";
@@ -47,7 +47,7 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
     <div className="flex flex-col md:flex-row md:h-screen">
       <div className="w-full md:w-1/2">
         <div className="flex flex-row p-6 justify-between fixed w-full md:w-1/2 z-50">
-          <UpButton />
+          <UpButton color="white" />
           <LanguageButton onClick={toggleLang} lang={lang} />
         </div>
         <div
