@@ -14,8 +14,8 @@
   @apply leading-5 prose prose-sm prose-a:font-normal prose-a:text-verde;
 }
 
-.sensiblogIndex {
-  @apply leading-5 prose prose-sm prose-a:font-normal prose-a:text-verde;
+.modal {
+  @apply leading-5 prose text-center prose-neutral prose-sm prose-p:text-black prose-a:text-verde;
 }
 
 .feed {

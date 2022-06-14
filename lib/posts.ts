@@ -3,12 +3,12 @@ import path from 'path'
 import matter from 'gray-matter'
 import { remark } from 'remark'
 import html from 'remark-html'
-import { aboutPost, feedPost, sensiblogPost } from '../interfaces/posts'
+import { aboutPost, feedPost, sensiblogPost, modalContent } from '../interfaces/posts'
 
 const postsDirectory = path.join(process.cwd(), 'content/sensiblog')
 const feedDirectory = path.join(process.cwd(), 'content/feed')
 const sensiblogDirectory = path.join(process.cwd(), 'content/sensiblog')
-
+const modalsDirectory = path.join(process.cwd(), 'content/modals')
 /**
  * Reads files in 'about' folder and returns array of posts
  * Written like this because it used to do remark parsing which used await keyword
@@ -165,6 +165,20 @@ export const getAllPostIds = () => {
   })
 }
 
+export const getModalContents = (id: string): modalContent => {
+  const fullPath = path.join(modalsDirectory, `${id}.md`)
+  const fileContents = fs.readFileSync(fullPath, 'utf8')
+  // Use gray-matter to parse the post metadata section
+  const matterResult = matter(fileContents)
+  return {
+    id,
+    contentSpanish: matterResult.content,
+    contentEnglish: matterResult.data.body_eng,
+    ...(matterResult.data as { date: string; title: string })
+  }
+}
+
+// deprecated
 export const getPostData = async (id: string) => {
   const fullPath = path.join(postsDirectory, `${id}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')

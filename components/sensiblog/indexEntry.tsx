@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import html from "remark-html";
 import Image from "next/image";
 
-interface indexEntryProps {
+interface IndexEntryProps {
   post: sensiblogPost;
 }
 
@@ -19,7 +19,7 @@ function strip(html: string) {
   return doc.body.textContent || "";
 }
 
-const IndexEntry = ({ post }: indexEntryProps) => {
+const IndexEntry = ({ post }: IndexEntryProps) => {
   const [snippet, setSnippet] = useState("");
 
   useEffect(() => {
@@ -30,7 +30,7 @@ const IndexEntry = ({ post }: indexEntryProps) => {
       setSnippet(strip(content.toString()).slice(0, 120) + "..");
     };
     processContent();
-    console.log(snippet);
+    
   }, []);
 
   return (

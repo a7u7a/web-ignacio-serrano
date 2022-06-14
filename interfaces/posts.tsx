@@ -32,3 +32,7 @@ export interface sensiblogPost extends basePost {
   title_eng: string;
   tags: string[];
 }
+
+export interface modalContent extends basePost {
+  contentEnglish: string;
+}
