@@ -5,7 +5,7 @@ import { aboutPost, feedPost } from "../interfaces/posts";
 import AboutSection from "../components/aboutSection";
 import { useState, useEffect } from "react";
 import LanguageButton from "../components/languageBtn";
-import UpButton from "../components/upButton";
+import UpButton from "../components/upBtn";
 import Feed from "../components/feed";
 import RandomButton from "../components/randomButton";
 import CajaRemedio from "../components/cajaRemedio";
