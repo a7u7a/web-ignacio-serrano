@@ -18,7 +18,7 @@ const SensiblogNavbar = ({
 }: SensiblogNavbarProps) => {
   const [visible, setVisibility] = useState(false);
   return (
-    <div className="flex flex-row justify-between fixed w-full z-50">
+    <div className="flex flex-row justify-between fixed w-full z-40 bg-black">
       <SensiblogModal
         content={modalContent}
         visible={visible}
