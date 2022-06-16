@@ -4,7 +4,7 @@ import { sensiblogPost, modalContent } from "../interfaces/posts";
 import { useState, useEffect } from "react";
 import IndexEntry from "../components/sensiblog/indexEntry";
 import SensiblogNavbar from "../components/sensiblog/navBar";
-
+import MyFooter from "../components/footer";
 
 interface sensiblogProps {
   allSensiblogPosts: sensiblogPost[];
@@ -21,7 +21,7 @@ function getCategories(allPosts: sensiblogPost[]) {
 const Sensiblog = ({ allSensiblogPosts, modalContents }: sensiblogProps) => {
   const categories = getCategories(allSensiblogPosts);
   const [lang, setLang] = useState("spa");
-  
+
   function toggleLang() {
     if (lang === "spa") {
       setLang("eng");
@@ -34,7 +34,11 @@ const Sensiblog = ({ allSensiblogPosts, modalContents }: sensiblogProps) => {
     <div className="flex flex-col h-screen">
       <div className="h-screen w-screen bg-black fixed -z-10"></div>
       <div className="fixed inset-y-0 right-0 w-44 z-50 bg-gradient-to-l from-amarillo "></div>
-      <SensiblogNavbar lang={lang} toggleFunc={toggleLang} modalContent={modalContents} />
+      <SensiblogNavbar
+        lang={lang}
+        toggleFunc={toggleLang}
+        modalContent={modalContents}
+      />
       <div className="mt-32 flex flex-col w-full space-y-3">
         {categories.map((category) => (
           <div
@@ -54,6 +58,7 @@ const Sensiblog = ({ allSensiblogPosts, modalContents }: sensiblogProps) => {
           </div>
         ))}
       </div>
+      <MyFooter />
     </div>
   );
 };
