@@ -31,32 +31,33 @@ const Sensiblog = ({ allSensiblogPosts, modalContents }: sensiblogProps) => {
   }
 
   return (
-    <div className="flex flex-col h-screen">
-      <div className="h-screen w-screen bg-black fixed -z-10"></div>
-      <SensiblogNavbar
-        lang={lang}
-        toggleFunc={toggleLang}
-        modalContent={modalContents}
-      />
-      <div className="fixed inset-y-0 right-0 w-44 z-50 bg-gradient-to-l from-amarillo "></div>
-      <div className="mt-32 flex flex-col w-full space-y-3">
-        {categories.map((category) => (
-          <div
-            className="flex flex-row h-40 overflow-x-scroll space-x-4 pr-64"
-            key={category}
-          >
-            <div className="sticky left-0 text-3xl font-serif h-40 p-6 text-white bg-black z-30 ">
-              {category + " →"}
+    <div className="flex flex-col justify-between h-screen bg-black">
+      <div className="bg-black">
+        <SensiblogNavbar
+          lang={lang}
+          toggleFunc={toggleLang}
+          modalContent={modalContents}
+        />
+        <div className="fixed inset-y-0 right-0 w-44 z-50 bg-gradient-to-l from-amarillo "></div>
+        <div className="mt-32 flex flex-col w-full space-y-3 mb-3">
+          {categories.map((category) => (
+            <div
+              className="flex flex-row h-40 overflow-x-scroll space-x-4 pr-64"
+              key={category}
+            >
+              <div className="sticky left-0 text-3xl font-serif h-40 p-6 text-white bg-black z-30 ">
+                {category + " →"}
+              </div>
+              {allSensiblogPosts
+                .filter((post) => {
+                  return post.category === category;
+                })
+                .map((post) => (
+                  <IndexEntry post={post} key={post.id} />
+                ))}
             </div>
-            {allSensiblogPosts
-              .filter((post) => {
-                return post.category === category;
-              })
-              .map((post) => (
-                <IndexEntry post={post} key={post.id} />
-              ))}
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
       <MyFooter />
     </div>

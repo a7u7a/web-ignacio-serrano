@@ -1,7 +1,7 @@
 import Link from "next/link";
 const MyFooter = () => {
   return (
-    <div className="flex justify-center inset-x-0 bottom-0  border-t border-white">
+    <footer className="flex justify-center inset-x-0 bottom-0 border-t border-white bg-black">
       <div className="flex flex-row p-6 text-white">
 
         <Link
@@ -15,7 +15,7 @@ const MyFooter = () => {
         <a className="ml-2"> - 2022</a>
             </div>
       
-    </div>
+    </footer>
   );
 };
 

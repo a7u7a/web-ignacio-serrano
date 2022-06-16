@@ -27,7 +27,7 @@ const IndexEntry = ({ post }: IndexEntryProps) => {
       // parse post content to html
       const content = await remark().use(html).process(post.contentSpanish);
       // strip html and get only text
-      setSnippet(strip(content.toString()).slice(0, 120) + "..");
+      setSnippet(strip(content.toString()).slice(0, 160) + "..");
     };
     processContent();
     
@@ -39,8 +39,8 @@ const IndexEntry = ({ post }: IndexEntryProps) => {
         <Image objectFit="cover" src={post.thumbnail} layout="fill" />
       </div>
       <div className="flex flex-col w-64 py-1 px-2 ">
-        <div className="font-serif text-xl text-white">{post.title}</div>
-        <div className="text-xs text-gray-200">{snippet}</div>
+        <div className="font-serif text-xl text-zinc-200">{post.title}</div>
+        <div className="mt-2 text-xs text-zinc-400">{snippet}</div>
       </div>
     </div>
   );
