@@ -28,7 +28,7 @@ const SensiblogNavbar = ({
         <div className="pt-6 px-6">
           <UpButton color="white" />
         </div>
-        <div className="h-28 w-56 relative">
+        <div className="h-28 w-52 mt-3 relative">
           <Image
             objectFit="contain"
             src={"/images/sensiblog.png"}

@@ -38,7 +38,7 @@ const IndexEntry = ({ post }: IndexEntryProps) => {
       <div className="w-40 relative">
         <Image objectFit="cover" src={post.thumbnail} layout="fill" />
       </div>
-      <div className="flex flex-col w-64 py-1 px-2 ">
+      <div className="flex flex-col w-64 py-1 pl-3 pr-2 ">
         <div className="font-serif text-xl text-zinc-200">{post.title}</div>
         <div className="mt-2 text-xs text-zinc-400">{snippet}</div>
       </div>
