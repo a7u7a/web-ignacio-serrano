@@ -6,6 +6,7 @@ import Image from "next/image";
 
 interface IndexEntryProps {
   post: sensiblogPost;
+  lang: string;
 }
 
 /* 
@@ -19,23 +20,24 @@ function strip(html: string) {
   return doc.body.textContent || "";
 }
 
-const IndexEntry = ({ post }: IndexEntryProps) => {
+const IndexEntry = ({ post, lang }: IndexEntryProps) => {
   const [snippet, setSnippet] = useState("");
 
   useEffect(() => {
     const processContent = async () => {
+      const content_lang =
+        lang === "spa" ? post.contentSpanish : post.contentEnglish;
       // parse post content to html
-      const content = await remark().use(html).process(post.contentSpanish);
+      const content = await remark().use(html).process(content_lang);
       // strip html and get only text
       setSnippet(strip(content.toString()).slice(0, 160) + "..");
     };
     processContent();
-    
-  }, []);
+  }, [lang]);
 
   return (
-    <div className="flex flex-row h-40 cursor-pointer">
-      <div className="w-40 relative">
+    <div className="flex flex-row h-48 cursor-pointer hover:bg-gray-800">
+      <div className="w-48 relative">
         <Image objectFit="cover" src={post.thumbnail} layout="fill" />
       </div>
       <div className="flex flex-col w-64 py-1 pl-3 pr-2 ">

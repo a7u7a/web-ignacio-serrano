@@ -18,7 +18,7 @@ const SensiblogNavbar = ({
 }: SensiblogNavbarProps) => {
   const [visible, setVisibility] = useState(false);
   return (
-    <div className="flex flex-row justify-between fixed w-full z-40 bg-black">
+    <div className="flex flex-row h-28 justify-between fixed w-full z-40 bg-black">
       <SensiblogModal
         content={modalContent}
         visible={visible}
@@ -28,7 +28,7 @@ const SensiblogNavbar = ({
         <div className="pt-6 px-6">
           <UpButton color="white" />
         </div>
-        <div className="h-28 w-52 mt-3 relative">
+        <div className="h-24 w-52 mt-3 relative">
           <Image
             objectFit="contain"
             src={"/images/sensiblog.png"}
