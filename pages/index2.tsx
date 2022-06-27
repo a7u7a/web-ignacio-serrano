@@ -42,7 +42,7 @@ export default function Home2({
               </Link>
               <br />
               <small>
-                <DateEl dateString={date} />
+                <DateEl dateString={date} className="" />
               </small>
             </li>
           ))}
