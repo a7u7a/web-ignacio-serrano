@@ -3,6 +3,7 @@ import { remark } from "remark";
 import { useState, useEffect } from "react";
 import html from "remark-html";
 import Image from "next/image";
+import DateEl from "../date";
 
 interface IndexEntryProps {
   post: sensiblogPost;
@@ -22,15 +23,17 @@ function strip(html: string) {
 
 const IndexEntry = ({ post, lang }: IndexEntryProps) => {
   const [snippet, setSnippet] = useState("");
+  const [title, setTitle] = useState("");
 
   useEffect(() => {
     const processContent = async () => {
-      const content_lang =
-        lang === "spa" ? post.contentSpanish : post.contentEnglish;
+      const _ = lang === "spa" ? post.contentSpanish : post.contentEnglish;
+
       // parse post content to html
-      const content = await remark().use(html).process(content_lang);
-      // strip html and get only text
+      const content = await remark().use(html).process(_);
+      // strip html and get only text, trim to only the first chars
       setSnippet(strip(content.toString()).slice(0, 160) + "..");
+      setTitle(lang === "spa" ? post.title : post.title_eng);
     };
     processContent();
   }, [lang]);
@@ -41,8 +44,9 @@ const IndexEntry = ({ post, lang }: IndexEntryProps) => {
         <Image objectFit="cover" src={post.thumbnail} layout="fill" />
       </div>
       <div className="flex flex-col w-64 py-1 pl-3 pr-2 ">
-        <div className="font-serif text-xl text-zinc-200">{post.title}</div>
-        <div className="mt-2 text-xs text-zinc-400">{snippet}</div>
+        <div className="font-serif text-xl text-zinc-200">{title}</div>
+        <DateEl dateString={post.date} className="text-xs text-zinc-300 mt-1" />
+        <div className="mt-3 text-xs text-zinc-400">{snippet}</div>
       </div>
     </div>
   );
