@@ -10,6 +10,7 @@
     <!-- Include the script that builds the page and powers Netlify CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
     <script>
+      //  Text on image editor component, should put these in a cms.ts file like this one https://github.com/mwood23/netlify-cms-responsive-vimeo-editor-widget
       CMS.registerEditorComponent({
         label: "TextOnImage",
         id: "textOnImage",
@@ -59,42 +60,82 @@
       });
     </script>
     <script>
+      // Categories widget
       var CategoriesControl = createClass({
-        handleChange: function(e) {
-          const separator = this.props.field.get('separator', ', ')
-          this.props.onChange(e.target.value.split(separator).map((e) => e.trim()));
+        handleChange: function (e) {
+          const separator = this.props.field.get("separator", ", ");
+          this.props.onChange(
+            e.target.value.split(separator).map((e) => e.trim())
+          );
         },
-      
-        render: function() {
-          const separator = this.props.field.get('separator', ', ');
+
+        render: function () {
+          const separator = this.props.field.get("separator", ", ");
           var value = this.props.value;
-          return h('input', {
+          return h("input", {
             id: this.props.forID,
             className: this.props.classNameWrapper,
-            type: 'text',
-            value: value ? value.join(separator) : '',
+            type: "text",
+            value: value ? value.join(separator) : "",
             onChange: this.handleChange,
           });
         },
       });
-      
+
       var CategoriesPreview = createClass({
-        render: function() {
-          return h('ul', {},
-            this.props.value.map(function(val, index) {
-              return h('li', {key: index}, val);
+        render: function () {
+          return h(
+            "ul",
+            {},
+            this.props.value.map(function (val, index) {
+              return h("li", { key: index }, val);
             })
           );
-        }
+        },
       });
-      
+
       var schema = {
         properties: {
-          separator: { type: 'string' },
+          separator: { type: "string" },
         },
-      }
-      
-      CMS.registerWidget('categories', CategoriesControl, CategoriesPreview, schema);
-      </script>
+      };
+
+      CMS.registerWidget(
+        "categories",
+        CategoriesControl,
+        CategoriesPreview,
+        schema
+      );
+    </script>
+    <script>
+      // Vimeo embed editor component, should put these in a cms.ts file like this one https://github.com/mwood23/netlify-cms-responsive-vimeo-editor-widget
+      // adapted from: https://github.com/mwood23/netlify-cms-responsive-vimeo-editor-widget/blob/master/index.js
+      CMS.registerEditorComponent({
+        // Internal id of the component
+        id: "vimeo",
+        // Visible label
+        label: "Vimeo",
+        // Fields the user need to fill out when adding an instance of the component
+        fields: [{ name: "id", label: "Vimeo Video ID", widget: "string" }],
+        // Pattern to identify a block as being an instance of this component
+        pattern: /^vimeo (\S+)$/,
+        // Function to extract data elements from the regexp match
+        fromBlock: function (match) {
+          return {
+            id: match[1],
+          };
+        },
+        // Function to create a text block from an instance of this component
+        toBlock: function (obj) {
+          return "vimeo " + obj.id;
+        },
+        // Preview output for this component. Can either be a string or a React component
+        // (component gives better render performance)
+        toPreview: function (obj) {
+          return `<div style="overflow: hidden;padding-bottom: 56.25%;position: relative;height: 0;"><iframe src="https://player.vimeo.com/video/${obj.id}" style="left: 0;top: 0;height: 100%;width: 100%;
+      position: absolute;" width="853" height="505" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>`;
+        },
+      });
+    </script>
   </body>
 </html>

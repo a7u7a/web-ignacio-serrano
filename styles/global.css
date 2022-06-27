@@ -14,8 +14,8 @@
   @apply leading-5 prose prose-sm prose-a:font-normal prose-a:text-verde;
 }
 
-.modal {
-  @apply leading-5 prose text-center prose-neutral prose-sm prose-p:text-black prose-a:text-verde;
+.md-modal {
+  @apply leading-5 prose text-center prose-neutral prose-sm prose-p:text-slate-300 prose-h1:text-slate-200 prose-a:text-verde;
 }
 
 .feed {

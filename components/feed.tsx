@@ -139,7 +139,7 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
                   }`}
                 >
                   <a className="text-5xl px-4 font-light">{post.title}</a>
-                  <DateEl dateString={post.date} />
+                  <DateEl dateString={post.date} className="text-sm" />
                 </div>
 
                 {/* I wanted to have the svg viewbox on top of everything so it has detect the hover events */}

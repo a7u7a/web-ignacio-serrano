@@ -21,11 +21,14 @@ const SensiblogModal = ({
 
   return (
     <div
-      onClick={(e) => clickOutsideHandle(e)}
-      className={`inset-0 z-50 flex items-center justify-center ${
+      className={`inset-0 z-40 flex items-center justify-center ${
         visible ? "fixed" : "hidden"
       }`}
     >
+      <div
+        onClick={(e) => clickOutsideHandle(e)}
+        className="w-screen h-screen bg-black opacity-70"
+      ></div>
       <div className="text-black w-1/2 absolute bg-violeta">
         <div className="relative">
           <button
@@ -35,8 +38,8 @@ const SensiblogModal = ({
             <X size={42} />
           </button>
         </div>
-        <div className="m-8">
-          <ReactMarkdown className="modal">
+        <div className="m-8 flex flex-col items-center">
+          <ReactMarkdown className="md-modal">
             {content.contentSpanish}
           </ReactMarkdown>
         </div>
