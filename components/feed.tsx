@@ -93,6 +93,16 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
             <ReactMarkdown
               className="feed"
               components={{
+                code({ node, inline, className, children, ...props }) {
+                  const match =  /^vimeo (\S+)$/.exec(className || "");
+                  return !inline && match ? (
+                  <div>
+                    henlo vimeo
+                  </div>
+                  ) : (
+                    <code className={className} {...props} />
+                  );
+                },
                 a: ({ node, children }) => {
                   return (
                     <NavLink
