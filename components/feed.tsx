@@ -5,6 +5,7 @@ import { X } from "phosphor-react";
 import ReactMarkdown from "react-markdown";
 import NavLink from "./navlink";
 import Sticker from "./sticker";
+import remarkGfm from "remark-gfm";
 
 export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
   const [backgroundImage, setBackgroundImage] = useState("");
@@ -92,17 +93,8 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
             <div className="text-sm mt-4">{articleDisplay?.date}</div>
             <ReactMarkdown
               className="feed"
+              remarkPlugins={[remarkGfm]}
               components={{
-                code({ node, inline, className, children, ...props }) {
-                  const match =  /^vimeo (\S+)$/.exec(className || "");
-                  return !inline && match ? (
-                  <div>
-                    henlo vimeo
-                  </div>
-                  ) : (
-                    <code className={className} {...props} />
-                  );
-                },
                 a: ({ node, children }) => {
                   return (
                     <NavLink
