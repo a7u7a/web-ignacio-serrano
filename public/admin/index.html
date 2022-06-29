@@ -153,10 +153,10 @@
             text: match[3],
           };
         },
-        toBlock: ({ alt, image, text }) =>
+        toBlock: ({ image, alt, text }) =>
           `<blockquote id="textOnImage" src="${image}" alt="${alt}">${text}</blockquote>`,
         // eslint-disable-next-line react/display-name
-        toPreview: ({ alt, image, text }, getAsset, fields) => {
+        toPreview: ({ image, alt, text }, getAsset, fields) => {
           const imageField = fields?.find((f) => f.get("widget") === "image");
           const src = getAsset(image, imageField);
           return `<img src=${src || ""} alt=${alt || ""}  />`;

@@ -12,4 +12,4 @@ title: hola chao
 
 > blobloblooo
 
-<blockquote id="special" src="/uploads/d_nq_np_769079-mlc47937758735_102021-w.jpg" alt="Girl in a jacket">Soy el texto sobre la imagen</blockquote>
+<blockquote id="textOnImage" src="/uploads/d_nq_np_769079-mlc47937758735_102021-w.jpg" alt="Girl in a jacket">Soy el texto sobre la imagen</blockquote>
