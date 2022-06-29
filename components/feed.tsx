@@ -108,7 +108,7 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
               rehypePlugins={[rehypeRaw]}
               components={{
                 blockquote: ({ node, ...props }) => {
-                  if (node.properties && node.properties.id === "special") {
+                  if (node.properties && node.properties.id === "textOnImage") {
                     const text = (node.children[0] as Props).value;
                     const src = node.properties.src as string;
                     const alt = node.properties.alt as string;

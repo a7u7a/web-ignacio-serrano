@@ -153,18 +153,16 @@
             text: match[3],
           };
         },
-        toBlock: ({ alt, image, title, more }) =>
-          `![${alt || ""}](${image || ""}${
-            title ? ` "${title.replace(/"/g, '\\"')}"` : ""
-          })[${more}]`,
+        toBlock: ({ alt, image, text }) =>
+          `<blockquote id="textOnImage" src="${image}" alt="${alt}">${text}</blockquote>`,
         // eslint-disable-next-line react/display-name
-        toPreview: ({ alt, image, title }, getAsset, fields) => {
+        toPreview: ({ alt, image, text }, getAsset, fields) => {
           const imageField = fields?.find((f) => f.get("widget") === "image");
           const src = getAsset(image, imageField);
           return `<img src=${src || ""} alt=${alt || ""}  />`;
         },
         // pattern: /^!\[(.*)\]\((.*?)(\s"(.*)")?\)\[([\S\s]*)\]\n/,
-        pattern: /<blockquote.*?id="special".*?src="(.+?)".*?alt="(.+?)".*?>(.+?)<\/blockquote>/,
+        pattern: /<blockquote.*?id="textOnImage".*?src="(.+?)".*?alt="(.+?)".*?>(.+?)<\/blockquote>/,
         fields: [
           {
             label: "Image",
