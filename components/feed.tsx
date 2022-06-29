@@ -35,8 +35,6 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
   const [tagColors, setTagColors] = useState(getTagColors());
   const childFunc = useRef(null);
 
-  console.log("remarkGfm", remarkGfm);
-
   function getTagColors() {
     // Get the first tag on each post. Used to determine sticker color
     // return a obj of unique tags and color for each tag {tag1:tag1color, tag2:tag2color, ...}
