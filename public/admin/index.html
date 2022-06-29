@@ -147,11 +147,13 @@
         id: "textOnImage",
         fromBlock: (match) => {
           console.log("match", match);
-          match && {
-            image: match[1],
-            alt: match[2],
-            text: match[3],
-          };
+          if (match) {
+            return {
+              image: match[1],
+              alt: match[2],
+              text: match[3],
+            };
+          }
         },
         toBlock: (data) => {
           console.log("toBlock:", data);
