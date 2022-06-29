@@ -148,10 +148,9 @@
         fromBlock: (match) => {
           console.log("match", match);
           match && {
-            test: match[0]
-            // image: match[2],
-            // alt: match[1],
-            // more: match[5],
+            image: match[1],
+            alt: match[2],
+            text: match[3],
           };
         },
         toBlock: ({ alt, image, title, more }) =>
@@ -165,34 +164,25 @@
           return `<img src=${src || ""} alt=${alt || ""}  />`;
         },
         // pattern: /^!\[(.*)\]\((.*?)(\s"(.*)")?\)\[([\S\s]*)\]\n/,
-        pattern: /<blockquote.*?id="special".*?>\n(.+?)<\/blockquote>/gi,
+        pattern: /<blockquote.*?id="special".*?src="(.+?)".*?alt="(.+?)".*?>(.+?)<\/blockquote>/,
         fields: [
           {
+            label: "Image",
+            name: "image",
+            widget: "image",
+            media_library: {
+              allow_multiple: false,
+            },
+          },
+          {
+            label: "Alt Text",
+            name: "alt",
+          },
+          {
             label: "Text on image",
-            name: "test",
+            name: "text",
             widget: "text",
           },
-          // {
-          //   label: "Image",
-          //   name: "image",
-          //   widget: "image",
-          //   media_library: {
-          //     allow_multiple: false,
-          //   },
-          // },
-          // {
-          //   label: "Alt Text",
-          //   name: "alt",
-          // },
-          // {
-          //   label: "Title",
-          //   name: "title",
-          // },
-          // {
-          //   label: "Text on image",
-          //   name: "more",
-          //   widget: "text",
-          // },
         ],
       });
     </script>
