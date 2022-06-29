@@ -147,19 +147,16 @@
         id: "textOnImage",
         fromBlock: (match) => {
           console.log("match", match);
-          console.log({
-            image: match[1],
-            alt: match[2],
-            text: match[3],
-          });
           match && {
             image: match[1],
             alt: match[2],
             text: match[3],
           };
         },
-        toBlock: ({ image, alt, text }) =>
-          `<blockquote id="textOnImage" src="${image}" alt="${alt}">${text}</blockquote>`,
+        toBlock: (data) => {
+          console.log("toBlock:", data);
+          return `<blockquote id="textOnImage" src="${data.image}" alt="${data.alt}">${data.text}</blockquote>`;
+        },
         // eslint-disable-next-line react/display-name
         toPreview: ({ image, alt, text }, getAsset, fields) => {
           const imageField = fields?.find((f) => f.get("widget") === "image");
@@ -167,7 +164,8 @@
           return `<img src=${src || ""} alt=${alt || ""}  />`;
         },
         // pattern: /^!\[(.*)\]\((.*?)(\s"(.*)")?\)\[([\S\s]*)\]\n/,
-        pattern: /<blockquote.*?id="textOnImage".*?src="(.+?)".*?alt="(.+?)".*?>(.+?)<\/blockquote>/,
+        pattern:
+          /<blockquote.*?id="textOnImage".*?src="(.+?)".*?alt="(.+?)".*?>(.+?)<\/blockquote>/,
         fields: [
           {
             label: "Image",
