@@ -6,6 +6,27 @@ import ReactMarkdown from "react-markdown";
 import NavLink from "./navlink";
 import Sticker from "./sticker";
 import remarkGfm from "remark-gfm";
+import rehypeRaw from 'rehype-raw'
+
+
+const CodeSandboxTransformer = {
+  name: "CodeSandbox",
+  // shouldTransform can also be async
+  shouldTransform(url: string) {
+    const { host, pathname } = new URL(url);
+
+    return (
+      ["codesandbox.io", "www.codesandbox.io"].includes(host) &&
+      pathname.includes("/s/")
+    );
+  },
+  // getHTML can also be async
+  getHTML(url: string) {
+    const iframeUrl = url.replace("/s/", "/embed/");
+
+    return `<iframe src="${iframeUrl}" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking" sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe>`;
+  },
+};
 
 export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
   const [backgroundImage, setBackgroundImage] = useState("");
@@ -13,6 +34,8 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
   const [hoverId, setHoverId] = useState<string | undefined>(undefined);
   const [tagColors, setTagColors] = useState(getTagColors());
   const childFunc = useRef(null);
+
+  console.log("remarkGfm", remarkGfm);
 
   function getTagColors() {
     // Get the first tag on each post. Used to determine sticker color
@@ -92,8 +115,14 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
             <div className="text-3xl mt-6">{articleDisplay?.title}</div>
             <div className="text-sm mt-4">{articleDisplay?.date}</div>
             <ReactMarkdown
+              children={
+                articleDisplay?.contentSpanish
+                  ? articleDisplay.contentSpanish
+                  : ""
+              }
               className="feed"
               remarkPlugins={[remarkGfm]}
+              rehypePlugins={[rehypeRaw]}
               components={{
                 a: ({ node, children }) => {
                   return (
@@ -104,11 +133,8 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
                   );
                 },
               }}
-            >
-              {articleDisplay?.contentSpanish
-                ? articleDisplay.contentSpanish
-                : ""}
-            </ReactMarkdown>
+            />
+
             <div className="text-sm mt-4">
               <p>Tags:</p>
               {articleDisplay?.tags.map((tag) => (
