@@ -10,6 +10,9 @@ title: hola chao
 <p><a href="https://vimeo.com/715263826">&quot;Dancing&quot; with Interactive light/sound device provided with bioplastic sensor.</a> from <a href="https://vimeo.com/ignacioserranol">Ignacio Serrano Letelier</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 
+
+<blockquote id="textOnImage" src="/uploads/screen-shot-2021-12-24-at-16.32.48.png" alt="burbujitas">Pongamole un texto encima de estas burbujas</blockquote>
+
 > blobloblooo
 
 <blockquote id="textOnImage" src="/uploads/d_nq_np_769079-mlc47937758735_102021-w.jpg" alt="Girl in a jacket">Soy el texto sobre la imagen</blockquote>
