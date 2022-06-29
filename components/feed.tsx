@@ -2,16 +2,9 @@ import DateEl from "./date";
 import { feedPost } from "../interfaces/posts";
 import { useState, useRef } from "react";
 import { X } from "phosphor-react";
-import ReactMarkdown from "react-markdown";
-import NavLink from "./navlink";
 import Sticker from "./sticker";
-import remarkGfm from "remark-gfm";
-import rehypeRaw from "rehype-raw";
-import Image from "next/image";
+import FromMarkdown from "./postFromMarkdown";
 
-interface Props {
-  value: string;
-}
 
 export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
   const [backgroundImage, setBackgroundImage] = useState("");
@@ -97,7 +90,12 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
             </div>
             <div className="text-3xl mt-6">{articleDisplay?.title}</div>
             <div className="text-sm mt-4">{articleDisplay?.date}</div>
-            <ReactMarkdown
+            <FromMarkdown contentMd={
+                articleDisplay?.contentSpanish
+                  ? articleDisplay.contentSpanish
+                  : ""
+              }  className="feed"/>
+            {/* <ReactMarkdown
               children={
                 articleDisplay?.contentSpanish
                   ? articleDisplay.contentSpanish
@@ -113,26 +111,14 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
                     const src = node.properties.src as string;
                     const alt = node.properties.alt as string;
                     return (
-                      <Image
-                        src={src}
-                        alt={alt}
-                        width={100}
-                        height={100}
-                      />
+                      <Image src={src} alt={alt} width={100} height={100} />
                     );
                   } else {
                     return <blockquote {...props} />;
                   }
                 },
-                // blockquote: ({ node, children }) => {
-                //   console.log("testing blockquote", node,children );
-                //   return (
-
-                //     <></>
-                //   );
-                // },
               }}
-            />
+            /> */}
 
             <div className="text-sm mt-4">
               <p>Tags:</p>
