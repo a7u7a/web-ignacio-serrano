@@ -6,27 +6,12 @@ import ReactMarkdown from "react-markdown";
 import NavLink from "./navlink";
 import Sticker from "./sticker";
 import remarkGfm from "remark-gfm";
-import rehypeRaw from 'rehype-raw'
+import rehypeRaw from "rehype-raw";
+import Image from "next/image";
 
-
-const CodeSandboxTransformer = {
-  name: "CodeSandbox",
-  // shouldTransform can also be async
-  shouldTransform(url: string) {
-    const { host, pathname } = new URL(url);
-
-    return (
-      ["codesandbox.io", "www.codesandbox.io"].includes(host) &&
-      pathname.includes("/s/")
-    );
-  },
-  // getHTML can also be async
-  getHTML(url: string) {
-    const iframeUrl = url.replace("/s/", "/embed/");
-
-    return `<iframe src="${iframeUrl}" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking" sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe>`;
-  },
-};
+interface Props {
+  value: string;
+}
 
 export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
   const [backgroundImage, setBackgroundImage] = useState("");
@@ -122,14 +107,30 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
               remarkPlugins={[remarkGfm]}
               rehypePlugins={[rehypeRaw]}
               components={{
-                a: ({ node, children }) => {
-                  return (
-                    <NavLink
-                      url={node.properties!.href as string}
-                      text={children[0] as string}
-                    />
-                  );
+                blockquote: ({ node, ...props }) => {
+                  if (node.properties && node.properties.id === "special") {
+                    const text = (node.children[0] as Props).value;
+                    const src = node.properties.src as string;
+                    const alt = node.properties.alt as string;
+                    return (
+                      <Image
+                        src={src}
+                        alt={alt}
+                        width={100}
+                        height={100}
+                      ></Image>
+                    );
+                  } else {
+                    return <blockquote {...props} />;
+                  }
                 },
+                // blockquote: ({ node, children }) => {
+                //   console.log("testing blockquote", node,children );
+                //   return (
+
+                //     <></>
+                //   );
+                // },
               }}
             />
 
