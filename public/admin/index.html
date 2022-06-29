@@ -143,10 +143,9 @@
     <script>
       //  Text on image editor component, should put these in a cms.ts file like this one https://github.com/mwood23/netlify-cms-responsive-vimeo-editor-widget
       CMS.registerEditorComponent({
-        label: "TextOnImage",
+        label: "Texto + imagen",
         id: "textOnImage",
         fromBlock: (match) => {
-          console.log("match", match);
           if (match) {
             return {
               image: match[1],
@@ -156,7 +155,6 @@
           }
         },
         toBlock: (data) => {
-          console.log("toBlock:", data);
           return `<blockquote id="textOnImage" src="${data.image}" alt="${data.alt}">${data.text}</blockquote>`;
         },
         // eslint-disable-next-line react/display-name
