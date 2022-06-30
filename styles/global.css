@@ -3,23 +3,23 @@
 @tailwind utilities;
 
 .intro {
-  @apply max-w-full prose-p:leading-snug prose-p:text-black prose-p:font-semibold text-center prose prose-lg prose-a:text-verde;
+  @apply max-w-full prose prose-lg prose-p:leading-snug prose-p:text-black prose-p:font-semibold text-center prose-a:text-verde;
 }
 
 .bio {
-  @apply mt-10 max-w-full prose-p:text-justify prose-p:leading-snug prose prose-a:font-normal prose-a:text-verde;
+  @apply mt-10 max-w-full prose prose-sm prose-p:text-justify prose-p:leading-snug prose-a:font-normal prose-a:text-verde;
 }
 
 .cv {
-  @apply mt-10 prose-p:leading-tight prose prose-sm prose-a:font-normal prose-a:text-verde;
+  @apply  mt-10 prose prose-sm prose-p:leading-tight prose-a:font-normal prose-a:text-verde;
 }
 
 .md-modal {
-  @apply leading-5 prose text-center prose-neutral prose-sm prose-p:text-slate-300 prose-h1:text-slate-200 prose-a:text-verde;
+  @apply text-center prose prose-neutral prose-sm prose-p:leading-snug prose-p:text-slate-300 prose-h1:text-slate-200 prose-a:text-verde;
 }
 
 .feed {
-  @apply prose-p:text-white prose-h1:text-white prose-h1:font-light prose-h2:text-white prose-h3:text-white prose-tr:text-white prose-th:text-white prose-h4:text-white mt-8 leading-5 prose prose-sm prose-a:font-normal prose-a:text-verde;
+  @apply mt-8 prose prose-sm prose-p:leading-tight prose-p:text-white prose-h1:text-white prose-h1:font-light prose-h2:text-white prose-h3:text-white prose-tr:text-white prose-th:text-white prose-h4:text-white prose-a:font-normal prose-a:text-verde;
 }
 
 /* hide scrollbar */

@@ -117,7 +117,7 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
           <div className="md:pt-44 flex flex-col">
             {feedPosts.map((post) => (
               <button
-                className="relative -mb-4 w-full flex items-center place-content-center"
+                className="relative -mb-4 w-full flex place-content-center"
                 key={post.id}
                 onMouseEnter={() => setBackgroundImage(post.thumbnail)}
                 onMouseLeave={() => setBackgroundImage("")}

@@ -52,13 +52,11 @@ export const getAbout = async (): Promise<aboutPost[]> => {
 }
 
 function sortFeedPosts(allPostsData: feedPost[]) {
-  return allPostsData.sort((a, b) => {
-    if (a.date > b.date) {
-      return 1
-    } else {
-      return -1
-    }
-  })
+  return allPostsData.sort((a, b) => Number(Date.parse(b.date)) - Number(Date.parse(a.date)))
+}
+
+function sortSensiblogPosts(allPostsData: sensiblogPost[]) {
+  return allPostsData.sort((a, b) => Number(Date.parse(b.date)) - Number(Date.parse(a.date)))
 }
 
 export const getSortedFeedPosts = (): feedPost[] => {
@@ -86,16 +84,6 @@ export const getSortedFeedPosts = (): feedPost[] => {
     }
   })
   return sortFeedPosts(allPostsData)
-}
-
-function sortSensiblogPosts(allPostsData: sensiblogPost[]) {
-  return allPostsData.sort((a, b) => {
-    if (a.date > b.date) {
-      return 1
-    } else {
-      return -1
-    }
-  })
 }
 
 export const getSortedSensiblogPosts = (): sensiblogPost[] => {

@@ -12,6 +12,7 @@ import CajaRemedio from "../components/cajaRemedio";
 import Image from "next/image";
 import useMediaQuery from "../lib/media";
 import MyFooter from "../components/footer";
+import SocialAbout from "../components/socials";
 
 const pageName = "About";
 
@@ -59,12 +60,12 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
         >
           <div className="flex flex-col m-12 md:ml-8 md:mr-8 lg:ml-24 lg:mr-24">
             <CajaRemedio />
-
             <AboutSection
               className="intro"
               data={aboutData.filter((post) => post.id === "intro")[0]}
               lang={lang}
             />
+            <SocialAbout/>
             <AboutSection
               className="bio"
               data={aboutData.filter((post) => post.id === "bio")[0]}
