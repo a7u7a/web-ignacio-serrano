@@ -5,7 +5,6 @@ import { X } from "phosphor-react";
 import Sticker from "./sticker";
 import FromMarkdown from "./postFromMarkdown";
 
-
 export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
   const [backgroundImage, setBackgroundImage] = useState("");
   const [articleDisplay, setArticle] = useState<feedPost | undefined>();
@@ -72,7 +71,7 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
           >
             <X size={42} />
           </button>
-          <div className="m-12">
+          <div className="m-12 text-white">
             <div className="text-sm">
               <button
                 onClick={() => changeArticle("down")}
@@ -88,13 +87,20 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
                 Siguiente
               </button>
             </div>
-            <div className="text-3xl mt-6">{articleDisplay?.title}</div>
-            <div className="text-sm mt-4">{articleDisplay?.date}</div>
-            <FromMarkdown contentMd={
+            <div className="text-3xl text-black mt-6">
+              {articleDisplay?.title}
+            </div>
+            <div className="text-xs text-gray-600 mt-4">
+              {articleDisplay?.date}
+            </div>
+            <FromMarkdown
+              contentMd={
                 articleDisplay?.contentSpanish
                   ? articleDisplay.contentSpanish
                   : ""
-              }  className="feed"/>
+              }
+              className="feed"
+            />
             <div className="text-sm mt-4">
               <p>Tags:</p>
               {articleDisplay?.tags.map((tag) => (
@@ -104,9 +110,9 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
           </div>
         </div>
 
-        <h1 className="static md:fixed w-full md:w-1/2 mt-10 md:mt-16 mb-6 md:mb-16 object-center rotate-45 text-center text-3xl z-40">
-          Feed
-        </h1>
+        <div className="flex static md:fixed justify-center w-full md:w-1/2 mt-10 md:mt-16 mb-6 md:mb-16 z-40">
+          <h1 className="rotate-45 text-center text-3xl">Feed</h1>
+        </div>
         <div className="h-full pb-12 md:overflow-auto">
           <div className="md:pt-44 flex flex-col">
             {feedPosts.map((post) => (

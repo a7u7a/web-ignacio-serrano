@@ -9,59 +9,6 @@
   <body>
     <!-- Include the script that builds the page and powers Netlify CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
-    <!-- <script>
-      // DEPRECATED
-      //  Text on image editor component, should put these in a cms.ts file like this one https://github.com/mwood23/netlify-cms-responsive-vimeo-editor-widget
-      CMS.registerEditorComponent({
-        label: "TextOnImage",
-        id: "textOnImage",
-        fromBlock: (match) => {
-          console.log("match", match);
-          match && {
-            image: match[2],
-            alt: match[1],
-            title: match[4],
-            more: match[5],
-          };
-        },
-        toBlock: ({ alt, image, title, more }) =>
-          `![${alt || ""}](${image || ""}${
-            title ? ` "${title.replace(/"/g, '\\"')}"` : ""
-          })[${more}]`,
-        // eslint-disable-next-line react/display-name
-        toPreview: ({ alt, image, title }, getAsset, fields) => {
-          const imageField = fields?.find((f) => f.get("widget") === "image");
-          const src = getAsset(image, imageField);
-          return `<img src=${src || ""} alt=${alt || ""} title=${
-            title || ""
-          } />`;
-        },
-        pattern: /^!\[(.*)\]\((.*?)(\s"(.*)")?\)\[([\S\s]*)\]\n/,
-        fields: [
-          {
-            label: "Image",
-            name: "image",
-            widget: "image",
-            media_library: {
-              allow_multiple: false,
-            },
-          },
-          {
-            label: "Alt Text",
-            name: "alt",
-          },
-          {
-            label: "Title",
-            name: "title",
-          },
-          {
-            label: "Text on image",
-            name: "more",
-            widget: "text",
-          },
-        ],
-      });
-    </script> -->
     <script>
       // Categories widget
       var CategoriesControl = createClass({
@@ -110,38 +57,8 @@
         schema
       );
     </script>
-    <!-- <script>
-      // Vimeo embed editor component, should put these in a cms.ts file like this one https://github.com/mwood23/netlify-cms-responsive-vimeo-editor-widget
-      // adapted from: https://github.com/mwood23/netlify-cms-responsive-vimeo-editor-widget/blob/master/index.js
-      CMS.registerEditorComponent({
-        // Internal id of the component
-        id: "vimeo",
-        // Visible label
-        label: "Vimeo",
-        // Fields the user need to fill out when adding an instance of the component
-        fields: [{ name: "id", label: "Vimeo Video ID", widget: "string" }],
-        // Pattern to identify a block as being an instance of this component
-        pattern: /^vimeo (\S+)$/,
-        // Function to extract data elements from the regexp match
-        fromBlock: function (match) {
-          return {
-            id: match[1],
-          };
-        },
-        // Function to create a text block from an instance of this component
-        toBlock: function (obj) {
-          return "vimeo " + obj.id;
-        },
-        // Preview output for this component. Can either be a string or a React component
-        // (component gives better render performance)
-        toPreview: function (obj) {
-          return `<div style="overflow: hidden;padding-bottom: 56.25%;position: relative;height: 0;"><iframe src="https://player.vimeo.com/video/${obj.id}" style="left: 0;top: 0;height: 100%;width: 100%;
-      position: absolute;" width="853" height="505" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>`;
-        },
-      });
-    </script> -->
     <script>
-      //  Text on image editor component, should put these in a cms.ts file like this one https://github.com/mwood23/netlify-cms-responsive-vimeo-editor-widget
+      //  Text on image editor component
       CMS.registerEditorComponent({
         label: "Texto + imagen",
         id: "textOnImage",
@@ -157,13 +74,11 @@
         toBlock: (data) => {
           return `<blockquote id="textOnImage" src="${data.image}" alt="${data.alt}">${data.text}</blockquote>`;
         },
-        // eslint-disable-next-line react/display-name
         toPreview: ({ image, alt, text }, getAsset, fields) => {
           const imageField = fields?.find((f) => f.get("widget") === "image");
           const src = getAsset(image, imageField);
           return `<img src=${src || ""} alt=${alt || ""}  />`;
         },
-        
         pattern:
           /<blockquote.*?id="textOnImage".*?src="(.+?)".*?alt="(.+?)".*?>((.|\n)*?)<\/blockquote>/,
         fields: [

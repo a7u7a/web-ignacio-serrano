@@ -1,6 +1,7 @@
 import { aboutPost } from "../interfaces/posts";
 import ReactMarkdown from "react-markdown";
 import NavLink from "./navlink";
+import FromMarkdown from "./postFromMarkdown";
 
 interface AboutSectionProps {
   data: aboutPost;
@@ -8,28 +9,9 @@ interface AboutSectionProps {
   className: string;
 }
 
-const AboutSection = ({data, lang, className}: AboutSectionProps) => {
-  const content =
-    lang === "spa"
-      ? data.contentSpanish
-      : data.contentEnglish;
-  return (
-    <ReactMarkdown
-      className={className}
-      components={{
-        a: ({ node, children }) => {
-          return (
-            <NavLink
-              url={node.properties!.href as string}
-              text={children[0] as string}
-            />
-          );
-        },
-      }}
-    >
-      {content}
-    </ReactMarkdown>
-  );
+const AboutSection = ({ data, lang, className }: AboutSectionProps) => {
+  const content = lang === "spa" ? data.contentSpanish : data.contentEnglish;
+  return <FromMarkdown contentMd={content} className={className} />;
 };
 
 export default AboutSection;

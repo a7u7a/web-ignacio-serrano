@@ -6,13 +6,20 @@ tags:
   - chao
 title: Post demo contenidos feed
 ---
-# Titulo grande
+
 Hola este es un post con diferentes formas de contenido:
 
-Todo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande del [departamento](https://duckduckgo.com) de Tolima, después de Ibagué y El Espinal.4​ Importante centro agrícola antes de la erupción, Armero producía cerca de una quinta parte del arroz de Colombia, además de algodón, sorgo y café. Gran parte de este éxito puede ser atribuido al Nevado del Ruiz.
+Todo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande del [link hacia algun lugar](https://duckduckgo.com) de Tolima, después de Ibagué y El Espinal.
+
+# Titulo grande
+
+Importante centro agrícola antes de la erupción, Armero producía cerca de una quinta parte del arroz de Colombia, además de algodón, sorgo y café. Gran parte de este éxito puede ser atribuido al Nevado del Ruiz.
 
 
 ## Titulo mediano
+
+Imagen simple
+
 ![The San Juan Mountains are beautiful!](/uploads/screen-shot-2022-04-11-at-17.41.52.png "San Juan Mountains")
 
 ### Titulo pequeño
