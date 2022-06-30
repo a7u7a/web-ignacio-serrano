@@ -21,6 +21,7 @@ const FromMarkdown = ({ contentMd, className }: FromMarkdownProps) => {
         remarkPlugins={[remarkGfm]}
         rehypePlugins={[rehypeRaw]}
         components={{
+          // this should go into a separate component
           blockquote: ({ node, ...props }) => {
             if (node.properties && node.properties.id === "textOnImage") {
               const text = (node.children[0] as ChildProps).value;
