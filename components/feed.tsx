@@ -4,6 +4,7 @@ import { useState, useRef } from "react";
 import { X } from "phosphor-react";
 import Sticker from "./sticker";
 import FromMarkdown from "./postFromMarkdown";
+import XButton from "./xBtn";
 
 export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
   const [backgroundImage, setBackgroundImage] = useState("");
@@ -65,29 +66,24 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
             articleDisplay ? "visible" : "invisible"
           }`}
         >
-          <button
-            className="fixed p-6 bottom-0 right-0 md:bottom-auto md:top-0"
-            onClick={() => setArticle(undefined)}
-          >
-            <X size={42} />
-          </button>
+          <XButton color="black" onClick={() => setArticle(undefined)} />
           <div className="m-12 text-white">
             <div className="text-sm">
               <button
                 onClick={() => changeArticle("up")}
-                className="underline inline"
+                className="underline inline hover:text-verde"
               >
                 Anterior
               </button>
               <p className="inline mx-1">/</p>
               <button
                 onClick={() => changeArticle("down")}
-                className="underline inline"
+                className="underline inline hover:text-verde"
               >
                 Siguiente
               </button>
             </div>
-            <div className="text-3xl text-black mt-6">
+            <div className="text-3xl font-light text-white mt-6 underline decoration-verde decoration-2 decoration-wavy underline-offset-1">
               {articleDisplay?.title}
             </div>
             <div className="text-xs text-gray-600 mt-4">
@@ -136,7 +132,7 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
                   <DateEl dateString={post.date} className="text-sm" />
                 </div>
 
-                {/* I wanted to have the svg viewbox on top of everything so it has detect the hover events */}
+                {/* svg viewbox sits on top of everything and so it has detect to detext hover events */}
                 <Sticker
                   id={post.id}
                   color={
