@@ -19,7 +19,7 @@
 }
 
 .feed {
-  @apply mt-4 leading-5 prose prose-sm prose-a:font-normal prose-a:text-verde;
+  @apply prose-p:text-white prose-h1:text-white prose-h2:text-white prose-h3:text-white prose-tr:text-white prose-th:text-white prose-h4:text-white mt-6 leading-5 prose prose-sm prose-a:font-normal prose-a:text-verde;
 }
 
 /* hide scrollbar */

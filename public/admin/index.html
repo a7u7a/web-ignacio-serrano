@@ -163,9 +163,9 @@
           const src = getAsset(image, imageField);
           return `<img src=${src || ""} alt=${alt || ""}  />`;
         },
-        // pattern: /^!\[(.*)\]\((.*?)(\s"(.*)")?\)\[([\S\s]*)\]\n/,
+        
         pattern:
-          /<blockquote.*?id="textOnImage".*?src="(.+?)".*?alt="(.+?)".*?>(.+?)<\/blockquote>/,
+          /<blockquote.*?id="textOnImage".*?src="(.+?)".*?alt="(.+?)".*?>((.|\n)*?)<\/blockquote>/,
         fields: [
           {
             label: "Image",

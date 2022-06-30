@@ -62,12 +62,12 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
       >
         {/* Article modal (make comp)*/}
         <div
-          className={`fixed inset-0 md:absolute md:top-0 md:right-0 z-50 w-full h-full bg-violet-400 ${
+          className={`fixed inset-0 md:absolute md:top-0 md:right-0 z-50 w-full h-full bg-violet-400 overflow-auto ${
             articleDisplay ? "visible" : "invisible"
           }`}
         >
           <button
-            className="absolute m-2 bottom-0 right-0 md:bottom-auto md:top-0"
+            className="fixed m-2 bottom-0 right-0 md:bottom-auto md:top-0"
             onClick={() => setArticle(undefined)}
           >
             <X size={42} />
@@ -95,31 +95,6 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
                   ? articleDisplay.contentSpanish
                   : ""
               }  className="feed"/>
-            {/* <ReactMarkdown
-              children={
-                articleDisplay?.contentSpanish
-                  ? articleDisplay.contentSpanish
-                  : ""
-              }
-              className="feed"
-              remarkPlugins={[remarkGfm]}
-              rehypePlugins={[rehypeRaw]}
-              components={{
-                blockquote: ({ node, ...props }) => {
-                  if (node.properties && node.properties.id === "textOnImage") {
-                    const text = (node.children[0] as Props).value;
-                    const src = node.properties.src as string;
-                    const alt = node.properties.alt as string;
-                    return (
-                      <Image src={src} alt={alt} width={100} height={100} />
-                    );
-                  } else {
-                    return <blockquote {...props} />;
-                  }
-                },
-              }}
-            /> */}
-
             <div className="text-sm mt-4">
               <p>Tags:</p>
               {articleDisplay?.tags.map((tag) => (

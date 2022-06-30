@@ -51,6 +51,16 @@ export const getAbout = async (): Promise<aboutPost[]> => {
   return processFileNames()
 }
 
+function sortFeedPosts(allPostsData: feedPost[]) {
+  return allPostsData.sort((a, b) => {
+    if (a.date > b.date) {
+      return 1
+    } else {
+      return -1
+    }
+  })
+}
+
 export const getSortedFeedPosts = (): feedPost[] => {
   // Get file names under /posts
   const fileNames = fs.readdirSync(feedDirectory)
@@ -75,9 +85,12 @@ export const getSortedFeedPosts = (): feedPost[] => {
       tags: matterResult.data.tags
     }
   })
-  // Sort posts by date
+  return sortFeedPosts(allPostsData)
+}
+
+function sortSensiblogPosts(allPostsData: sensiblogPost[]) {
   return allPostsData.sort((a, b) => {
-    if (a.date < b.date) {
+    if (a.date > b.date) {
       return 1
     } else {
       return -1
@@ -112,14 +125,7 @@ export const getSortedSensiblogPosts = (): sensiblogPost[] => {
       category: matterResult.data.category
     }
   })
-  // Sort posts by date
-  return allPostsData.sort((a, b) => {
-    if (a.date < b.date) {
-      return 1
-    } else {
-      return -1
-    }
-  })
+  return sortSensiblogPosts(allPostsData)
 }
 
 
@@ -153,6 +159,8 @@ export const getSortedPostsData = () => {
     }
   })
 }
+
+
 
 export const getAllPostIds = () => {
   const fileNames = fs.readdirSync(postsDirectory)

@@ -12,8 +12,8 @@ const HomeLink = ({ href, src }: HomeLinkProps) => {
       <div className="w-96 relative">
         <Image
           className="cursor-pointer"
-          objectFit="contain"
           src={src}
+          objectFit="contain"
           layout="fill"
         />
       </div>
