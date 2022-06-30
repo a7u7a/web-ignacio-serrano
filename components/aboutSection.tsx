@@ -1,6 +1,4 @@
 import { aboutPost } from "../interfaces/posts";
-import ReactMarkdown from "react-markdown";
-import NavLink from "./navlink";
 import FromMarkdown from "./postFromMarkdown";
 
 interface AboutSectionProps {

@@ -13,36 +13,8 @@ interface ChildProps {
   value: string;
 }
 
-const useResize = (myRef: React.RefObject<HTMLDivElement>) => {
-  const getWidth = useCallback(() => myRef?.current?.offsetWidth, [myRef]);
-
-  const [width, setWidth] = useState<number | undefined>(undefined);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWidth(getWidth());
-      console.log("resize", width);
-    };
-
-    if (myRef.current) {
-      setWidth(getWidth());
-    }
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, [myRef, getWidth]);
-
-  return width && width > 25 ? width - 25 : width;
-};
-
 const FromMarkdown = ({ contentMd, className }: FromMarkdownProps) => {
-  const divRef = useRef<HTMLDivElement>(null);
-  const maxWidth = useResize(divRef);
   return (
-    <div ref={divRef}>
       <ReactMarkdown
         children={contentMd}
         className={className}
@@ -70,7 +42,7 @@ const FromMarkdown = ({ contentMd, className }: FromMarkdownProps) => {
           },
         }}
       />
-    </div>
+    
   );
 };
 

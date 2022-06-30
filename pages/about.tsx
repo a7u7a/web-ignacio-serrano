@@ -11,6 +11,7 @@ import RandomButton from "../components/randomButton";
 import CajaRemedio from "../components/cajaRemedio";
 import Image from "next/image";
 import useMediaQuery from "../lib/media";
+import MyFooter from "../components/footer";
 
 const pageName = "About";
 
@@ -56,7 +57,7 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
             collapsed ? "overflow-hidden h-screen" : "overflow-auto h-full"
           } h-max-screen `}
         >
-          <div className="flex flex-col m-6 md:ml-8 md:mr-8 lg:ml-24 lg:mr-24 space-y-10">
+          <div className="flex flex-col m-12 md:ml-8 md:mr-8 lg:ml-24 lg:mr-24">
             <CajaRemedio />
 
             <AboutSection
@@ -70,7 +71,7 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
               lang={lang}
             />
             <RandomButton />
-            <div>
+            <div className="mt-10">
               <div className="w-3/12 mb-4">
                 <Image
                   height={100}
@@ -84,7 +85,9 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
                 lang={lang}
               />
             </div>
+            
           </div>
+          <MyFooter color="white"/>
           <div
             className={`${
               collapsed ? "absolute" : "fixed"

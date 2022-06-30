@@ -1,6 +1,6 @@
 import { X } from "phosphor-react";
 import { modalContent } from "../../interfaces/posts";
-import ReactMarkdown from "react-markdown";
+import FromMarkdown from "../postFromMarkdown";
 
 interface SensiblogModalProps {
   content: modalContent;
@@ -39,9 +39,7 @@ const SensiblogModal = ({
           </button>
         </div>
         <div className="m-8 flex flex-col items-center">
-          <ReactMarkdown className="md-modal">
-            {content.contentSpanish}
-          </ReactMarkdown>
+          <FromMarkdown className="md-modal" contentMd={content.contentSpanish}/>
         </div>
       </div>
     </div>

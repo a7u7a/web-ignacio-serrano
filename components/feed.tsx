@@ -66,7 +66,7 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
           }`}
         >
           <button
-            className="fixed m-2 bottom-0 right-0 md:bottom-auto md:top-0"
+            className="fixed p-6 bottom-0 right-0 md:bottom-auto md:top-0"
             onClick={() => setArticle(undefined)}
           >
             <X size={42} />
@@ -74,14 +74,14 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
           <div className="m-12 text-white">
             <div className="text-sm">
               <button
-                onClick={() => changeArticle("down")}
+                onClick={() => changeArticle("up")}
                 className="underline inline"
               >
                 Anterior
               </button>
               <p className="inline mx-1">/</p>
               <button
-                onClick={() => changeArticle("up")}
+                onClick={() => changeArticle("down")}
                 className="underline inline"
               >
                 Siguiente

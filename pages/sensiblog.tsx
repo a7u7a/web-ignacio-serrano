@@ -65,7 +65,7 @@ const Sensiblog = ({ allSensiblogPosts, modalContents }: sensiblogProps) => {
           ))}
         </div>
       </div>
-      <MyFooter />
+      <MyFooter color="black" />
     </div>
   );
 };

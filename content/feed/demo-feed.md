@@ -13,8 +13,11 @@ Todo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera p
 
 # Titulo grande
 
-Importante centro agrícola antes de la erupción, Armero producía cerca de una quinta parte del arroz de Colombia, además de algodón, sorgo y café. Gran parte de este éxito puede ser atribuido al Nevado del Ruiz.
+Asi se ve el texto citado:
 
+> Armero producía cerca de una quinta parte del arroz de Colombia, además de algodón, sorgo y café.
+
+Importante centro agrícola antes de la erupción, Armero producía cerca de una quinta parte del arroz de Colombia, además de algodón, sorgo y café. Gran parte de este éxito puede ser atribuido al Nevado del Ruiz.
 
 ## Titulo mediano
 
@@ -45,12 +48,8 @@ alcance a estar dentro de la imagen</blockquote>
 
 Armero producía cerca de una quinta parte del arroz de Colombia, además de algodón, sorgo y café.
 
-### Qué pasa si el texto sobrepasa el alto
+### Así se ve cuando el texto sobrepasa el alto
 <blockquote id="textOnImage" src="/uploads/d_nq_np_769079-mlc47937758735_102021-w.jpg" alt="Girl in a jacket">Todo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande delTodo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande delTodo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande delTodo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande delTodo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande delTodo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande delTodo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande delTodo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande delTodo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande delTodo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande delTodo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande delTodo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande delTodo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande delTodo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande delTodo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande delTodo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande delTodo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande delTodo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande delTodo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande delTodo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande delTodo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande delTodo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande delTodo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande delTodo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande delTodo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande delTodo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande delTodo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande delTodo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande delTodo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande delTodo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande delTodo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande del</blockquote>
-
-### Cita
-Asi se ve el texto citado
-> Armero producía cerca de una quinta parte del arroz de Colombia, además de algodón, sorgo y café.
 
 ### Tabla
 

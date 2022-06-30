@@ -7,7 +7,7 @@ const RandomButton = () => {
     <button
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className="flex relative"
+      className="flex relative mt-10"
     >
       <Image width={1314} height={670} src={"/uploads/random.png"} />
       <div className="absolute flex w-full h-full items-center justify-center">
