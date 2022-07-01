@@ -6,6 +6,7 @@ import SensiblogNavbar from "../components/sensiblog/navBar";
 import MyFooter from "../components/footer";
 import SensiCatalog from "../components/sensiblog/sensilog";
 import SensiHero from "../components/sensiblog/hero";
+import SideGradient from "../components/sensiblog/side-gradient";
 
 interface sensiblogProps {
   allSensiblogPosts: sensiblogPost[];
@@ -13,9 +14,8 @@ interface sensiblogProps {
 }
 
 const Sensiblog = ({ allSensiblogPosts, modalContents }: sensiblogProps) => {
-  // const categories = getCategories(allSensiblogPosts);
   const [lang, setLang] = useState("spa");
-
+  
   function toggleLang() {
     if (lang === "spa") {
       setLang("eng");
@@ -26,17 +26,15 @@ const Sensiblog = ({ allSensiblogPosts, modalContents }: sensiblogProps) => {
 
   return (
     <div className="flex flex-col justify-between h-screen bg-black">
-      <div className="bg-black">
+      <div>
         <SensiblogNavbar
           lang={lang}
           toggleFunc={toggleLang}
           modalContent={modalContents}
         />
-          <div className="fixed inset-y-0 right-0 w-20 z-30 bg-gradient-to-l from-amarillo" />
         <SensiHero allSensiblogPosts={allSensiblogPosts} lang={lang} />
-        
-          <SensiCatalog allSensiblogPosts={allSensiblogPosts} lang={lang} />
-        
+        <SensiCatalog allSensiblogPosts={allSensiblogPosts} lang={lang} />
+        <SideGradient />
       </div>
       <MyFooter color="black" />
     </div>

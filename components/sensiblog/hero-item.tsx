@@ -32,12 +32,12 @@ const HeroItem = ({ post, lang }: HeroItemProps) => {
           <div className="text-sm max-w-min px-1 rounded font-bold text-zinc-800 mt-2 bg-slate-200">
             {post.category}
           </div>
-          <div className="text-6xl font-serif mt-2">{title}</div>
+          <div className=" font-serif mt-2 text-xl sm:text-xl md:text-4xl lg:text-6xl">{title}</div>
           <DateEl
             dateString={post.date}
             className="text-sm text-white pt-2"
           />
-          <div className="mt-3 w-2/3">{snippet}</div>
+          <div className="mt-3 w-2/3 text-xs sm:text-sm md:text-base">{snippet}</div>
         </div>
       </div>
       <div className="absolute w-full h-full bg-black opacity-30 z-20 " />

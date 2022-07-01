@@ -12,7 +12,7 @@ interface SensiHeroProps {
 const SensiHero = ({ allSensiblogPosts, lang }: SensiHeroProps) => {
   const recentPosts = allSensiblogPosts.slice(0,4);
   return (
-    <div className="w-screen mt-28">
+    <div className="w-screen">
       <SectionTab tabText="Recientes"/>
       <div className="flex shrink-0 snap-x mx-auto snap-mandatory overflow-scroll">
         {recentPosts.map((post) => (

@@ -1,5 +1,4 @@
 import { ScrollSync, ScrollSyncPane } from "react-scroll-sync";
-import { ArrowDown } from "phosphor-react";
 import { sensiblogPost } from "../../interfaces/posts";
 import IndexEntry from "../../components/sensiblog/indexEntry";
 import SectionTab from "./section-tab";

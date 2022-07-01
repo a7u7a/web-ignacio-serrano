@@ -2,7 +2,7 @@ import Image from "next/image";
 import UpButton from "../upBtn";
 import LanguageButton from "../languageBtn";
 import SensiblogModal from "../sensiblog/modal";
-import { sensiblogPost, modalContent } from "../../interfaces/posts";
+import { modalContent } from "../../interfaces/posts";
 import { useState } from "react";
 
 interface SensiblogNavbarProps {
@@ -18,16 +18,17 @@ const SensiblogNavbar = ({
 }: SensiblogNavbarProps) => {
   const [visible, setVisibility] = useState(false);
   return (
-    <div className="flex flex-row h-28 justify-between fixed w-full z-40 bg-black">
+    <div className="sticky inset-x-0 top-0 flex flex-col sm:flex-row justify-between w-full z-40 bg-black">
       <SensiblogModal
         content={modalContent}
         visible={visible}
         toggleVisible={setVisibility}
       />
-
+      <UpButton color="white" />
+      
+      {/* Sensiblog logo */}
       <div className="flex flex-row">
-        <UpButton color="white" />
-        <div className="h-24 w-52 mt-3 relative">
+        <div className="h-16 md:h-20 lg:h-24 w-44 md:w-48 lg:w-52 ml-14 mr-14  mt-3 relative">
           <Image
             objectFit="contain"
             src={"/images/sensiblog.png"}
@@ -37,11 +38,10 @@ const SensiblogNavbar = ({
       </div>
 
       <div className="flex flex-row">
-        <div
-          onClick={() => setVisibility(true)}
-          className="pt-6 h-6"
-        >
-          <button className="text-lg underline-offset-1 tracking-wide underline mr-6 hover:text-violeta text-white">
+
+        {/* about button */}
+        <div onClick={() => setVisibility(true)} className="pt-6 h-6">
+          <button className="sm:text-md md:text-lg underline-offset-1 tracking-wide underline mr-6 hover:text-violeta text-white">
             Sobre Sensiblog
           </button>
         </div>
