@@ -15,7 +15,7 @@ interface sensiblogProps {
 
 const Sensiblog = ({ allSensiblogPosts, modalContents }: sensiblogProps) => {
   const [lang, setLang] = useState("spa");
-  
+
   function toggleLang() {
     if (lang === "spa") {
       setLang("eng");
@@ -25,7 +25,7 @@ const Sensiblog = ({ allSensiblogPosts, modalContents }: sensiblogProps) => {
   }
 
   return (
-    <div className="flex flex-col justify-between h-screen bg-black">
+    <div className="flex flex-col justify-between bg-black">
       <div>
         <SensiblogNavbar
           lang={lang}

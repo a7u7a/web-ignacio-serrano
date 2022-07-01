@@ -23,7 +23,7 @@ const IndexEntry = ({ post, lang }: IndexEntryProps) => {
     const processContent = async () => {
       const _ = lang === "spa" ? post.contentSpanish : post.contentEnglish;
       const content = await remark().use(html).process(_);
-      setSnippet(strip(content.toString()).slice(0, 160) + "..");
+      setSnippet(strip(content.toString()));
       setTitle(lang === "spa" ? post.title : post.title_eng);
     };
     processContent();
@@ -37,7 +37,7 @@ const IndexEntry = ({ post, lang }: IndexEntryProps) => {
       <div className="flex flex-col w-64 py-1 pl-3 pr-2 ">
         <div className="font-serif text-xl text-zinc-200">{title}</div>
         <DateEl dateString={post.date} className="text-xs text-zinc-300 mt-1" />
-        <div className="mt-3 text-xs text-zinc-400">{snippet}</div>
+        <div className="mt-3 text-xs text-zinc-400 line-clamp-4">{snippet}</div>
       </div>
     </div>
   );

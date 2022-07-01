@@ -16,7 +16,7 @@ const SensiHero = ({ allSensiblogPosts, lang }: SensiHeroProps) => {
       <SectionTab tabText="Recientes"/>
       <div className="flex shrink-0 snap-x mx-auto snap-mandatory overflow-scroll">
         {recentPosts.map((post) => (
-          <HeroItem post={post} lang={lang} />
+          <HeroItem post={post} lang={lang} key={post.id}/>
         ))}
       </div>
     </div>
