@@ -39,7 +39,7 @@ const SensiblogNavbar = ({
       <div className="flex flex-row">
         <button
           onClick={() => setVisibility(true)}
-          className="pt-6 h-6 text-xl underline-offset-1 tracking-wide underline mr-24 hover:text-violeta text-white"
+          className="pt-6 h-6 text-lg underline-offset-1 tracking-wide underline mr-24 hover:text-violeta text-white"
         >
           Sobre Sensiblog
         </button>

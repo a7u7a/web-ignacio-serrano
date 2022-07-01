@@ -27,8 +27,7 @@ const HeroItem = ({ post, lang }: HeroItemProps) => {
 
   return (
     <div className="relative w-4/6 shrink-0 snap-start">
-        
-      <div className="absolute z-30 text-white p-12">
+      <div className="absolute z-30 text-white pt-16 p-12">
         <div className="flex flex-col">
           <div className="text-sm max-w-min px-1 rounded font-bold text-zinc-800 mt-2 bg-slate-200">
             {post.category}
