@@ -56,7 +56,7 @@ function sortFeedPosts(allPostsData: feedPost[]) {
 }
 
 function sortSensiblogPosts(allPostsData: sensiblogPost[]) {
-  return allPostsData.sort((a, b) => Number(Date.parse(b.date)) - Number(Date.parse(a.date)))
+  return allPostsData.sort((a, b) => Number(Date.parse(a.date)) - Number(Date.parse(b.date)))
 }
 
 export const getSortedFeedPosts = (): feedPost[] => {

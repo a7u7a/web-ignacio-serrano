@@ -13,7 +13,7 @@ const MyFooter = ({ color }: FooterProps) => {
     >
       <div
         className={`flex flex-row p-6  ${
-          color === "white" ? "text-black" : "text-white"
+          color === "white" ? "text-slate-800" : "text-slate-300"
         }`}
       >
         <Link href={"https://www.instagram.com/ignacioserranol/"}>

@@ -33,7 +33,7 @@ const Sensiblog = ({ allSensiblogPosts, modalContents }: sensiblogProps) => {
           toggleFunc={toggleLang}
           modalContent={modalContents}
         />
-        <div className="fixed inset-y-0 right-0 w-36 z-50 bg-gradient-to-l from-amarillo " />
+        <div className="fixed inset-y-0 right-0 w-36 z-50 bg-gradient-to-l from-amarillo mix-blend-exclusion" />
         <SensiHero allSensiblogPosts={allSensiblogPosts} lang={lang} />
         <div>
           <SensiCatalog allSensiblogPosts={allSensiblogPosts} lang={lang} />

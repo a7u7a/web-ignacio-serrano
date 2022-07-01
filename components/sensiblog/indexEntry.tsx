@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import html from "remark-html";
 import Image from "next/image";
 import DateEl from "../date";
+import { strip } from "../../lib/utils";
 
 interface IndexEntryProps {
   post: sensiblogPost;
@@ -12,14 +13,7 @@ interface IndexEntryProps {
 
 /* 
 Here we get the first few characters to preview the post. 
-Text stripped of any html/markdown contents
 */
-
-function strip(html: string) {
-  // from https://stackoverflow.com/questions/822452/strip-html-from-text-javascript/47140708#47140708
-  let doc = new DOMParser().parseFromString(html, "text/html");
-  return doc.body.textContent || "";
-}
 
 const IndexEntry = ({ post, lang }: IndexEntryProps) => {
   const [snippet, setSnippet] = useState("");
@@ -28,10 +22,7 @@ const IndexEntry = ({ post, lang }: IndexEntryProps) => {
   useEffect(() => {
     const processContent = async () => {
       const _ = lang === "spa" ? post.contentSpanish : post.contentEnglish;
-
-      // parse post content to html
       const content = await remark().use(html).process(_);
-      // strip html and get only text, trim to only the first chars
       setSnippet(strip(content.toString()).slice(0, 160) + "..");
       setTitle(lang === "spa" ? post.title : post.title_eng);
     };

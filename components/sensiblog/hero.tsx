@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { sensiblogPost } from "../../interfaces/posts";
 import HeroItem from "./hero-item";
+import { ArrowDown } from "phosphor-react";
 
 interface SensiHeroProps {
   allSensiblogPosts: sensiblogPost[];
@@ -8,14 +9,17 @@ interface SensiHeroProps {
 }
 
 const SensiHero = ({ allSensiblogPosts, lang }: SensiHeroProps) => {
-  const recentPosts = allSensiblogPosts.slice(-4);
+  const recentPosts = allSensiblogPosts.slice(0,4);
   return (
     <div className="w-screen mt-28">
+        <div className="absolute flex max-w-min flex-row space-x-1 bg-white font-semibold text-sm z-30 py-1 px-2">
+          <ArrowDown size={18} color="#1f1a1a" />
+          <a>Recientes</a>
+        </div>
       <div className="flex shrink-0 snap-x mx-auto snap-mandatory overflow-scroll">
-        <HeroItem imgSrc="/uploads/screen-shot-2021-12-24-at-16.32.48.png" />
-        <HeroItem imgSrc="/uploads/screen-shot-2022-05-25-at-20.31.07.png" />
-        <HeroItem imgSrc="/uploads/screen-shot-2021-12-24-at-16.32.48.png" />
-        <HeroItem imgSrc="/uploads/screen-shot-2022-05-05-at-15.55.04.png" />
+        {recentPosts.map((post) => (
+          <HeroItem post={post} lang={lang} />
+        ))}
       </div>
     </div>
   );
