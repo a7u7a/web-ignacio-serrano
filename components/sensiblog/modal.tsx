@@ -27,9 +27,9 @@ const SensiblogModal = ({
     >
       <div
         onClick={(e) => clickOutsideHandle(e)}
-        className="w-screen h-screen bg-black opacity-70"
+        className="w-screen h-screen"
       ></div>
-      <div className="text-black w-1/2 absolute bg-violeta">
+      <div className="text-black w-1/2 absolute bg-violeta drop-shadow-2xl">
         <div className="relative">
           <button
             onClick={() => toggleVisible(false)}

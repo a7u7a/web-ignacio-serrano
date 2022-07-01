@@ -12,7 +12,7 @@ const MyFooter = ({ color }: FooterProps) => {
       }`}
     >
       <div
-        className={`flex flex-row p-6  ${
+        className={`flex flex-row p-6 text-sm ${
           color === "white" ? "text-slate-800" : "text-slate-300"
         }`}
       >

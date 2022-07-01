@@ -15,7 +15,7 @@
 }
 
 .md-modal {
-  @apply text-center prose prose-neutral prose-sm prose-p:leading-snug prose-p:text-slate-300 prose-h1:text-slate-200 prose-a:text-verde;
+  @apply text-center prose prose-neutral prose-sm prose-p:leading-snug prose-h2:font-semibold prose-h2:text-white prose-p:text-white prose-a:text-verde;
 }
 
 .feed {

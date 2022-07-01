@@ -22,7 +22,6 @@ const Sensiblog = ({ allSensiblogPosts, modalContents }: sensiblogProps) => {
     } else {
       setLang("spa");
     }
-    console.log("lang", lang);
   }
 
   return (
@@ -33,11 +32,11 @@ const Sensiblog = ({ allSensiblogPosts, modalContents }: sensiblogProps) => {
           toggleFunc={toggleLang}
           modalContent={modalContents}
         />
-        <div className="fixed inset-y-0 right-0 w-36 z-50 bg-gradient-to-l from-amarillo mix-blend-exclusion" />
+          <div className="fixed inset-y-0 right-0 w-20 z-30 bg-gradient-to-l from-amarillo" />
         <SensiHero allSensiblogPosts={allSensiblogPosts} lang={lang} />
-        <div>
+        
           <SensiCatalog allSensiblogPosts={allSensiblogPosts} lang={lang} />
-        </div>
+        
       </div>
       <MyFooter color="black" />
     </div>

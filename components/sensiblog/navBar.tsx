@@ -24,10 +24,9 @@ const SensiblogNavbar = ({
         visible={visible}
         toggleVisible={setVisibility}
       />
+
       <div className="flex flex-row">
-        <div className="pt-6 px-6">
-          <UpButton color="white" />
-        </div>
+        <UpButton color="white" />
         <div className="h-24 w-52 mt-3 relative">
           <Image
             objectFit="contain"
@@ -36,14 +35,18 @@ const SensiblogNavbar = ({
           />
         </div>
       </div>
+
       <div className="flex flex-row">
-        <button
+        <div
           onClick={() => setVisibility(true)}
-          className="pt-6 h-6 text-lg underline-offset-1 tracking-wide underline mr-24 hover:text-violeta text-white"
+          className="pt-6 h-6"
         >
-          Sobre Sensiblog
-        </button>
-        <div className="p-6 mr-44">
+          <button className="text-lg underline-offset-1 tracking-wide underline mr-6 hover:text-violeta text-white">
+            Sobre Sensiblog
+          </button>
+        </div>
+
+        <div className="p-6">
           <LanguageButton onClick={toggleFunc} lang={lang} color="white" />
         </div>
       </div>
