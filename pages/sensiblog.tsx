@@ -1,27 +1,19 @@
 import { GetStaticProps } from "next";
 import { getSortedSensiblogPosts, getModalContents } from "../lib/posts";
 import { sensiblogPost, modalContent } from "../interfaces/posts";
-import { useState, useEffect } from "react";
-import IndexEntry from "../components/sensiblog/indexEntry";
+import { useState } from "react";
 import SensiblogNavbar from "../components/sensiblog/navBar";
 import MyFooter from "../components/footer";
-import { ArrowDown } from "phosphor-react";
-import { ScrollSync, ScrollSyncPane } from "react-scroll-sync";
+import SensiCatalog from "../components/sensiblog/sensilog";
+import SensiHero from "../components/sensiblog/hero";
 
 interface sensiblogProps {
   allSensiblogPosts: sensiblogPost[];
   modalContents: modalContent;
 }
 
-function getCategories(allPosts: sensiblogPost[]) {
-  const _ = allPosts.map((post) => {
-    return post.category;
-  });
-  return [...new Set(_)]; // remove duplicates
-}
-
 const Sensiblog = ({ allSensiblogPosts, modalContents }: sensiblogProps) => {
-  const categories = getCategories(allSensiblogPosts);
+  // const categories = getCategories(allSensiblogPosts);
   const [lang, setLang] = useState("spa");
 
   function toggleLang() {
@@ -41,34 +33,11 @@ const Sensiblog = ({ allSensiblogPosts, modalContents }: sensiblogProps) => {
           toggleFunc={toggleLang}
           modalContent={modalContents}
         />
-        <div className="fixed inset-y-0 right-0 w-36 z-50 bg-gradient-to-l from-amarillo "></div>
-        <ScrollSync>
-          <div className="relative mt-28 flex flex-col w-full space-y-3 mb-3">
-            <div className="fixed flex flex-row space-x-1 bg-white font-semibold text-sm z-30 py-1 px-2">
-              <ArrowDown size={18} color="#1f1a1a" />
-              <a>Categorías</a>
-            </div>
-            {categories.map((category) => (
-              <ScrollSyncPane>
-                <div
-                  className="flex flex-row overflow-x-auto space-x-3 pr-64"
-                  key={category}
-                >
-                  <div className="sticky left-0 flex items-center justify-center text-3xl font-serif p-6 text-white bg-gradient-to-r from-black to-black/50 z-20 ">
-                    {category}
-                  </div>
-                  {allSensiblogPosts
-                    .filter((post) => {
-                      return post.category === category;
-                    })
-                    .map((post) => (
-                      <IndexEntry post={post} lang={lang} key={post.id} />
-                    ))}
-                </div>
-              </ScrollSyncPane>
-            ))}
-          </div>
-        </ScrollSync>
+        <div className="fixed inset-y-0 right-0 w-36 z-50 bg-gradient-to-l from-amarillo " />
+        <SensiHero allSensiblogPosts={allSensiblogPosts} lang={lang} />
+        <div>
+          <SensiCatalog allSensiblogPosts={allSensiblogPosts} lang={lang} />
+        </div>
       </div>
       <MyFooter color="black" />
     </div>

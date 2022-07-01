@@ -22,10 +22,21 @@
   @apply mt-8 prose prose-sm prose-p:leading-tight prose-p:text-white prose-h1:text-white prose-h1:font-light prose-h2:text-white prose-h3:text-white prose-tr:text-white prose-th:text-white prose-h4:text-white prose-a:font-normal prose-a:text-verde;
 }
 
-/* hide scrollbar */
-* {
+/* hide scrollbar on Internet Explorer and Microsoft Edge*/
+/* * {
   -ms-overflow-style: none;
 }
+
 ::-webkit-scrollbar {
   display: none;
+} */
+
+.no-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scroll-bar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }

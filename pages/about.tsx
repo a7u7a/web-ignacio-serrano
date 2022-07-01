@@ -56,7 +56,7 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
           // className="relative h-96 overflow-hidden md:overflow-auto h-max-96 md:h-full"
           className={`relative ${
             collapsed ? "overflow-hidden h-screen" : "overflow-auto h-full"
-          } h-max-screen `}
+          } h-max-screen no-scroll-bar`}
         >
           <div className="flex flex-col m-12 md:ml-8 md:mr-8 lg:ml-24 lg:mr-24">
             <CajaRemedio />
