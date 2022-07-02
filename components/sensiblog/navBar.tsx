@@ -4,7 +4,7 @@ import LanguageButton from "../languageBtn";
 import SensiblogModal from "../sensiblog/modal";
 import { modalContent } from "../../interfaces/posts";
 import { useState } from "react";
-import Link from "next/link";
+
 
 interface SensiblogNavbarProps {
   toggleFunc: () => void;
