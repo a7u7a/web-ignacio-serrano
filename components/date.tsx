@@ -1,6 +1,16 @@
-import { parse, format } from 'date-fns'
+import { parse, format } from "date-fns";
 
-export default function DateEl({ dateString,className }:{ dateString: string, className:string }) {
-  const date = Date.parse(dateString)
-  return <time className={className} dateTime={dateString}>{format(date, 'LLL d, yyyy')}</time>
+export default function DateEl({
+  dateString,
+  className,
+}: {
+  dateString: string;
+  className?: string;
+}) {
+  const date = Date.parse(dateString);
+  return (
+    <time className={className} dateTime={dateString}>
+      {format(date, "LLL d, yyyy")}
+    </time>
+  );
 }

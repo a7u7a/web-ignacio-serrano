@@ -37,7 +37,7 @@ const HeroItemText = ({ post, lang }: HeroItemTextProps) => {
           </div>
           <DateEl
             dateString={post.date}
-            className="text-xs sm:text-xs md:text-sm text-white pt-1 md:pt-2 "
+            className="text-xs sm:text-xs md:text-sm text-white pt-1 md:pt-2"
           />
           <p className="mt-2 md:mt-3 w-5/6 text-xs sm:text-sm md:text-sm lg:text-base line-clamp-5 md:line-clamp-3">
             {snippet}

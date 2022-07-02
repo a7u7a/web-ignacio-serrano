@@ -1,8 +1,14 @@
+import Head from "next/head";
 import HomeLink from "../components/homeLink";
+
+const siteTitle = "Ignacio Serrano Web"
 
 const Home = () => {
   return (
     <>
+    <Head>
+        <title>{siteTitle}</title>
+      </Head>
       <div className="flex flex-col w-screen h-screen p-4 space-y-12 md:space-y-0 my-16 md:my-4">
         <div className="flex flex-row h-1/3 justify-center">
           <HomeLink src={"/images/about.png"} href={"/about"} />

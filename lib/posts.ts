@@ -116,6 +116,42 @@ export const getSortedSensiblogPosts = (): sensiblogPost[] => {
   return sortSensiblogPosts(allPostsData)
 }
 
+export const getSensiblogPost = (id: string): sensiblogPost => {
+  const fullPath = path.join(postsDirectory, `${id}.md`)
+  const fileContents = fs.readFileSync(fullPath, 'utf8')
+  const matterResult = matter(fileContents)
+  const contentSpanish = matterResult.content
+  return {
+    id,
+    title: matterResult.data.title,
+    date: matterResult.data.date,
+    thumbnail: matterResult.data.thumbnail,
+    contentSpanish,
+    tags: matterResult.data.tags,
+    title_eng: matterResult.data.title_eng,
+    contentEnglish: matterResult.data.body_eng,
+    category: matterResult.data.category
+  }
+}
+
+// deprecated
+export const getPostData = async (id: string) => {
+  const fullPath = path.join(postsDirectory, `${id}.md`)
+  const fileContents = fs.readFileSync(fullPath, 'utf8')
+  // Use gray-matter to parse the post metadata section
+  const matterResult = matter(fileContents)
+  // Use remark to convert markdown into HTML string
+  const processedContent = await remark()
+    .use(html)
+    .process(matterResult.content)
+  const contentHtml = processedContent.toString()
+  // Combine the data with the id and contentHtml
+  return {
+    id,
+    contentHtml,
+    ...(matterResult.data as { date: string; title: string })
+  }
+}
 
 // Used to render post index
 export const getSortedPostsData = () => {
@@ -148,8 +184,6 @@ export const getSortedPostsData = () => {
   })
 }
 
-
-
 export const getAllPostIds = () => {
   const fileNames = fs.readdirSync(postsDirectory)
   return fileNames.map(fileName => {
@@ -174,21 +208,3 @@ export const getModalContents = (id: string): modalContent => {
   }
 }
 
-// deprecated
-export const getPostData = async (id: string) => {
-  const fullPath = path.join(postsDirectory, `${id}.md`)
-  const fileContents = fs.readFileSync(fullPath, 'utf8')
-  // Use gray-matter to parse the post metadata section
-  const matterResult = matter(fileContents)
-  // Use remark to convert markdown into HTML string
-  const processedContent = await remark()
-    .use(html)
-    .process(matterResult.content)
-  const contentHtml = processedContent.toString()
-  // Combine the data with the id and contentHtml
-  return {
-    id,
-    contentHtml,
-    ...(matterResult.data as { date: string; title: string })
-  }
-}
