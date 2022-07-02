@@ -7,7 +7,7 @@ interface LanguageButtonProps {
 const LanguageButton = ({ onClick, lang, color }: LanguageButtonProps) => {
   return (
     <button
-      className={`flex flex-row space-x-0.5 z-50 text-center px-1 h-7 rounded border-2 text-sm sm:text-sm md:text-base ${
+      className={`flex flex-row space-x-0.5 z-40 text-center px-1 h-7 rounded border-2 text-sm sm:text-sm md:text-base ${
         color === "white"
           ? "bg-black text-white border-white "
           : "bg-white text-black border-black"

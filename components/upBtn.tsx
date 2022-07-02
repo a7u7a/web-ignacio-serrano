@@ -9,7 +9,7 @@ interface UpButtonProps {
 const UpButton = ({ color }: UpButtonProps) => {
   const [hover, setHover] = useState(false);
   return (
-    <div className="absolute pt-6 px-6 z-50" title="Volver">
+    <div className="absolute left-0 top-0 pt-6 px-6 z-40" title="Volver">
       <Link href={"/"}>
         <ArrowElbowLeftUp
           className="cursor-pointer z-50"

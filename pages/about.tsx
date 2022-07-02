@@ -33,7 +33,7 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
 
   function expandHandle() {
     setCollapsed(!collapsed);
-
+    // go to top
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
@@ -48,31 +48,41 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
   return (
     <div className="flex flex-col md:flex-row md:h-screen">
       <div className="w-full md:w-1/2">
-        <div className="flex flex-row p-6 justify-between fixed w-full md:w-1/2 z-50">
+        {/* about top buttons */}
+        <div className="flex absolute flex-row p-6 justify-end w-1/2 z-50">
           <UpButton color="black" />
           <LanguageButton onClick={toggleLang} lang={lang} color="black" />
         </div>
+
         <div
-          // className="relative h-96 overflow-hidden md:overflow-auto h-max-96 md:h-full"
-          className={`relative ${
+          className={`relative flex flex-col justify-between w-full items-center ${
             collapsed ? "overflow-hidden h-screen" : "overflow-auto h-full"
           } h-max-screen no-scroll-bar`}
         >
-          <div className="flex flex-col m-12 md:ml-8 md:mr-8 lg:ml-24 lg:mr-24">
+          <div className="flex flex-col m-6 items-center md:ml-14 md:mr-14 lg:ml-20 lg:mr-20 lg:max-w-2xl">
+            
             <CajaRemedio />
+
+            {/* Intro */}
             <AboutSection
               className="intro"
               data={aboutData.filter((post) => post.id === "intro")[0]}
               lang={lang}
             />
-            <SocialAbout/>
+
+            <SocialAbout />
+
+            {/* Bio */}
             <AboutSection
               className="bio"
               data={aboutData.filter((post) => post.id === "bio")[0]}
               lang={lang}
             />
+
             <RandomButton />
-            <div className="mt-10">
+
+            {/* CV */}
+            <div className="mt-10 left-0 w-full">
               <div className="w-3/12 mb-4">
                 <Image
                   height={100}
@@ -86,9 +96,11 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
                 lang={lang}
               />
             </div>
-            
           </div>
-          <MyFooter color="white"/>
+
+          <MyFooter color="white" />
+
+          {/* collapse btn */}
           <div
             className={`${
               collapsed ? "absolute" : "fixed"
@@ -101,6 +113,7 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
               {collapsed ? "Expandir" : "Contraer"}
             </button>
           </div>
+
         </div>
       </div>
       <Feed feedPosts={allFeedData} />

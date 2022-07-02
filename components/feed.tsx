@@ -109,7 +109,7 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
         <div className="flex static md:fixed justify-center w-full md:w-1/2 mt-10 md:mt-16 mb-6 md:mb-16 z-40">
           <h1 className="rotate-45 text-center text-3xl">Feed</h1>
         </div>
-        <div className="h-full pb-12 md:overflow-auto">
+        <div className="h-full pb-12 md:overflow-auto no-scroll-bar">
           <div className="md:pt-44 flex flex-col">
             {feedPosts.map((post) => (
               <button
