@@ -26,14 +26,14 @@ interface HeroItemTextProps {
 
     return (<div className="absolute z-30 text-white pt-10 sm:pt-12 md:pt-16 pl-4 sm:pl-8 md:pl-12 pr-8 pb-4">
     <div className="flex flex-col">
-      <div className="text-sm max-w-min px-1 rounded font-bold text-zinc-800 mt-1 md:mt-2 bg-slate-200">
+      <div className="text-xs sm:text-xs md:text-sm max-w-min px-1 rounded font-bold text-zinc-800 mt-1 md:mt-2 bg-slate-200">
         {post.category}
       </div>
       <div className=" font-serif mt-2 text-xl sm:text-xl md:text-4xl lg:text-6xl">
         {title}
       </div>
       <DateEl dateString={post.date} className="text-xs sm:text-xs md:text-sm text-white pt-1 md:pt-2 " />
-      <p className="mt-2 md:mt-3 w-2/3 text-xs sm:text-sm md:text-base line-clamp-3">
+      <p className="mt-2 md:mt-3 w-2/3 text-xs sm:text-sm md:text-sm lg:text-base line-clamp-5 md:line-clamp-3">
         {snippet}
       </p>
     </div>

@@ -39,7 +39,7 @@ const SensiblogNavbar = ({
           </div>
         </div>
 
-        <div className="flex flex-row p-2 md:p-6 space-x-8 ">
+        <div className="flex flex-row pt-1 pb-3 md:p-6 space-x-8 ">
           {/* about button */}
           <div onClick={() => setVisibility(true)}>
             <button className="sm:text-md md:text-lg underline-offset-1 tracking-wide underline mr-6 hover:text-violeta text-white">
@@ -47,9 +47,8 @@ const SensiblogNavbar = ({
             </button>
           </div>
 
-          <div>
-            <LanguageButton onClick={toggleFunc} lang={lang} color="white" />
-          </div>
+          <LanguageButton onClick={toggleFunc} lang={lang} color="white" />
+
         </div>
       </div>
     </div>

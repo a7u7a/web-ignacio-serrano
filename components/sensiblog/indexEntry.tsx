@@ -11,10 +11,6 @@ interface IndexEntryProps {
   lang: string;
 }
 
-/* 
-Here we get the first few characters to preview the post. 
-*/
-
 const IndexEntry = ({ post, lang }: IndexEntryProps) => {
   const [snippet, setSnippet] = useState("");
   const [title, setTitle] = useState("");
@@ -30,8 +26,8 @@ const IndexEntry = ({ post, lang }: IndexEntryProps) => {
   }, [lang]);
 
   return (
-    <div className="flex flex-row h-48 cursor-pointer hover:bg-gray-800">
-      <div className="w-48 relative">
+    <div className="flex flex-row h-32 sm:h-48 cursor-pointer hover:bg-gray-800">
+      <div className="w-32 sm:w-48 relative">
         <Image objectFit="cover" src={post.thumbnail} layout="fill" />
       </div>
       <div className="flex flex-col w-64 py-1 pl-3 pr-2 ">

@@ -7,7 +7,7 @@ interface FooterProps {
 const MyFooter = ({ color }: FooterProps) => {
   return (
     <footer
-      className={`flex justify-center inset-x-0 bottom-0 ${
+      className={`flex justify-center inset-x-0 bottom-0 z-30 ${
         color === "white" ? "bg-white" : "bg-black"
       }`}
     >
