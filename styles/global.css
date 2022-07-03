@@ -15,15 +15,15 @@
 }
 
 .md-modal {
-  @apply text-center prose prose-neutral prose-sm prose-p:leading-snug prose-h2:font-semibold prose-h2:text-white prose-p:text-white prose-a:text-verde;
+  @apply text-center prose  prose-neutral prose-sm prose-p:leading-snug prose-h2:font-semibold prose-h2:text-white prose-p:text-white prose-a:text-verde;
 }
 
 .feed {
-  @apply mt-8 prose prose-sm prose-p:leading-tight prose-p:text-white prose-h1:text-white prose-h1:font-light prose-h2:text-white prose-h3:text-white prose-tr:text-white prose-th:text-white prose-h4:text-white prose-a:font-normal prose-a:text-verde;
+  @apply mt-8 prose prose-sm w-7/12 md:w-1/2 lg:w-5/12 max-w-lg prose-p:leading-tight prose-p:text-white prose-h1:text-white prose-h1:font-light prose-h2:text-white prose-h3:text-white prose-tr:text-white prose-th:text-white prose-h4:text-white prose-a:font-normal prose-a:text-verde;
 }
 
 .sensiblog {
-  @apply flex flex-col flex-wrap h-full gap-x-12 prose prose-p:leading-snug prose-p:ml-0 prose-p:text-white prose-h1:text-white prose-h1:font-light prose-h2:text-white prose-h3:text-white prose-tr:text-white prose-th:text-white prose-h4:text-white prose-a:font-normal prose-a:text-verde;
+  @apply grid grid-cols-3 grid-rows-3 prose-p:w-1/2 prose-p:shrink-0 prose-sm prose-invert prose prose-img:mt-0 prose-img:mb-0 prose-p:mt-0 prose-p:leading-snug prose-p:ml-0 prose-h1:font-light prose-a:font-normal prose-a:text-verde;
 }
 
 /* Hide scrollbar for Chrome */

@@ -4,11 +4,12 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { getAllPostIds, getSensiblogPost } from "../../lib/posts";
-import FromMarkdown from "../../components/postFromMarkdown";
 import { sensiblogPost } from "../../interfaces/posts";
 import LanguageButton from "../../components/languageBtn";
 import DateEl from "../../components/date";
 import SideGradient from "../../components/side-gradient";
+import FromMarkdownTest from "../../components/postFromMarkdown-test";
+import FromMarkdown from "../../components/postFromMarkdown";
 
 interface SensiblogPostProps {
   post: sensiblogPost;
@@ -28,9 +29,9 @@ export default function Post({ post }: SensiblogPostProps) {
   }
 
   return (
-    <div className="flex flex-row space-x-12 h-screen w-screen p-12 bg-black overflow-x-auto pr-12">
+    <div className="flex flex-col md:flex-row h-screen w-screen pl-12 py-12 bg-black overflow-x-auto">
       <SideGradient />
-      <div className="flex flex-col w-2/6 ">
+      <div className="flex flex-col w-2/6 max-w-lg mr-12">
         {/* Header */}
         <div className="flex flex-row justify-between w-full">
           <Link href={"/sensiblog"}>
@@ -62,7 +63,12 @@ export default function Post({ post }: SensiblogPostProps) {
           </div>
         </div>
       </div>
-      <FromMarkdown contentMd={content} className="sensiblog" />
+
+      <div className="">
+
+        <FromMarkdownTest contentMd={content} className="sensiblog" />
+      </div>
+      
     </div>
   );
 }
