@@ -8,9 +8,7 @@ tags:
   - sonido
 title: Invitación a interactuar. / Ondita Sensible 1.
 ---
-Hola este es un post con diferentes formas de contenido:
 
-Todo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande del [link hacia algun lugar](https://duckduckgo.com) de Tolima, después de Ibagué y El Espinal.
 
 # Ondita Sensible 1. / Invitación a interactuar.
 
