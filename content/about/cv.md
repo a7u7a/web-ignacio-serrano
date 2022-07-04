@@ -90,10 +90,10 @@ body_eng: >-
   Published by Revista Estudios Sobre Arte Actual (Madrid, Spain) along with Dr. in Physics Carolina Espinoza
 
 
-  SENSIBLE: Investigation and experimentation on the creation of new tactile interfaces to communica- te with electronic devices. http://estudiossobrearteactual.com/wp-content/u- ploads/2020/10/15.-Carolina-Espinoza-e-Ignacio-Serrano.pdf
+  SENSIBLE: Investigation and experimentation on the creation of new tactile interfaces to communica- te with electronic devices.
 
 
-  ### Lectures
+  http://estudiossobrearteactual.com/wp-content/uploads/2020/10/15.-Carolina-Espinoza-e-Ignacio-Serrano.pdfLectures
 
 
   ##### 2020
@@ -183,7 +183,9 @@ Impresión con tintas conductivas: Expansión disciplinar del diseño gráfico.
 
 Publicado por Revista Estudios Sobre Arte Actual (Madrid, Spain) junto a Dra. in Physics Carolina Espinoza
 
-SENSIBLE: Investigation and experimentation on the creation of new tactile interfaces to communica- te with electronic devices. http://estudiossobrearteactual.com/wp-content/u-ploads/2020/10/15.-Carolina-Espinoza-e-Ignacio-Serrano.pdf
+SENSIBLE: Investigation and experimentation on the creation of new tactile interfaces to communica- te with electronic devices. 
+
+http://estudiossobrearteactual.com/wp-content/uploads/2020/10/15.-Carolina-Espinoza-e-Ignacio-Serrano.pdf
 
 ### Ponencias
 
