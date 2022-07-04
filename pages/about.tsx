@@ -76,7 +76,7 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
             <AboutSection
               className="bio"
               data={aboutData.filter((post) => post.id === "bio")[0]}
-              lang={lang}
+              lang={lang} 
             />
 
             <RandomButton />
