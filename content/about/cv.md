@@ -2,122 +2,220 @@
 date: May 27, 2022 10:44 PM
 title: CV
 body_eng: >-
-  ### baibai
-
-  Nevado del Ruiz has undergone three distinct eruptive periods, the
-
-  first beginning 1.8 million years ago. During the present period (beginning
-
-  11,000 years ago), it has erupted at least twelve times, producing ashfalls,
-
-  pyroclastic flows, and lahars. The historically recorded eruptions have
-
-  primarily involved a central vent eruption (in the caldera) followed by an
-
-  explosive eruption, then the formation of lahars. Ruiz's earliest identifiedasda
-
-  Holocene eruption was in about 6660 BC, and further eruptions occurred around
-
-  1245, 850, 200 BC, and in about 350, 675, in 1350, 1541 (perhaps), 1570, 1595,
-
-  1623, 1805, 1826, 1828 (perhaps), 1829, 1831, 1833 (perhaps), 1845, 1916,
-
-  December 1984 through March 1985, 1987 through July 1991, and possibly in
-
-  April 1994. Many of these eruptions involved a central vent eruption, a flank
-
-  vent eruption, and a phreatic (steam) explosion. Ruiz is the second-most
-
-  active volcano in Colombia after Galeras. [ulala](https://duckduckgo.com)
+  ### Education
 
 
-  Nevado del Ruiz has undergone three distinct eruptive periods, the
-
-  first beginning 1.8 million years ago. During the present period (beginning
-
-  11,000 years ago), it has erupted at least twelve times, producing ashfalls,
-
-  pyroclastic flows, and lahars. The historically recorded eruptions have
-
-  primarily involved a central vent eruption (in the caldera) followed by an
-
-  explosive eruption, then the formation of lahars. Ruiz's earliest identified
-
-  Holocene eruption was in about 6660 BC, and further eruptions occurred around
-
-  1245, 850, 200 BC, and in about 350, 675, in 1350, 1541 (perhaps), 1570, 1595,
-
-  1623, 1805, 1826, 1828 (perhaps), 1829, 1831, 1833 (perhaps), 1845, 1916,
-
-  December 1984 through March 1985, 1987 through July 1991, and possibly in
-
-  April 1994. Many of these eruptions involved a central vent eruption, a flank
-
-  vent eruption, and a phreatic (steam) explosion. Ruiz is the second-most
-
-  active volcano in Colombia after Galeras. [ulala](https://duckduckgo.com)
+  ##### 2012-2014
 
 
-  Nevado del Ruiz has undergone three distinct eruptive periods, the
-
-  first beginning 1.8 million years ago. During the present period (beginning
-
-  11,000 years ago), it has erupted at least twelve times, producing ashfalls,
-
-  pyroclastic flows, and lahars. The historically recorded eruptions have
-
-  primarily involved a central vent eruption (in the caldera) followed by an
-
-  explosive eruption, then the formation of lahars. Ruiz's earliest identified
-
-  Holocene eruption was in about 6660 BC, and further eruptions occurred around
-
-  1245, 850, 200 BC, and in about 350, 675, in 1350, 1541 (perhaps), 1570, 1595,
-
-  1623, 1805, 1826, 1828 (perhaps), 1829, 1831, 1833 (perhaps), 1845, 1916,
-
-  December 1984 through March 1985, 1987 through July 1991, and possibly in
-
-  April 1994. Many of these eruptions involved a central vent eruption, a flank
-
-  vent eruption, and a phreatic (steam) explosion. Ruiz is the second-most
-
-  active volcano in Colombia after Galeras. [ulala](https://duckduckgo.com)
+  Fine Arts Bachelor
 
 
-  Nevado del Ruiz has undergone three distinct eruptive periods, the
+  Visual Arts School, Universidad Mayor, Santiago de Chile.
 
-  first beginning 1.8 million years ago. During the present period (beginning
 
-  11,000 years ago), it has erupted at least twelve times, producing ashfalls,
 
-  pyroclastic flows, and lahars. The historically recorded eruptions have
 
-  primarily involved a central vent eruption (in the caldera) followed by an
+  ##### 2007-2010
 
-  explosive eruption, then the formation of lahars. Ruiz's earliest identified
 
-  Holocene eruption was in about 6660 BC, and further eruptions occurred around
+  ##### Professional Photography
 
-  1245, 850, 200 BC, and in about 350, 675, in 1350, 1541 (perhaps), 1570, 1595,
 
-  1623, 1805, 1826, 1828 (perhaps), 1829, 1831, 1833 (perhaps), 1845, 1916,
+  ARCOS Institute, Santiago de Chile.
 
-  December 1984 through March 1985, 1987 through July 1991, and possibly in
 
-  April 1994. Many of these eruptions involved a central vent eruption, a flank
 
-  vent eruption, and a phreatic (steam) explosion. Ruiz is the second-most
 
-  active volcano in Colombia after Galeras. [ulala](https://duckduckgo.com)
+  ##### 2006
+
+
+  Pre-Bachelor Arts Program for the Youth Fine Arts School, Universidad de Chile
+
+
+  ### Residencies
+
+
+  ##### 2021 - Ongoing
+
+
+  Granted with second Residency in Balmaceda Arte Joven for its project SENSIBLE.
+
+
+  ##### 2021 - Ongoing
+
+
+  Granted with Residency in FabLab Universidad de Chile. School of Physical and Mathematical Sciences. Universidad de Chile.
+
+
+  ##### 2018- Ongoing
+
+
+  Granted with residency for a founder role at Balmaceda Arte Joven, for the creation of a printing studio with its proyect POSIBLE, creative interdisci- plinary printing studio.
+
+
+  Balmaceda Arte Joven is a public-private corpora- tion with the mission to bring art education to the youth.
+
+
+  ### Grants
+
+
+  ##### 2021
+
+
+  Regional New Media Arts Fund 2021 (FONDART) 
+
+
+  SENSIBLE:  Biodegradable electronic interfaces, new processes for electronic arts with sustainability focus for cultural circuits reactivation.)
+
+
+
+
+  ##### 2020
+
+
+  National Design Fund 2020 (FONDART) for the proyect 
+
+
+  Impresión con tintas conductivas: Expansión disciplinar del diseño gráfico.
+
+
+  Printing with conductive Inks: Disciplinary expansion for graphic design. 
+
+
+  ### Publications
+
+
+  ##### 2021
+
+
+  Published by Revista Estudios Sobre Arte Actual (Madrid, Spain) along with Dr. in Physics Carolina Espinoza
+
+
+  SENSIBLE: Investigation and experimentation on the creation of new tactile interfaces to communica- te with electronic devices. http://estudiossobrearteactual.com/wp-content/u- ploads/2020/10/15.-Carolina-Espinoza-e-Ignacio-Serrano.pdf
+
+
+  ### Lectures
+
+
+  ##### 2020
+
+
+  Conference lecture at IDEA20 (Cuenca, Ecuador) SENSIBLE: Investigation and experimentation on the creation of new tactile interfaces to communicate with electronic devices.
+
+
+  Along with Dr. in Physics Carolina Espinoza Oñate
+
+
+  ### Teaching Experience
+
+
+  ##### 2017 – 2019
+
+
+  Teacher of the Printing Workshop Programme at Balmaceda Arte Joven.
+
+
+  ##### 2014 – 2019
+
+
+  Screenprinting tutor for design and art projects at interdisciplinary studio POSIBLE.
+
+
+  ### Ad Honorem
+
+
+  ##### 2017 – Ongoing
+
+
+  Ad honorem founder and coordinator of Balmaceda Arte Joven Printing Studio for printing education for the youth.
 categories:
   - sdadasd,asdasd
 ---
-Armero, localizada a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande del departamento de Tolima, después de Ibagué y El Espinal.4​ Importante centro agrícola antes de la erupción, Armero producía cerca de una quinta parte del arroz de Colombia, además de algodón, sorgo y café. Gran parte de este éxito puede ser atribuido al Nevado del Ruiz, ya que el fértil suelo volcánico había estimulado el crecimiento agrícola.5​ Construido encima de un abanico aluvial que había presenciado otros lahares,6​ el pueblo había sido destruido previamente por una erupción en 1595 y por flujos de lodo en 1845.7​ En la erupción de 1595, tres erupciones plinianas distintas produjeron lahares que se cobraron la vida de 636 personas.8​9​ Durante el evento de 1845, 1000 personas murieron cerca del río Magdalena por flujos de lodo producidos por terremotos. [ulala](https://duckduckgo.com)
+### Education
 
-Armero, localizada a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande del departamento de Tolima, después de Ibagué y El Espinal.4​ Importante centro agrícola antes de la erupción, Armero producía cerca de una quinta parte del arroz de Colombia, además de algodón, sorgo y café. Gran parte de este éxito puede ser atribuido al Nevado del Ruiz, ya que el fértil suelo volcánico había estimulado el crecimiento agrícola.5​ Construido encima de un abanico aluvial que había presenciado otros lahares,6​ el pueblo había sido destruido previamente por una erupción en 1595 y por flujos de lodo en 1845.7​ En la erupción de 1595, tres erupciones plinianas distintas produjeron lahares que se cobraron la vida de 636 personas.8​9​ Durante el evento de 1845, 1000 personas murieron cerca del río Magdalena por flujos de lodo producidos por terremotos. [ulala](https://duckduckgo.com)
+##### 2012-2014
 
-Armero, localizada a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande del departamento de Tolima, después de Ibagué y El Espinal.4​ Importante centro agrícola antes de la erupción, Armero producía cerca de una quinta parte del arroz de Colombia, además de algodón, sorgo y café. Gran parte de este éxito puede ser atribuido al Nevado del Ruiz, ya que el fértil suelo volcánico había estimulado el crecimiento agrícola.5​ Construido encima de un abanico aluvial que había presenciado otros lahares,6​ el pueblo había sido destruido previamente por una erupción en 1595 y por flujos de lodo en 1845.7​ En la erupción de 1595, tres erupciones plinianas distintas produjeron lahares que se cobraron la vida de 636 personas.8​9​ Durante el evento de 1845, 1000 personas murieron cerca del río Magdalena por flujos de lodo producidos por terremotos. [ulala](https://duckduckgo.com)
+Fine Arts Bachelor
+
+Visual Arts School, Universidad Mayor, Santiago de Chile.
 
 
-Armero, localizada a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande del departamento de Tolima, después de Ibagué y El Espinal.4​ Importante centro agrícola antes de la erupción, Armero producía cerca de una quinta parte del **arroz** de Colombia, además de algodón, sorgo y café. Gran parte de este éxito puede ser atribuido al Nevado del Ruiz, ya que el fértil suelo volcánico había estimulado el crecimiento agrícola.5​ Construido encima de un abanico aluvial que había presenciado otros lahares,6​ el pueblo había sido destruido previamente por una erupción en 1595 y por flujos de lodo en 1845.7​ En la erupción de 1595, tres erupciones plinianas distintas produjeron lahares que se cobraron la vida de 636 personas.8​9​ Durante el evento de 1845, 1000 personas murieron cerca del río Magdalena por flujos de lodo producidos por terremotos. [ulala](https://duckduckgo.com)
+
+##### 2007-2010
+
+##### Professional Photography
+
+ARCOS Institute, Santiago de Chile.
+
+
+
+##### 2006
+
+Pre-Bachelor Arts Program for the Youth Fine Arts School, Universidad de Chile
+
+### Residencies
+
+##### 2021 - Ongoing
+
+Granted with second Residency in Balmaceda Arte Joven for its project SENSIBLE.
+
+##### 2021 - Ongoing
+
+Granted with Residency in FabLab Universidad de Chile. School of Physical and Mathematical Sciences. Universidad de Chile.
+
+##### 2018- Ongoing
+
+Granted with residency for a founder role at Balmaceda Arte Joven, for the creation of a printing studio with its proyect POSIBLE, creative interdisci- plinary printing studio.
+
+Balmaceda Arte Joven is a public-private corpora- tion with the mission to bring art education to the youth.
+
+### Grants
+
+##### 2021
+
+Regional New Media Arts Fund 2021 (FONDART) 
+
+SENSIBLE:  Biodegradable electronic interfaces, new processes for electronic arts with sustainability focus for cultural circuits reactivation.)
+
+
+
+##### 2020
+
+National Design Fund 2020 (FONDART) for the proyect 
+
+Impresión con tintas conductivas: Expansión disciplinar del diseño gráfico.
+
+Printing with conductive Inks: Disciplinary expansion for graphic design. 
+
+### Publications
+
+##### 2021
+
+Published by Revista Estudios Sobre Arte Actual (Madrid, Spain) along with Dr. in Physics Carolina Espinoza
+
+SENSIBLE: Investigation and experimentation on the creation of new tactile interfaces to communica- te with electronic devices. http://estudiossobrearteactual.com/wp-content/u- ploads/2020/10/15.-Carolina-Espinoza-e-Ignacio-Serrano.pdf
+
+### Lectures
+
+##### 2020
+
+Conference lecture at IDEA20 (Cuenca, Ecuador) SENSIBLE: Investigation and experimentation on the creation of new tactile interfaces to communicate with electronic devices.
+
+Along with Dr. in Physics Carolina Espinoza Oñate
+
+### Teaching Experience
+
+##### 2017 – 2019
+
+Teacher of the Printing Workshop Programme at Balmaceda Arte Joven.
+
+##### 2014 – 2019
+
+Screenprinting tutor for design and art projects at interdisciplinary studio POSIBLE.
+
+### Ad Honorem
+
+##### 2017 – Ongoing
+
+Ad honorem founder and coordinator of Balmaceda Arte Joven Printing Studio for printing education for the youth.
