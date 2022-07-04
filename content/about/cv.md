@@ -211,4 +211,4 @@ Profesor y tutor de proyectos en serigrafia en Posible.
 
 ##### 2017 – En. curso
 
-Fundador y coordinador del Taller de Grabado Balmaceda Arte Joven 
+Fundador y gestor del Taller de Grabado Balmaceda Arte Joven 
