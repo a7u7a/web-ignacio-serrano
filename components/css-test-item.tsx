@@ -2,10 +2,11 @@ import Image from "next/image";
 
 interface TestProps {
   className?: string;
+  label: number;
 }
 
-const TestItem = ({ className }: TestProps) => {
-  return <div className={`${className} w-12 h-12 bg-slate-500`}>hola</div>;
+const TestItem = ({ className, label }: TestProps) => {
+  return <div className={`${className} h-full bg-slate-500`}>{label}</div>;
 };
 
 export default TestItem;
