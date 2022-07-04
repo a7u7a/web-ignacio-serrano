@@ -29,7 +29,7 @@ const HeroItemText = ({ post, lang }: HeroItemTextProps) => {
     <div className="absolute z-30 text-white pt-10 sm:pt-12 md:pt-16 pl-4 sm:pl-8 md:pl-12 pr-8 pb-4">
       <Link href={`/sensiblog/${post.id}`}>
         <div className="flex flex-col cursor-pointer">
-          <div className="text-xs sm:text-xs md:text-sm max-w-min px-1 rounded font-bold text-zinc-800 mt-1 md:mt-2 bg-slate-200">
+          <div className="text-xs sm:text-xs md:text-sm max-w-min px-1 rounded font-bold text-zinc-100 mt-1 md:mt-2 bg-zinc-800">
             {post.category}
           </div>
           <div className=" font-serif mt-2 text-xl sm:text-xl md:text-4xl lg:text-6xl">
