@@ -5,7 +5,7 @@ body_eng: >-
   Born in Santiago, Chile (1989)
 
 
-  I'm a multimedia artist and researcher that transits among printing, design, electronics, animation, photography and sculpture. In the last years, I’ve been invested in techniques from a multitude of disciplines in the explora- tion of sustainable materials to incorporate in my practice, leading both art and science research on its formula- tion and application.
+  I'm a multimedia artist and researcher that transits among printing, design, electronics, animation, photography, instalations and material research. In the last years, I’ve been invested in techniques from a multitude of disciplines in the exploration of biodegradable materials to incorporate in my practice, leading both art and science research on its formulation and application.
 
 
   My work goes constantly alongside incorporating the technical limits of the media involved in the creative process and the recurrent search for the incorporation of decomposition as a formal and/or poetic form.
@@ -17,7 +17,7 @@ categories:
 ---
 Nacido en Santiago, Chile (1989)
 
-Soy un artista medial e investigador que transita entre la impresión, el diseño, la electrónica, animación e indagaciones materiales. Mi trabajo indaga recurrentemente los limites técnicos de los medios utilizados, buscando encontrar intersecciones que me permitan la incorporación de la descomposición como elemento formal/poético en mi práctica.
+Soy un artista medial e investigador que transita entre la impresión, el diseño, la electrónica, fotografa, animación, instalaciones e indagaciones materiales. Mi trabajo indaga recurrentemente los limites técnicos de los medios utilizados, buscando encontrar intersecciones que me permitan la incorporación de la descomposición como elemento formal/poético en mi práctica.
 
 En los últimos años, me he desenvuelto en una multitud de disciplinas para el desarrollo de tintas conductivas y experimentación de nuevos materiales, dirigiendo proyectos de investigación artística y cientifica para su formulación y pruebas de aplicación.
 
