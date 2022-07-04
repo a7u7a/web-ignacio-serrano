@@ -17,8 +17,8 @@ categories:
 ---
 Nacido en Santiago, Chile (1989)
 
-Soy un artista medial e investigador que transita entre la impresión, el diseño, la electrónica, animación e indagaciones materiales. Mi práctica explora recurrentemente los limites técnicos de los medios utilizados, buscando encontrar intersecciones que me permitan la incorporación de la descomposición como elemento formal/poético en mi trabajo.
+Soy un artista medial e investigador que transita entre la impresión, el diseño, la electrónica, animación e indagaciones materiales. Mi trabajo indaga recurrentemente los limites técnicos de los medios utilizados, buscando encontrar intersecciones que me permitan la incorporación de la descomposición como elemento formal/poético en mi práctica.
 
-En los últimos años, me he desenvuelto en una multitud de disciplinas para el desarrollo de tintas conductivas y experimentación de nuevos materiales que incorporar en mi paráctica, dirigiendo proyectos de investigación artística y cientifica para su formulación y pruebas de aplicación.
+En los últimos años, me he desenvuelto en una multitud de disciplinas para el desarrollo de tintas conductivas y experimentación de nuevos materiales, dirigiendo proyectos de investigación artística y cientifica para su formulación y pruebas de aplicación.
 
 Soy fundador de Posible, estudio de impresión y diseño experimental desde el 2011 y residente fundador del Taller de Grabado de Balmaceda Arte Joven desde el 2013, donde Posible reside como gestor y facilitador de técnicas de impresión para jóvenes en Santiago de Chile. Me he adjudicado dos Fondos de Cultura, Nacional Diseño 2020 y Regional Nuevos Medios 2021, asi como una residencia en el FabLab de la Facultad de Ciencias Fisicas y Matemáticas de la Universidad de Chile por mi trabajo en la formulación de tintas conductivas y diseño de materiales ligado a electronica especulativa biodegradable para nuevos medios en arte y educación en ciencias.
