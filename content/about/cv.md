@@ -2,6 +2,10 @@
 date: May 27, 2022 10:44 PM
 title: CV
 body_eng: >-
+  ### [CV
+  /download](https://drive.google.com/file/d/18Dex5RNFA7XCEo2FnVX8OazAwNJd654v/view?usp=sharing)
+
+
   ### Education
 
 
@@ -14,8 +18,6 @@ body_eng: >-
   Visual Arts School, Universidad Mayor, Santiago de Chile.
 
 
-
-
   ##### 2007-2010
 
 
@@ -23,8 +25,6 @@ body_eng: >-
 
 
   ARCOS Institute, Santiago de Chile.
-
-
 
 
   ##### 2006
@@ -67,8 +67,6 @@ body_eng: >-
 
 
   SENSIBLE:  Biodegradable electronic interfaces, new processes for electronic arts with sustainability focus for cultural circuits reactivation.)
-
-
 
 
   ##### 2020
