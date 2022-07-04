@@ -2,39 +2,23 @@
 date: May 27, 2022 10:44 PM
 title: Bio
 body_eng: >-
-  Once upon a time three distinct eruptive periods, the
+  Born in Santiago, Chile (1989)
 
-  first beginning 1.8 million years ago. During the present period (beginning
 
-  11,000 years ago), it has erupted at least twelve times, producing ashfalls,
+  I'm a multimedia artist and researcher that transits among printing, design, electronics, animation, photography and sculpture. In the last years, I’ve been invested in techniques from a multitude of disciplines in the explora- tion of sustainable materials to incorporate in my practice, leading both art and science research on its formula- tion and application.
 
-  pyroclastic flows, and lahars. The historically recorded eruptions have
 
-  primarily involved a central vent eruption (in the caldera) followed by an
+  My work goes constantly alongside incorporating the technical limits of the media involved in the creative process and the recurrent search for the incorporation of decomposition as a formal and/or poetic form.
 
-  explosive eruption, then the formation of lahars. Ruiz's earliest identified
 
-  Holocene eruption was in about 6660 BC, and further eruptions occurred around
-
-  1245, 850, 200 BC, and in about 350, 675, in 1350, 1541 (perhaps), 1570, 1595,
-
-  1623, 1805, 1826, 1828 (perhaps), 1829, 1831, 1833 (perhaps), 1845, 1916,
-
-  December 1984 through March 1985, 1987 through July 1991, and possibly in
-
-  April 1994. Many of these eruptions involved a central vent eruption, a flank
-
-  vent eruption, and a phreatic (steam) explosion. Ruiz is the second-most
-
-  active volcano in Colombia after Galeras.
-
-   April 1994. Many of these eruptions involved a central vent eruption, a flank
-  vent eruption, and a phreatic (steam) explosion. Ruiz is the second-most
-
-  active volcano in Colombia after Galeras. [Gobierno de chile](https://duckduckgo.com)
+  Founder of POSIBLE, experimental printing studio since 2013 and founder resident of Taller de Grabado Balmaceda Arte Joven since 2013, where my project POSIBLE resides as a facilitator of printing techniques and experimentation for the youth in Santiago de Chile. I've also been granted two FONDART (Public Merit Fund for the Arts granted by Chilean Government 2020 and 2021) and a Fablab Residency (School of Physical and Mathematical Sciences. Universidad de Chile.) for my research and creation project SENSIBLE, which indaga- tes in the sustainable incorporation of biodegradable electronics in graphic and material design on new media art installations and science education.
 categories:
   - asdsadsafaf,dsasd
 ---
-Todo partió a 48 km del Nevado del Ruiz y a 169 km de Bogotá, era la tercera población más grande del departamento de Tolima, después de Ibagué y El Espinal.4​ Importante centro agrícola antes de la erupción, Armero producía cerca de una quinta parte del arroz de Colombia, además de algodón, sorgo y café. Gran parte de este éxito puede ser atribuido al Nevado del Ruiz, ya que el fértil suelo volcánico había estimulado el crecimiento agrícola.5​ Construido encima de un abanico aluvial que había presenciado otros lahares,6​ el **pueblo había sido destruido** previamente por una erupción en 1595 y por flujos de lodo en 1845.7​ En la erupción de 1595, tres erupciones plinianas distintas produjeron lahares que se cobraron la vida de 636 personas.8​9​ Durante el evento de 1845, 1000 personas murieron cerca del río Magdalena por flujos de lodo producidos por terremotos.
+Nacido en Santiago, Chile (1989)
 
-Construido encima de un abanico aluvial que había presenciado otros lahares,6​ el pueblo había sido destruido previamente por una erupción en 1595 y por flujos de lodo en 1845. [Gobierno de chile](https://duckduckgo.com)
+Soy un artista medial e investigador que transita entre la impresión, el diseño, la electrónica, animación e indagaciones materiales. Mi práctica explora recurrentemente los limites técnicos de los medios utilizados, buscando encontrar intersecciones que me permitan la incorporación de la descomposición como elemento formal/poético en mi trabajo.
+
+En los últimos años, me he desenvuelto en una multitud de disciplinas para el desarrollo de tintas conductivas y experimentación de nuevos materiales que incorporar en mi paráctica, dirigiendo proyectos de investigación artística y cientifica para su formulación y pruebas de aplicación.
+
+Soy fundador de Posible, estudio de impresión y diseño experimental desde el 2011 y residente fundador del Taller de Grabado de Balmaceda Arte Joven desde el 2013, donde Posible reside como gestor y facilitador de técnicas de impresión para jóvenes en Santiago de Chile. Me he adjudicado dos Fondos de Cultura, Nacional Diseño 2020 y Regional Nuevos Medios 2021, asi como una residencia en el FabLab de la Facultad de Ciencias Fisicas y Matemáticas de la Universidad de Chile por mi trabajo en la formulación de tintas conductivas y diseño de materiales ligado a electronica especulativa biodegradable para nuevos medios en arte y educación en ciencias.
