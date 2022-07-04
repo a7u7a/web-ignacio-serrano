@@ -15,35 +15,37 @@ interface ChildProps {
 
 const FromMarkdown = ({ contentMd, className }: FromMarkdownProps) => {
   return (
-      <ReactMarkdown
-        children={contentMd}
-        className={className}
-        remarkPlugins={[remarkGfm]}
-        rehypePlugins={[rehypeRaw]}
-        components={{
-          // this should go into a separate component
-          blockquote: ({ node, ...props }) => {
-            if (node.properties && node.properties.id === "textOnImage") {
-              const text = (node.children[0] as ChildProps).value;
-              const src = node.properties.src as string;
-              const alt = node.properties.alt as string;
-              return (
-                <div className="w-full relative">
-                  <img alt={alt} src={src} className="w-full object-contain" />
-                  <div className="absolute w-full h-full top-0 left-0 p-4 overflow-auto">
-                    <span className="text-white leading-snug text-lg inline py-0.5 px-0.5 bg-black ">
-                      {text}
-                    </span>
-                  </div>
+    <ReactMarkdown
+      children={contentMd}
+      className={className}
+      remarkPlugins={[remarkGfm]}
+      rehypePlugins={[rehypeRaw]}
+      components={{
+        // this should go into a separate component
+        iframe: ({ node, ...props }) => {
+          return <iframe {...props} className="aspect-[16/9] w-full" />;
+        },
+        blockquote: ({ node, ...props }) => {
+          if (node.properties && node.properties.id === "textOnImage") {
+            const text = (node.children[0] as ChildProps).value;
+            const src = node.properties.src as string;
+            const alt = node.properties.alt as string;
+            return (
+              <div className="w-full relative">
+                <img alt={alt} src={src} className="w-full object-contain" />
+                <div className="absolute w-full h-full top-0 left-0 p-4 overflow-auto">
+                  <span className="text-white leading-snug text-lg inline py-0.5 px-0.5 bg-black ">
+                    {text}
+                  </span>
                 </div>
-              );
-            } else {
-              return <blockquote {...props} />;
-            }
-          },
-        }}
-      />
-    
+              </div>
+            );
+          } else {
+            return <blockquote {...props} />;
+          }
+        },
+      }}
+    />
   );
 };
 
