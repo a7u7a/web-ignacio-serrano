@@ -1,9 +1,9 @@
 ---
 date: May 27, 2022 10:43 PM
 title: Intro
-body_eng: Hello! Im Ignacio Serrano. On this About section you’ll be able to
+body_eng: Hello! I'm Ignacio Serrano. On this About section you'll be able to
   find information regarding my professional practice, CV and exhibitions. You
-  may also want visit [Sensiblog](https://duckduckgo.com), a repository for
+  may also visit [Sensiblog](https://duckduckgo.com), a repository for
   speculative biodegradable electronics, or [Posible](https://duckduckgo.com)
   for my work on printing, design, publishing and colabs.
 categories:
