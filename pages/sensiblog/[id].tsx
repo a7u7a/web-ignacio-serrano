@@ -8,7 +8,6 @@ import { sensiblogPost } from "../../interfaces/posts";
 import LanguageButton from "../../components/languageBtn";
 import DateEl from "../../components/date";
 import SideGradient from "../../components/side-gradient";
-// import FromMarkdownTest from "../../components/postFromMarkdown-test";
 import FromMarkdown from "../../components/postFromMarkdown";
 
 interface SensiblogPostProps {

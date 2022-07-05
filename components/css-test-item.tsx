@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useState, useEffect } from "react";
 
 interface TestProps {
   className?: string;
@@ -6,7 +7,16 @@ interface TestProps {
 }
 
 const TestItem = ({ className, label }: TestProps) => {
-  return <div className={`${className} h-full bg-slate-500`}>{label}</div>;
+  const [color, setColor] = useState("#FFFFFF");
+  return (
+    <div
+      className={`${
+        className ? className : ""
+      } h-full w-96 border border-amber-500 bg-slate-200`}
+    >
+      {label}
+    </div>
+  );
 };
 
 export default TestItem;
