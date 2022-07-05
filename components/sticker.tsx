@@ -21,19 +21,15 @@ function randomPosition(height: number, width: number) {
   };
 }
 
-const Sticker = ({
-  tag,
-  color,
-  id,
-  onEnter,
-  onExit,
-}: {
+interface StickerProps {
   tag: string;
-  color:string
+  color: string;
   id: string;
   onEnter: (id: string) => void;
   onExit: () => void;
-}) => {
+}
+
+const Sticker = ({ tag, color, id, onEnter, onExit }: StickerProps) => {
   const refContainer = useRef<HTMLInputElement>(null);
 
   const [angle, setA] = useState(randomAngle());
