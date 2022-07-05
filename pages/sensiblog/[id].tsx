@@ -8,7 +8,6 @@ import { sensiblogPost } from "../../interfaces/posts";
 import LanguageButton from "../../components/languageBtn";
 import DateEl from "../../components/date";
 import SideGradient from "../../components/side-gradient";
-import FromMarkdownTest from "../../components/postFromMarkdown-test";
 import FromMarkdown from "../../components/postFromMarkdown";
 
 interface SensiblogPostProps {
@@ -66,7 +65,7 @@ export default function Post({ post }: SensiblogPostProps) {
 
       <div className="">
 
-        <FromMarkdownTest contentMd={content} className="sensiblog" />
+        <FromMarkdown contentMd={content} className="sensiblog" />
       </div>
       
     </div>

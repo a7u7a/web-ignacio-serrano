@@ -59,7 +59,7 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
             collapsed ? "overflow-hidden h-screen" : "overflow-auto h-full"
           } h-max-screen no-scroll-bar`}
         >
-          <div className="flex flex-col m-6 items-center md:ml-14 md:mr-14 lg:ml-20 lg:mr-20 lg:max-w-2xl">
+          <div className="flex flex-col m-6 items-center md:ml-14 md:mr-14 lg:ml-20 lg:mr-20 lg:max-w-xl">
             
             <CajaRemedio />
 
@@ -76,7 +76,7 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
             <AboutSection
               className="bio"
               data={aboutData.filter((post) => post.id === "bio")[0]}
-              lang={lang}
+              lang={lang} 
             />
 
             <RandomButton />

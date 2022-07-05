@@ -28,7 +28,7 @@ const HeroItem = ({ post, lang }: HeroItemProps) => {
     <div className="relative w-4/6 shrink-0 snap-start overflow-hidden">
       <HeroItemText post={post} lang={lang} />
       {/* Opacity layer */}
-      <div className="absolute w-full h-full bg-black opacity-30 z-20 " />
+      <div className="absolute w-full h-full bg-black opacity-30 z-20" />
       <Image
         src={post.thumbnail}
         layout="responsive"
