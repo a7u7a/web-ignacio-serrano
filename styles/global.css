@@ -3,27 +3,50 @@
 @tailwind utilities;
 
 .intro {
-  @apply max-w-xl prose prose-lg prose-p:leading-snug prose-p:text-black prose-p:font-semibold text-center prose-a:text-verde;
+  @apply max-w-xl text-center
+  prose prose-lg 
+  prose-p:leading-snug prose-p:text-black prose-p:font-semibold 
+  prose-a:text-verde;
 }
 
 .bio {
-  @apply mt-10 max-w-xl prose prose-sm prose-p:text-justify prose-p:leading-snug prose-a:font-normal prose-a:text-verde;
+  @apply mt-10 max-w-xl 
+  prose prose-sm 
+  prose-p:text-justify prose-p:leading-snug 
+  prose-a:font-normal prose-a:text-verde;
 }
 
 .cv {
-  @apply mt-10 max-w-lg prose prose-sm prose-p:leading-tight prose-a:font-normal prose-a:text-verde;
+  @apply mt-10 max-w-lg 
+  prose prose-sm 
+  prose-p:leading-tight 
+  prose-a:text-verde prose-a:font-normal;
 }
 
 .md-modal {
-  @apply text-center prose  prose-neutral prose-sm prose-p:leading-snug prose-h2:font-semibold prose-h2:text-white prose-p:text-white prose-a:text-verde;
+  @apply text-center 
+  prose prose-neutral prose-sm 
+  prose-h2:font-semibold prose-h2:text-white 
+  prose-p:leading-snug prose-p:text-white
+  prose-a:text-verde;
 }
 
 .feed {
-  @apply mt-8 prose prose-sm max-w-xl prose-p:leading-tight prose-p:text-white prose-h1:text-white prose-h1:font-light prose-h2:text-white prose-h3:text-white prose-tr:text-white prose-th:text-white prose-h4:text-white prose-a:font-normal prose-a:text-verde;
+  @apply mt-8 prose prose-sm max-w-xl 
+  prose-p:leading-tight prose-p:text-white 
+  prose-h1:text-white prose-h1:font-light
+  prose-h2:text-white prose-h3:text-white prose-h4:text-white
+  prose-tr:text-white prose-th:text-white  
+  prose-a:text-verde prose-a:font-normal;
 }
 
 .sensiblog {
-  @apply grid grid-cols-3 grid-rows-3  prose-p:w-1/2 prose-p:shrink-0 prose-sm prose-invert prose prose-img:mt-0 prose-img:mb-0 prose-p:mt-0 prose-p:leading-snug prose-p:ml-0 prose-h1:font-light prose-a:font-normal prose-a:text-verde;
+  @apply flex flex-row space-x-6
+  prose-sm prose-invert prose 
+  prose-img:mt-0 prose-img:mb-0 
+  prose-p:mt-0 prose-p:leading-snug prose-p:ml-0 prose-p:w-96
+  prose-h1:font-light 
+  prose-a:font-normal prose-a:text-verde;
 }
 
 /* Hide scrollbar for Chrome */
@@ -33,6 +56,6 @@
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .no-scroll-bar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
