@@ -29,45 +29,7 @@ export default function Post({ post }: SensiblogPostProps) {
 
   return (
     <div className="flex flex-col md:flex-row h-screen w-screen pl-12 py-12 bg-black overflow-x-auto">
-      <SideGradient />
-      <div className="flex flex-col w-2/6 max-w-lg mr-12">
-        {/* Header */}
-        <div className="flex flex-row justify-between w-full">
-          <Link href={"/sensiblog"}>
-            <div className="h-20 w-48 relative cursor-pointer">
-              <Image
-                objectFit="contain"
-                src={"/images/sensiblog.png"}
-                layout="fill"
-              />
-            </div>
-          </Link>
-          <LanguageButton onClick={toggleLang} lang={lang} color="white" />
-        </div>
-
-        <div className="text-white">
-          {/* Title */}
-          <div className="mt-12 text-5xl font-serif text-white">{title}</div>
-
-          {/* Date */}
-          <div className="text-sm mt-8">
-            <DateEl dateString={post.date} />
-          </div>
-
-          {/* Tags */}
-          <div className="mt-4">
-            {post.tags.map((tag) => (
-              <p key={tag} className="inline mr-2">{`#${tag}`}</p>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      <div className="">
-
-        <FromMarkdown contentMd={content} className="sensiblog" />
-      </div>
-      
+      <FromMarkdown contentMd={content} className="sensiblog" />
     </div>
   );
 }

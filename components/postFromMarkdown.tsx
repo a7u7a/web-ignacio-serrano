@@ -22,7 +22,11 @@ const FromMarkdown = ({ contentMd, className }: FromMarkdownProps) => {
       rehypePlugins={[rehypeRaw]}
       components={{
         // this should go into a separate component
+        div: ({ node, ...props }) => {
+          return <div {...props} className="w-96" />;
+        },
         iframe: ({ node, ...props }) => {
+          // mostly used for youtube videos
           return <iframe {...props} className="aspect-[16/9] w-full" />;
         },
         blockquote: ({ node, ...props }) => {
