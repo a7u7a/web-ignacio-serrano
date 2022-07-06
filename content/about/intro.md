@@ -10,6 +10,7 @@ categories:
   - grr
 ---
 
-Hola, soy Ignacio Serrano. En esta sección encontrarás información sobre mi practica profesional, CV y exhibiciones. 
-Tambin te puede interesar [Posible](https://duckduckgo.com) para mi trabajo en impresión, diseño y objetos o [Sensiblog](https://duckduckgo.com), repositorio de procesos ligados a electrónica especulativa biodegradable.
+HJola! En esta sección encontrarás información sobre mi practica profesional, CV y exhibiciones. 
+Visita[Posible](https://duckduckgo.com) para mi trabajo en impresión, diseño y objetos. 
+Puede interesarte tambien [Sensiblog](https://duckduckgo.com), repositorio de procesos ligados a electrónica especulativa biodegradable.
 
