@@ -1,13 +1,7 @@
 import { useState, useEffect } from "react";
 import { GetStaticProps, GetStaticPaths } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
 import { getAllPostIds, getSensiblogPost } from "../../lib/posts";
 import { sensiblogPost } from "../../interfaces/posts";
-import LanguageButton from "../../components/languageBtn";
-import DateEl from "../../components/date";
-import SideGradient from "../../components/side-gradient";
 import FromMarkdown from "../../components/postFromMarkdown";
 
 interface SensiblogPostProps {
