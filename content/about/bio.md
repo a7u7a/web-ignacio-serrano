@@ -17,7 +17,7 @@ categories:
 ---
 Nacido en Santiago, Chile (1989)
 
-Soy un artista medial e investigador que transita entre la impresión, el diseño, la electrónica, fotografa, animación, instalaciones e indagaciones materiales. Mi trabajo indaga recurrentemente los limites técnicos de los medios utilizados, buscando encontrar intersecciones que me permitan la incorporación de la descomposición como elemento formal/poético en mi práctica.
+Artista medial e investigador que transita entre la impresión, el diseño, la electrónica, fotografa, animación, instalaciones e indagaciones materiales. Mi trabajo indaga recurrentemente los limites técnicos de los medios utilizados, buscando encontrar intersecciones que me permitan la incorporación de la descomposición como elemento formal/poético en mi práctica.
 
 En los últimos años, me he desenvuelto en una multitud de disciplinas para el desarrollo de tintas conductivas y experimentación de nuevos materiales, dirigiendo proyectos de investigación artística y cientifica para su formulación y pruebas de aplicación.
 
