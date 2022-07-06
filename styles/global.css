@@ -41,7 +41,7 @@
 }
 
 .sensiblog {
-  @apply flex flex-row space-x-6
+  @apply flex flex-row px-12 py-12 w-full
   prose-sm prose-invert prose 
   prose-img:mt-0 prose-img:mb-0 
   prose-p:mt-0 prose-p:leading-snug prose-p:ml-0 prose-p:w-96

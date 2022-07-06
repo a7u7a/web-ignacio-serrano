@@ -3,7 +3,7 @@ import { feedPost } from "../interfaces/posts";
 import { useState, useRef } from "react";
 import { X } from "phosphor-react";
 import Sticker from "./sticker";
-import FromMarkdown from "./postFromMarkdown";
+import FromMarkdown from "./from-markdown";
 import XButton from "./xBtn";
 
 export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {

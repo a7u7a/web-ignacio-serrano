@@ -14,6 +14,7 @@ interface sensiblogProps {
 }
 
 const Sensiblog = ({ allSensiblogPosts, modalContents }: sensiblogProps) => {
+
   const [lang, setLang] = useState("spa");
 
   function toggleLang() {

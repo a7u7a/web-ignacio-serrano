@@ -33,7 +33,7 @@ const SensiblogNavbar = ({
           <div className="h-16 md:h-20 lg:h-24 w-44 md:w-48 lg:w-52 ml-0 sm:ml-20 mr-0 sm:mr-14 mt-3 relative">
             <Image
               objectFit="contain"
-              src={"/images/sensiblog.png"}
+              src={"/images/sensiblog.gif"}
               layout="fill"
             />
           </div>

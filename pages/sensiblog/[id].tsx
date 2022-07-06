@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { GetStaticProps, GetStaticPaths } from "next";
 import { getAllPostIds, getSensiblogPost } from "../../lib/posts";
 import { sensiblogPost } from "../../interfaces/posts";
-import FromMarkdown from "../../components/postFromMarkdown";
+import FromMarkdown from "../../components/from-markdown";
 
 interface SensiblogPostProps {
   post: sensiblogPost;
@@ -22,8 +22,9 @@ export default function Post({ post }: SensiblogPostProps) {
   }
 
   return (
-    <div className="flex flex-col md:flex-row h-screen w-screen pl-12 py-12 bg-black overflow-x-auto">
+    <div className="flex flex-row h-screen w-screen bg-black overflow-x-auto">
       <FromMarkdown contentMd={content} className="sensiblog" />
+      <div className="text-white">hola</div>
     </div>
   );
 }

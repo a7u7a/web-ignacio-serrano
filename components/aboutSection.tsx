@@ -1,5 +1,5 @@
 import { aboutPost } from "../interfaces/posts";
-import FromMarkdown from "./postFromMarkdown";
+import FromMarkdown from "./from-markdown";
 
 interface AboutSectionProps {
   data: aboutPost;
