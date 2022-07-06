@@ -4,6 +4,8 @@ import rehypeRaw from "rehype-raw";
 import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
 
+// Almost identical to components/from-markdown.tsx but deals with column divs for horizontal scrolling layout
+
 interface FromMarkdownProps {
   contentMd: string;
   className: string;
@@ -21,9 +23,9 @@ const FromMarkdown = ({ contentMd, className }: FromMarkdownProps) => {
       remarkPlugins={[remarkGfm]}
       rehypePlugins={[rehypeRaw]}
       components={{
-        // this should go into a separate component
         div: ({ node, ...props }) => {
-          return <div {...props} className="w-96" />;
+          console.log("node", node);
+          return <div {...props} className="sensiblog" />;
         },
         iframe: ({ node, ...props }) => {
           // used for youtube videos
@@ -36,9 +38,13 @@ const FromMarkdown = ({ contentMd, className }: FromMarkdownProps) => {
             const alt = node.properties.alt as string;
             return (
               <div className="w-full relative">
-                <img alt={alt} src={src} className="w-full object-contain" />
+                <img
+                  alt={alt}
+                  src={src}
+                  className="w-full object-contain"
+                />
                 <div className="absolute w-full h-full top-0 left-0 p-4 overflow-auto">
-                  <span className="text-white leading-snug text-lg inline py-0.5 px-0.5 bg-black ">
+                  <span className="text-white leading-snug text-base inline py-0.5 px-0.5 bg-black">
                     {text}
                   </span>
                 </div>
