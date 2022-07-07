@@ -80,7 +80,6 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
               lang={lang}
             />
 
-
             {/* CV */}
             <div className="mt-0 left-0 w-full">
               <AboutSection
