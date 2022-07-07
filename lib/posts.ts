@@ -117,23 +117,22 @@ export const getSortedSensiblogPosts = (): sensiblogPost[] => {
 }
 
 /**
- * Finds posts whose tags intersect with intput tags
- * Returns 
+ * Finds posts whose tags intersect with intput tags.
+ * Skips post with same id as idSkip
  */
 
-export const getRelatedSensiblogPosts = (targetTags: string[]): sensiblogPost[] => {
+export const getRelatedSensiblogPosts = (targetTags: string[], idSkip: string): sensiblogPost[] => {
   const allPosts = getSortedSensiblogPosts()
   const xPosts: sensiblogPost[] = []
   allPosts.map(post => {
     // find intersecting tags for current post, if any
     const currentTags = post.tags
     const xTags = currentTags.filter(tag => targetTags.includes(tag))
-    // console.log("targetTags", targetTags, "currentTags", currentTags, "xTags", xTags);
-    if (xTags.length > 0) {
+    console.log(post.id, idSkip);
+    if (xTags.length > 0 && post.id !== idSkip ) {
       xPosts.push(post)
     }
   })
-  // console.log("intersectingPosts", intersectingPosts);
   return xPosts
 }
 

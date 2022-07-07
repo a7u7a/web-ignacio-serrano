@@ -76,7 +76,8 @@ export default function Post({ post, relatedPosts }: SensiblogPostProps) {
                 </p>
               ))}
             </div>
-
+            
+            {/* Related posts */}
             <div className="mt-12 ">
               <RelatedPosts posts={relatedPosts} lang={lang} />
             </div>
@@ -103,8 +104,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const post = getSensiblogPost(params!.id as string);
-  console.log("target tags", post.tags);
-  const relatedPosts = getRelatedSensiblogPosts(post.tags);
+  const relatedPosts = getRelatedSensiblogPosts(post.tags, post.id);
   return {
     props: {
       post,

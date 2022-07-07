@@ -88,10 +88,18 @@ La tragedia de Armero fue un desastre natural producto de la erupción del volc�
 <blockquote id="textOnImage" src="/uploads/screen-shot-2021-12-24-at-16.32.48.png" alt="burbujitas">Este espacio es para poner texto que 
 alcance a estar <a href="url">link text</a> dentro de la imagen</blockquote>
 
+
+</div>
+
+
+<div>
+
+
 ![Alga](/uploads/screen-shot-2022-02-02-at-23.14.13.png "Un pie de foto por aquí")
 
 
 </div>
+
 
 <div>
 
