@@ -41,10 +41,10 @@
 }
 
 .sensiblog {
-  @apply shrink-0 max-w-none w-5/12
+  @apply shrink-0 max-w-none w-7/12 pr-20
   prose prose-sm prose-invert
   prose-img:mt-0 prose-img:mb-3 
-  prose-p:mt-0 prose-p:leading-snug prose-p:ml-0 prose-p:mb-3
+  prose-p:mt-0 prose-p:leading-snug prose-p:ml-0 prose-p:mb-3 prose-p:w-full
   prose-h1:mb-3 prose-h2:mb-3 prose-h3:mb-3
   prose-a:text-verde;
 }
