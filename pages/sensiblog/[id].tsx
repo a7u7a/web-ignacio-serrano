@@ -37,12 +37,11 @@ export default function Post({ post, relatedPosts }: SensiblogPostProps) {
   return (
     <div className="flex justify-between flex-row h-screen bg-black overflow-x-auto">
       <UpButton color="white" href="/sensiblog" />
-      <div className="p-12">
-        <SideGradient />
-
+      <SideGradient />
+      <div className="p-10">
         <div className="flex flex-col">
           {/* Header */}
-          <div className="flex flex-row justify-between w-96">
+          <div className="flex flex-row justify-between w-80">
             <Link href={"/sensiblog"}>
               <div className="h-20 w-48 relative cursor-pointer">
                 <Image
@@ -69,16 +68,15 @@ export default function Post({ post, relatedPosts }: SensiblogPostProps) {
 
             {/* Tags */}
             <div className="text-sm mt-4">
-              Tags:
               {post.tags.map((tag, i) => (
-                <p key={i} className="inline pl-2">
-                  {`${tag}`}
+                <p key={i} className="inline pr-2">
+                  {`#${tag}`}
                 </p>
               ))}
             </div>
-            
+
             {/* Related posts */}
-            <div className="mt-12 ">
+            <div className="mt-10 ">
               <RelatedPosts posts={relatedPosts} lang={lang} />
             </div>
           </div>

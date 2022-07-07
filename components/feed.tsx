@@ -83,7 +83,7 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
                 Siguiente
               </button>
             </div>
-            <div className="text-3xl font-light text-white mt-6 underline decoration-verde decoration-2 decoration-wavy underline-offset-1">
+            <div className="text-3xl font-light text-white mt-6">
               {articleDisplay?.title}
             </div>
             <div className="text-xs text-gray-600 mt-4">

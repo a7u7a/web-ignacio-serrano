@@ -49,7 +49,7 @@ La tragedia de Armero fue un desastre natural producto de la erupción del volc�
 
 ## Otro texto tremendo
 
-### Mas texto por aca
+### más texto por acá
 <div>
 La tragedia de Armero fue un desastre natural producto de la erupción del volcán Nevado del Ruiz el miércoles 13 de noviembre de 1985, afectando a los departamentos de Caldas y Tolima, Colombia. Tras sesenta y nueve años de inactividad, la [erupción](https://duckduckgo.com) tomó por sorpresa a los poblados cercanos, a pesar de que el Gobierno había recibido advertencias por parte de múltiples organismos vulcanológicos desde la aparición de los primeros indicios de actividad volcánica en septiembre de 1985.
 
