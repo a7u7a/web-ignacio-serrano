@@ -59,7 +59,7 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
             collapsed ? "overflow-hidden h-screen" : "overflow-auto h-full"
           } h-max-screen no-scroll-bar`}
         >
-          <div className="flex flex-col m-6 items-center md:ml-14 md:mr-14 lg:ml-20 lg:mr-20 lg:max-w-xl">
+          <div className="flex flex-col items-center m-6 md:ml-14 md:mr-14 lg:ml-20 lg:mr-20 lg:max-w-xl">
             <CajaRemedio />
 
             {/* Intro */}
@@ -71,6 +71,8 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
 
             <SocialAbout />
 
+            <RandomButton />
+
             {/* Bio */}
             <AboutSection
               className="bio"
@@ -78,17 +80,9 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
               lang={lang}
             />
 
-            <RandomButton />
 
             {/* CV */}
-            <div className="mt-10 left-0 w-full">
-              <div className="w-3/12 mb-4">
-                <Image
-                  height={100}
-                  width={100 * 1.09}
-                  src={"/images/cv.png"}
-                ></Image>
-              </div>
+            <div className="mt-0 left-0 w-full">
               <AboutSection
                 className="cv"
                 data={aboutData.filter((post) => post.id === "cv")[0]}

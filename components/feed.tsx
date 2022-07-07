@@ -57,7 +57,7 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
   return (
     <>
       <div
-        className="relative w-full md:w-1/2 bg-no-repeat bg-center bg-cover bg-violet-400"
+        className="relative w-full md:w-1/2 bg-no-repeat bg-center bg-cover"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         {/* Article modal (make comp)*/}

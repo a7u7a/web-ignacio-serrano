@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .intro {
-  @apply max-w-xl text-center
+  @apply mt-8 max-w-xl text-center
   prose prose-lg 
   prose-p:leading-snug prose-p:text-black prose-p:font-semibold 
   prose-a:text-verde;
@@ -17,7 +17,7 @@
 }
 
 .cv {
-  @apply mt-10 max-w-lg 
+  @apply mt-6 max-w-lg 
   prose prose-sm 
   prose-p:leading-tight 
   prose-a:text-verde prose-a:font-normal;

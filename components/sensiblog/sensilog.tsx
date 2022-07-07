@@ -18,11 +18,11 @@ function getCategories(allPosts: sensiblogPost[]) {
 const SensiCatalog = ({ allSensiblogPosts, lang }: SensiCatalogProps) => {
   const categories = getCategories(allSensiblogPosts);
   return (
-    <ScrollSync>
+    
       <div className="relative flex flex-col w-full space-y-3">
         <SectionTab tabText="Categorías" />
         {categories.map((category) => (
-          <ScrollSyncPane>
+          
             <div
               className="flex flex-row overflow-x-auto space-x-3 pr-32 no-scroll-bar"
               key={category}
@@ -38,10 +38,10 @@ const SensiCatalog = ({ allSensiblogPosts, lang }: SensiCatalogProps) => {
                   <IndexEntry post={post} lang={lang} key={post.id} />
                 ))}
             </div>
-          </ScrollSyncPane>
+          
         ))}
       </div>
-    </ScrollSync>
+    
   );
 };
 

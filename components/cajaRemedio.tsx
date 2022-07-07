@@ -7,8 +7,19 @@ import {
   extend,
   ReactThreeFiber,
 } from "@react-three/fiber";
-import { PerspectiveCamera } from "@react-three/drei";
+import { PerspectiveCamera, useGLTF } from "@react-three/drei";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import { DDSLoader } from "three-stdlib";
+import { GLTF as GLTFThree } from "three/examples/jsm/loaders/GLTFLoader";
+
+THREE.DefaultLoadingManager.addHandler(/\.dds$/i, new DDSLoader());
+
+declare module "three-stdlib" {
+  export interface GLTF extends GLTFThree {
+    nodes: Record<string, THREE.Mesh>;
+    materials: Record<string, THREE.Material>;
+  }
+}
 
 extend({ OrbitControls });
 declare global {
@@ -34,34 +45,67 @@ const CameraControls = () => {
   // Ref to the controls, so that we can update them on every frame using useFrame
   const controls = useRef<OrbitControls>(null);
   useFrame((state) => controls.current!.update());
-  return <orbitControls ref={controls} args={[camera, domElement]} enableZoom={false} />;
+  return (
+    <orbitControls
+      ref={controls}
+      args={[camera, domElement]}
+      enableZoom={false}
+    />
+  );
 };
 
-function Box(props: JSX.IntrinsicElements["mesh"]) {
+const Model: React.FC<{
+  props: {
+    position: THREE.Vector3;
+    rotation: THREE.Euler;
+    scale: THREE.Vector3;
+  };
+  id: number;
+}> = ({ props, id }) => {
   const ref = useRef<THREE.Mesh>(null!);
-
-  useFrame((state, delta) => (ref.current.rotation.y += 0.01));
-
+  useFrame((state, delta) => (ref.current.rotation.x += -0.01));
+  const { nodes } = useGLTF("/glb/ignacioserranol.glb");
+  const name = "REAL";
+  const node = nodes[name].children[id] as THREE.Mesh;
+  console.log("node", node);
   return (
-    <mesh {...props} ref={ref} scale={1}>
-      <boxGeometry args={[0.5, 1, 2]} />
-      <meshStandardMaterial color={0xb4af9f} />
-    </mesh>
+    <mesh
+      ref={ref}
+      name={name}
+      geometry={node.geometry}
+      material={node.material}
+      {...props}
+      dispose={null}
+    />
   );
-}
+};
 
-const CajaRemedio = () => {
+const MainScene = () => {
+  const faces = Array.from(Array(6).keys());
   return (
-    <div className="h-80">
+    <div className="h-80 w-full">
       <Canvas>
         <CameraControls />
-        <PerspectiveCamera makeDefault position={[2.5, 1.5, 2.5]} zoom={1.5} />
+        <PerspectiveCamera makeDefault position={[4.5, 1.5, 4.5]} zoom={1.5} />
         <ambientLight />
         <pointLight position={[10, 10, 10]} />
-        <Box position={[0, .2, 0]} />
+
+        <group rotation={new THREE.Euler(0, 0, THREE.MathUtils.degToRad(-90))}>
+          {faces.map((faceId) => (
+            <Model
+              id={faceId}
+              key={faceId}
+              props={{
+                position: new THREE.Vector3(0, 0, 0),
+                rotation: new THREE.Euler(0, 0, 0),
+                scale: new THREE.Vector3(1, .5, 2),
+              }}
+            />
+          ))}
+        </group>
       </Canvas>
     </div>
   );
 };
 
-export default CajaRemedio;
+export default MainScene;
