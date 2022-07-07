@@ -21,7 +21,7 @@ const SensiblogNavbar = ({
   return (
     <div>
       <div className="sticky inset-x-0 top-0 flex items-center flex-col sm:flex-row justify-between w-full z-40 bg-black">
-      <UpButton color="white" />
+      <UpButton color="white" href="/" />
         <SensiblogModal
           content={modalContent}
           visible={visible}

@@ -1,6 +1,8 @@
-// fix any
+
+// wip
+
 interface BlockquoteProps {
-  node: any;
+  node: any; // fix
 }
 
 interface ChildProps {

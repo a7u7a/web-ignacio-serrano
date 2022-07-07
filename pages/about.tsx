@@ -50,7 +50,7 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
       <div className="w-full md:w-1/2">
         {/* about top buttons */}
         <div className="flex absolute flex-row p-6 justify-end w-1/2 z-50">
-          <UpButton color="black" />
+          <UpButton color="black" href="/" />
           <LanguageButton onClick={toggleLang} lang={lang} color="black" />
         </div>
 
@@ -60,7 +60,6 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
           } h-max-screen no-scroll-bar`}
         >
           <div className="flex flex-col m-6 items-center md:ml-14 md:mr-14 lg:ml-20 lg:mr-20 lg:max-w-xl">
-            
             <CajaRemedio />
 
             {/* Intro */}
@@ -76,7 +75,7 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
             <AboutSection
               className="bio"
               data={aboutData.filter((post) => post.id === "bio")[0]}
-              lang={lang} 
+              lang={lang}
             />
 
             <RandomButton />
@@ -113,7 +112,6 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
               {collapsed ? "Expandir" : "Contraer"}
             </button>
           </div>
-
         </div>
       </div>
       <Feed feedPosts={allFeedData} />

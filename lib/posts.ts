@@ -73,7 +73,7 @@ export const getSortedFeedPosts = (): feedPost[] => {
     // Use gray-matter to parse the post metadata section
     const matterResult = matter(fileContents)
     const contentSpanish = matterResult.content
-    // Combine the data with the id
+
     return {
       id,
       title: matterResult.data.title,
@@ -100,7 +100,7 @@ export const getSortedSensiblogPosts = (): sensiblogPost[] => {
     // Use gray-matter to parse the post metadata section
     const matterResult = matter(fileContents)
     const contentSpanish = matterResult.content
-    // Combine the data with the id
+
     return {
       id,
       title: matterResult.data.title,
@@ -121,6 +121,9 @@ export const getSensiblogPost = (id: string): sensiblogPost => {
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   const matterResult = matter(fileContents)
   const contentSpanish = matterResult.content
+  const contentEnglish = matter(matterResult.data.body_eng)
+  const contentEnglishOut = contentEnglish.content.split('\n').join("\r\n")
+  console.log("contentEnglish.content", contentEnglishOut);
   return {
     id,
     title: matterResult.data.title,
@@ -129,7 +132,7 @@ export const getSensiblogPost = (id: string): sensiblogPost => {
     contentSpanish,
     tags: matterResult.data.tags,
     title_eng: matterResult.data.title_eng,
-    contentEnglish: matterResult.data.body_eng,
+    contentEnglish: contentEnglishOut,
     category: matterResult.data.category
   }
 }

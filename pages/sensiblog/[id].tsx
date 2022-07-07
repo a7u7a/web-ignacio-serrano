@@ -1,22 +1,17 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { GetStaticProps, GetStaticPaths } from "next";
-import { getAllPostIds, getSensiblogPost } from "../../lib/posts";
-import { sensiblogPost } from "../../interfaces/posts";
-import ReactMarkdown from "react-markdown";
-import FromMarkdownToSensiblog from "../../components/sensiblog/from-markdown";
-import SideGradient from "../../components/side-gradient";
 import Image from "next/image";
 import Link from "next/link";
-import remarkGfm from "remark-gfm";
-import rehypeRaw from "rehype-raw";
+import { getAllPostIds, getSensiblogPost } from "../../lib/posts";
+import { sensiblogPost } from "../../interfaces/posts";
+import FromMarkdownToSensiblog from "../../components/sensiblog/from-markdown";
+import SideGradient from "../../components/side-gradient";
 import LanguageButton from "../../components/languageBtn";
 import DateEl from "../../components/date";
+import UpButton from "../../components/upBtn";
 
 interface SensiblogPostProps {
   post: sensiblogPost;
-}
-interface ChildProps {
-  value: string;
 }
 
 export default function Post({ post }: SensiblogPostProps) {
@@ -34,7 +29,8 @@ export default function Post({ post }: SensiblogPostProps) {
 
   return (
     <div className="flex justify-between flex-row h-screen bg-black overflow-x-auto">
-       <div className="pl-12 pt-12 pb-12">
+      <UpButton color="white" href="/sensiblog" />
+      <div className="p-12">
         <SideGradient />
         <div className="flex flex-col">
           {/* Header */}
@@ -72,7 +68,7 @@ export default function Post({ post }: SensiblogPostProps) {
       <div>
         <FromMarkdownToSensiblog
           contentMd={content}
-          className="flex flex-row w-full space-x-12 p-12 "
+          className="flex flex-row w-full pt-12 pb-12"
         />
       </div>
     </div>
@@ -89,7 +85,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const post = getSensiblogPost(params!.id as string);
-  return {
+  return { 
     props: {
       post,
     },

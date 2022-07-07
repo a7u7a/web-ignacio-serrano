@@ -15,7 +15,7 @@ interface ChildProps {
   value: string;
 }
 
-const FromMarkdown = ({ contentMd, className }: FromMarkdownProps) => {
+const FromMarkdownSensiblog = ({ contentMd, className }: FromMarkdownProps) => {
   return (
     <ReactMarkdown
       children={contentMd}
@@ -24,12 +24,11 @@ const FromMarkdown = ({ contentMd, className }: FromMarkdownProps) => {
       rehypePlugins={[rehypeRaw]}
       components={{
         div: ({ node, ...props }) => {
-          console.log("node", node);
           return <div {...props} className="sensiblog" />;
         },
         iframe: ({ node, ...props }) => {
           // used for youtube videos
-          return <iframe {...props} className="aspect-[16/9] w-full" />;
+          return <iframe {...props} className="aspect-[16/9] w-full pt-0" />;
         },
         blockquote: ({ node, ...props }) => {
           if (node.properties && node.properties.id === "textOnImage") {
@@ -38,11 +37,7 @@ const FromMarkdown = ({ contentMd, className }: FromMarkdownProps) => {
             const alt = node.properties.alt as string;
             return (
               <div className="w-full relative">
-                <img
-                  alt={alt}
-                  src={src}
-                  className="w-full object-contain"
-                />
+                <img alt={alt} src={src} className="w-full object-contain" />
                 <div className="absolute w-full h-full top-0 left-0 p-4 overflow-auto">
                   <span className="text-white leading-snug text-base inline py-0.5 px-0.5 bg-black">
                     {text}
@@ -59,4 +54,4 @@ const FromMarkdown = ({ contentMd, className }: FromMarkdownProps) => {
   );
 };
 
-export default FromMarkdown;
+export default FromMarkdownSensiblog;
