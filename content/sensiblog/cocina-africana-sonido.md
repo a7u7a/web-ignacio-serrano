@@ -6,7 +6,7 @@ tags:
   - biofabricacion
   - workshop
 title: Post demo contenidos Sensiblog
-title_eng: Post demo contenidos Sensiblog
+title_eng: Sensiblog contents demo post
 body_eng: >-
   <div>
 
@@ -38,7 +38,7 @@ body_eng: >-
   alcance a estar dentro de la imagen</blockquote>
 
 
-  ### Video de Vimeo
+  ### Vimeo
 
 
   <iframe width="560" height="315" src="https://player.vimeo.com/video/715263826?h=d16c98d0cd" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe><script src="https://player.vimeo.com/api/player.js"></script>
@@ -50,7 +50,7 @@ body_eng: >-
   <div>
 
 
-  ### Mas texto por aca
+  ### More text
 
   The Armero tragedy occurred following the eruption of the Nevado del Ruiz stratovolcano in Tolima, Colombia, on November 13, 1985. After 69 years of [dormancy](https://duckduckgo.com), the volcano's eruption caught nearby towns unaware, even though the government had received warnings.
 
@@ -65,7 +65,7 @@ body_eng: >-
 
   The Armero tragedy occurred following the eruption of the Nevado del Ruiz stratovolcano in Tolima, Colombia, on November 13, 1985. After 69 years of [dormancy](https://duckduckgo.com), the volcano's eruption caught nearby towns unaware, even though the government had received warnings.
 
-  #### Fin
+  #### The end
 
   The Armero tragedy occurred following the eruption of the Nevado del Ruiz stratovolcano in Tolima, Colombia, on November 13, 1985. After 69 years of [dormancy](https://duckduckgo.com), the volcano's eruption caught nearby towns unaware, even though the government had received warnings.
 

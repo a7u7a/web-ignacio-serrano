@@ -116,14 +116,35 @@ export const getSortedSensiblogPosts = (): sensiblogPost[] => {
   return sortSensiblogPosts(allPostsData)
 }
 
+/**
+ * Finds posts whose tags intersect with intput tags
+ * Returns 
+ */
+
+export const getRelatedSensiblogPosts = (targetTags: string[]): sensiblogPost[] => {
+  const allPosts = getSortedSensiblogPosts()
+  const xPosts: sensiblogPost[] = []
+  allPosts.map(post => {
+    // find intersecting tags for current post, if any
+    const currentTags = post.tags
+    const xTags = currentTags.filter(tag => targetTags.includes(tag))
+    // console.log("targetTags", targetTags, "currentTags", currentTags, "xTags", xTags);
+    if (xTags.length > 0) {
+      xPosts.push(post)
+    }
+  })
+  // console.log("intersectingPosts", intersectingPosts);
+  return xPosts
+}
+
 export const getSensiblogPost = (id: string): sensiblogPost => {
   const fullPath = path.join(postsDirectory, `${id}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   const matterResult = matter(fileContents)
   const contentSpanish = matterResult.content
-  const contentEnglish = matter(matterResult.data.body_eng)
-  const contentEnglishOut = contentEnglish.content.split('\n').join("\r\n")
-  console.log("contentEnglish.content", contentEnglishOut);
+  const _ = matter(matterResult.data.body_eng)
+  const contentEnglishOut = _.content.split('\n').join("\r\n")
+
   return {
     id,
     title: matterResult.data.title,
@@ -134,25 +155,6 @@ export const getSensiblogPost = (id: string): sensiblogPost => {
     title_eng: matterResult.data.title_eng,
     contentEnglish: contentEnglishOut,
     category: matterResult.data.category
-  }
-}
-
-// deprecated
-export const getPostData = async (id: string) => {
-  const fullPath = path.join(postsDirectory, `${id}.md`)
-  const fileContents = fs.readFileSync(fullPath, 'utf8')
-  // Use gray-matter to parse the post metadata section
-  const matterResult = matter(fileContents)
-  // Use remark to convert markdown into HTML string
-  const processedContent = await remark()
-    .use(html)
-    .process(matterResult.content)
-  const contentHtml = processedContent.toString()
-  // Combine the data with the id and contentHtml
-  return {
-    id,
-    contentHtml,
-    ...(matterResult.data as { date: string; title: string })
   }
 }
 
