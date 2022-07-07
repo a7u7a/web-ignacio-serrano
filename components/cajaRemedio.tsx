@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import React, { useRef, useState } from "react";
+import React, { Suspense, useRef, useState } from "react";
 import {
   Canvas,
   useFrame,
@@ -87,22 +87,26 @@ const MainScene = () => {
       <Canvas>
         <CameraControls />
         <PerspectiveCamera makeDefault position={[4.5, 1.5, 4.5]} zoom={1.5} />
-        <ambientLight />
+        <ambientLight intensity={0.1} />
         <pointLight position={[10, 10, 10]} />
 
-        <group rotation={new THREE.Euler(0, 0, THREE.MathUtils.degToRad(-90))}>
-          {faces.map((faceId) => (
-            <Model
-              id={faceId}
-              key={faceId}
-              props={{
-                position: new THREE.Vector3(0, 0, 0),
-                rotation: new THREE.Euler(0, 0, 0),
-                scale: new THREE.Vector3(1, .5, 2),
-              }}
-            />
-          ))}
-        </group>
+        <Suspense fallback={null}>
+          <group
+            rotation={new THREE.Euler(0, 0, THREE.MathUtils.degToRad(-90))}
+          >
+            {faces.map((faceId) => (
+              <Model
+                id={faceId}
+                key={faceId}
+                props={{
+                  position: new THREE.Vector3(0, 0, 0),
+                  rotation: new THREE.Euler(0, 0, 0),
+                  scale: new THREE.Vector3(1, 0.5, 2),
+                }}
+              />
+            ))}
+          </group>
+        </Suspense>
       </Canvas>
     </div>
   );
