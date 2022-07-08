@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { getAbout, getSortedFeedPosts } from "../lib/posts";
+import { getAbout, getSortedFeedPosts, getAllPostsSlugs } from "../lib/posts";
 import { GetStaticProps } from "next";
 import { aboutPost, feedPost } from "../interfaces/posts";
 import AboutSection from "../components/aboutSection";
@@ -19,13 +19,15 @@ const pageName = "About";
 interface AboutProps {
   aboutData: aboutPost[];
   allFeedData: feedPost[];
+  allPostsSlugs: string[];
 }
 
-const About = ({ aboutData, allFeedData }: AboutProps) => {
+const About = ({ aboutData, allFeedData, allPostsSlugs }: AboutProps) => {
   const [lang, setLang] = useState("spa");
 
   const isSmall = useMediaQuery("(max-width: 768px)");
   const [collapsed, setCollapsed] = useState(isSmall);
+  const randomLink = allPostsSlugs[Math.floor(Math.random() * allPostsSlugs.length)];
 
   useEffect(() => {
     setCollapsed(isSmall ? true : false);
@@ -73,7 +75,7 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
 
             <SocialAbout />
 
-            <RandomButton />
+            <RandomButton linkTo={randomLink} />
 
             {/* Bio */}
             <AboutSection
@@ -114,14 +116,15 @@ const About = ({ aboutData, allFeedData }: AboutProps) => {
   );
 };
 
-// fetch post data from 'about' collection folder
 export const getStaticProps: GetStaticProps = async () => {
   const aboutData = await getAbout();
   const allFeedData = getSortedFeedPosts();
+  const allPostsSlugs = getAllPostsSlugs();
   return {
     props: {
       aboutData,
       allFeedData,
+      allPostsSlugs
     },
   };
 };

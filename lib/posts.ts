@@ -117,6 +117,22 @@ export const getSortedSensiblogPosts = (): sensiblogPost[] => {
 }
 
 /**
+ * Return list with url slugs for all posts
+ */
+
+const getPostSlugs = (posts: sensiblogPost[] | feedPost[], section: string) => {
+  return posts.map(({ id }) => "/" + section + "/" + id)
+}
+
+export const getAllPostsSlugs = () => {
+  const sensiblogPosts = getPostSlugs(getSortedSensiblogPosts(), "sensiblog")
+  const feedPosts = getPostSlugs(getSortedFeedPosts(), "about")
+  const allPostSlugs = [...sensiblogPosts, ...feedPosts];
+  return allPostSlugs;
+}
+
+
+/**
  * Finds posts whose tags intersect with intput tags.
  * Skips post with same id as idSkip
  */
@@ -129,7 +145,7 @@ export const getRelatedSensiblogPosts = (targetTags: string[], idSkip: string): 
     const currentTags = post.tags
     const xTags = currentTags.filter(tag => targetTags.includes(tag))
     console.log(post.id, idSkip);
-    if (xTags.length > 0 && post.id !== idSkip ) {
+    if (xTags.length > 0 && post.id !== idSkip) {
       xPosts.push(post)
     }
   })

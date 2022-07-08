@@ -68,7 +68,6 @@ const Model: React.FC<{
   const { nodes } = useGLTF("/glb/ignacioserranol.glb");
   const name = "REAL";
   const node = nodes[name].children[id] as THREE.Mesh;
-  console.log("node", node);
   return (
     <mesh
       ref={ref}
