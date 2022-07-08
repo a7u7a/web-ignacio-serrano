@@ -6,7 +6,7 @@ import SensiblogNavbar from "../components/sensiblog/navBar";
 import MyFooter from "../components/footer";
 import SensiCatalog from "../components/sensiblog/sensilog";
 import SensiHero from "../components/sensiblog/hero";
-import SideGradient from "../components/side-gradient";
+import SideGradient from "../components/sensiblog/side-gradient";
 
 interface sensiblogProps {
   allSensiblogPosts: sensiblogPost[];

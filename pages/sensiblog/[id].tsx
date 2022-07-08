@@ -9,12 +9,12 @@ import {
 } from "../../lib/posts";
 import { sensiblogPost } from "../../interfaces/posts";
 import FromMarkdownToSensiblog from "../../components/sensiblog/from-markdown";
-import SideGradient from "../../components/side-gradient";
+import SideGradient from "../../components/sensiblog/side-gradient";
 import LanguageButton from "../../components/languageBtn";
 import DateEl from "../../components/date";
 import UpButton from "../../components/upBtn";
 import CategoryTag from "../../components/sensiblog/category-tag";
-import RelatedPosts from "../../components/related-posts";
+import RelatedPosts from "../../components/sensiblog/related-posts";
 
 interface SensiblogPostProps {
   post: sensiblogPost;
@@ -77,7 +77,7 @@ export default function Post({ post, relatedPosts }: SensiblogPostProps) {
 
             {/* Related posts */}
             <div className="mt-10 ">
-              <RelatedPosts posts={relatedPosts} lang={lang} />
+              <RelatedPosts relatedPosts={relatedPosts} lang={lang} />
             </div>
           </div>
         </div>

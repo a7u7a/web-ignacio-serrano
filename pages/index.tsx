@@ -22,7 +22,7 @@ const Home = ({ allPostsSlugs }: HomeProps) => {
       <div className="flex flex-col w-screen h-screen p-4 space-y-12 md:space-y-0 my-16 md:my-4">
         <div className="relative flex flex-row h-1/3 justify-center">
           <Link href={"/about"}>
-            <div className="w-96">
+            <div className="w-96 cursor-pointer">
               <CajaRemedio />
             </div>
           </Link>

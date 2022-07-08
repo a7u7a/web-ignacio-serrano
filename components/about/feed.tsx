@@ -1,10 +1,11 @@
-import DateEl from "./date";
-import { feedPost } from "../interfaces/posts";
+import DateEl from "../date";
 import { useState, useRef } from "react";
+import { feedPost } from "../../interfaces/posts";
 import { X } from "phosphor-react";
 import Sticker from "./sticker";
-import FromMarkdown from "./from-markdown";
-import XButton from "./xBtn";
+import FromMarkdown from "../from-markdown";
+import XButton from "../xBtn";
+import RelatedFeedPosts from "./related-feed-posts";
 
 export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
   const [backgroundImage, setBackgroundImage] = useState("");
@@ -67,7 +68,7 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
           }`}
         >
           <XButton color="black" onClick={() => setArticle(undefined)} />
-          <div className="m-12 text-white">
+          <div className="m-12 mt-8 text-white">
             <div className="text-sm">
               <button
                 onClick={() => changeArticle("up")}
@@ -83,11 +84,14 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
                 Siguiente
               </button>
             </div>
-            <div className="text-3xl font-light text-white mt-6">
+            <div className="text-3xl font-light text-white mt-12">
               {articleDisplay?.title}
             </div>
-            <div className="text-xs text-gray-600 mt-4">
-              {articleDisplay?.date}
+            <div className="text-gray-600 mt-2">
+              <DateEl
+                dateString={articleDisplay ? articleDisplay.date : ""}
+                className="text-xs"
+              />
             </div>
             <FromMarkdown
               contentMd={
@@ -97,12 +101,16 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
               }
               className="feed"
             />
-            <div className="text-sm mt-4">
-              <p>Tags:</p>
+            <div className="text-sm mt-6">
+              <p className="underline text-gray-600">Tags:</p>
               {articleDisplay?.tags.map((tag) => (
                 <p key={tag} className="inline mr-2">{`#${tag}`}</p>
               ))}
             </div>
+            <RelatedFeedPosts
+              feedPosts={feedPosts}
+              currentPost={articleDisplay!}
+            />
           </div>
         </div>
 

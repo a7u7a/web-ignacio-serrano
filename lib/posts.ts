@@ -51,11 +51,11 @@ export const getAbout = async (): Promise<aboutPost[]> => {
   return processFileNames()
 }
 
-function sortFeedPosts(allPostsData: feedPost[]) {
+const sortFeedPosts = (allPostsData: feedPost[]) => {
   return allPostsData.sort((a, b) => Number(Date.parse(b.date)) - Number(Date.parse(a.date)))
 }
 
-function sortSensiblogPosts(allPostsData: sensiblogPost[]) {
+const sortSensiblogPosts = (allPostsData: sensiblogPost[]) => {
   return allPostsData.sort((a, b) => Number(Date.parse(a.date)) - Number(Date.parse(b.date)))
 }
 
@@ -127,6 +127,7 @@ const getPostSlugs = (posts: sensiblogPost[] | feedPost[], section: string) => {
 export const getAllPostsSlugs = () => {
   const sensiblogPosts = getPostSlugs(getSortedSensiblogPosts(), "sensiblog")
   const feedPosts = getPostSlugs(getSortedFeedPosts(), "about")
+  // join
   const allPostSlugs = [...sensiblogPosts, ...feedPosts];
   return allPostSlugs;
 }
@@ -138,18 +139,18 @@ export const getAllPostsSlugs = () => {
  */
 
 export const getRelatedSensiblogPosts = (targetTags: string[], idSkip: string): sensiblogPost[] => {
+  const maxPosts = 5;
   const allPosts = getSortedSensiblogPosts()
   const xPosts: sensiblogPost[] = []
   allPosts.map(post => {
     // find intersecting tags for current post, if any
     const currentTags = post.tags
     const xTags = currentTags.filter(tag => targetTags.includes(tag))
-    console.log(post.id, idSkip);
     if (xTags.length > 0 && post.id !== idSkip) {
       xPosts.push(post)
     }
   })
-  return xPosts
+  return xPosts.slice(0, maxPosts);
 }
 
 export const getSensiblogPost = (id: string): sensiblogPost => {

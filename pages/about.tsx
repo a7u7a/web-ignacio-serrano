@@ -2,17 +2,16 @@ import Head from "next/head";
 import { getAbout, getSortedFeedPosts, getAllPostsSlugs } from "../lib/posts";
 import { GetStaticProps } from "next";
 import { aboutPost, feedPost } from "../interfaces/posts";
-import AboutSection from "../components/aboutSection";
+import AboutSection from "../components/about/aboutSection";
 import { useState, useEffect } from "react";
 import LanguageButton from "../components/languageBtn";
 import UpButton from "../components/upBtn";
-import Feed from "../components/feed";
-import RandomButton from "../components/randomButton";
+import Feed from "../components/about/feed";
+import RandomButton from "../components/about/randomButton";
 import CajaRemedio from "../components/cajaRemedio";
-import Image from "next/image";
 import useMediaQuery from "../lib/media";
 import MyFooter from "../components/footer";
-import SocialAbout from "../components/socials";
+import SocialAbout from "../components/about/socials";
 
 const pageName = "About";
 
