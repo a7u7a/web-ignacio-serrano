@@ -9,7 +9,6 @@ import {
 } from "../../lib/posts";
 import { sensiblogPost } from "../../interfaces/posts";
 import FromMarkdownToSensiblog from "../../components/sensiblog/from-markdown";
-import SideGradient from "../../components/sensiblog/side-gradient";
 import LanguageButton from "../../components/languageBtn";
 import DateEl from "../../components/date";
 import UpButton from "../../components/upBtn";
@@ -35,23 +34,24 @@ export default function Post({ post, relatedPosts }: SensiblogPostProps) {
   }
 
   return (
-    <div className="flex justify-between flex-row h-screen bg-black overflow-x-auto">
+    <div className="flex justify-between flex-col md:flex-row h-screen bg-black overflow-x-auto">
       <UpButton color="white" href="/sensiblog" />
-      <SideGradient />
-      <div className="p-10">
+      <div className="fixed inset-x-0 bottom-0 md:left-auto md:inset-y-0 md:right-0 h-20 md:h-screen w-screen md:w-20 z-20 bg-gradient-to-t md:bg-gradient-to-l from-amarillo" />
+
+      <div className="p-6 sm:p-8 md:p-10">
         <div className="flex flex-col">
           {/* Header */}
-          <div className="flex flex-row justify-between w-80">
-            <Link href={"/sensiblog"}>
-              <div className="h-20 w-48 relative cursor-pointer">
-                <Image
-                  objectFit="contain"
-                  src={"/images/sensiblog.png"}
-                  layout="fill"
-                />
-              </div>
-            </Link>
-            <LanguageButton onClick={toggleLang} lang={lang} color="white" />
+          <div className="relative flex flex-row justify-center md:justify-between w-full md:w-80">
+            <div className="h-20 w-48 relative cursor-pointer">
+              <Image
+                objectFit="contain"
+                src={"/images/sensiblog.png"}
+                layout="fill"
+              />
+            </div>
+            <div className="absolute top-0 right-0 md:top-auto md:right-auto md:static">
+              <LanguageButton onClick={toggleLang} lang={lang} color="white" />
+            </div>
           </div>
 
           <div className="text-white">
@@ -76,16 +76,17 @@ export default function Post({ post, relatedPosts }: SensiblogPostProps) {
             </div>
 
             {/* Related posts */}
-            <div className="mt-10 ">
+            <div className="mt-10 hidden md:block">
               <RelatedPosts relatedPosts={relatedPosts} lang={lang} />
             </div>
           </div>
         </div>
       </div>
+
       <div>
         <FromMarkdownToSensiblog
           contentMd={content}
-          className="flex flex-row w-full pt-12 pb-12"
+          className="flex flex-col md:flex-row w-full pt-2 px-6 sm:px-8 md:px-10 lg:px-10 md:pt-12 pb-20 md:pb-12"
         />
       </div>
     </div>

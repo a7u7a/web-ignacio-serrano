@@ -31,7 +31,7 @@ const HeroItemText = ({ post, lang }: HeroItemTextProps) => {
       <Link href={`/sensiblog/${post.id}`}>
         <div className="flex flex-col cursor-pointer">
           <CategoryTag label={post.category} />
-          <div className=" font-serif mt-2 text-xl sm:text-xl md:text-4xl lg:text-6xl">
+          <div className=" font-serif mt-2 text-2xl sm:text-3xl md:text-4xl lg:text-6xl">
             {title}
           </div>
           <DateEl

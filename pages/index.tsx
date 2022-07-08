@@ -12,8 +12,8 @@ interface HomeProps {
 }
 
 const Home = ({ allPostsSlugs }: HomeProps) => {
-  console.log("allPostsSlugs", allPostsSlugs);
-  const randomLink = allPostsSlugs[Math.floor(Math.random() * allPostsSlugs.length)];
+  const randomLink =
+    allPostsSlugs[Math.floor(Math.random() * allPostsSlugs.length)];
   return (
     <>
       <Head>
@@ -38,7 +38,7 @@ const Home = ({ allPostsSlugs }: HomeProps) => {
           <HomeLink src={"/images/posible.png"} href={"/posible"} />
         </div>
         <div className="flex flex-row h-1/3 justify-center">
-          <HomeLink src={"/images/random.png"} href={randomLink}/>
+          <HomeLink src={"/images/random.png"} href={randomLink} />
         </div>
       </div>
     </>

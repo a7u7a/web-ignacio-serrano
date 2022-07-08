@@ -12,7 +12,7 @@ const RelatedPosts = ({ relatedPosts, lang }: RelatedPostsProps) => {
       <p className="font-semibold text-lg underline underline-offset-1 text-violeta">
         {lang === "spa" ? "Posts relacionados:" : "Related posts:"}
       </p>
-      <div className="relative flex flex-col space-y-4 mt-2 overflow-y-auto h-[32rem] border-white">
+      <div className="relative flex flex-col space-y-4 mt-2 h-[32rem] border-white">
         {relatedPosts && relatedPosts.length ? (
           relatedPosts.map((related, i) => (
             <div key={i} className="">

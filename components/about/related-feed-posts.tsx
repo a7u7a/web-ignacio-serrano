@@ -36,9 +36,6 @@ const RelatedFeedPosts = ({
       currentPost.tags,
       currentPost.id
     );
-    relatedPosts.forEach((post) => {
-      console.log("current", currentPost.tags, "related", post.tags);
-    });
   }
   return (
     <div className="text-sm mt-10">

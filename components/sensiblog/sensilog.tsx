@@ -24,10 +24,10 @@ const SensiCatalog = ({ allSensiblogPosts, lang }: SensiCatalogProps) => {
         {categories.map((category) => (
           
             <div
-              className="flex flex-row overflow-x-auto space-x-3 pr-32 no-scroll-bar"
+              className="flex flex-row overflow-x-auto pr-32 no-scroll-bar"
               key={category}
             >
-              <div className="sticky left-0 flex items-center justify-center text-lg sm:text-2xl md:text-3xl font-serif p-6 text-white bg-gradient-to-r from-black to-black/50 z-20 ">
+              <div className="sticky left-0 flex items-center justify-center text-base sm:text-xl md:text-xl font-semibold p-3 sm:p-6 text-white bg-gradient-to-r from-black to-black/50 z-20">
                 {category}
               </div>
               {allSensiblogPosts
