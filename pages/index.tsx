@@ -1,17 +1,23 @@
 import Head from "next/head";
 import HomeLink from "../components/homeLink";
+import CajaRemedio from "../components/cajaRemedio";
+import Link from "next/link";
 
-const siteTitle = "Ignacio Serrano Web"
+const siteTitle = "Ignacio Serrano Web";
 
 const Home = () => {
   return (
     <>
-    <Head>
+      <Head>
         <title>{siteTitle}</title>
       </Head>
       <div className="flex flex-col w-screen h-screen p-4 space-y-12 md:space-y-0 my-16 md:my-4">
-        <div className="flex flex-row h-1/3 justify-center">
-          <HomeLink src={"/images/about.png"} href={"/about"} />
+        <div className="relative flex flex-row h-1/3 justify-center">
+          <Link href={"/about"}>
+            <div className="w-96">
+              <CajaRemedio />
+            </div>
+          </Link>
         </div>
         <div className="flex flex-row h-1/3 justify-center md:hidden">
           <HomeLink src={"/images/sensiblog.gif"} href={"/sensiblog"} />

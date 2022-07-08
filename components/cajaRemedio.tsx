@@ -1,4 +1,5 @@
 import * as THREE from "three";
+import Link from "next/link";
 import React, { Suspense, useRef, useState } from "react";
 import {
   Canvas,
@@ -83,10 +84,10 @@ const Model: React.FC<{
 const MainScene = () => {
   const faces = Array.from(Array(6).keys());
   return (
-    <div className="h-80 w-full">
+    <div className="h-full w-full">
       <Canvas>
         <CameraControls />
-        <PerspectiveCamera makeDefault position={[4.5, 1.5, 4.5]} zoom={1.5} />
+        <PerspectiveCamera makeDefault position={[6, 3, 6]} zoom={2} />
         <ambientLight intensity={0.1} />
         <pointLight position={[10, 10, 10]} />
 
@@ -99,9 +100,9 @@ const MainScene = () => {
                 id={faceId}
                 key={faceId}
                 props={{
-                  position: new THREE.Vector3(0, 0, 0),
+                  position: new THREE.Vector3(-0.3, 0, 0),
                   rotation: new THREE.Euler(0, 0, 0),
-                  scale: new THREE.Vector3(1, 0.5, 2),
+                  scale: new THREE.Vector3(1, 0.5, 2.2),
                 }}
               />
             ))}

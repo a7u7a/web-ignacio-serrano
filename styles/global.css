@@ -5,7 +5,7 @@
 .intro {
   @apply mt-8 max-w-xl text-center
   prose prose-lg 
-  prose-p:leading-snug prose-p:text-black prose-p:font-semibold 
+  prose-p:leading-snug prose-p:text-black 
   prose-a:text-verde;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .sensiblog {
-  @apply shrink-0 max-w-none  pr-20
+  @apply shrink-0 max-w-none pr-20
   prose prose-invert
   prose-img:mb-6 prose-img:mt-0 prose-img:w-full prose-img:max-w-2xl
   prose-p:mt-0 prose-p:leading-snug prose-p:ml-0 prose-p:mb-4 prose-p:w-full prose-p:max-w-xl
