@@ -1,6 +1,6 @@
 import { ScrollSync, ScrollSyncPane } from "react-scroll-sync";
 import { sensiblogPost } from "../../interfaces/posts";
-import IndexEntry from "../../components/sensiblog/indexEntry";
+import IndexEntry from "./indexEntry";
 import SectionTab from "./section-tab";
 
 interface SensiCatalogProps {

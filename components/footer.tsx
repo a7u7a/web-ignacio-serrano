@@ -6,14 +6,18 @@ interface FooterProps {
 
 const MyFooter = ({ color }: FooterProps) => {
   let bgColor;
+  let txtColor;
   if (color === "white") {
     bgColor = "bg-white";
+    txtColor = "text-slate-800";
   }
   if (color === "black") {
     bgColor = "bg-black";
+    txtColor = "text-slate-300";
   }
   if (color === "") {
     bgColor = "";
+    txtColor = "text-slate-800";
   }
   return (
     <footer

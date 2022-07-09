@@ -4,7 +4,6 @@ thumbnail: /uploads/d_nq_np_769079-mlc47937758735_102021-w.jpg
 stock: 9
 price: 500000
 title: Polera polera
-title_eng: T-shirt t-shirt
 body_eng: "Macaulay Carson Culkin was born on August 26, 1980, in New York City
   to Christopher Cornelius \"Kit\" Culkin, a former stage actor, and Patricia
   Brentrup, a native of North Dakota who met Kit in 1974 while working as a road

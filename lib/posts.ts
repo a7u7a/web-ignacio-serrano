@@ -3,11 +3,12 @@ import path from 'path'
 import matter from 'gray-matter'
 import { remark } from 'remark'
 import html from 'remark-html'
-import { aboutPost, feedPost, sensiblogPost, modalContent } from '../interfaces/posts'
+import { aboutPost, feedPost, sensiblogPost, modalContent, posiblePost } from '../interfaces/posts'
 
 const postsDirectory = path.join(process.cwd(), 'content/sensiblog')
 const feedDirectory = path.join(process.cwd(), 'content/feed')
 const sensiblogDirectory = path.join(process.cwd(), 'content/sensiblog')
+const posibleDirectory = path.join(process.cwd(), 'content/posible')
 const modalsDirectory = path.join(process.cwd(), 'content/modals')
 /**
  * Reads files in 'about' folder and returns array of posts
@@ -86,6 +87,40 @@ export const getSortedFeedPosts = (): feedPost[] => {
   return sortFeedPosts(allPostsData)
 }
 
+const sortPosiblePosts = (allPostsData: posiblePost[]) => {
+  return allPostsData.sort((a, b) => Number(Date.parse(a.date)) - Number(Date.parse(b.date)))
+}
+
+export const getSortedPosiblePosts = (): posiblePost[] => {
+  // Get file names under /posts
+  const fileNames = fs.readdirSync(posibleDirectory)
+  const allPostsData: posiblePost[] = fileNames.map(fileName => {
+    // Remove ".md" from file name to get id
+    const id = fileName.replace(/\.md$/, '')
+
+    // Read markdown file as string
+    const fullPath = path.join(posibleDirectory, fileName)
+    const fileContents = fs.readFileSync(fullPath, 'utf8')
+
+    // Use gray-matter to parse the post metadata section
+    const matterResult = matter(fileContents)
+    const contentSpanish = matterResult.content
+
+    return {
+      id,
+      title: matterResult.data.title,
+      date: matterResult.data.date,
+      thumbnail: matterResult.data.thumbnail,
+      contentEnglish: matterResult.data.body_eng,
+      stock: matterResult.data.stock,
+      price: matterResult.data.price,
+      contentSpanish
+    }
+  })
+  return sortPosiblePosts(allPostsData)
+}
+
+
 export const getSortedSensiblogPosts = (): sensiblogPost[] => {
   // Get file names under /posts
   const fileNames = fs.readdirSync(sensiblogDirectory)
@@ -115,6 +150,8 @@ export const getSortedSensiblogPosts = (): sensiblogPost[] => {
   })
   return sortSensiblogPosts(allPostsData)
 }
+
+
 
 /**
  * Return list with url slugs for all posts

@@ -36,3 +36,10 @@ export interface sensiblogPost extends basePost {
 export interface modalContent extends basePost {
   contentEnglish: string;
 }
+
+export interface posiblePost extends basePost {
+  thumbnail: string;
+  stock: number;
+  price: number;
+  contentEnglish: string;
+}
