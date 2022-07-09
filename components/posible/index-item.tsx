@@ -21,7 +21,7 @@ const IndexItem = ({ post }: IndexItemProps) => {
   return (
     <div
       key={post.id}
-      className="flex relative -mb-2 -mt-2 bg-no-repeat bg-center bg-cover w-full h-36"
+      className="flex relative bg-no-repeat bg-center bg-cover w-full h-36"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="absolute flex w-full h-full items-center justify-center">
@@ -37,7 +37,7 @@ const IndexItem = ({ post }: IndexItemProps) => {
           if (!isSm) setBackgroundImage("");
         }}
         tag={post.stock ? "Disponible" : "Agotado"}
-        marginY={35}
+        marginY={30}
         marginX={80}
       />
     </div>

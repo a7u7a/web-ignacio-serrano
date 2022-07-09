@@ -80,7 +80,7 @@ const Sticker = ({
       onMouseEnter={() => onEnter(id)}
       onMouseLeave={onExit}
       ref={refContainer}
-      className="absolute w-full h-full z-30"
+      className="absolute w-full h-full z-30 mb-2 mt-2"
     >
       <svg
         viewBox={`0 0 ${dimensions.width} ${dimensions.height}`}

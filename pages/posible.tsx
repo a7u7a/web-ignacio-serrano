@@ -33,7 +33,7 @@ const Posible = ({ allPosiblePosts, modalContent }: PosibleProps) => {
             />
           </div>
         </div>
-        <div className="flex flex-col py-2">
+        <div className="flex flex-col">
           {allPosiblePosts.map((post) => (
             <IndexItem key={post.id} post={post} />
           ))}
