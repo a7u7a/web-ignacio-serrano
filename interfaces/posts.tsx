@@ -41,5 +41,6 @@ export interface posiblePost extends basePost {
   thumbnail: string;
   stock: number;
   price: number;
-  contentEnglish: string;
+  descriptionEnglish: string;
+  photos:string
 }

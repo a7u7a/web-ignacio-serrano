@@ -111,10 +111,11 @@ export const getSortedPosiblePosts = (): posiblePost[] => {
       title: matterResult.data.title,
       date: matterResult.data.date,
       thumbnail: matterResult.data.thumbnail,
-      contentEnglish: matterResult.data.body_eng,
       stock: matterResult.data.stock,
       price: matterResult.data.price,
-      contentSpanish
+      contentSpanish: matterResult.data.description,
+      descriptionEnglish: matterResult.data.description_eng,
+      photos: contentSpanish
     }
   })
   return sortPosiblePosts(allPostsData)
@@ -216,19 +217,28 @@ export const getPosiblePost = (id: string): posiblePost => {
   const fullPath = path.join(posibleDirectory, `${id}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   const matterResult = matter(fileContents)
-  const contentSpanish = matterResult.content
-  const _ = matter(matterResult.data.body_eng)
-  const contentEnglishOut = _.content.split('\n').join("\r\n")
+
+  /**
+   * In the case of Posible posts, only photos contained in divs
+   * will be expected in the content
+   */
+
+  const photos = matterResult.content
+  const _ = matter(matterResult.data.description_eng)
+  const contenteEnglish = _.content.split('\n').join("\r\n")
+  const __ = matter(matterResult.data.description)
+  const contentSpanish = __.content.split('\n').join("\r\n")
 
   return {
     id,
     title: matterResult.data.title,
     date: matterResult.data.date,
     thumbnail: matterResult.data.thumbnail,
-    contentEnglish: contentEnglishOut,
+    descriptionEnglish: contenteEnglish,
     stock: matterResult.data.stock,
     price: matterResult.data.price,
-    contentSpanish
+    contentSpanish,
+    photos
   }
 }
 

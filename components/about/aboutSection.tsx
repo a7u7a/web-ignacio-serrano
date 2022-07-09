@@ -9,7 +9,7 @@ interface AboutSectionProps {
 
 const AboutSection = ({ data, lang, className }: AboutSectionProps) => {
   const content = lang === "spa" ? data.contentSpanish : data.contentEnglish;
-  return <FromMarkdown contentMd={content} className={className} />;
+  return <FromMarkdown contentMd={content} proseClass={className} />;
 };
 
 export default AboutSection;

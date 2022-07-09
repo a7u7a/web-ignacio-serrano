@@ -1,29 +1,18 @@
 ---
-date: May 27, 2022 11:47 PM
+title: Tazón mágico
 thumbnail: /uploads/Screen-Shot-2022-03-16-at-19.23.29.png
 stock: 1
 price: 500000
-title: Tazón magico
-body_eng: "Macaulay Carson Culkin was born on August 26, 1980, in New York City
-  to Christopher Cornelius \"Kit\" Culkin, a former stage actor, and Patricia
-  Brentrup, a native of North Dakota who met Kit in 1974 while working as a road
-  traffic controller in Sundance, Wyoming. The couple soon relocated to Kit's
-  native New York City, and gave birth to a total of seven children: Culkin's
-  siblings include Shane (b. 1976), Dakota (1979–2008),[8] Kieran (b. 1982),
-  Quinn (b. 1984), Christian (b. 1987), and Rory (b. 1989). He also had a
-  paternal half-sister, Jennifer (born 1970), who died in 2000. His paternal
-  aunt is actress Bonnie Bedelia. Culkin is of part-Irish descent."
+date: May 27, 2022 11:47 PM
+description: >-
+  La tragedia de Armero fue un desastre natural producto de la erupción del volcán Nevado del Ruiz el miércoles 13 de noviembre de 1985, afectando a los departamentos de Caldas y Tolima, Colombia. Tras sesenta y nueve años de inactividad, la [erupción](https://duckduckgo.com) tomó por sorpresa a los poblados cercanos, a pesar de que el Gobierno había recibido advertencias por parte de múltiples organismos vulcanológicos desde la aparición de los primeros indicios de actividad volcánica en septiembre de 1985.
+description_eng: >-
+  The Armero tragedy occurred following the eruption of the Nevado del
+  Ruiz stratovolcano in Tolima, Colombia, on November 13, 1985. After 69 years
+  of dormancy, the volcano's eruption caught nearby towns unaware, even though
+  the government had received warnings from volcanological organizations to
+  evacuate the area after the detection of volcanic activity two months earlier.
 ---
-
-<div>
-
-
-La tragedia de Armero fue un desastre natural producto de la erupción del volcán Nevado del Ruiz el miércoles 13 de noviembre de 1985, afectando a los departamentos de Caldas y Tolima, Colombia. Tras sesenta y nueve años de inactividad, la [erupción](https://duckduckgo.com) tomó por sorpresa a los poblados cercanos, a pesar de que el Gobierno había recibido advertencias por parte de múltiples organismos vulcanológicos desde la aparición de los primeros indicios de actividad volcánica en septiembre de 1985.
-
-
-</div>
-
-
 <div>
 
 
