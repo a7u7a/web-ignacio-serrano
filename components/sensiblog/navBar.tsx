@@ -1,7 +1,7 @@
 import Image from "next/image";
 import UpButton from "../upBtn";
 import LanguageButton from "../languageBtn";
-import Modal from "../sensiblog/modal";
+import Modal from "../modal";
 import { modalContent } from "../../interfaces/posts";
 import { useState } from "react";
 

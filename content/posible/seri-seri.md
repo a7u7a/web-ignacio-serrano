@@ -1,6 +1,6 @@
 ---
-title: Poster WOW
-thumbnail: /uploads/d_nq_np_769079-mlc47937758735_102021-w.jpg
+title: Serigrafía enmarcada
+thumbnail: /uploads/screen-shot-2022-05-25-at-20.31.07.png
 stock: 4
 price: 350000
 date: May 27, 2022 9:36 PM

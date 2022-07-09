@@ -1,6 +1,6 @@
 import { X } from "phosphor-react";
-import { modalContent } from "../../interfaces/posts";
-import FromMarkdown from "../from-markdown";
+import { modalContent } from "../interfaces/posts";
+import FromMarkdown from "./from-markdown";
 
 interface ModalProps {
   content: modalContent;

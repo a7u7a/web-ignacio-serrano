@@ -6,7 +6,7 @@ import { getSortedPosiblePosts, getModalContents } from "../lib/posts";
 import UpButton from "../components/upBtn";
 import MyFooter from "../components/footer";
 import IndexItem from "../components/posible/index-item";
-import Modal from "../components/sensiblog/modal";
+import Modal from "../components/modal";
 
 interface PosibleProps {
   allPosiblePosts: posiblePost[];
@@ -16,7 +16,7 @@ interface PosibleProps {
 const Posible = ({ allPosiblePosts, modalContent }: PosibleProps) => {
   const [visibleModal, setModalVisibility] = useState(false);
   return (
-    <div className="flex flex-col justify-between">
+    <div className="flex flex-col justify-between h-screen">
       <div>
         <div className="flex sticky items-center justify-center w-full bg-verde h-36">
           <div

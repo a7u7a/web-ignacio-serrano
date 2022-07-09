@@ -1,9 +1,9 @@
 ---
 date: May 27, 2022 11:47 PM
-thumbnail: /uploads/Screen-Shot-2022-03-16-at-19.23.29.png
-stock: 1
+thumbnail: /uploads/screen-shot-2022-05-19-at-16.06.13.png
+stock: 0
 price: 500000
-title: Tazón magico
+title: Piedra Roca 3D
 body_eng: "Macaulay Carson Culkin was born on August 26, 1980, in New York City
   to Christopher Cornelius \"Kit\" Culkin, a former stage actor, and Patricia
   Brentrup, a native of North Dakota who met Kit in 1974 while working as a road
@@ -27,7 +27,7 @@ La tragedia de Armero fue un desastre natural producto de la erupción del volc�
 <div>
 
 
-![Alga](/uploads/screen-shot-2022-02-02-at-23.14.13.png "Un pie de foto por aquí")
+![Alga](/uploads/screen-shot-2022-05-19-at-16.06.13.png "Un pie de foto por aquí")
 
 
 </div>
@@ -36,7 +36,7 @@ La tragedia de Armero fue un desastre natural producto de la erupción del volc�
 <div>
 
 
-![globos](/uploads/screen-shot-2021-12-24-at-16.32.48.png "Otro pie de foto")
+![globos](/uploads/screen-shot-2022-05-19-at-16.06.13.png "Otro pie de foto")
 
 
 </div>

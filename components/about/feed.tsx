@@ -136,7 +136,7 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
                     hoverId === post.id ? "text-white" : "text-black"
                   }`}
                 >
-                  <a className="text-5xl px-4 font-light">{post.title}</a>
+                  <p className="text-5xl px-4 font-light">{post.title}</p>
                   <DateEl dateString={post.date} className="text-sm" />
                 </div>
 
