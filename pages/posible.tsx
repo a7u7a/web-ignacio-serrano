@@ -1,24 +1,28 @@
 import { GetStaticProps } from "next";
+import { useState } from "react";
+import Image from "next/image";
 import { posiblePost, modalContent } from "../interfaces/posts";
 import { getSortedPosiblePosts, getModalContents } from "../lib/posts";
-import Image from "next/image";
 import UpButton from "../components/upBtn";
 import MyFooter from "../components/footer";
 import IndexItem from "../components/posible/index-item";
+import Modal from "../components/sensiblog/modal";
 
 interface PosibleProps {
   allPosiblePosts: posiblePost[];
-  modalContents: modalContent;
+  modalContent: modalContent;
 }
 
-const Posible = ({ allPosiblePosts, modalContents }: PosibleProps) => {
-  console.log("allPosiblePosts", allPosiblePosts);
-
+const Posible = ({ allPosiblePosts, modalContent }: PosibleProps) => {
+  const [visibleModal, setModalVisibility] = useState(false);
   return (
     <div className="flex flex-col justify-between">
       <div>
         <div className="flex sticky items-center justify-center w-full bg-verde h-36">
-          <div className="absolute pl-6 pb-3 underline z-20 left-auto md:left-0 bottom-0">
+          <div
+            onClick={() => setModalVisibility(true)}
+            className="absolute pl-0 md:pl-6 pb-3 underline z-20 md:left-0 bottom-0 cursor-pointer"
+          >
             Qué es esto?
           </div>
           <div className="relative h-full w-52 md:w-full mb-3 md:mb-0">
@@ -37,18 +41,22 @@ const Posible = ({ allPosiblePosts, modalContents }: PosibleProps) => {
       </div>
       <MyFooter color="white" />
       <UpButton color="black" href="/" />
+      <Modal
+        content={modalContent}
+        visible={visibleModal}
+        toggleVisible={setModalVisibility}
+      />
     </div>
   );
 };
 
 export const getStaticProps: GetStaticProps = async () => {
   const allPosiblePosts = getSortedPosiblePosts();
-  console.log("asdasda", allPosiblePosts);
-  const modalContents = getModalContents("about-posible");
+  const modalContent = getModalContents("about-posible");
   return {
     props: {
       allPosiblePosts,
-      modalContents,
+      modalContent,
     },
   };
 };

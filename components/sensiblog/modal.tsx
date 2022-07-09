@@ -2,17 +2,17 @@ import { X } from "phosphor-react";
 import { modalContent } from "../../interfaces/posts";
 import FromMarkdown from "../from-markdown";
 
-interface SensiblogModalProps {
+interface ModalProps {
   content: modalContent;
   visible: boolean;
   toggleVisible: (visible: boolean) => void;
 }
 
-const SensiblogModal = ({
+const Modal = ({
   content,
   visible,
   toggleVisible,
-}: SensiblogModalProps) => {
+}: ModalProps) => {
   function clickOutsideHandle(e: React.MouseEvent<Element, MouseEvent>) {
     if (e.currentTarget === e.target) {
       toggleVisible(false);
@@ -46,4 +46,4 @@ const SensiblogModal = ({
   );
 };
 
-export default SensiblogModal;
+export default Modal;

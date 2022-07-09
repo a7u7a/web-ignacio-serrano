@@ -13,7 +13,6 @@ const IndexItem = ({ post }: IndexItemProps) => {
 
   useEffect(() => {
     if (isSm) {
-      console.log("small");
       setBackgroundImage(post.thumbnail);
     } else {
       setBackgroundImage("");

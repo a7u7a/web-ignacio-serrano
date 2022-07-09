@@ -1,10 +1,9 @@
 import Image from "next/image";
 import UpButton from "../upBtn";
 import LanguageButton from "../languageBtn";
-import SensiblogModal from "../sensiblog/modal";
+import Modal from "../sensiblog/modal";
 import { modalContent } from "../../interfaces/posts";
 import { useState } from "react";
-
 
 interface SensiblogNavbarProps {
   toggleFunc: () => void;
@@ -17,15 +16,15 @@ const SensiblogNavbar = ({
   lang,
   modalContent,
 }: SensiblogNavbarProps) => {
-  const [visible, setVisibility] = useState(false);
+  const [visibleModal, setModalVisibility] = useState(false);
   return (
     <div>
       <div className="sticky inset-x-0 top-0 flex items-center flex-col sm:flex-row justify-between w-full z-40 bg-black">
-      <UpButton color="white" href="/" />
-        <SensiblogModal
+        <UpButton color="white" href="/" />
+        <Modal
           content={modalContent}
-          visible={visible}
-          toggleVisible={setVisibility}
+          visible={visibleModal}
+          toggleVisible={setModalVisibility}
         />
 
         {/* Sensiblog logo */}
@@ -41,14 +40,13 @@ const SensiblogNavbar = ({
 
         <div className="flex flex-row pt-1 mr-6 pb-3 md:p-6 space-x-8 ">
           {/* about button */}
-          <div onClick={() => setVisibility(true)}>
+          <div onClick={() => setModalVisibility(true)}>
             <button className="sm:text-md md:text-lg underline-offset-1 tracking-wide underline mr-6 hover:text-violeta text-white">
               Sobre Sensiblog
             </button>
           </div>
 
           <LanguageButton onClick={toggleFunc} lang={lang} color="white" />
-
         </div>
       </div>
     </div>
