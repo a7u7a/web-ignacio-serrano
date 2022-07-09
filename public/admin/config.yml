@@ -65,5 +65,5 @@ collections:
       - {label: "Price", name: "price", widget: "number"}
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Cuerpo (Castellano)", name: "body", widget: "markdown"}
-      - {label: "Title", name: "title_eng", widget: "string"}
-      - {label: "Cuerpo (English)", name: "body_eng", widget: "markdown"}
+      - {label: "Description (English)", name: "description_eng", widget: "markdown"}
+      - {label: "Descripción (Español)", name: "description", widget: "markdown"}

@@ -39,7 +39,7 @@ const Modal = ({
           </button>
         </div>
         <div className="p-8 flex flex-col max-h-screen items-center overflow-auto">
-          <FromMarkdown className="md-modal" contentMd={content.contentSpanish}/>
+          <FromMarkdown proseClass="md-modal" contentMd={content.contentSpanish}/>
         </div>
       </div>
     </div>

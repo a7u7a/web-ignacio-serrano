@@ -41,7 +41,7 @@ const IndexItem = ({ post }: IndexItemProps) => {
             }}
             tag={post.stock ? "Disponible" : "Agotado"}
             marginY={40}
-            marginX={isSm ? 80 : 220}
+            marginX={isSm ? 80 : 300}
           />
         </div>
       </Link>
