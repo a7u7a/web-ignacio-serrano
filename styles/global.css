@@ -3,21 +3,21 @@
 @tailwind utilities;
 
 .intro {
-  @apply max-w-xl text-center
+  @apply mt-8 max-w-xl text-center
   prose prose-lg 
-  prose-p:leading-snug prose-p:text-black prose-p:font-semibold 
+  prose-p:leading-snug prose-p:text-black 
   prose-a:text-verde;
 }
 
 .bio {
   @apply mt-10 max-w-xl 
-  prose prose-sm 
+  prose prose-lg 
   prose-p:text-justify prose-p:leading-snug 
   prose-a:font-normal prose-a:text-verde;
 }
 
 .cv {
-  @apply mt-10 max-w-lg 
+  @apply mt-6 max-w-lg 
   prose prose-sm 
   prose-p:leading-tight 
   prose-a:text-verde prose-a:font-normal;
@@ -32,7 +32,7 @@
 }
 
 .feed {
-  @apply mt-8 prose prose-sm max-w-xl 
+  @apply mt-4 prose prose-sm max-w-xl 
   prose-p:leading-tight prose-p:text-white 
   prose-h1:text-white prose-h1:font-light
   prose-h2:text-white prose-h3:text-white prose-h4:text-white
@@ -41,12 +41,33 @@
 }
 
 .sensiblog {
-  @apply flex flex-row space-x-6
-  prose-sm prose-invert prose 
-  prose-img:mt-0 prose-img:mb-0 
-  prose-p:mt-0 prose-p:leading-snug prose-p:ml-0 prose-p:w-96
-  prose-h1:font-light 
-  prose-a:font-normal prose-a:text-verde;
+  @apply shrink-0 max-w-none pr-0 md:pr-16
+  prose-sm md:prose-base
+  prose prose-invert
+  prose-img:mb-6 prose-img:mt-0 prose-img:w-full prose-img:max-w-2xl
+  prose-p:mt-0 prose-p:leading-snug prose-p:ml-0 prose-p:mb-4 prose-p:w-full prose-p:max-w-xl
+  prose-h1:mb-4 prose-h2:mb-4 prose-h3:mb-4
+  prose-a:text-verde;
+}
+
+.posible {
+  @apply shrink-0 max-w-none pr-0 md:pr-16
+  prose-sm md:prose-base
+  prose
+  prose-img:mb-6 prose-img:mt-0 prose-img:w-full prose-img:max-w-2xl
+  prose-p:mt-0 prose-p:leading-snug prose-p:ml-0 prose-p:mb-4 prose-p:w-full prose-p:max-w-xl
+  prose-h1:mb-4 prose-h2:mb-4 prose-h3:mb-4
+  prose-a:text-verde;
+}
+
+.posible-description {
+  @apply shrink-0 max-w-none
+  prose-sm md:prose-base
+  prose
+  prose-img:mb-6 prose-img:mt-0 prose-img:w-full prose-img:max-w-2xl
+  prose-p:mt-0 prose-p:leading-snug prose-p:ml-0 prose-p:mb-4 prose-p:w-96 prose-p:max-w-6xl
+  prose-h1:mb-4 prose-h2:mb-4 prose-h3:mb-4
+  prose-a:text-verde;
 }
 
 /* Hide scrollbar for Chrome */

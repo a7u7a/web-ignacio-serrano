@@ -12,9 +12,12 @@ function randomNumber(min: number, max: number) {
   return Math.random() * (max - min) + min;
 }
 
-function randomPosition(height: number, width: number) {
-  const marginY = 40;
-  const marginX = 80;
+function randomPosition(
+  height: number,
+  width: number,
+  marginX: number,
+  marginY: number
+) {
   return {
     x: randomNumber(marginX, width - marginX),
     y: randomNumber(marginY, height - marginY),
@@ -27,11 +30,20 @@ interface StickerProps {
   id: string;
   onEnter: (id: string) => void;
   onExit: () => void;
+  marginX: number;
+  marginY: number;
 }
 
-const Sticker = ({ tag, color, id, onEnter, onExit }: StickerProps) => {
+const Sticker = ({
+  tag,
+  color,
+  id,
+  onEnter,
+  onExit,
+  marginX,
+  marginY,
+}: StickerProps) => {
   const refContainer = useRef<HTMLInputElement>(null);
-
   const [angle, setA] = useState(randomAngle());
   const [dimensions, setDimensions] = useState<{
     width: number;
@@ -58,7 +70,9 @@ const Sticker = ({ tag, color, id, onEnter, onExit }: StickerProps) => {
     position.x === 0 &&
     position.y === 0
   ) {
-    setPosition(randomPosition(dimensions.height, dimensions.width));
+    setPosition(
+      randomPosition(dimensions.height, dimensions.width, marginX, marginY)
+    );
   }
 
   return (

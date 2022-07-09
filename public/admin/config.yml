@@ -4,7 +4,7 @@ backend:
 
 media_folder: "public/uploads" # Where media files will be stored
 public_folder: "/uploads" # Where the media files can be accesed from the server
-# publish_mode: editorial_workflow # For Drafts
+publish_mode: editorial_workflow # For Drafts
 
 collections:
   - name: "about" # Used in routes, e.g., /admin/collections/blog
@@ -65,5 +65,5 @@ collections:
       - {label: "Price", name: "price", widget: "number"}
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Cuerpo (Castellano)", name: "body", widget: "markdown"}
-      - {label: "Title", name: "title_eng", widget: "string"}
-      - {label: "Cuerpo (English)", name: "body_eng", widget: "markdown"}
+      - {label: "Description (English)", name: "description_eng", widget: "markdown"}
+      - {label: "Descripción (Español)", name: "description", widget: "markdown"}

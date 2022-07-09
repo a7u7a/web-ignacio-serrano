@@ -4,9 +4,9 @@ import { sensiblogPost, modalContent } from "../interfaces/posts";
 import { useState } from "react";
 import SensiblogNavbar from "../components/sensiblog/navBar";
 import MyFooter from "../components/footer";
-import SensiCatalog from "../components/sensiblog/sensilog";
+import SensiCatalog from "../components/sensiblog/sensicatalog";
 import SensiHero from "../components/sensiblog/hero";
-import SideGradient from "../components/side-gradient";
+import SideGradient from "../components/sensiblog/side-gradient";
 
 interface sensiblogProps {
   allSensiblogPosts: sensiblogPost[];
@@ -14,6 +14,7 @@ interface sensiblogProps {
 }
 
 const Sensiblog = ({ allSensiblogPosts, modalContents }: sensiblogProps) => {
+
   const [lang, setLang] = useState("spa");
 
   function toggleLang() {
