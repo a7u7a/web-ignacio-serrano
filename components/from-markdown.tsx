@@ -6,18 +6,18 @@ import { useCallback, useEffect, useRef, useState } from "react";
 
 interface FromMarkdownProps {
   contentMd: string;
-  className: string;
+  proseClass: string;
 }
 
 interface ChildProps {
   value: string;
 }
 
-const FromMarkdown = ({ contentMd, className }: FromMarkdownProps) => {
+const FromMarkdown = ({ contentMd, proseClass }: FromMarkdownProps) => {
   return (
     <ReactMarkdown
       children={contentMd}
-      className={className}
+      className={proseClass}
       remarkPlugins={[remarkGfm]}
       rehypePlugins={[rehypeRaw]}
       components={{

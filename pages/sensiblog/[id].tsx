@@ -8,7 +8,7 @@ import {
   getRelatedSensiblogPosts,
 } from "../../lib/posts";
 import { sensiblogPost } from "../../interfaces/posts";
-import FromMarkdownToSensiblog from "../../components/sensiblog/from-markdown";
+import FromMarkdownToSensiblog from "../../components/from-markdown-horizontal";
 import LanguageButton from "../../components/languageBtn";
 import DateEl from "../../components/date";
 import UpButton from "../../components/upBtn";
@@ -87,6 +87,7 @@ export default function Post({ post, relatedPosts }: SensiblogPostProps) {
         <FromMarkdownToSensiblog
           contentMd={content}
           className="flex flex-col md:flex-row w-full pt-2 px-6 sm:px-8 md:px-10 lg:px-10 md:pt-12 pb-20 md:pb-12"
+          proseClass="sensiblog"
         />
       </div>
     </div>

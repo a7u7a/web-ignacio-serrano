@@ -1,21 +1,24 @@
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
-import Image from "next/image";
-import { useCallback, useEffect, useRef, useState } from "react";
 
 // Almost identical to components/from-markdown.tsx but deals with column divs for horizontal scrolling layout
 
 interface FromMarkdownProps {
   contentMd: string;
   className: string;
+  proseClass: string;
 }
 
 interface ChildProps {
   value: string;
 }
 
-const FromMarkdownSensiblog = ({ contentMd, className }: FromMarkdownProps) => {
+const FromMarkdownHorizontal = ({
+  contentMd,
+  className,
+  proseClass,
+}: FromMarkdownProps) => {
   return (
     <ReactMarkdown
       children={contentMd}
@@ -24,11 +27,16 @@ const FromMarkdownSensiblog = ({ contentMd, className }: FromMarkdownProps) => {
       rehypePlugins={[rehypeRaw]}
       components={{
         div: ({ node, ...props }) => {
-          return <div {...props} className="sensiblog" />;
+          return <div {...props} className={proseClass} />;
         },
         iframe: ({ node, ...props }) => {
           // used for youtube videos
-          return <iframe {...props} className="aspect-[16/9] w-full h-auto md:h-80 pt-0 mb-4" />;
+          return (
+            <iframe
+              {...props}
+              className="aspect-[16/9] w-full h-auto md:h-80 pt-0 mb-4"
+            />
+          );
         },
         blockquote: ({ node, ...props }) => {
           if (node.properties && node.properties.id === "textOnImage") {
@@ -54,4 +62,4 @@ const FromMarkdownSensiblog = ({ contentMd, className }: FromMarkdownProps) => {
   );
 };
 
-export default FromMarkdownSensiblog;
+export default FromMarkdownHorizontal;

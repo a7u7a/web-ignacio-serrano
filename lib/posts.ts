@@ -5,9 +5,9 @@ import { remark } from 'remark'
 import html from 'remark-html'
 import { aboutPost, feedPost, sensiblogPost, modalContent, posiblePost } from '../interfaces/posts'
 
-const postsDirectory = path.join(process.cwd(), 'content/sensiblog')
-const feedDirectory = path.join(process.cwd(), 'content/feed')
+
 const sensiblogDirectory = path.join(process.cwd(), 'content/sensiblog')
+const feedDirectory = path.join(process.cwd(), 'content/feed')
 const posibleDirectory = path.join(process.cwd(), 'content/posible')
 const modalsDirectory = path.join(process.cwd(), 'content/modals')
 /**
@@ -191,7 +191,7 @@ export const getRelatedSensiblogPosts = (targetTags: string[], idSkip: string): 
 }
 
 export const getSensiblogPost = (id: string): sensiblogPost => {
-  const fullPath = path.join(postsDirectory, `${id}.md`)
+  const fullPath = path.join(sensiblogDirectory, `${id}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   const matterResult = matter(fileContents)
   const contentSpanish = matterResult.content
@@ -211,16 +211,38 @@ export const getSensiblogPost = (id: string): sensiblogPost => {
   }
 }
 
+
+export const getPosiblePost = (id: string): posiblePost => {
+  const fullPath = path.join(posibleDirectory, `${id}.md`)
+  const fileContents = fs.readFileSync(fullPath, 'utf8')
+  const matterResult = matter(fileContents)
+  const contentSpanish = matterResult.content
+  const _ = matter(matterResult.data.body_eng)
+  const contentEnglishOut = _.content.split('\n').join("\r\n")
+
+  return {
+    id,
+    title: matterResult.data.title,
+    date: matterResult.data.date,
+    thumbnail: matterResult.data.thumbnail,
+    contentEnglish: contentEnglishOut,
+    stock: matterResult.data.stock,
+    price: matterResult.data.price,
+    contentSpanish
+  }
+}
+
+
 // Used to render post index
 export const getSortedPostsData = () => {
   // Get file names under /posts
-  const fileNames = fs.readdirSync(postsDirectory)
+  const fileNames = fs.readdirSync(sensiblogDirectory)
   const allPostsData = fileNames.map(fileName => {
     // Remove ".md" from file name to get id
     const id = fileName.replace(/\.md$/, '')
 
     // Read markdown file as string
-    const fullPath = path.join(postsDirectory, fileName)
+    const fullPath = path.join(sensiblogDirectory, fileName)
     const fileContents = fs.readFileSync(fullPath, 'utf8')
 
     // Use gray-matter to parse the post metadata section
@@ -243,7 +265,18 @@ export const getSortedPostsData = () => {
 }
 
 export const getAllPostIds = () => {
-  const fileNames = fs.readdirSync(postsDirectory)
+  const fileNames = fs.readdirSync(sensiblogDirectory)
+  return fileNames.map(fileName => {
+    return {
+      params: {
+        id: fileName.replace(/\.md$/, '')
+      }
+    }
+  })
+}
+
+export const getAllPosibleIds = () => {
+  const fileNames = fs.readdirSync(posibleDirectory)
   return fileNames.map(fileName => {
     return {
       params: {
