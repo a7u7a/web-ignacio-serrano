@@ -99,7 +99,7 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
                   ? articleDisplay.contentSpanish
                   : ""
               }
-              className="feed"
+              proseClass="feed"
             />
             <div className="text-sm mt-6">
               <p className="underline text-gray-600">Tags:</p>
