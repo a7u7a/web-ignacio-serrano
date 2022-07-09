@@ -41,7 +41,7 @@
 }
 
 .sensiblog {
-  @apply shrink-0 max-w-none pr-0 md:pr-20
+  @apply shrink-0 max-w-none pr-0 md:pr-16
   prose-sm md:prose-base
   prose prose-invert
   prose-img:mb-6 prose-img:mt-0 prose-img:w-full prose-img:max-w-2xl
