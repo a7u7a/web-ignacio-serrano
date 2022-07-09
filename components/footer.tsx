@@ -5,11 +5,19 @@ interface FooterProps {
 }
 
 const MyFooter = ({ color }: FooterProps) => {
+  let bgColor;
+  if (color === "white") {
+    bgColor = "bg-white";
+  }
+  if (color === "black") {
+    bgColor = "bg-black";
+  }
+  if (color === "") {
+    bgColor = "";
+  }
   return (
     <footer
-      className={`flex justify-center inset-x-0 bottom-0 z-30 ${
-        color === "white" ? "bg-white" : "bg-black"
-      }`}
+      className={`flex justify-center inset-x-0 bottom-0 z-30 w-full ${bgColor}`}
     >
       <div
         className={`flex flex-row p-6 text-sm ${

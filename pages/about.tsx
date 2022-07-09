@@ -50,8 +50,8 @@ const About = ({ aboutData, allFeedData, allPostsSlugs }: AboutProps) => {
     <div className="flex flex-col md:flex-row md:h-screen">
       <div className="w-full md:w-1/2">
         {/* about top buttons */}
-        <div className="flex absolute flex-row p-6 justify-end w-1/2 z-50">
           <UpButton color="black" href="/" />
+        <div className="flex fixed flex-row p-6 right-0 top-0 z-50">
           <LanguageButton onClick={toggleLang} lang={lang} color="black" />
         </div>
 
@@ -93,13 +93,13 @@ const About = ({ aboutData, allFeedData, allPostsSlugs }: AboutProps) => {
             </div>
           </div>
 
-          <MyFooter color="white" />
+          <MyFooter color="" />
 
           {/* collapse btn */}
           <div
             className={`${
               collapsed ? "absolute" : "fixed"
-            } flex flex-col bottom-0 text-center inset-x-0 md:invisible items-center bg-gradient-to-t from-indigo-500`}
+            } flex flex-col bottom-0 text-center inset-x-0 md:invisible items-center bg-gradient-to-t from-indigo-500 z-50`}
           >
             <button
               onClick={expandHandle}

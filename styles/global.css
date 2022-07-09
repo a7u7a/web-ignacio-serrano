@@ -11,7 +11,7 @@
 
 .bio {
   @apply mt-10 max-w-xl 
-  prose prose-sm 
+  prose prose-lg 
   prose-p:text-justify prose-p:leading-snug 
   prose-a:font-normal prose-a:text-verde;
 }
