@@ -62,12 +62,12 @@ export default function Post({ post, relatedPosts }: SensiblogPostProps) {
             <div className="mt-3 text-5xl font-serif text-white">{title}</div>
 
             {/* Date */}
-            <div className="text-sm mt-4">
+            <div className="text-base mt-4">
               <DateEl dateString={post.date} />
             </div>
 
             {/* Tags */}
-            <div className="text- mt-4">
+            <div className="text-base mt-4">
               {post.tags.map((tag, i) => (
                 <p key={i} className="inline pr-2">
                   {`#${tag}`}

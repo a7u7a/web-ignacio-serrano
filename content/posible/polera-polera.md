@@ -1,7 +1,7 @@
 ---
 date: May 27, 2022 11:47 PM
 thumbnail: /uploads/d_nq_np_769079-mlc47937758735_102021-w.jpg
-stock: 9
+stock: 0
 price: 500000
 title: Polera polera
 body_eng: "Macaulay Carson Culkin was born on August 26, 1980, in New York City

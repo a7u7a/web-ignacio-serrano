@@ -2,7 +2,7 @@ import DateEl from "../date";
 import { useState, useRef } from "react";
 import { feedPost } from "../../interfaces/posts";
 import { X } from "phosphor-react";
-import Sticker from "./sticker";
+import Sticker from "../sticker";
 import FromMarkdown from "../from-markdown";
 import XButton from "../xBtn";
 import RelatedFeedPosts from "./related-feed-posts";
@@ -151,6 +151,8 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
                   onEnter={onEnter}
                   onExit={onExit}
                   tag={post.tags[0]}
+                  marginY={40}
+                  marginX={80}
                 />
                 <div
                   className={`absolute w-full h-full ${
