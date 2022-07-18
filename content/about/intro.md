@@ -9,8 +9,6 @@ body_eng: >-
 categories:
   - grr
 ---
-
-HJola! En esta sección encontrarás información sobre mi practica profesional, CV y exhibiciones. 
-Visita[Posible](https://duckduckgo.com) para mi trabajo en impresión, diseño y objetos. 
+Hola! En esta sección encontrarás información sobre mi practica profesional, CV y exhibiciones. 
+Visita [Posible](https://duckduckgo.com) para mi trabajo en impresión, diseño y objetos. 
 Puede interesarte tambien [Sensiblog](https://duckduckgo.com), repositorio de procesos ligados a electrónica especulativa biodegradable.
-
