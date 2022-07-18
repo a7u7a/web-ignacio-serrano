@@ -2,10 +2,10 @@
 date: May 27, 2022 10:43 PM
 title: Intro
 body_eng: >-
-  Hello! I’m Ignacio Serrano. On this section you’ll be able to find information
-  regarding my professional practice, CV and exhibitions. 
+  Hello! On this section you’ll be able to find information regarding my
+  professional practice, CV and exhibitions. 
 
-  You may also be interested in [Posible](https://duckduckgo.com) for my work on printing, design and objects or [Sensiblog](https://duckduckgo.com), a repository for speculative biodegradable electronics’s processes.
+  You may also be interested in [Posible](https://www.ignacioserranol.com/posible) for my work on printing, design and objects or [Sensiblog](https://www.ignacioserranol.com/sensiblog), a repository for speculative biodegradable electronics’s processes.
 categories:
   - grr
 ---
