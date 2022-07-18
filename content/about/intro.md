@@ -10,5 +10,5 @@ categories:
   - grr
 ---
 Hola! En esta sección encontrarás información sobre mi practica profesional, CV y exhibiciones. 
-Visita [Posible](https://duckduckgo.com) para mi trabajo en impresión, diseño y objetos. 
-Puede interesarte tambien [Sensiblog](https://duckduckgo.com), repositorio de procesos ligados a electrónica especulativa biodegradable.
+Visita [Posible](https://www.ignacioserranol.com/posible) para mi trabajo en impresión, diseño y objetos. 
+Puede interesarte tambien [Sensiblog](https://www.ignacioserranol.com/sensiblog), repositorio de procesos ligados a electrónica especulativa biodegradable.
