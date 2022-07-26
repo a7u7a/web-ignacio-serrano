@@ -1,5 +1,5 @@
 ---
-date: July 26, 2022 12:15 PM
+date: July 22, 2022 12:15 PM
 thumbnail: /uploads/img_3547.jpg
 tags:
   - sensiblog
