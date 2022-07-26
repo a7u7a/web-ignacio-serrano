@@ -1,6 +1,6 @@
 ---
 date: June 8, 2022 12:26 PM
-thumbnail: /uploads/captura-de-pantalla-2022-06-24-a-la-s-13.33.28.png
+thumbnail: /uploads/img_5616.jpg
 tags:
   - fondart
   - sonido
