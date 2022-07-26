@@ -1,5 +1,5 @@
 ---
-date: July 26, 2022 12:26 PM
+date: June 8, 2022 12:26 PM
 thumbnail: /uploads/captura-de-pantalla-2022-06-24-a-la-s-13.33.28.png
 tags:
   - fondart
