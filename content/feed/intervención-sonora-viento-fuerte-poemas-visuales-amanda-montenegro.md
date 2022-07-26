@@ -26,3 +26,19 @@ La instalación, provista de un sensor capacitivo de gran formato impreso con ti
 *Viento Fuerte is a sound installation that took place in Amanda Montenegro’s  Poemas Visuales, at Espacio Vilches, Pontificia Universidad Catolica de Chile.*
 
 *The installation, provided with a large scale printed capacitive sensor on bioplastic, activates a touch-sound response that at the same time intends to responde to Amanda’s exhibition proposal.*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*.*
