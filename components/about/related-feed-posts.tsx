@@ -47,7 +47,7 @@ const RelatedFeedPosts = ({
               <div className="font-semibold text-lg hover:text-verde hover:underline">
                 <Link href={"/about/" + related.id}>{related.title}</Link>
               </div>
-              <div>
+              <div className="w-full flex flex-row flex-wrap">
                 {related.tags.map((tag, i) => (
                   <p key={i} className="inline pr-2">
                     {`#${tag}`}

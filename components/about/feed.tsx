@@ -58,10 +58,10 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
   return (
     <>
       <div
-        className="relative w-full md:w-1/2 bg-no-repeat bg-center bg-cover"
+        className="relative w-full md:w-1/2 bg-no-repeat bg-center bg-violet-400 bg-cover"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        {/* Article modal (make comp)*/}
+        {/* Article modal (todo: make comp)*/}
         <div
           className={`fixed inset-0 md:absolute md:top-0 md:right-0 z-50 w-full h-full bg-violet-400 overflow-auto ${
             articleDisplay ? "visible" : "invisible"
@@ -103,9 +103,11 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
             />
             <div className="text-sm mt-6">
               <p className="underline text-gray-600">Tags:</p>
-              {articleDisplay?.tags.map((tag) => (
-                <p key={tag} className="inline mr-2">{`#${tag}`}</p>
-              ))}
+              <div className="w-2/3 flex flex-row flex-wrap">
+                {articleDisplay?.tags.map((tag) => (
+                  <p key={tag} className="inline mr-2">{`#${tag}`}</p>
+                ))}
+              </div>
             </div>
             <RelatedFeedPosts
               feedPosts={feedPosts}

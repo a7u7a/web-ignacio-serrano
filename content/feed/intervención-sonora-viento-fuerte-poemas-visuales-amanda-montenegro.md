@@ -15,7 +15,7 @@ tags:
   - conductive
 title: Intervención sonora Viento Fuerte / Poemas Visuales Amanda Montenegro
 ---
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/731858601?h=d3b7c2afac&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Intervenci&amp;oacute;n &amp;quot;Viento Fuerte&amp;quot; en muestra &amp;quot;Poemas Visuales&amp;quot; de Amanda Montenegro."></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<iframe src="https://player.vimeo.com/video/731858601?h=d3b7c2afac" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Intervenci&amp;oacute;n &amp;quot;Viento Fuerte&amp;quot; en muestra &amp;quot;Poemas Visuales&amp;quot; de Amanda Montenegro."></iframe>
 
 Viento fuerte es una intervención sonora que tuvo lugar en la muestra Poemas Visuales de la artista medial Amanda Montenegro el 8 de junio del 2022 en Espacio Vilches, Campus Oriente Pontifica Universidad Católica de Chile.
 
@@ -26,19 +26,3 @@ La instalación, provista de un sensor capacitivo de gran formato impreso con ti
 *Viento Fuerte is a sound installation that took place in Amanda Montenegro’s  Poemas Visuales, at Espacio Vilches, Pontificia Universidad Catolica de Chile.*
 
 *The installation, provided with a large scale printed capacitive sensor on bioplastic, activates a touch-sound response that at the same time intends to responde to Amanda’s exhibition proposal.*
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-*.*

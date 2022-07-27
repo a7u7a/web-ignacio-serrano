@@ -33,6 +33,7 @@
 
 .feed {
   @apply mt-4 prose prose-sm max-w-xl 
+  prose-p:text-justify
   prose-p:leading-tight prose-p:text-white 
   prose-h1:text-white prose-h1:font-light
   prose-h2:text-white prose-h3:text-white prose-h4:text-white
