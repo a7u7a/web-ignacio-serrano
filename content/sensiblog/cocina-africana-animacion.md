@@ -1,11 +1,11 @@
 ---
 date: May 27, 2022 11:39 PM
-thumbnail: /uploads/screen-shot-2021-05-04-at-10.34.08.png
+thumbnail: /uploads/captura-de-pantalla-2020-10-12-a-la-s-12.08.42.png
 category: Animación
 tags:
   - biofabricacion
   - workshop
-title: Cocina africana
+title: Bioplastico agar
 title_eng: African cuisine
 body_eng: >-
   # Wow text
@@ -15,9 +15,7 @@ body_eng: >-
 
   ![Alga](/uploads/screen-shot-2022-02-02-at-23.14.13.png "Un pie de foto por aquí")
 
-  ## Componente especial Texto + Imagen
-  <blockquote id="textOnImage" src="/uploads/screen-shot-2021-12-24-at-16.32.48.png" alt="burbujitas">Este espacio es para poner texto que 
-  alcance a estar dentro de la imagen</blockquote>
+  ## Componente especial Texto + Imagen <blockquote id="textOnImage" src="/uploads/screen-shot-2021-12-24-at-16.32.48.png" alt="burbujitas">Este espacio es para poner texto que  alcance a estar dentro de la imagen</blockquote>
 
   ### More and more
 
