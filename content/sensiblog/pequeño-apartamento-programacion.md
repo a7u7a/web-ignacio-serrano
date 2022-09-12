@@ -6,7 +6,7 @@ tags:
   - piedra
   - workshop
   - pancito
-title: Controlsr visuales en TouchDesigner con Arduino
+title: Controlar visuales en TouchDesigner con Arduino
 title_eng: Small flat
 body_eng: >-
   ![Alga](/uploads/screen-shot-2022-05-31-at-16.22.55.png "Un pie de foto por
