@@ -1,11 +1,11 @@
 ---
 date: June 1, 2022 11:39 PM
-thumbnail: /uploads/screen-shot-2021-05-04-at-10.34.08.png
+thumbnail: /uploads/captura-de-pantalla-2020-10-12-a-la-s-12.06.48.png
 category: Biomateriales
 tags:
-  - biofabricacion
+  - sonido
   - workshop
-title: Cocina africana
+title: Biosensor como switch capacitivo con PureData
 title_eng: African cuisine
 body_eng: >-
   # Wow text
