@@ -1,11 +1,11 @@
 ---
 date: March 27, 2024 11:39 PM
-thumbnail: /uploads/screen-shot-2021-05-04-at-10.34.08.png
+thumbnail: /uploads/captura-de-pantalla-2022-05-28-a-la-s-13.20.42.png
 category: Programación
 tags:
-  - biofabricacion
+  - sonido
   - workshop
-title: Cocina africana
+title: PureData y resistencias variables
 title_eng: African cuisine
 body_eng: >-
   # Wow text
