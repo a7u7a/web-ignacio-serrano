@@ -1,11 +1,11 @@
 ---
 date: May 27, 2022 11:39 PM
-thumbnail: /uploads/screen-shot-2021-05-04-at-10.34.08.png
+thumbnail: /uploads/captura-de-pantalla-2020-10-12-a-la-s-12.07.54.png
 category: Arte
 tags:
   - biofabricacion
   - workshop
-title: Cocina africana
+title: Bioplastico conductivo
 title_eng: African cuisine
 body_eng: >-
   # Wow text
