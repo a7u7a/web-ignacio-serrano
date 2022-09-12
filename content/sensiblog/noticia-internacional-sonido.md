@@ -1,12 +1,12 @@
 ---
 date: June 10, 2022 11:01 AM
-thumbnail: /uploads/screen-shot-2022-05-10-at-16.45.30.png
+thumbnail: /uploads/captura-de-pantalla-2022-05-28-a-la-s-13.20.42.png
 category: Sonido
 tags:
   - hola
   - chao
   - pancito
-title: Noticia internacional
+title: Interacción Ondita Sensible 1 en BAJ
 title_eng: International News
 body_eng: >-
   ![Alga](/uploads/screen-shot-2022-05-31-at-16.22.55.png "Un pie de foto por
