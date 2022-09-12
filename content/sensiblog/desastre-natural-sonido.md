@@ -1,11 +1,11 @@
 ---
 date: May 27, 2022 11:39 PM
-thumbnail: /uploads/screen-shot-2022-04-24-at-20.56.01.png
+thumbnail: /uploads/img_5616.jpg
 category: Sonido
 tags:
   - biofabricacion
   - workshop
-title: Sal de fruta por favor
+title: Sensor de proximidad y sonido en PureData
 title_eng: Natural Disaster
 body_eng: >-
   # Wow text
