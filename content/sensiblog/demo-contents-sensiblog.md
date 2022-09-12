@@ -1,11 +1,11 @@
 ---
 date: April 2, 2022 11:39 PM
-thumbnail: /uploads/captura-de-pantalla-2022-06-24-a-la-s-13.33.28.png
+thumbnail: /uploads/captura-de-pantalla-2022-07-13-a-la-s-17.48.50.png
 category: Sonido
 tags:
   - biofabricacion
   - workshop
-title: PureData y sensor imnoreso en bioplastico
+title: PureData y resistencias variables impresas
 title_eng: Sensiblog contents demo post
 body_eng: >-
   <div>
