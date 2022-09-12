@@ -1,12 +1,12 @@
 ---
 date: June 10, 2022 11:01 AM
-thumbnail: /uploads/screen-shot-2022-05-10-at-16.45.30.png
+thumbnail: /uploads/captura-de-pantalla-2022-02-21-a-la-s-18.37.05.png
 category: Programación
 tags:
   - piedra
   - workshop
   - pancito
-title: Pequeño apartamento
+title: Controlar visuales en TouchDesigner con Arduino
 title_eng: Small flat
 body_eng: >-
   ![Alga](/uploads/screen-shot-2022-05-31-at-16.22.55.png "Un pie de foto por
