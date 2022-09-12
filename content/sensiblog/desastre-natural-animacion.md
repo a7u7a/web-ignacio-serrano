@@ -5,7 +5,7 @@ category: Animación
 tags:
   - biofabricacion
   - workshop
-title: Vaciado de bioplastico agar para Timelapse's
+title: Vaciado de bioplastico agar para Timelapses
 title_eng: Natural Disaster
 body_eng: >-
   # Wow text
