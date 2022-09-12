@@ -1,12 +1,12 @@
 ---
 date: June 10, 2022 11:01 AM
-thumbnail: /uploads/screen-shot-2022-02-02-at-23.16.59.png
+thumbnail: /uploads/captura-de-pantalla-2020-10-12-a-la-s-12.05.41.png
 category: Animación
 tags:
   - hola
   - chao
   - pancito
-title: Reventado y más
+title: Interacción con animación usando PD GEM
 title_eng: International News
 body_eng: >-
   ![Alga](/uploads/screen-shot-2022-05-31-at-16.22.55.png "Un pie de foto por
