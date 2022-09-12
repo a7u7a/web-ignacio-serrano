@@ -5,7 +5,7 @@ category: Sonido
 tags:
   - biofabricacion
   - workshop
-title: Post demo contenidos Sensiblog
+title: "Post demo contenidos Sensiblog "
 title_eng: Sensiblog contents demo post
 body_eng: >-
   <div>
