@@ -1,12 +1,12 @@
 ---
 date: June 10, 2022 11:01 AM
-thumbnail: /uploads/d_nq_np_769079-mlc47937758735_102021-w.jpg
+thumbnail: /uploads/captura-de-pantalla-2020-10-13-a-la-s-16.00.57.png
 category: Programación
 tags:
   - hola
   - chao
   - pancito
-title: Totalmente enfermo K.O.
+title: Arduino, sensores cap. y sintes en PD
 title_eng: International News
 body_eng: >-
   ![Alga](/uploads/screen-shot-2022-05-31-at-16.22.55.png "Un pie de foto por
