@@ -1,11 +1,11 @@
 ---
 date: May 27, 2022 11:39 PM
-thumbnail: /uploads/screen-shot-2022-05-19-at-17.42.16.png
+thumbnail: /uploads/captura-de-pantalla-2020-10-12-a-la-s-12.03.12.png
 category: Animación
 tags:
   - biofabricacion
   - workshop
-title: Califragilistico espialidoso
+title: Vaciado de bioplastico agar para Timelapses
 title_eng: Natural Disaster
 body_eng: >-
   # Wow text
