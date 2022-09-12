@@ -1,6 +1,6 @@
 ---
 date: April 2, 2022 11:39 PM
-thumbnail: /uploads/screen-shot-2021-05-04-at-10.34.08.png
+thumbnail: /uploads/img_3547.jpg
 category: Sonido
 tags:
   - biofabricacion
@@ -10,7 +10,7 @@ title_eng: Sensiblog contents demo post
 body_eng: >-
   <div>
 
-  
+
   English demo post:
 
   ### Quote
@@ -20,8 +20,7 @@ body_eng: >-
   The Armero tragedy occurred following the eruption of the Nevado del Ruiz stratovolcano in Tolima, Colombia, on November 13, 1985. After 69 years of [dormancy](https://duckduckgo.com), the volcano's eruption caught nearby towns unaware, even though the government had received warnings.
 
 
-  <blockquote id="textOnImage" src="/uploads/screen-shot-2021-12-24-at-16.32.48.png" alt="burbujitas">Este espacio es para poner texto que 
-  alcance a estar <a href="url">link text</a> dentro de la imagen</blockquote>
+  <blockquote id="textOnImage" src="/uploads/screen-shot-2021-12-24-at-16.32.48.png" alt="burbujitas">Este espacio es para poner texto que  alcance a estar <a href="url">link text</a> dentro de la imagen</blockquote>
 
 
   ![Alga](/uploads/screen-shot-2022-02-02-at-23.14.13.png "Un pie de foto por aquí")
@@ -34,8 +33,7 @@ body_eng: >-
 
   ### Componente especial Texto + Imagen
 
-  <blockquote id="textOnImage" src="/uploads/screen-shot-2022-02-02-at-23.14.13.png" alt="burbujitas">Este espacio es para poner texto que 
-  alcance a estar dentro de la imagen</blockquote>
+  <blockquote id="textOnImage" src="/uploads/screen-shot-2022-02-02-at-23.14.13.png" alt="burbujitas">Este espacio es para poner texto que  alcance a estar dentro de la imagen</blockquote>
 
 
   ### Vimeo
