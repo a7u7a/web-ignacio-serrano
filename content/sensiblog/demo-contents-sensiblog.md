@@ -1,11 +1,11 @@
 ---
 date: April 2, 2022 11:39 PM
-thumbnail: /uploads/img_3547.jpg
+thumbnail: /uploads/captura-de-pantalla-2022-06-24-a-la-s-13.33.28.png
 category: Sonido
 tags:
   - biofabricacion
   - workshop
-title: Resistencias variables en bioplastico
+title: PureData y sensor imnoreso en bioplastico
 title_eng: Sensiblog contents demo post
 body_eng: >-
   <div>
