@@ -1,11 +1,11 @@
 ---
 date: May 27, 2022 11:39 PM
-thumbnail: /uploads/screen-shot-2021-05-24-at-20.47.11.png
+thumbnail: /uploads/captura-de-pantalla-2022-07-13-a-la-s-17.43.53.png
 category: Arte
 tags:
   - biofabricacion
   - workshop
-title: Arte arte arte
+title: Ondita Sensible 1. en Matucana 100
 title_eng: Natural Disaster
 body_eng: >-
   # Wow text
