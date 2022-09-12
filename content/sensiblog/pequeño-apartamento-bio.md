@@ -1,12 +1,12 @@
 ---
 date: June 10, 2022 11:01 AM
-thumbnail: /uploads/screen-shot-2022-05-19-at-16.06.13.png
+thumbnail: /uploads/captura-de-pantalla-2020-10-14-a-la-s-17.16.44.png
 category: Biomateriales
 tags:
   - piedra
   - workshop
   - pancito
-title: Afrontas de la vida
+title: Receta agar conductivo
 title_eng: Small flat
 body_eng: >-
   ![Alga](/uploads/screen-shot-2022-05-31-at-16.22.55.png "Un pie de foto por
