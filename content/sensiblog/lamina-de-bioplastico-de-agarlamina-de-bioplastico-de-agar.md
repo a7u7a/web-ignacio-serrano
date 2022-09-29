@@ -7,13 +7,11 @@ tags:
   - agar
   - lamina
   - receta
-title: Lamina de Bioplastico de Agar
+title: Lamina de bioplástico de Agar
 title_eng: Agar bioplastic film tutorial
 body_eng: Coming soon
 ---
 ![](/uploads/captura-de-pantalla-2020-10-12-a-la-s-12.08.42.png)
-
-
 
 En esta entrada compartimos la receta de lámina de bioplástico de  agar usada para la instalación Viento Fuerte, en la que fue usada como soporte para un sensor impreso con tintas conductivas.
 
@@ -39,6 +37,10 @@ Conservantes / Estabilizadores
 4.2. Vinagre: 
 
 4.3 Enjuague bucal:
+
+
+
+![](/uploads/captura-de-pantalla-2020-10-12-a-la-s-22.49.03.png)
 
 Receta (tabla)
 
