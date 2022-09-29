@@ -7,10 +7,14 @@ tags:
   - agar
   - lamina
   - receta
-title: Lamina de Bioplastico de AgarLamina de Bioplastico de Agar
+title: Lamina de Bioplastico de Agar
 title_eng: Agar bioplastic film tutorial
 body_eng: Coming soon
 ---
+![](/uploads/captura-de-pantalla-2020-10-12-a-la-s-12.08.42.png)
+
+
+
 En esta entrada compartimos la receta de lámina de bioplástico de  agar usada para la instalación Viento Fuerte, en la que fue usada como soporte para un sensor impreso con tintas conductivas.
 
 Las láminas de agar pueden ser usadas por si mismas como sensores usando la humedad del material como conductor cuando están frescas, como superficie para impresión con tintas conductivas una vez deshidratadas, o como un ‘cuero’ en el que fijar componentes cuando se  trabajan lo suficientemente gruesas.
@@ -29,14 +33,12 @@ Las cantidades de agar dependerán de la calidad de este, y de la dureza del mat
 Glicerol:
 El glicerol o glicerina, está relacionado a la ductilidad del material, y la proporciones usadas he observado que tienen directa relación con su velocidad de secado y eventual curado al deshidratarse. Es un buen ingrediente a aumentar si tu receta termina siendo quebradiza, y a disminuir si aun seco por semanas tu material pareciese ‘sudar’.
 
-
 Conservantes / Estabilizadores
 4.1  Bórax: El bórax funciona como un estabilizador y conservante. Disminuye e incluso previene del todo la proliferación de hongos en el secado. Entrega una resistencia mayor a láminas gruesas sin aportar rigidez. El bórax puede agregarle cualidades semiconductoras al material, por lo que si deseas usarlo como aislante  o no quieres  aumentar sus cualidades conductivas, no aconsejo abusar de él.
 
 4.2. Vinagre: 
 
 4.3 Enjuague bucal:
-
 
 Receta (tabla)
 
@@ -60,12 +62,7 @@ Pesa gramera
 Cuchara de palo
 Superficie para vertir el bioplástico, idealmente con barandas.
 
-
-
-
 Cocina en olla
-
-
 
 Mezcla
 Tips mezcla
@@ -81,8 +78,6 @@ Tiempos y precauciones
 Reposo
 Vertimiento
 
-
-
 Vertimiento y secado.
 
 Reposo
@@ -91,6 +86,5 @@ Vertimiento
 Burbujas
 Cuidados 
 Tiempos
-
 
 Vertimiento y secado.
