@@ -7,7 +7,7 @@ tags:
   - agar
   - lamina
   - receta
-title: Lamina de Bioplastico de AgarLamina de Bioplastico de Agar
+title: Lamina de Bioplastico de Agar
 title_eng: Agar bioplastic film tutorial
 body_eng: Coming soon
 ---
