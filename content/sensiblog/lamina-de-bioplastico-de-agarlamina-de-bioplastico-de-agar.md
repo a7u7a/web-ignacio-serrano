@@ -1,7 +1,7 @@
 ---
 date: September 29, 2022 2:31 PM
 thumbnail: /uploads/captura-de-pantalla-2020-10-12-a-la-s-12.08.42.png
-category: bioplastico
+category: biomateriales
 tags:
   - bioplastico
   - agar
