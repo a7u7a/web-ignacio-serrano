@@ -20,7 +20,6 @@ interface PosiblePostProps {
 export default function Post({ post, modalContent }: PosiblePostProps) {
   const [visibleModal, setModalVisibility] = useState(false);
   const [lang, setLang] = useState("spa");
-  console.log("lang", lang);
   const content =
     lang === "spa" ? post.contentSpanish : post.descriptionEnglish;
   var peso = new Intl.NumberFormat("es-CL", {

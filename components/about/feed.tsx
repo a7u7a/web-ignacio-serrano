@@ -60,6 +60,7 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
   function onEnter(id: string) {
     setHoverId(id);
   }
+
   function onExit() {
     setHoverId(undefined);
   }
@@ -77,11 +78,9 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
 
       // show post when id is valid
       if (post.length) {
-        console.log("url param valid");
         setArticle(post[0]);
         // update url param
       } else {
-        console.log("url param invalid");
         // show error when invalid
         setUrlError(true);
       }
@@ -219,7 +218,7 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
                       ? "mix-blend-exclusion bg-violet-300"
                       : ""
                   }`}
-                ></div>
+                />
               </button>
             ))}
           </div>

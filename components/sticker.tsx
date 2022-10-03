@@ -28,8 +28,8 @@ interface StickerProps {
   tag: string;
   color: string;
   id: string;
-  onEnter: (id: string) => void;
-  onExit: () => void;
+  onEnter?: (id: string) => void;
+  onExit?: () => void;
   marginX: number;
   marginY: number;
 }
@@ -75,10 +75,22 @@ const Sticker = ({
     );
   }
 
+  const handleOnEnter = () => {
+    if (onEnter) {
+      onEnter(id);
+    }
+  };
+
+  const handleOnExit = () => {
+    if (onExit) {
+      onExit();
+    }
+  };
+
   return (
     <div
-      onMouseEnter={() => onEnter(id)}
-      onMouseLeave={onExit}
+      onMouseEnter={() => handleOnEnter()}
+      onMouseLeave={() => handleOnExit()}
       ref={refContainer}
       className="absolute w-full h-full z-30"
     >

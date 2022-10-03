@@ -14,7 +14,17 @@ interface PosibleProps {
 }
 
 const Posible = ({ allPosiblePosts, modalContent }: PosibleProps) => {
+  const [backgroundImage, setBackgroundImage] = useState("");
   const [visibleModal, setModalVisibility] = useState(false);
+  const [hoverId, setHoverId] = useState<string | undefined>(undefined);
+
+  function onEnter(id: string) {
+    setHoverId(id);
+  }
+  function onExit() {
+    setHoverId(undefined);
+  }
+
   return (
     <div className="flex flex-col justify-between h-screen">
       <div>
@@ -33,9 +43,23 @@ const Posible = ({ allPosiblePosts, modalContent }: PosibleProps) => {
             />
           </div>
         </div>
-        <div className="flex flex-col">
+        <div
+          className="flex flex-col bg-no-repeat bg-center bg-cover"
+          style={{ backgroundImage: `url(${backgroundImage})` }}
+        >
           {allPosiblePosts.map((post) => (
-            <IndexItem key={post.id} post={post} />
+            <div
+              onMouseEnter={() => setBackgroundImage(post.thumbnail)}
+              onMouseLeave={() => setBackgroundImage("")}
+            >
+              <IndexItem
+                onEnter={onEnter}
+                onExit={onExit}
+                key={post.id}
+                post={post}
+                hover={hoverId === post.id}
+              />
+            </div>
           ))}
         </div>
       </div>

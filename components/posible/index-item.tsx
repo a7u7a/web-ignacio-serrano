@@ -6,39 +6,37 @@ import useMediaQuery from "../../lib/media";
 
 interface IndexItemProps {
   post: posiblePost;
+  onEnter: (id: string) => void;
+  onExit: () => void;
+  hover: boolean;
 }
 
-const IndexItem = ({ post }: IndexItemProps) => {
+const IndexItem = ({ post, onEnter, onExit, hover }: IndexItemProps) => {
   const isSm = useMediaQuery("(max-width: 768px)");
-  const [backgroundImage, setBackgroundImage] = useState("");
 
-  useEffect(() => {
-    if (isSm) {
-      setBackgroundImage(post.thumbnail);
-    } else {
-      setBackgroundImage("");
-    }
-  }, [isSm]);
   return (
-    <div
-      key={post.id}
-      className="flex relative bg-no-repeat bg-center bg-cover w-full h-36"
-      style={{ backgroundImage: `url(${backgroundImage})` }}
-    >
+    <div key={post.id} className="flex relative w-full h-36">
       <Link href={`/posible/${post.id}`}>
         <div className="cursor-pointer">
+          <div
+            className={`absolute w-full h-full ${
+              hover ? "mix-blend-exclusion bg-violet-300" : ""
+            }`}
+          />
           <div className="absolute flex w-full h-full items-center justify-center">
-            <p className="flex text-center text-5xl font-light">{post.title}</p>
+            <p
+              className={`flex text-center text-5xl font-light ${
+                hover ? "text-white" : "text-black"
+              }`}
+            >
+              {post.title}
+            </p>
           </div>
           <Sticker
             id={post.id}
             color={post.stock ? "#05FF00" : "#FFFF00"}
-            onEnter={() => {
-              if (!isSm) setBackgroundImage(post.thumbnail);
-            }}
-            onExit={() => {
-              if (!isSm) setBackgroundImage("");
-            }}
+            onEnter={onEnter}
+            onExit={onExit}
             tag={post.stock ? "Disponible" : "Agotado"}
             marginY={40}
             marginX={isSm ? 80 : 300}
