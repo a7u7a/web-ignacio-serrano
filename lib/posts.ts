@@ -159,13 +159,14 @@ export const getSortedSensiblogPosts = (): sensiblogPost[] => {
  */
 
 const getPostSlugs = (posts: sensiblogPost[] | feedPost[], section: string) => {
-  return posts.map(({ id }) => "/" + section + "/" + id)
+  return posts.map(({ id }) => "/" + section + id)
 }
 
 export const getAllPostsSlugs = () => {
-  const sensiblogPosts = getPostSlugs(getSortedSensiblogPosts(), "sensiblog")
-  const feedPosts = getPostSlugs(getSortedFeedPosts(), "about")
+  const sensiblogPosts = getPostSlugs(getSortedSensiblogPosts(), "sensiblog/")
+  const feedPosts = getPostSlugs(getSortedFeedPosts(), "about?post=")
   // join
+  // const allPostSlugs = [ ...feedPosts];
   const allPostSlugs = [...sensiblogPosts, ...feedPosts];
   return allPostSlugs;
 }

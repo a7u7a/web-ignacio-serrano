@@ -24,7 +24,11 @@ const About = ({ aboutData, allFeedData, allPostsSlugs }: AboutProps) => {
 
   const isSmall = useMediaQuery("(max-width: 768px)");
   const [collapsed, setCollapsed] = useState(isSmall);
-  const randomLink = allPostsSlugs[Math.floor(Math.random() * allPostsSlugs.length)];
+  const randomLink =
+    allPostsSlugs[Math.floor(Math.random() * allPostsSlugs.length)];
+
+    console.log("allPostsSlugs",allPostsSlugs);
+
 
   useEffect(() => {
     setCollapsed(isSmall ? true : false);
@@ -48,7 +52,7 @@ const About = ({ aboutData, allFeedData, allPostsSlugs }: AboutProps) => {
     <div className="flex flex-col md:flex-row md:h-screen">
       <div className="w-full md:w-1/2">
         {/* about top buttons */}
-          <UpButton color="black" href="/" />
+        <UpButton color="black" href="/" />
         <div className="flex fixed flex-row p-6 right-0 top-0 z-50">
           <LanguageButton onClick={toggleLang} lang={lang} color="black" />
         </div>
@@ -121,7 +125,7 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       aboutData,
       allFeedData,
-      allPostsSlugs
+      allPostsSlugs,
     },
   };
 };

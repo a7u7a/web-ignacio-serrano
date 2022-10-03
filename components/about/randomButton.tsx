@@ -8,7 +8,7 @@ interface RandomButtonProps {
 const RandomButton = ({ linkTo }: RandomButtonProps) => {
   return (
     <Link href={linkTo}>
-      <div className="flex relative py-12">
+      <div className="flex relative py-12 cursor-pointer">
         <Image width={1308} height={526} src={"/images/random.gif"} />
       </div>
     </Link>
