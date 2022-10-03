@@ -17,7 +17,7 @@ const RelatedPosts = ({ relatedPosts, lang }: RelatedPostsProps) => {
           relatedPosts.map((related, i) => (
             <div key={i} className="text-white hover:text-verde">
               <div className="font-semibold hover:underline">
-                <Link href={"/" + related.id}>
+                <Link href={"/sensiblog/" + related.id}>
                   {lang === "spa" ? related.title : related.title_eng}
                 </Link>
               </div>
