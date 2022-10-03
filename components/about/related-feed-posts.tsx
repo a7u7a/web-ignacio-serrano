@@ -45,7 +45,7 @@ const RelatedFeedPosts = ({
           relatedPosts.map((related, i) => (
             <div key={i} className="flex flex-col">
               <div className="font-semibold text-lg hover:text-verde hover:underline">
-                <Link href={"/about/" + related.id}>{related.title}</Link>
+                <Link href={"/about?post=" + related.id}>{related.title}</Link>
               </div>
               <div className="w-full flex flex-row flex-wrap">
                 {related.tags.map((tag, i) => (

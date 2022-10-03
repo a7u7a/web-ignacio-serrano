@@ -13,8 +13,6 @@ import useMediaQuery from "../lib/media";
 import MyFooter from "../components/footer";
 import SocialAbout from "../components/about/socials";
 
-const pageName = "About";
-
 interface AboutProps {
   aboutData: aboutPost[];
   allFeedData: feedPost[];
