@@ -52,7 +52,9 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
     const index = feedPosts.indexOf(articleDisplay!);
     const mod = direction === "up" ? +1 : -1;
     const nextPost = feedPosts[index + mod];
-    setArticle(nextPost ? nextPost : articleDisplay);
+    if (nextPost) {
+      router.push("/about?post=" + nextPost.id);
+    }
   }
 
   function onEnter(id: string) {
@@ -65,17 +67,24 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
   const router = useRouter();
 
   useEffect(() => {
+    // clear url params when clicking on x button
+    // add url params when clicking on a post
+
     if (router.query["post"]) {
       // when something is found on url
       const urlId = router.query["post"] as string;
       const post = validPostId(urlId, feedPosts);
+
       // show post when id is valid
       if (post.length) {
+        console.log("url param valid");
         setArticle(post[0]);
+        // update url param
       } else {
+        console.log("url param invalid");
+        // show error when invalid
         setUrlError(true);
       }
-      // show error when invalid
     } else {
       // no article found in url
       setArticle(undefined);
@@ -91,8 +100,17 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
         {/* Article modal (todo: make component)*/}
         {urlError ? (
           <div className="fixed inset-0 md:absolute md:top-0 md:right-0 z-50 w-full h-full bg-violet-400 overflow-auto">
-            <div className="m-12 text-3xl font-light text-white ">Post no encontrado :(</div>
-            <XButton color="black" onClick={() => setUrlError(false)} />
+            <div className="m-12 text-3xl font-light text-white ">
+              Post no encontrado :(
+            </div>
+            <XButton
+              color="black"
+              onClick={() => {
+                setUrlError(false);
+                // clear url params
+                router.replace("/about", undefined, { shallow: true });
+              }}
+            />
           </div>
         ) : (
           <div
@@ -100,7 +118,14 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
               articleDisplay ? "visible" : "invisible"
             }`}
           >
-            <XButton color="black" onClick={() => setArticle(undefined)} />
+            <XButton
+              color="black"
+              onClick={() => {
+                setArticle(undefined);
+                // clear url params
+                router.replace("/about", undefined, { shallow: true });
+              }}
+            />
             <div className="m-12 mt-8 text-white">
               <div className="text-sm">
                 <button
@@ -162,9 +187,7 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
                 onMouseEnter={() => setBackgroundImage(post.thumbnail)}
                 onMouseLeave={() => setBackgroundImage("")}
                 onClick={() => {
-                  setArticle(
-                    feedPosts.filter((feedPost) => feedPost.id === post.id)[0]
-                  );
+                  router.push("/about?post=" + post.id);
                 }}
               >
                 <div

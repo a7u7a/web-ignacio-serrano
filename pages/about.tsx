@@ -25,10 +25,7 @@ const About = ({ aboutData, allFeedData, allPostsSlugs }: AboutProps) => {
   const isSmall = useMediaQuery("(max-width: 768px)");
   const [collapsed, setCollapsed] = useState(isSmall);
   const randomLink =
-    allPostsSlugs[Math.floor(Math.random() * allPostsSlugs.length)];
-
-    console.log("allPostsSlugs",allPostsSlugs);
-
+    allPostsSlugs[Math.floor(Math.random() * allPostsSlugs.length)];  
 
   useEffect(() => {
     setCollapsed(isSmall ? true : false);
