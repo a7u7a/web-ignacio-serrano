@@ -125,8 +125,8 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
                 router.replace("/about", undefined, { shallow: true });
               }}
             />
-            <div className="m-12 mt-8 text-white">
-              <div className="text-sm">
+            <div className="flex flex-col items-center text-white m-6 md:ml-14 md:mr-14 lg:ml-20 lg:mr-20 lg:max-w-xl">
+              <div className="w-full text-sm">
                 <button
                   onClick={() => changeArticle("up")}
                   className="underline inline hover:text-verde"

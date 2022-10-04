@@ -38,7 +38,7 @@ const FromMarkdown = ({ contentMd, proseClass }: FromMarkdownProps) => {
               <div className="w-full relative">
                 <img alt={alt} src={src} className="w-full object-contain" />
                 <div className="absolute w-full h-full top-0 left-0 p-4 overflow-auto">
-                  <span className="text-white leading-snug text-lg inline py-0.5 px-0.5 bg-black ">
+                  <span className="text-white leading-snug text-lg inline py-0.5 px-0.5 bg-black">
                     {text}
                   </span>
                 </div>
