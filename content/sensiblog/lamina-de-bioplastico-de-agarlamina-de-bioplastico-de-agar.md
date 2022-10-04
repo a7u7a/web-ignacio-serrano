@@ -1,6 +1,6 @@
 ---
 date: September 29, 2022 2:31 PM
-thumbnail: /uploads/captura-de-pantalla-2020-10-12-a-la-s-12.08.42.png
+thumbnail: /uploads/imagen-cuadrada.png
 category: Biomateriales
 tags:
   - bioplastico
@@ -11,14 +11,17 @@ title: Lamina de bioplástico de Agar
 title_eng: Agar bioplastic film tutorial
 body_eng: Coming soon
 ---
-<div>
 
-![](/uploads/captura-de-pantalla-2020-10-12-a-la-s-12.08.42.png)
+
+</div>
+
+<div><div>
+
+![](/uploads/imagen-vertical.png)
 
 </div>
 
 <div>
-
 
 En esta entrada compartimos la receta de lámina de bioplástico de  agar usada para la instalación Viento Fuerte, en la que fue usada como soporte para un sensor impreso con tintas conductivas.
 
@@ -31,7 +34,6 @@ Para poder entender un poco mas sobre las modificaciones que tendrás que consid
 </div>
 
 <div>
-
 
 Agua:
 Si, agua. El agua que uses es muy importante dependiendo del uso que quieras  darle al material. Considera los químicos que pueda contener el agua de la cañería del lugar que habitas y las posibles interacciones que podrían tener  en torno a los resultados buscados. Ten en cuenta también, que si elijes agua destilada esta disminuirá considerablemente la conductividad eléctrica del material, lo cual esta muy bueno si es lo que buscas, pero no será util si quieres   usar  	q1x
@@ -46,11 +48,11 @@ El glicerol o glicerina, está relacionado a la ductilidad del material, y la pr
 Conservantes / Estabilizadores
 4.1  Bórax: El bórax funciona como un estabilizador y conservante. Disminuye e incluso previene del todo la proliferación de hongos en el secado. Entrega una resistencia mayor a láminas gruesas sin aportar rigidez. El bórax puede agregarle cualidades semiconductoras al material, por lo que si deseas usarlo como aislante  o no quieres  aumentar sus cualidades conductivas, no aconsejo abusar de él.
 
-
 </div>
 
 <div>
 
+![](/uploads/imagen-horizontal.png)
 
 ### Receta (tabla)
 
@@ -65,13 +67,6 @@ Conservantes / Estabilizadores
 ## Vinagre ml. (opcional)
 
 ## Colorantes para comida o anilinas.
-
-
-</div>
-
-<div>
-
-![](/uploads/captura-de-pantalla-2020-10-12-a-la-s-22.49.03.png)
 
 </div>
 
@@ -118,3 +113,19 @@ Tiempos
 Vertimiento y secado.
 
 </div>
+
+<div>
+
+![](/uploads/imagen-cuadrada.png)
+
+</div>
+
+<div>
+
+![](/uploads/imagen-vertical.png)
+
+</div>
+
+<div>
+
+![](/uploads/imagen-horizontal.png)
