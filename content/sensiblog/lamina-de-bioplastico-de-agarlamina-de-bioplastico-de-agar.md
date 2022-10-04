@@ -23,7 +23,7 @@ Antes de comenzar, es importante recalcar que esta receta de bioplástico de aga
 
 Para poder entender un poco mas sobre las modificaciones que tendrás que considerar para hacer tu propio bioplástico, haremos un  recorrido por los ingredientes para que te hagas una idea de que puedes ir refinando en tu receta si los resultados no son los que esperabas.
 
-<div>
+</div>
 
 
 <div>
@@ -45,7 +45,7 @@ Conservantes / Estabilizadores
 
 4.3 Enjuague bucal:
 
-<div>
+</div>
 
 
 <div>
@@ -101,6 +101,7 @@ Tiempos
 
 Vertimiento y secado.
 
-<div>
+</div>
+
 
 
