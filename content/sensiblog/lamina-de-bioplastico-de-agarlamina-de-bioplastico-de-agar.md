@@ -14,8 +14,8 @@ body_eng: Coming soon
 </div>
 
 
-
 ![](/uploads/imagen-vertical.png)
+
 
 </div>
 
@@ -52,6 +52,7 @@ Conservantes / Estabilizadores
 
 ![](/uploads/imagen-horizontal.png)
 
+
 ### Receta (tabla)
 
 ## Agua ml.
@@ -70,7 +71,7 @@ Conservantes / Estabilizadores
 
 <div>
 
-Paso a paso
+## Paso a paso
 
 Entregaré dos metodologías de preparación, ya que actualmente trabajo con robots de cocina, pero entiendo que no todes comenzarán teniendo uno.
 
