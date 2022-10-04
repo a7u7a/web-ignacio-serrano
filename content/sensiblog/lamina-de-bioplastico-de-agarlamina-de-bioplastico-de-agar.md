@@ -25,7 +25,6 @@ Para poder entender un poco mas sobre las modificaciones que tendrás que consid
 
 </div>
 
-
 <div>
 
 Agua:
@@ -46,7 +45,6 @@ Conservantes / Estabilizadores
 4.3 Enjuague bucal:
 
 </div>
-
 
 <div>
 
