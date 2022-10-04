@@ -15,6 +15,9 @@ body_eng: Coming soon
 
 ![](/uploads/captura-de-pantalla-2020-10-12-a-la-s-12.08.42.png)
 
+</div>
+
+<div>
 En esta entrada compartimos la receta de lámina de bioplástico de  agar usada para la instalación Viento Fuerte, en la que fue usada como soporte para un sensor impreso con tintas conductivas.
 
 Las láminas de agar pueden ser usadas por si mismas como sensores usando la humedad del material como conductor cuando están frescas, como superficie para impresión con tintas conductivas una vez deshidratadas, o como un ‘cuero’ en el que fijar componentes cuando se  trabajan lo suficientemente gruesas.
@@ -22,7 +25,6 @@ Las láminas de agar pueden ser usadas por si mismas como sensores usando la hum
 Antes de comenzar, es importante recalcar que esta receta de bioplástico de agar es solo un punto de partida para tu propia indagación. Los bioplásticos de agar son muy permeables a la humedad, y las curvas de secado son determinantes en el resultado final, por lo que las condiciones ambientales de tu región pueden darte resultados totalmente diferentes a los que puedo obtener en Santiago de Chile con los mismos ingredientes. En este post buscaré entregarte la mayor cantidad de consideraciones para  que tu indagación no te desmotive en tu busqueda, pero ¡Preparate para frustrarte y ten un plan b! Llegar a los  resultados reproducibles usados me tomó al menos una docena de intentos.
 
 Para poder entender un poco mas sobre las modificaciones que tendrás que considerar para hacer tu propio bioplástico, haremos un  recorrido por los ingredientes para que te hagas una idea de que puedes ir refinando en tu receta si los resultados no son los que esperabas.
-
 </div>
 
 <div>
@@ -58,6 +60,10 @@ Glicerol gr.
 Borax gr.(opcional)
 Vinagre ml. (opcional)
 Colorantes para comida o anilinas.
+
+</div>
+
+<div>
 
 Paso a paso
 
@@ -100,6 +106,3 @@ Tiempos
 Vertimiento y secado.
 
 </div>
-
-
-
