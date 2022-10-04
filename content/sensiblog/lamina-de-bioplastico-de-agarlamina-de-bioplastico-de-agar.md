@@ -52,19 +52,19 @@ Conservantes / Estabilizadores
 <div>
 
 
-###Receta (tabla)
+### Receta (tabla)
 
-##Agua ml.
+## Agua ml.
 
-##Agar gr.
+## Agar gr.
 
-##Glicerol gr.
+## Glicerol gr.
 
-##Borax gr.(opcional)
+## Borax gr.(opcional)
 
-##Vinagre ml. (opcional)
+## Vinagre ml. (opcional)
 
-##Colorantes para comida o anilinas.
+## Colorantes para comida o anilinas.
 
 
 </div>
