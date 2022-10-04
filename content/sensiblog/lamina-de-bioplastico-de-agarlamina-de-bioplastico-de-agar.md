@@ -12,7 +12,6 @@ title_eng: Agar bioplastic film tutorial
 body_eng: Coming soon
 ---
 <div>
-
 ![](/uploads/captura-de-pantalla-2020-10-12-a-la-s-12.08.42.png)
 
 </div>
@@ -25,6 +24,7 @@ Las láminas de agar pueden ser usadas por si mismas como sensores usando la hum
 Antes de comenzar, es importante recalcar que esta receta de bioplástico de agar es solo un punto de partida para tu propia indagación. Los bioplásticos de agar son muy permeables a la humedad, y las curvas de secado son determinantes en el resultado final, por lo que las condiciones ambientales de tu región pueden darte resultados totalmente diferentes a los que puedo obtener en Santiago de Chile con los mismos ingredientes. En este post buscaré entregarte la mayor cantidad de consideraciones para  que tu indagación no te desmotive en tu busqueda, pero ¡Preparate para frustrarte y ten un plan b! Llegar a los  resultados reproducibles usados me tomó al menos una docena de intentos.
 
 Para poder entender un poco mas sobre las modificaciones que tendrás que considerar para hacer tu propio bioplástico, haremos un  recorrido por los ingredientes para que te hagas una idea de que puedes ir refinando en tu receta si los resultados no son los que esperabas.
+
 </div>
 
 <div>
