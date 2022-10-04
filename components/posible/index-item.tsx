@@ -15,17 +15,15 @@ const IndexItem = ({ post, onEnter, onExit, hover }: IndexItemProps) => {
   const isSm = useMediaQuery("(max-width: 768px)");
 
   return (
-    <div key={post.id} className="flex relative w-full h-36">
+    <div key={post.id} className="flex relative w-full h-20">
       <Link href={`/posible/${post.id}`}>
         <div className="cursor-pointer">
           <div
-            className={`absolute w-full h-full ${
-              hover ? "mix-blend-exclusion bg-violet-300" : ""
-            }`}
+            className={`absolute w-full h-full`}
           />
           <div className="absolute flex w-full h-full items-center justify-center">
             <p
-              className={`flex text-center text-5xl font-light ${
+              className={`flex text-center text-3xl font-light ${
                 hover ? "text-white" : "text-black"
               }`}
             >
