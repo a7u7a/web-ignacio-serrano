@@ -42,10 +42,10 @@ export default function Post({ post, relatedPosts }: SensiblogPostProps) {
         <div className="flex flex-col">
           {/* Header */}
           <div className="relative flex flex-row justify-center md:justify-between w-full md:w-80">
-            <div className="h-20 w-48 relative cursor-pointer mt-6">
+            <div className="ml-2 h-20 w-44 relative cursor-pointer mt-10 rotate-12">
               <Image
                 objectFit="contain"
-                src={"/images/sensiblog.png"}
+                src={"/images/sensiblog.jpg"}
                 layout="fill"
               />
             </div>

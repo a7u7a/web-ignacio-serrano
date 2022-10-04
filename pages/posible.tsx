@@ -35,10 +35,10 @@ const Posible = ({ allPosiblePosts, modalContent }: PosibleProps) => {
           >
             Qué es esto?
           </div>
-          <div className="relative h-full w-52 md:w-full mb-3 md:mb-0">
-            <Image
+          <div className="relative h-16 w-52 md:w-full mix-blend-multiply ">
+            <Image className=""
               objectFit="contain"
-              src={"/images/posible.png"}
+              src={"/images/posible3d.png"}
               layout="fill"
             />
           </div>

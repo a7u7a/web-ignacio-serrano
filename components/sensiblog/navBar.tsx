@@ -29,10 +29,10 @@ const SensiblogNavbar = ({
 
         {/* Sensiblog logo */}
         <div className="flex flex-row">
-          <div className="h-16 md:h-20 lg:h-24 w-44 md:w-48 lg:w-52 ml-0 sm:ml-20 mr-0 sm:mr-14 mt-3 relative">
+          <div className="h-16 md:h-20 lg:h-24 w-44 md:w-40 lg:w-40 ml-0 sm:ml-20 mr-0 sm:mr-14 mt-3 relative rotate-12">
             <Image
               objectFit="contain"
-              src={"/images/sensiblog.gif"}
+              src={"/images/sensiblog.jpg"}
               layout="fill"
             />
           </div>

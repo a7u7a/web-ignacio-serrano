@@ -27,18 +27,15 @@ const Home = ({ allPostsSlugs }: HomeProps) => {
             </div>
           </Link>
         </div>
-        <div className="flex flex-row h-1/3 justify-center md:hidden">
-          <HomeLink src={"/images/sensiblog.gif"} href={"/sensiblog"} />
+        <div className="flex flex-row h-1/3 justify-center ">
+          <HomeLink src={"/images/posible2d.png"} href={"/posible"} />
         </div>
-        <div className="flex flex-row h-1/3 justify-center md:hidden">
-          <HomeLink src={"/images/posible.png"} href={"/posible"} />
-        </div>
-        <div className="hidden flex-row h-1/3 justify-center space-x-52 md:flex">
-          <HomeLink src={"/images/sensiblog.gif"} href={"/sensiblog"} />
-          <HomeLink src={"/images/posible.png"} href={"/posible"} />
+        <div className="flex flex-row h-1/3 justify-center rotate-12">
+          
+          <HomeLink src={"/images/sensiblog_w.gif"} href={"/sensiblog"} />
         </div>
         <div className="flex flex-row h-1/3 justify-center">
-          <HomeLink src={"/images/random.png"} href={randomLink} />
+          <HomeLink src={"/images/random.gif"} href={randomLink} />
         </div>
       </div>
     </>
