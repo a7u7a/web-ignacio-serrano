@@ -12,7 +12,6 @@ title_eng: Agar bioplastic film tutorial
 body_eng: Coming soon
 ---
 <div>
-
 ![](/uploads/captura-de-pantalla-2020-10-12-a-la-s-12.08.42.png)
 
 </div>
@@ -46,23 +45,26 @@ El glicerol o glicerina, está relacionado a la ductilidad del material, y la pr
 Conservantes / Estabilizadores
 4.1  Bórax: El bórax funciona como un estabilizador y conservante. Disminuye e incluso previene del todo la proliferación de hongos en el secado. Entrega una resistencia mayor a láminas gruesas sin aportar rigidez. El bórax puede agregarle cualidades semiconductoras al material, por lo que si deseas usarlo como aislante  o no quieres  aumentar sus cualidades conductivas, no aconsejo abusar de él.
 
-4.2. Vinagre: 
-
-4.3 Enjuague bucal:
 
 </div>
 
 <div>
 
 
-Receta (tabla)
+###Receta (tabla)
 
-Agua ml.
-Agar gr.
-Glicerol gr.
-Borax gr.(opcional)
-Vinagre ml. (opcional)
-Colorantes para comida o anilinas.
+##Agua ml.
+
+##Agar gr.
+
+##Glicerol gr.
+
+##Borax gr.(opcional)
+
+##Vinagre ml. (opcional)
+
+##Colorantes para comida o anilinas.
+
 
 </div>
 
