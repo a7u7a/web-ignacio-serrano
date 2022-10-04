@@ -21,6 +21,11 @@ Antes de comenzar, es importante recalcar que esta receta de bioplástico de aga
 
 Para poder entender un poco mas sobre las modificaciones que tendrás que considerar para hacer tu propio bioplástico, haremos un  recorrido por los ingredientes para que te hagas una idea de que puedes ir refinando en tu receta si los resultados no son los que esperabas.
 
+<div>
+
+
+<div>
+
 Agua:
 Si, agua. El agua que uses es muy importante dependiendo del uso que quieras  darle al material. Considera los químicos que pueda contener el agua de la cañería del lugar que habitas y las posibles interacciones que podrían tener  en torno a los resultados buscados. Ten en cuenta también, que si elijes agua destilada esta disminuirá considerablemente la conductividad eléctrica del material, lo cual esta muy bueno si es lo que buscas, pero no será util si quieres   usar  	q1x
 
@@ -38,7 +43,10 @@ Conservantes / Estabilizadores
 
 4.3 Enjuague bucal:
 
+<div>
 
+
+<div>
 
 ![](/uploads/captura-de-pantalla-2020-10-12-a-la-s-22.49.03.png)
 
@@ -90,3 +98,8 @@ Cuidados
 Tiempos
 
 Vertimiento y secado.
+
+<div>
+
+
+<div>
