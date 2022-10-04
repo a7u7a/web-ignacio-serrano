@@ -11,11 +11,9 @@ title: Lamina de bioplástico de Agar
 title_eng: Agar bioplastic film tutorial
 body_eng: Coming soon
 ---
-
-
 </div>
 
-<div><div>
+
 
 ![](/uploads/imagen-vertical.png)
 
