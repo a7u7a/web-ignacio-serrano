@@ -19,6 +19,7 @@ body_eng: Coming soon
 
 <div>
 
+
 En esta entrada compartimos la receta de lámina de bioplástico de  agar usada para la instalación Viento Fuerte, en la que fue usada como soporte para un sensor impreso con tintas conductivas.
 
 Las láminas de agar pueden ser usadas por si mismas como sensores usando la humedad del material como conductor cuando están frescas, como superficie para impresión con tintas conductivas una vez deshidratadas, o como un ‘cuero’ en el que fijar componentes cuando se  trabajan lo suficientemente gruesas.
@@ -30,6 +31,7 @@ Para poder entender un poco mas sobre las modificaciones que tendrás que consid
 </div>
 
 <div>
+
 
 Agua:
 Si, agua. El agua que uses es muy importante dependiendo del uso que quieras  darle al material. Considera los químicos que pueda contener el agua de la cañería del lugar que habitas y las posibles interacciones que podrían tener  en torno a los resultados buscados. Ten en cuenta también, que si elijes agua destilada esta disminuirá considerablemente la conductividad eléctrica del material, lo cual esta muy bueno si es lo que buscas, pero no será util si quieres   usar  	q1x
@@ -52,7 +54,6 @@ Conservantes / Estabilizadores
 
 <div>
 
-![](/uploads/captura-de-pantalla-2020-10-12-a-la-s-22.49.03.png)
 
 Receta (tabla)
 
@@ -62,6 +63,12 @@ Glicerol gr.
 Borax gr.(opcional)
 Vinagre ml. (opcional)
 Colorantes para comida o anilinas.
+
+</div>
+
+<div>
+
+![](/uploads/captura-de-pantalla-2020-10-12-a-la-s-22.49.03.png)
 
 </div>
 
