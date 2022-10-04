@@ -12,6 +12,7 @@ title_eng: Agar bioplastic film tutorial
 body_eng: Coming soon
 ---
 <div>
+
 ![](/uploads/captura-de-pantalla-2020-10-12-a-la-s-12.08.42.png)
 
 </div>
