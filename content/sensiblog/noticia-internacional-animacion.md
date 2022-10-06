@@ -1,7 +1,7 @@
 ---
 date: June 10, 2022 11:01 AM
 thumbnail: /uploads/captura-de-pantalla-2020-10-12-a-la-s-12.05.41.png
-category: Animación
+category: Audiovisual
 tags:
   - hola
   - chao
