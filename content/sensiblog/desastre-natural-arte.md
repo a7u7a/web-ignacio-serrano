@@ -1,7 +1,7 @@
 ---
 date: May 27, 2022 11:39 PM
 thumbnail: /uploads/captura-de-pantalla-2022-07-13-a-la-s-17.43.53.png
-category: Arte
+category: Exhibiciones
 tags:
   - biofabricacion
   - workshop
