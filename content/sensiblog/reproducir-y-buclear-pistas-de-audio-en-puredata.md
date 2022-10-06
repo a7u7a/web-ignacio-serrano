@@ -20,14 +20,13 @@ body_eng: Comming soon.
 En este post te compartimos como reproducir y buclear audios en PureData. Estos ejemplos son parte la base de los patches de PureData que usamos para Viento Fuerte y Cálido, comunicándonos con el protocolo Arduino-PureData y sketch capacitivo. Puedes encontrar también un post de Carolina, en el que te muestra pasos simples para refinar tus samples antes de pasar a PureData.
 
 Una vez que logramos la versión final del sample para la obra, el paso siguiente correspondió a reproducir ese sample en loop en PD, añadiendo en principio algún control que permitiera manipular el volumen. 
-
- 
-
- 
-
-
-
+#
+#
+#
+#
 # 1.
+#
+#
 
 Para abrir archivos de audio usamos el objeto \[readsf~]. Este objeto tiene una entrada y dos salidas: la entrada es para la lectura de un mensaje en que indicaremos el nombre del archivo que queremos abrir, la salida de la izquierda corresponde a una salida de audio (si añadimos el número “2” al definir el objeto tendremos dos salidas de audio), y el outlet de la derecha corresponde a un bang que se activa cuando la pista de audio se acaba. El objeto se inicia cuando enviamos un “1” como mensaje y se detiene cuando enviamos un “0”.
 
