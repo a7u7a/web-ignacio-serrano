@@ -5,7 +5,7 @@ category: Sonido
 tags:
   - sonido
   - PureData
-title: Controlar manualmente el volumen de las pistas en PureData
+title: Controlar manualmente el volumen de pistas de audio en PureData
 title_eng: Play and loop audio tracks on PureData
 body_eng: Comming soon.
 ---
