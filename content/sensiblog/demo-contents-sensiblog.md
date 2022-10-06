@@ -1,7 +1,7 @@
 ---
 date: April 2, 2022 11:39 PM
 thumbnail: /uploads/captura-de-pantalla-2022-07-13-a-la-s-17.48.50.png
-category: xxx
+category: Sonido
 tags:
   - biofabricacion
   - workshop
