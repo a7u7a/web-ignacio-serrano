@@ -1,7 +1,7 @@
 ---
 date: June 10, 2022 11:01 AM
 thumbnail: /uploads/captura-de-pantalla-2020-10-13-a-la-s-16.00.57.png
-category: "Dispositivos "
+category: Dispositivos
 tags:
   - hola
   - chao
