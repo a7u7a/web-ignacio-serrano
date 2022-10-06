@@ -1,7 +1,7 @@
 ---
 date: June 10, 2022 11:01 AM
 thumbnail: /uploads/captura-de-pantalla-2022-05-28-a-la-s-13.20.42.png
-category: Sonido
+category: Exhibiciones
 tags:
   - exhibición
   - sonido
