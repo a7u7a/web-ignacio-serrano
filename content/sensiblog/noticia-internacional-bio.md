@@ -1,7 +1,7 @@
 ---
 date: June 10, 2022 11:01 AM
 thumbnail: /uploads/captura-de-pantalla-2020-10-12-a-la-s-22.49.03.png
-category: Biomateriales
+category: Biofabricación
 tags:
   - hola
   - chao
