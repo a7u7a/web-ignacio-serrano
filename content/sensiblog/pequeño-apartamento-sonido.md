@@ -1,7 +1,7 @@
 ---
 date: June 10, 2022 11:01 AM
 thumbnail: /uploads/captura-de-pantalla-2020-10-07-a-la-s-20.56.29.png
-category: Sonido
+category: xxx
 tags:
   - piedra
   - workshop
