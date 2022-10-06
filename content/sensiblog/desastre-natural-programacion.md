@@ -1,10 +1,11 @@
 ---
 date: May 27, 2022 11:39 PM
 thumbnail: /uploads/captura-de-pantalla-2020-10-07-a-la-s-20.56.29.png
-category: Programación
+category: Electrónica
 tags:
-  - biofabricacion
-  - workshop
+  - puredata
+  - arduino
+  - programación
 title: "Protocolo Pduino: Arduino + PureData"
 title_eng: Natural Disaster
 body_eng: >-
