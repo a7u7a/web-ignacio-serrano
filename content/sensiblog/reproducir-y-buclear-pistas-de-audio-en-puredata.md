@@ -11,7 +11,7 @@ body_eng: Comming soon.
 ---
 <div>
 
-![](/uploads/imagen-cuadrada.png)
+![](/uploads/captura-de-pantalla-2022-10-06-a-la-s-16.45.31.png)
 
 En este post te compartimos como reproducir y buclear audios en PureData.
 
