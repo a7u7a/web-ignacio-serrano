@@ -1,11 +1,15 @@
 ---
 date: June 1, 2022 11:39 PM
 thumbnail: /uploads/captura-de-pantalla-2020-10-12-a-la-s-12.06.48.png
-category: Biomateriales
+category: Dispositivos
 tags:
+  - puredata
   - sonido
-  - workshop
-title: Biosensor como switch capacitivo con PureData
+  - luz
+  - bioplastico
+  - arduino
+  - capacitivo
+title: Biosensor como disparador capacitivo con PureData
 title_eng: African cuisine
 body_eng: >-
   # Wow text
