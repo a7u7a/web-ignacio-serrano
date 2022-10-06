@@ -1,7 +1,7 @@
 ---
 date: June 10, 2022 11:01 AM
 thumbnail: /uploads/captura-de-pantalla-2020-10-14-a-la-s-17.16.44.png
-category: Biomateriales
+category: Biofabricación
 tags:
   - piedra
   - workshop
