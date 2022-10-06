@@ -1,7 +1,7 @@
 ---
 date: June 10, 2022 11:01 AM
 thumbnail: /uploads/story.png
-category: Arte
+category: Exhibiciones
 tags:
   - piedra
   - workshop
