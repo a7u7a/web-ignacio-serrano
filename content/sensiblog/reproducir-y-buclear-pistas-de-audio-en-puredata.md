@@ -21,7 +21,9 @@ En este post te compartimos como reproducir y buclear audios en PureData. Estos 
 
 Una vez que logramos la versión final del sample para la obra, el paso siguiente correspondió a reproducir ese sample en loop en PD, añadiendo en principio algún control que permitiera manipular el volumen. 
 
+ 
 
+ 
 
 
 
