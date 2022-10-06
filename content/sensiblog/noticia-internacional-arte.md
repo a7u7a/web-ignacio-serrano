@@ -1,7 +1,7 @@
 ---
 date: June 10, 2022 11:01 AM
 thumbnail: /uploads/captura-de-pantalla-2022-07-13-a-la-s-17.47.25.png
-category: Arte
+category: Exhibiciones
 tags:
   - hola
   - chao
