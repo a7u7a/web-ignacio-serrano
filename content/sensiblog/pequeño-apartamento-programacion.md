@@ -1,7 +1,7 @@
 ---
 date: June 10, 2022 11:01 AM
 thumbnail: /uploads/captura-de-pantalla-2022-02-21-a-la-s-18.37.05.png
-category: Programación
+category: Dispositivos
 tags:
   - piedra
   - workshop
