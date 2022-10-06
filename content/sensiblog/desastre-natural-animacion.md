@@ -1,11 +1,14 @@
 ---
 date: May 27, 2022 11:39 PM
 thumbnail: /uploads/captura-de-pantalla-2020-10-12-a-la-s-12.03.12.png
-category: Animación
+category: Biofabricación
 tags:
   - biofabricacion
-  - workshop
-title: Vaciado de bioplastico agar para Timelapses
+  - conductivo
+  - bioplastico
+  - grafito
+  - vaciado
+title: Vaciado de bioplástico conductivo
 title_eng: Natural Disaster
 body_eng: >-
   # Wow text
