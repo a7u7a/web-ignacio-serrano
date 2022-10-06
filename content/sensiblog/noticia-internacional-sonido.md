@@ -3,9 +3,9 @@ date: June 10, 2022 11:01 AM
 thumbnail: /uploads/captura-de-pantalla-2022-05-28-a-la-s-13.20.42.png
 category: Sonido
 tags:
-  - hola
-  - chao
-  - pancito
+  - exhibición
+  - sonido
+  - ""
 title: Interacción Ondita Sensible 1 en BAJ
 title_eng: International News
 body_eng: >-
