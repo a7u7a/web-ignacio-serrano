@@ -1,7 +1,7 @@
 ---
 date: June 10, 2022 11:01 AM
 thumbnail: /uploads/captura-de-pantalla-2022-09-12-a-la-s-09.29.24.png
-category: Animación
+category: Audiovisual
 tags:
   - piedra
   - workshop
