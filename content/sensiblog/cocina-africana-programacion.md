@@ -1,7 +1,7 @@
 ---
 date: March 27, 2024 11:39 PM
 thumbnail: /uploads/captura-de-pantalla-2022-05-28-a-la-s-13.20.42.png
-category: Programación
+category: Electrónica
 tags:
   - sonido
   - workshop
