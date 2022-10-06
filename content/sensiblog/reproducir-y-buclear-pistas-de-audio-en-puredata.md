@@ -11,9 +11,15 @@ body_eng: Comming soon.
 ---
 <div>
 
-En este post te mostramos como reproducir y buclear audios en PureData.
+![](/uploads/imagen-cuadrada.png)
+
+En este post te compartimos como reproducir y buclear audios en PureData.
 
 Estos son los patches de PureData que usamos para Viento Fuerte y Cálido, comunicándonos con el protocolo Arduino-PureData y sketch capacitivo. Puedes encontrar también un post de Carolina, en el que te muestra pasos simples para refinar tus samples antes de pasar a PureData.
+
+</div>
+
+<div>
 
 Una vez que logramos la versión final del sample para la obra, el paso siguiente correspondió a reproducir ese sample en loop en PD, añadiendo en principio algún control que permitiera manipular el volumen. 
 
