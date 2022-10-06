@@ -25,11 +25,13 @@ Una vez que logramos la versión final del sample para la obra, el paso siguient
 
 Para abrir archivos de audio usamos el objeto \[readsf~]. Este objeto tiene una entrada y dos salidas: la entrada es para la lectura de un mensaje en que indicaremos el nombre del archivo que queremos abrir, la salida de la izquierda corresponde a una salida de audio (si añadimos el número “2” al definir el objeto tendremos dos salidas de audio), y el outlet de la derecha corresponde a un bang que se activa cuando la pista de audio se acaba. El objeto se inicia cuando enviamos un “1” como mensaje y se detiene cuando enviamos un “0”.
 
-En la imagen vemos los siguientes elementos: un mensaje que indica abrir el archivo VientoFuerte.wav (ubicado en la misma carpeta que el patch), acompañado de un número “1” que envía un segundo mensaje de inicializar el objeto readsf. Luego está el objeto, en que hemos indicado con el número “2” que el audio saldrá en modo estéreo, y así sus salidas izquierda y central se conectan al objeto \[dac~] (Digital to Analog Converter, conexión entre PureData y la tarjeta de sonido). Por último, añadimos un bang que se activa cuando el audio termina de reproducirse.
+En la imagen vemos los siguientes elementos: un mensaje que indica abrir el archivo VientoFuerte.wav (ubicado en la misma carpeta que el patch), acompañado de un número
 
 </div>
 
 <div>
+
+ “1” que envía un segundo mensaje de inicializar el objeto readsf. Luego está el objeto, en que hemos indicado con el número “2” que el audio saldrá en modo estéreo, y así sus salidas izquierda y central se conectan al objeto \[dac~] (Digital to Analog Converter, conexión entre PureData y la tarjeta de sonido). Por último, añadimos un bang que se activa cuando el audio termina de reproducirse.
 
 ![](/uploads/01.png)
 
