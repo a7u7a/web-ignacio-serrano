@@ -1,7 +1,7 @@
 ---
 date: September 29, 2022 2:31 PM
 thumbnail: /uploads/imagen-cuadrada.png
-category: Biomateriales
+category: Exhibiciones
 tags:
   - bioplastico
   - agar
