@@ -24,5 +24,5 @@ En la imagen vemos los siguientes elementos: un mensaje que indica abrir el arch
 ![](/uploads/01.png)
 
 2. Para la reproducción del audio debemos pasar del modo edición al reproducción (cmd+e) y hacer click en el mensaje. Para lograr una reproducción en loop el objeto bang se vuelve indispensable. Los bangs envían avisos o pulsos a cualquier objeto o mensaje que se conecte a su salida. Así, un bang conectado a un mensaje funcionará como un click. El truco para lograr un loop es conectar el bang que va de la salida del objeto readsf a la entrada del mensaje. De esta forma, cada vez que el audio termine, el bang se activará y “hará click” nuevamente en el mensaje.\*\*
-3. ![](/uploads/02.png)
-4.
+
+   ![](/uploads/02.png)
