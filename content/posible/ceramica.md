@@ -2,26 +2,23 @@
 date: May 27, 2022 9:36 PM
 thumbnail: /uploads/bolsa-lola-1900.gif
 stock: 4
-price: 20
+price: 20000
 title: Bolsa Bolsa
 description_eng: LA BOLSA BOLSA BLA BLA BLA
-description: La tragedia de Armero fue un desastre natural producto de la
-  erupción del volcán Nevado del Ruiz el miércoles 13 de noviembre de 1985,
-  afectando a los departamentos de Caldas y Tolima, Colombia. Tras sesenta y
-  nueve años de inactividad, la [erupción](https://duckduckgo.com) tomó por
-  sorpresa a los poblados cercanos, a pesar de que el Gobierno había recibido
-  advertencias por parte de múltiples organismos vulcanológicos desde la
-  aparición de los primeros indicios de actividad volcánica en septiembre de
-  1985.
+description: Bolsa Bolsa es una bolsa de lona forrada, impermeable interior y
+  con terminacion opaca de  exterior. Impregnada con filtro UV y serigrafiada,
+  es una reproduccion exacta de las bolsas negras que no queremos que se coman
+  los animales en ninguna parte, pero como las queremos mucho, le rendimos
+  tributo con esta bolsa actiz.
 ---
 <div>
 
-![Alga](/uploads/bolsa-lola-1900.gif "Un pie de foto por aquí")
+![](/uploads/bolsa-lola-1900.gif)
 
 </div>
 
 <div>
 
-![globos]( "Otro pie de foto")
+![globos](/uploads/bolsa-lola-1900.gif "Otro pie de foto")
 
 </div>
