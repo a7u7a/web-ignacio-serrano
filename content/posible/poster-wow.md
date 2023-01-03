@@ -1,6 +1,6 @@
 ---
 date: May 27, 2022 9:36 PM
-thumbnail: /uploads/dsc03341-copia.jpg
+thumbnail: /uploads/dsc03290-copia.jpg
 stock: 0
 price: 16000
 title: Libretas Degradado
@@ -21,18 +21,16 @@ description: La tragedia de Armero fue un desastre natural producto de la
 ---
 <div>
 
-![](/uploads/dsc03290-copia.jpg)
+![](/uploads/dsc03341-copia.jpg)
+
+</div>
+
+<div>
+
+![](/uploads/dsc03339-copia.jpg)
 
 </div>
 
 <div>
 
 ![](/uploads/dsc03308-detalle.jpg)
-
-</div>
-
-
-
-<div>
-
-![](/uploads/dsc03339-copia.jpg)
