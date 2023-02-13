@@ -4,7 +4,7 @@ thumbnail: /uploads/1_01.gif
 category: Sonido
 tags:
   - "#puredata"
-title: "#2 Reproducción de audios en PD y generación de loops"
+title: Reproducción de audios en PD y generación de loops
 title_eng: "#2 Play and loop audio tracks on PureData"
 body_eng: Comming soon.
 ---
