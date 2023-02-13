@@ -5,7 +5,7 @@ category: Sonido
 tags:
   - "#puredata"
 title: "#2 Reproducción de audios en PD y generación de loops"
-title_eng: "#1 Play and loop audio tracks on PureData"
+title_eng: "#2 Play and loop audio tracks on PureData"
 body_eng: Comming soon.
 ---
 <div>
