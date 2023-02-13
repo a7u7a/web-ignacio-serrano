@@ -24,7 +24,7 @@ En la imagen vemos los siguientes elementos: un mensaje con la función \[open],
 
 <div>
 
-![](/uploads/1_01.gif)
+![](/uploads/1_03.gif)
 
 </div>
 
