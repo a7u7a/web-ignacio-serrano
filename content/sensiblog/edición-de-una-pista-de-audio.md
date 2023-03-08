@@ -22,10 +22,6 @@ El objetivo de la obra Viento Fuerte fue lograr un sonido orgánico de viento, c
 
 Para evitar el click, fue necesario editar la dinámica el sample añadiendo un fade in y un fade out. Si bien es posible hacer modificaciones a pistas desde PD, la opción más simple es utilizar algún software de audio. En nuestro caso usamos GarageBand 10.3.4, programa gratuito para OS X, pero existen otras alternativas gratuitas como Audacity.
 
-# 3.
-
-Para hacer los cambios de dinámica automatizamos la pista siguiendo los siguientes pasos: Mezcla/Mix -> Mostrar Automatización/Show Automation ->Volume, como muestra la imagen.
-
 </div>
 
 <div>
@@ -35,6 +31,10 @@ Para hacer los cambios de dinámica automatizamos la pista siguiendo los siguien
 </div>
 
 <div>
+
+# 3.
+
+Para hacer los cambios de dinámica automatizamos la pista siguiendo los siguientes pasos: Mezcla/Mix -> Mostrar Automatización/Show Automation ->Volume, como muestra la imagen.
 
 # 4.
 
