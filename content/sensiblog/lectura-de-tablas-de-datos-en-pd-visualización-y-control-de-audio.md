@@ -30,10 +30,6 @@ Para la visualización creamos un array del tamaño del largo de nuestro archivo
 
 ![](/uploads/6.gif)
 
-</div>
-
-<div>
-
 # 4.
 
 Para controlar el volumen, necesitamos ir leyendo uno a uno los datos de la tabla, a un tiempo determinado. Para esto usamos el objeto \[tabread]. Este objeto lee los datos de un arreglo en localizaciones que nosotros especificamos según el número de índice, que se conecta al único inlet del objeto. En el mismo inlet se puede conectar un mensaje set que indica qué arreglo se está leyendo. En nuestro caso, leemos el arreglo HM1 y al abrir el programa, el índice está en 0.
@@ -42,13 +38,13 @@ Para controlar el volumen, necesitamos ir leyendo uno a uno los datos de la tabl
 
 El outlet del objeto \[tabread] muestra el valor de la tabla en el punto indicado por el índice. Como decíamos anteriormente, nos interesa que estos valores controlen audio, por lo que es deseable que no superen el valor de 1. Sabiendo el máximo de la tabla (100), dividimos la salida de \[tabread] por 100 y así nos aseguramos de estar trabajando con valores menores o iguales a 1. El resultado de la división es usado en nuestro ejemplo para controlar el volumen de un archivo de audio.
 
-# 6.
-
-Para que el índice corra, y no se quede siempre en el valor de iniciación, utilizamos el objeto \[counter], el que nos ayuda a hacer correr un contador en números enteros. Este objeto tiene una serie de entradas y salidas, pero nos centraremos en dos entradas y una salida en particular.
-
 </div>
 
 <div>
+
+# 6.
+
+Para que el índice corra, y no se quede siempre en el valor de iniciación, utilizamos el objeto \[counter], el que nos ayuda a hacer correr un contador en números enteros. Este objeto tiene una serie de entradas y salidas, pero nos centraremos en dos entradas y una salida en particular.
 
 # 7.
 
