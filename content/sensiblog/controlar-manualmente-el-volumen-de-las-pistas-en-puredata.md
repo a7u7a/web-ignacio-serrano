@@ -11,15 +11,7 @@ body_eng: Comming soon.
 ---
 <div>
 
-![](/uploads/imagen-vertical.png)
-
-</div>
-
-<div>
-
-En este post te compartimos como controlar manuelmente la amplitud en la reproduccin de audios en PureData. Estos ejemplos son parte la base de los patches de PureData que usamos para Viento Fuerte y Cálido, comunicándonos con el protocolo Arduino-PureData y sketch capacitivo. Puedes encontrar también un post de Carolina, en el que te muestra pasos simples para refinar tus samples antes de pasar a PureData.
-
-Una vez que logramos la versión final del sample para la obra, el paso siguiente correspondió a reproducir ese sample en loop en PD, añadiendo controles para manipular el volumen. 
+En la entrada Edición básica de pistas de audio vimos una manera simple de pre-procesar audios para añadirlas a nuestras obras. En este post mostraremos cómo abrir audios en PD y reproducirlos en loop. Esto lo aplicamos en la obra Viento Fuerte y Cálido.
 
 # 1.
 
