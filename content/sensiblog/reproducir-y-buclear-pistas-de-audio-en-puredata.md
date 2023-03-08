@@ -1,44 +1,34 @@
 ---
-date: October 6, 2022 3:55 PM
-thumbnail: /uploads/readsf-ejemplo.png
+date: February 27, 2023 3:55 PM
+thumbnail: /uploads/3.gif
 category: Sonido
 tags:
   - PureData
   - sonido
-title: Reproducir y buclear pistas de audio en PureData
+title: "Controlar externamente el volumen de pistas en PD, parte I "
 title_eng: Play and loop audio tracks on PureData
 body_eng: Comming soon.
 ---
 <div>
 
-![](/uploads/imagen-vertical.png)
-
-</div>
-
-<div>
-
-En este post te compartimos como reproducir y buclear audios en PureData. Estos ejemplos son parte la base de los patches de PureData que usamos para Viento Fuerte y Cálido, comunicándonos con el protocolo Arduino-PureData y sketch capacitivo. Puedes encontrar también un post de Carolina, en el que te muestra pasos simples para refinar tus samples antes de pasar a PureData.
-
-Una vez que logramos la versión final del sample para la obra, el paso siguiente correspondió a reproducir ese sample en loop en PD, añadiendo en principio algún control que permitiera manipular el volumen. 
+En la entrada [Controlar manualmente el volumen de pistas en PD](https://www.ignacioserranol.com/sensiblog/controlar-manualmente-el-volumen-de-las-pistas-en-puredata) revisamos dos maneras de manipular de manualmente el volumen de una pista de audio. En general, cuando diseñamos obras interactivas como Viento Fuerte y Ondita Sensible I, lo que queremos es el control externo de una serie de parámetros, entre ellos el volumen. Para controlar externamente el volumen del audio es necesario comunicar PD con un dispositivo que sea capaz de procesar estímulos mediante la conexión a sensores y transformarlos en datos. En el caso de la obra Viento fuerte el dispositivo de control corresponde a un Arduino UNO, mientras que para Ondita Sensible I usamos un Arduino MEGA. El protocolo que mostraremos a continuación sirve para ambas placas. (Por [Caro](https://sites.google.com/view/caroespinoza))
 
 # 1.
 
-Para abrir archivos de audio usamos el objeto \[readsf~]. Este objeto tiene una entrada y dos salidas: la entrada es para la lectura de un mensaje en que indicaremos el nombre del archivo que queremos abrir, la salida de la izquierda corresponde a una salida de audio (si añadimos el número “2” al definir el objeto tendremos dos salidas de audio), y el outlet de la derecha corresponde a un bang que se activa cuando la pista de audio se acaba. El objeto se inicia cuando enviamos un “1” como mensaje y se detiene cuando enviamos un “0”.
-
-</div>
-
-<div>
-
-![](/uploads/readsf-ejemplo.png)
-
-En la imagen vemos los siguientes elementos: un mensaje que indica abrir el archivo VientoFuerte.wav (ubicado en la misma carpeta que el patch), acompañado de un número “1” que envía un segundo mensaje de inicializar el objeto readsf. Luego está el objeto, en que hemos indicado con el número “2” que el audio saldrá en modo estéreo, y así sus salidas izquierda y central se conectan al objeto \[dac~] (Digital to Analog Converter, conexión entre PureData y la tarjeta de sonido). Por último, añadimos un bang que se activa cuando el audio termina de reproducirse.
-
-</div>
-
-<div>
+Existe más de un protocolo para lograr la comunicación. En este proyecto actualizamos uno propuesto en el siguiente [link](https://www.youtube.com/watch?v=WPj-clNbvfk) 
 
 # 2.
 
-Para la reproducción del audio debemos pasar del modo edición al reproducción (cmd+e) y hacer click en el mensaje. Para lograr una reproducción en loop el objeto bang se vuelve indispensable. Los bangs envían avisos o pulsos a cualquier objeto o mensaje que se conecte a su salida. Así, un bang conectado a un mensaje funcionará como un click. El truco para lograr un loop es conectar el bang que va de la salida del objeto readsf a la entrada del mensaje. De esta forma, cada vez que el audio termine, el bang se activará y “hará click” nuevamente en el mensaje.\*\*
+En la figura se ejemplifica la comunicación con un Arduino UNO que está enviando dos datos: 1 y 2. El punto importante acá es el número que acompaña a nuestro objeto \[cyclone/zl group 3]. El número indica que estamos enviando 3 datos separados, los dos valores que procesó arduino y un separador. Si quisiéramos recibir 10, tendríamos que cambiar ese valor por 19. Si quisiéramos recibir N datos, tendríamos que cambiarlo por 2*N-1. El otro punto importante es el objeto \[unpack f f]. En este caso, cada “f” indica la llegada de un dato (sin separador) y se generarán tantos outlets como número de “f”. Es decir, si estuviéramos recibiendo 10 datos, deberíamos incluir 10 “f” separadas por un espacio.
 
-![](/uploads/loop-ejemplo.png)
+# 3.
+
+Por último, para transformar estos datos en controles de volumen (u otro parámetro) en nuestro patch de PD, basta con multiplicar nuestras señales de audio por estos datos. Los detalles de lo anterior están en el post [Controlar manualmente el volumen de pistas en PD](https://www.ignacioserranol.com/sensiblog/controlar-manualmente-el-volumen-de-las-pistas-en-puredata). Tal como indicamos ahí, deben tenerse ciertos cuidados para evitar daños auditivos al realizar el control externo. En Controlar externamente el volumen de pistas, parte II, se mostrar un ejemplo más elaborado de control externo.
+
+</div>
+
+<div>
+
+![](/uploads/3.gif)
+
+</div>
