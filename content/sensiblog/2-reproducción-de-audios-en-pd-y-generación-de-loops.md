@@ -10,7 +10,7 @@ body_eng: Comming soon.
 ---
 <div>
 
-En la entrada Edición básica de pistas de audio vimos una manera simple de pre-procesar audios para añadirlas a nuestras obras. En este post mostraremos cómo abrir audios en PD y reproducirlos en loop. Esto lo aplicamos en la obra Viento Fuerte y Cálido.
+En la entrada [Edición básica de pistas de audio](https://www.ignacioserranol.com/sensiblog/edici%C3%B3n-de-una-pista-de-audio) vimos una manera simple de pre-procesar audios para añadirlas a nuestras obras. En este post mostraremos cómo abrir audios en PD y reproducirlos en loop. Esto lo aplicamos en la obra Viento Fuerte y Cálido.
 
 # 1.
 
