@@ -10,7 +10,7 @@ body_eng: Comming soon.
 ---
 <div>
 
-En entradas anteriores hemos mostrado cómo incluir y manipular samples de audio en PD. Sin embargo, muchas veces es deseable generar nuestros propios sonidos. Aunque este es un camino complejo y hay millones de técnicas que podemos aplicar y aprender, hay una pieza fundamental que debemos entender: los osciladores. Los osciladores, en el mundo de PD, son básicamente arreglos de datos que varían en el tiempo de manera periódica, definidos por su forma, amplitud y frecuencia. Si bien existen una serie de osciladores que podemos generar (para eso pueden ver este [video](< <https://www.youtube.com/watch?v=YDL-UwdSSj0>>)), en este post hablaremos del más simple: la onda sinusoidal. (Por [Caro](https://sites.google.com/view/caroespinoza))
+En entradas anteriores hemos mostrado cómo incluir y manipular samples de audio en PD. Sin embargo, muchas veces es deseable generar nuestros propios sonidos. Aunque este es un camino complejo y hay millones de técnicas que podemos aplicar y aprender, hay una pieza fundamental que debemos entender: los osciladores. Los osciladores, en el mundo de PD, son básicamente arreglos de datos que varían en el tiempo de manera periódica, definidos por su forma, amplitud y frecuencia. Si bien existen una serie de osciladores que podemos generar (para eso pueden ver este [video](<https://www.youtube.com/watch?v=YDL-UwdSSj0>)), en este post hablaremos del más simple: la onda sinusoidal. (Por [Caro](https://sites.google.com/view/caroespinoza))
 
 # 1.
 
