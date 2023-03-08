@@ -1,35 +1,47 @@
 ---
 date: October 6, 2022 6:42 PM
-thumbnail: /uploads/imagen-cuadrada.png
+thumbnail: /uploads/garage2.gif
 category: Sonido
 tags:
   - sonido
   - audio
-title: Edición de una pista de audio
+title: Edición básica de una pista de audio
 title_eng: Sound track edition
 body_eng: |
   Soon.
 ---
 <div>
 
-![](/uploads/imagen-vertical.png)
-
-</div>
-
-<div>
-
-Es muy probable que cuando trabajemos con samples que bajamos desde algún repositorio como Freesound u otros debamos realizar algún tipo de edición que ajuste ese audio a las necesidades de la obra. Eso es justamente lo que hicimos en Viento Fuerte.
+Es muy probable que cuando trabajemos con grabaciones propias o samples debamos realizar algún tipo de edición que ajuste ese audio a las necesidades de la obra. Esto quiere decir: cambiar la dinámica, añadir efectos, hacer fade in y fade out para evitar clicks, etc. En este post mostramos una forma básica de edición de pistas de audio que aplicamos en la obra Viento Fuerte, Cálido y Ondita Sensible I  para evitar saltos en la reproducción sonora.
 
 # 1.
 
-Para lograr una reproducción orgánica, era necesario editar el sample. Si bien es posible hacer modificaciones a pistas desde PD, la mejor opción es utilizar algún software de audio. En nuestro caso usamos GarageBand 10.3.4, programa gratuito para OS X, pues la edición necesaria era simple: recortar la pista y hacer fade in y fade out con el fin de evitar saltos en la reproducción del loop (Mezcla/Mix -> Mostrar Automatización/Show Automation ->Volume).
+El objetivo de la obra Viento Fuerte fue lograr un sonido orgánico de viento, con una dinámica controlada externamente. Para generar la identidad sonora, descargamos un sample de sonido de viento desde la base de datos colaborativa Freesound (<https://freesound.org/>). Al reproducir en loop este extracto desde PD, se escuchaba un click cada vez que iniciaba el bucle.
 
 # 2.
 
-En el mismo programa existen un montón de otras opciones para explorar, como la automatización de efectos, ecualización, etc. Todas estas herramientas son sumamente útiles para lograr editar samples que se ajusten mejor a la intención sonora de la obra. En el video se ejemplifica un proceso de edición simple, donde se muestran el recorte de una pista, automatización de volumen para hacer fade in y fade out, asignación de efectos y ecualización.
+Para evitar el click, fue necesario editar la dinámica el sample añadiendo un fade in y un fade out. Si bien es posible hacer modificaciones a pistas desde PD, la opción más simple es utilizar algún software de audio. En nuestro caso usamos GarageBand 10.3.4, programa gratuito para OS X, pero existen otras alternativas gratuitas como Audacity.
+
+# 3.
+
+Para hacer los cambios de dinámica automatizamos la pista siguiendo los siguientes pasos: Mezcla/Mix -> Mostrar Automatización/Show Automation ->Volume, como muestra la imagen.
 
 </div>
 
 <div>
 
-![](/uploads/imagen-horizontal.png)
+![](/uploads/garage.gif)
+
+</div>
+
+<div>
+
+# 4.
+
+Escogido el parámetros a automatizar, aparecerá una línea de control sobre la pista de audio. Haciendo click en ella, se crearán puntos que permitirán manipular los valores en este caso de audio.
+
+# 5.
+
+Como se ve en la imagen, al ir a “mostrar automatización” aparece una lista de automatizaciones posibles, entre ellas Reverb, Echo. La forma de operar con ellas es exactamente la misma. 
+
+</div>
