@@ -12,7 +12,7 @@ body_eng: |
 ---
 <div>
 
-Es muy probable que cuando trabajemos con grabaciones propias o samples debamos realizar algún tipo de edición que ajuste ese audio a las necesidades de la obra. Esto quiere decir: cambiar la dinámica, añadir efectos, hacer fade in y fade out para evitar clicks, etc. En este post mostramos una forma básica de edición de pistas de audio que aplicamos en la obra Viento Fuerte, Cálido y Ondita Sensible I  para evitar saltos en la reproducción sonora.
+Es muy probable que cuando trabajemos con grabaciones propias o samples debamos realizar algún tipo de edición que ajuste ese audio a las necesidades de la obra. Esto quiere decir: cambiar la dinámica, añadir efectos, hacer fade in y fade out para evitar clicks, etc. En este post mostramos una forma básica de edición de pistas de audio que aplicamos en la obra Viento Fuerte, Cálido y Ondita Sensible I  para evitar saltos en la reproducción sonora. (Por [Caro](https://sites.google.com/view/caroespinoza))
 
 # 1.
 
