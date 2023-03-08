@@ -29,6 +29,8 @@ Si queremos tener un control manual de la amplitud en el tiempo, tenemos dos opc
 
 </div>
 
+<div>
+
 # 3.
 
 A mano izquierda, el objeto de multiplicación está por un lado conectado a la salida de \[readsf~] y por otro a una secuencia de: un número, un objeto divisor y otro número. El primer número es el que controlamos como usuarios. Aquí, podemos aumentar el valor dando saltos entre números enteros tanto como queramos. Lo anterior puede ser muy peligroso si estamos manipulando el volumen de audio, ya que PD no pone un límite interno al volumen que saldrá por nuestros parlantes o audífonos. Como medida de seguridad, agregamos el objeto de división. El número siguiente nos indica el resultado de la operación. Aunque funciona si tenemos cuidado, no es una forma recomendable para usos manuales. 
