@@ -12,7 +12,7 @@ body_eng: |
 ---
 <div>
 
-![](/uploads/imagen-vertical.png)
+![](/uploads/garage2.gif)
 
 </div>
 
