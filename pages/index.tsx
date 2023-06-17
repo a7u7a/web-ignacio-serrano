@@ -4,7 +4,6 @@ import { aboutPost, feedPost } from "../interfaces/posts";
 import AboutSection from "../components/about/aboutSection";
 import { useState, useEffect } from "react";
 import LanguageButton from "../components/languageBtn";
-import UpButton from "../components/upBtn";
 import Feed from "../components/about/feed";
 import CajaRemedio from "../components/cajaRemedio";
 import useMediaQuery from "../lib/media";
