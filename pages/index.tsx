@@ -4,7 +4,6 @@ import { aboutPost, feedPost } from "../interfaces/posts";
 import AboutSection from "../components/about/aboutSection";
 import { useState, useEffect } from "react";
 import LanguageButton from "../components/languageBtn";
-import UpButton from "../components/upBtn";
 import Feed from "../components/about/feed";
 import CajaRemedio from "../components/cajaRemedio";
 import useMediaQuery from "../lib/media";
@@ -47,7 +46,6 @@ const About = ({ aboutData, allFeedData, allPostsSlugs }: AboutProps) => {
     <div className="flex flex-col md:flex-row md:h-screen">
       <div className="w-full md:w-1/2">
         {/* about top buttons */}
-        <UpButton color="black" href="/" />
         <div className="flex fixed flex-row p-6 right-0 top-0 z-50">
           <LanguageButton onClick={toggleLang} lang={lang} color="black" />
         </div>
