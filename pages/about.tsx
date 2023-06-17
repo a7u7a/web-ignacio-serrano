@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { getAbout, getSortedFeedPosts, getAllPostsSlugs } from "../lib/posts";
 import { GetStaticProps } from "next";
 import { aboutPost, feedPost } from "../interfaces/posts";
@@ -6,6 +7,7 @@ import { useState, useEffect } from "react";
 import LanguageButton from "../components/languageBtn";
 import UpButton from "../components/upBtn";
 import Feed from "../components/about/feed";
+import RandomButton from "../components/about/randomButton";
 import CajaRemedio from "../components/cajaRemedio";
 import useMediaQuery from "../lib/media";
 import MyFooter from "../components/footer";
