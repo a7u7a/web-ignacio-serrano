@@ -29,9 +29,9 @@ const MyFooter = ({ color }: FooterProps) => {
         }`}
       >
         <Link href={"https://www.instagram.com/ignacioserranol/"}>
-          <div className="underline cursor-pointer">ignacioserrano.com</div>
+          <div className="underline cursor-pointer">ignacioserranol.com</div>
         </Link>
-        <a className="ml-2"> - 2022</a>
+        <a className="ml-2"> - 2023</a>
       </div>
     </footer>
   );

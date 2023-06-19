@@ -93,7 +93,7 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
   return (
     <>
       <div
-        className="relative w-full md:w-1/2 bg-no-repeat bg-center bg-violet-400 bg-cover"
+        className="relative w-full md:w-1/2 bg-no-repeat bg-center bg-cover"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         {/* Article modal (todo: make component)*/}
@@ -194,7 +194,7 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
                     hoverId === post.id ? "text-white" : "text-black"
                   }`}
                 >
-                  <p className="text-5xl px-4 font-light">{post.title}</p>
+                  <p className="text-3xl px-4 font-light">{post.title}</p>
                   <DateEl dateString={post.date} className="text-sm" />
                 </div>
 
@@ -215,7 +215,7 @@ export default function Feed({ feedPosts }: { feedPosts: feedPost[] }) {
                 <div
                   className={`absolute w-full h-full ${
                     hoverId === post.id
-                      ? "mix-blend-exclusion bg-violet-300"
+                      ? "mix-blend-hard-light bg-violet-300"
                       : ""
                   }`}
                 />

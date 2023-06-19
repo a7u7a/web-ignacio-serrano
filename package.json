@@ -1,5 +1,6 @@
 {
   "private": true,
+  "homepage": "./about",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

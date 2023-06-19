@@ -64,17 +64,6 @@ const About = ({ aboutData, allFeedData, allPostsSlugs }: AboutProps) => {
               <CajaRemedio />
             </div>
 
-            {/* Intro */}
-            <AboutSection
-              className="intro"
-              data={aboutData.filter((post) => post.id === "intro")[0]}
-              lang={lang}
-            />
-
-            <SocialAbout />
-
-            <RandomButton linkTo={randomLink} />
-
             {/* Bio */}
             <AboutSection
               className="bio"
@@ -89,6 +78,18 @@ const About = ({ aboutData, allFeedData, allPostsSlugs }: AboutProps) => {
                 data={aboutData.filter((post) => post.id === "cv")[0]}
                 lang={lang}
               />
+
+              <SocialAbout />
+
+               {/* Intro */}
+            <AboutSection
+              className="intro"
+              data={aboutData.filter((post) => post.id === "intro")[0]}
+              lang={lang}
+            />
+
+           
+
             </div>
           </div>
 
