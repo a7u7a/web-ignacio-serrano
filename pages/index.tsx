@@ -79,11 +79,11 @@ const About = ({ aboutData, allFeedData, allPostsSlugs }: AboutProps) => {
               <SocialAbout />
 
                {/* Intro */}
-            <AboutSection
+            {/* <AboutSection
               className="intro"
               data={aboutData.filter((post) => post.id === "intro")[0]}
               lang={lang}
-            />
+            /> */}
 
            
 
