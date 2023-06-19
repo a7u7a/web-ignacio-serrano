@@ -1,6 +1,6 @@
 ---
 date: July 4, 2022 5:57 PM
-thumbnail: /uploads/captura-de-pantalla-2022-05-28-a-la-s-13.20.42.png
+thumbnail: /uploads/captura-de-pantalla-2022-05-28-a-la-s-13.20.42.webp
 tags:
   - fondart
   - diseño

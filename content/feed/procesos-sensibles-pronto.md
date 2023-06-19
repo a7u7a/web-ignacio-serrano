@@ -1,6 +1,6 @@
 ---
 date: July 22, 2022 12:15 PM
-thumbnail: /uploads/captura-de-pantalla-2022-05-27-a-la-s-16.05.55.png
+thumbnail: /uploads/captura-de-pantalla-2022-05-27-a-la-s-16.05.55.webp
 tags:
   - sensiblog
   - sensible

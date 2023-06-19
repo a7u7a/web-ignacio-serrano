@@ -1,6 +1,6 @@
 ---
 date: July 26, 2022 12:02 PM
-thumbnail: /uploads/captura-de-pantalla-2022-07-13-a-la-s-17.46.58.png
+thumbnail: /uploads/captura-de-pantalla-2022-07-13-a-la-s-17.46.58.webp
 tags:
   - fondart
   - tintas
@@ -20,10 +20,10 @@ La exhibición Ondita Sensible 1. Es parte de la divulgación de los resultados 
 Ondita Sensible 1, es una colaboración con la Dra. En Física y academica del Depto de Sonido de la Facultad de Artes de la Universidad de Chile, Carolina Espinoza Oñate e Ignacio Serrano, que se. Remonta al 2020, en plena pandemia. 
 Comenzando a indagar en las posibilidades de aplicación de tintas conductivas para la creación de interfaces para la creación en sonido, (…)
 
-![](/uploads/captura-de-pantalla-2022-07-13-a-la-s-17.48.50.png)
+![](/uploads/captura-de-pantalla-2022-07-13-a-la-s-17.48.50.webp)
 
-![](/uploads/captura-de-pantalla-2022-07-13-a-la-s-17.45.01.png)
+![](/uploads/captura-de-pantalla-2022-07-13-a-la-s-17.45.01.webp)
 
-![](/uploads/captura-de-pantalla-2022-07-13-a-la-s-17.44.31.png)
+![](/uploads/captura-de-pantalla-2022-07-13-a-la-s-17.44.31.webp)
 
-![](/uploads/captura-de-pantalla-2022-07-13-a-la-s-17.45.16.png)
+![](/uploads/captura-de-pantalla-2022-07-13-a-la-s-17.45.16.webp)
