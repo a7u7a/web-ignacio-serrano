@@ -64,7 +64,7 @@ const Model: React.FC<{
   id: number;
 }> = ({ props, id }) => {
   const ref = useRef<THREE.Mesh>(null!);
-  useFrame((state, delta) => (ref.current.rotation.x += -0.01));
+  useFrame((state, delta) => (ref.current.rotation.x += -0.001));
   const { nodes } = useGLTF("/glb/ignacioserranol.glb");
   const name = "REAL";
   const node = nodes[name].children[id] as THREE.Mesh;

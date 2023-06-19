@@ -56,7 +56,8 @@ const About = ({ aboutData, allFeedData, allPostsSlugs }: AboutProps) => {
           } h-max-screen no-scroll-bar`}
         >
           <div className="flex flex-col items-center m-6 md:ml-14 md:mr-14 lg:ml-20 lg:mr-20 lg:max-w-xl">
-            <div className="h-64 w-full mt-8 mb-6">
+
+          <div className="h-80 w-full">
               <CajaRemedio />
             </div>
 
